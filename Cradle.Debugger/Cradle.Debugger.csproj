@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Configurations>Debug;Release;Test</Configurations>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProRob.DataPacket\ProRob.DataPacket.csproj" />
+    <ProjectReference Include="..\ProRob.Extensions\ProRob.Extensions.csproj" />
+    <ProjectReference Include="..\ProRob.Framework\ProRob.Framework.csproj" />
+  </ItemGroup>
+
+</Project>

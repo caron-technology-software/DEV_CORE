@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x86</PlatformTarget>
+    <Configurations>Debug;Release;Test</Configurations>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Cradle.UI.csproj.user" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Apex.Analyzers.Immutable.Attributes" Version="1.0.1" />
+    <PackageReference Include="CefSharp.WinForms" Version="136.1.40" />
+    <PackageReference Include="Flurl" Version="4.0.0" />
+    <PackageReference Include="FontAwesome.Sharp" Version="6.6.0" />
+    <PackageReference Include="InputSimulator" Version="1.0.4" />
+    <PackageReference Include="Mono.Cecil" Version="0.11.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="ScottPlot.WinForms" Version="5.0.55" />
+    <PackageReference Include="System.Collections.Immutable" Version="9.0.5" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.5" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.2" />
+    <PackageReference Include="System.ValueTuple" Version="4.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Caron.CuttingRoomMachine\Caron.CuttingRoomMachine.csproj" />
+    <ProjectReference Include="..\Cradle.Core\Cradle.Core.csproj" />
+    <ProjectReference Include="..\Machine.Common.UI\Machine.UI.csproj" />
+    <ProjectReference Include="..\Machine.Communicator\Machine.Communicator.csproj" />
+    <ProjectReference Include="..\Machine.Core\Machine.Core.csproj" />
+    <ProjectReference Include="..\Machine.Encryption\Machine.Security.csproj" />
+    <ProjectReference Include="..\Machine.Shell\Machine.Shell.csproj" />
+    <ProjectReference Include="..\Machine.SoftwareUpdate\Machine.SoftwareUpdate.csproj" />
+    <ProjectReference Include="..\Machine.UI.Controls\Machine.UI.Controls.csproj" />
+    <ProjectReference Include="..\ProRob.Extensions.Hashing\ProRob.Extensions.Hashing.csproj" />
+    <ProjectReference Include="..\ProRob.Extensions.Json\ProRob.Extensions.Json.csproj" />
+    <ProjectReference Include="..\ProRob.Extensions.Object\ProRob.Extensions.Object.csproj" />
+    <ProjectReference Include="..\ProRob.Extensions\ProRob.Extensions.csproj" />
+    <ProjectReference Include="..\ProRob.Framework.ApplicationInfo\ProRob.Framework.ApplicationInfo.csproj" />
+    <ProjectReference Include="..\ProRob.Framework.Exceptions\ProRob.Framework.Exceptions.csproj" />
+    <ProjectReference Include="..\ProRob.Framework.Json\ProRob.Framework.Json.csproj" />
+    <ProjectReference Include="..\ProRob.Framework.Log\ProRob.Framework.Log.csproj" />
+    <ProjectReference Include="..\ProRob.Framework.SystemInfo\ProRob.Framework.SystemInfo.csproj" />
+    <ProjectReference Include="..\ProRob.Framework\ProRob.Framework.csproj" />
+    <ProjectReference Include="..\ProRob.OperatingSystems\ProRob.OperatingSystems.csproj" />
+  </ItemGroup>
+
+</Project>

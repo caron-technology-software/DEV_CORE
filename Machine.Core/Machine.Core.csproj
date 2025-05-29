@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Configurations>Debug;Release;Test</Configurations>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flurl.Http" Version="4.0.2" />
+    <PackageReference Include="LiteDB" Version="5.0.21" />
+    <PackageReference Include="Microsoft.Database.Collections.Generic" Version="2.0.4" />
+    <PackageReference Include="Microsoft.PowerShell.5.ReferenceAssemblies" Version="1.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.ValueTuple" Version="4.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Machine.Encryption\Machine.Security.csproj" />
+    <ProjectReference Include="..\Machine.UI.Controls\Machine.UI.Controls.csproj" />
+    <ProjectReference Include="..\ProRob.DataPacket\ProRob.DataPacket.csproj" />
+    <ProjectReference Include="..\ProRob.Extensions.Hashing\ProRob.Extensions.Hashing.csproj" />
+    <ProjectReference Include="..\ProRob.Extensions.Json\ProRob.Extensions.Json.csproj" />
+    <ProjectReference Include="..\ProRob.Extensions.Object\ProRob.Extensions.Object.csproj" />
+    <ProjectReference Include="..\ProRob.Extensions\ProRob.Extensions.csproj" />
+    <ProjectReference Include="..\ProRob.Framework.ApplicationInfo\ProRob.Framework.ApplicationInfo.csproj" />
+    <ProjectReference Include="..\ProRob.Framework.Documents\ProRob.Framework.Documents.csproj" />
+    <ProjectReference Include="..\ProRob.Framework.Json\ProRob.Framework.Json.csproj" />
+    <ProjectReference Include="..\ProRob.Framework.Log\ProRob.Framework.Log.csproj" />
+    <ProjectReference Include="..\ProRob.Framework\ProRob.Framework.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Configurations>Debug;Release;Test</Configurations>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProRob.Extensions.Object\ProRob.Extensions.Object.csproj" />
+    <ProjectReference Include="..\ProRob.Extensions\ProRob.Extensions.csproj" />
+    <ProjectReference Include="..\ProRob.Framework\ProRob.Framework.csproj" />
+  </ItemGroup>
+
+</Project>
