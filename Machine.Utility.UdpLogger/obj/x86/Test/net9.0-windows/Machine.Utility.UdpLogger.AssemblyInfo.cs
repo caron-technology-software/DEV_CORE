@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Machine.Utility.UdpLogger")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Test")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfe5cf298de251dcd45fb9797258f243a30a290c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93e41cdc8955f9926ba526629bdecfddb15febab")]
 [assembly: System.Reflection.AssemblyProductAttribute("Machine.Utility.UdpLogger")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Machine.Utility.UdpLogger")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
