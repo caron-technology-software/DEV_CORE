@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pSZILfWK1VU=",
+  "dgSpecHash": "gs75M7m/mU4=",
   "success": true,
-  "projectFilePath": "C:\\CARON\\YorkCore\\ProRob.Drawing\\ProRob.Drawing.csproj",
+  "projectFilePath": "C:\\CARON\\DEV_CORE\\ProRob.Drawing\\ProRob.Drawing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UffMarketing\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
     "C:\\Users\\UffMarketing\\.nuget\\packages\\opencvsharp4\\4.11.0.20250507\\opencvsharp4.4.11.0.20250507.nupkg.sha512",

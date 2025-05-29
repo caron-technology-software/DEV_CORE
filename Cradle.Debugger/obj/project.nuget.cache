@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aYMwc5uuiFI=",
+  "dgSpecHash": "AETwqmEFDqA=",
   "success": true,
-  "projectFilePath": "C:\\CARON\\YorkCore\\Cradle.Debugger\\Cradle.Debugger.csproj",
+  "projectFilePath": "C:\\CARON\\DEV_CORE\\Cradle.Debugger\\Cradle.Debugger.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UffMarketing\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
     "C:\\Users\\UffMarketing\\.nuget\\packages\\system.drawing.common\\8.0.0\\system.drawing.common.8.0.0.nupkg.sha512"

@@ -1897,11 +1897,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CARON\\YorkCore\\Caron.UI.Controls\\Caron.UI.Controls.csproj",
+      "projectUniqueName": "C:\\CARON\\DEV_CORE\\Caron.UI.Controls\\Caron.UI.Controls.csproj",
       "projectName": "Caron.UI.Controls",
-      "projectPath": "C:\\CARON\\YorkCore\\Caron.UI.Controls\\Caron.UI.Controls.csproj",
+      "projectPath": "C:\\CARON\\DEV_CORE\\Caron.UI.Controls\\Caron.UI.Controls.csproj",
       "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-      "outputPath": "C:\\CARON\\YorkCore\\Caron.UI.Controls\\obj\\",
+      "outputPath": "C:\\CARON\\DEV_CORE\\Caron.UI.Controls\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1923,17 +1923,17 @@
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
           "projectReferences": {
-            "C:\\CARON\\YorkCore\\Caron.CuttingRoomMachine\\Caron.CuttingRoomMachine.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\Caron.CuttingRoomMachine\\Caron.CuttingRoomMachine.csproj"
+            "C:\\CARON\\DEV_CORE\\Caron.CuttingRoomMachine\\Caron.CuttingRoomMachine.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\Caron.CuttingRoomMachine\\Caron.CuttingRoomMachine.csproj"
             },
-            "C:\\CARON\\YorkCore\\Machine.Common.UI\\Machine.UI.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\Machine.Common.UI\\Machine.UI.csproj"
+            "C:\\CARON\\DEV_CORE\\Machine.Common.UI\\Machine.UI.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\Machine.Common.UI\\Machine.UI.csproj"
             },
-            "C:\\CARON\\YorkCore\\Machine.UI.Controls\\Machine.UI.Controls.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\Machine.UI.Controls\\Machine.UI.Controls.csproj"
+            "C:\\CARON\\DEV_CORE\\Machine.UI.Controls\\Machine.UI.Controls.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\Machine.UI.Controls\\Machine.UI.Controls.csproj"
             },
-            "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj"
+            "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj"
             }
           }
         }

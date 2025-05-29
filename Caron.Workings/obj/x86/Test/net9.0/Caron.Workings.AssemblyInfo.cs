@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Caron.Workings")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Test")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cfe5cf298de251dcd45fb9797258f243a30a290c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Caron.Workings")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Caron.Workings")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

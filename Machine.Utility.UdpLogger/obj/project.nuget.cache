@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/iIi8UVXX9Q=",
+  "dgSpecHash": "M7sOKLVg3mA=",
   "success": true,
-  "projectFilePath": "C:\\CARON\\YorkCore\\Machine.Utility.UdpLogger\\Machine.Utility.UdpLogger.csproj",
+  "projectFilePath": "C:\\CARON\\DEV_CORE\\Machine.Utility.UdpLogger\\Machine.Utility.UdpLogger.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UffMarketing\\.nuget\\packages\\apex.analyzers.immutable.attributes\\1.0.1\\apex.analyzers.immutable.attributes.1.0.1.nupkg.sha512",
     "C:\\Users\\UffMarketing\\.nuget\\packages\\apex.serialization\\6.0.0\\apex.serialization.6.0.0.nupkg.sha512",

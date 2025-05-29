@@ -1690,11 +1690,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CARON\\YorkCore\\Machine.Remote\\Machine.Remote.csproj",
+      "projectUniqueName": "C:\\CARON\\DEV_CORE\\Machine.Remote\\Machine.Remote.csproj",
       "projectName": "Machine.Remote",
-      "projectPath": "C:\\CARON\\YorkCore\\Machine.Remote\\Machine.Remote.csproj",
+      "projectPath": "C:\\CARON\\DEV_CORE\\Machine.Remote\\Machine.Remote.csproj",
       "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-      "outputPath": "C:\\CARON\\YorkCore\\Machine.Remote\\obj\\",
+      "outputPath": "C:\\CARON\\DEV_CORE\\Machine.Remote\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1716,8 +1716,8 @@
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
           "projectReferences": {
-            "C:\\CARON\\YorkCore\\Machine.Core\\Machine.Core.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\Machine.Core\\Machine.Core.csproj"
+            "C:\\CARON\\DEV_CORE\\Machine.Core\\Machine.Core.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\Machine.Core\\Machine.Core.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Hk8AmwwaO8s=",
+  "dgSpecHash": "Wb5bBmEykj8=",
   "success": true,
-  "projectFilePath": "C:\\CARON\\YorkCore\\TrajectoryPlotter\\TrajectoryPlotter.csproj",
+  "projectFilePath": "C:\\CARON\\DEV_CORE\\TrajectoryPlotter\\TrajectoryPlotter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UffMarketing\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],

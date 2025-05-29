@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CARON\\YorkCore\\Cradle.Debugger\\Cradle.Debugger.csproj": {}
+    "C:\\CARON\\DEV_CORE\\Cradle.Debugger\\Cradle.Debugger.csproj": {}
   },
   "projects": {
-    "C:\\CARON\\YorkCore\\Cradle.Debugger\\Cradle.Debugger.csproj": {
+    "C:\\CARON\\DEV_CORE\\Cradle.Debugger\\Cradle.Debugger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\Cradle.Debugger\\Cradle.Debugger.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\Cradle.Debugger\\Cradle.Debugger.csproj",
         "projectName": "Cradle.Debugger",
-        "projectPath": "C:\\CARON\\YorkCore\\Cradle.Debugger\\Cradle.Debugger.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\Cradle.Debugger\\Cradle.Debugger.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\Cradle.Debugger\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\Cradle.Debugger\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,14 +33,14 @@
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "C:\\CARON\\YorkCore\\ProRob.DataPacket\\ProRob.DataPacket.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.DataPacket\\ProRob.DataPacket.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.DataPacket\\ProRob.DataPacket.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.DataPacket\\ProRob.DataPacket.csproj"
               },
-              "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj"
               },
-              "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\CARON\\YorkCore\\ProRob.DataPacket\\ProRob.DataPacket.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.DataPacket\\ProRob.DataPacket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.DataPacket\\ProRob.DataPacket.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.DataPacket\\ProRob.DataPacket.csproj",
         "projectName": "ProRob.DataPacket",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.DataPacket\\ProRob.DataPacket.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.DataPacket\\ProRob.DataPacket.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.DataPacket\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.DataPacket\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -149,14 +149,14 @@
         }
       }
     },
-    "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj",
         "projectName": "ProRob.Extensions",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -215,14 +215,14 @@
         }
       }
     },
-    "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj",
         "projectName": "ProRob.Framework",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.Framework\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -244,8 +244,8 @@
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj"
               }
             }
           }

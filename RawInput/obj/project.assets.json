@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CARON\\YorkCore\\RawInput\\RawInput.csproj",
+      "projectUniqueName": "C:\\CARON\\DEV_CORE\\RawInput\\RawInput.csproj",
       "projectName": "RawInput",
-      "projectPath": "C:\\CARON\\YorkCore\\RawInput\\RawInput.csproj",
+      "projectPath": "C:\\CARON\\DEV_CORE\\RawInput\\RawInput.csproj",
       "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-      "outputPath": "C:\\CARON\\YorkCore\\RawInput\\obj\\",
+      "outputPath": "C:\\CARON\\DEV_CORE\\RawInput\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -383,11 +383,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.DataBase\\ProRob.DataBase.csproj",
+      "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.DataBase\\ProRob.DataBase.csproj",
       "projectName": "ProRob.DataBase",
-      "projectPath": "C:\\CARON\\YorkCore\\ProRob.DataBase\\ProRob.DataBase.csproj",
+      "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.DataBase\\ProRob.DataBase.csproj",
       "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-      "outputPath": "C:\\CARON\\YorkCore\\ProRob.DataBase\\obj\\",
+      "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.DataBase\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

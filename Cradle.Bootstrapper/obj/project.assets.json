@@ -65,11 +65,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CARON\\YorkCore\\Cradle.Bootstrapper\\Cradle.Bootstrapper.csproj",
+      "projectUniqueName": "C:\\CARON\\DEV_CORE\\Cradle.Bootstrapper\\Cradle.Bootstrapper.csproj",
       "projectName": "Cradle.Bootstrapper",
-      "projectPath": "C:\\CARON\\YorkCore\\Cradle.Bootstrapper\\Cradle.Bootstrapper.csproj",
+      "projectPath": "C:\\CARON\\DEV_CORE\\Cradle.Bootstrapper\\Cradle.Bootstrapper.csproj",
       "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-      "outputPath": "C:\\CARON\\YorkCore\\Cradle.Bootstrapper\\obj\\",
+      "outputPath": "C:\\CARON\\DEV_CORE\\Cradle.Bootstrapper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,14 +91,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\CARON\\YorkCore\\Machine.SoftwareUpdate\\Machine.SoftwareUpdate.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\Machine.SoftwareUpdate\\Machine.SoftwareUpdate.csproj"
+            "C:\\CARON\\DEV_CORE\\Machine.SoftwareUpdate\\Machine.SoftwareUpdate.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\Machine.SoftwareUpdate\\Machine.SoftwareUpdate.csproj"
             },
-            "C:\\CARON\\YorkCore\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj"
+            "C:\\CARON\\DEV_CORE\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj"
             },
-            "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj"
+            "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj"
             }
           }
         }

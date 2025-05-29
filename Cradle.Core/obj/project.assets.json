@@ -116,11 +116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CARON\\YorkCore\\Cradle.Core\\Cradle.Core.csproj",
+      "projectUniqueName": "C:\\CARON\\DEV_CORE\\Cradle.Core\\Cradle.Core.csproj",
       "projectName": "Cradle.Core",
-      "projectPath": "C:\\CARON\\YorkCore\\Cradle.Core\\Cradle.Core.csproj",
+      "projectPath": "C:\\CARON\\DEV_CORE\\Cradle.Core\\Cradle.Core.csproj",
       "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-      "outputPath": "C:\\CARON\\YorkCore\\Cradle.Core\\obj\\",
+      "outputPath": "C:\\CARON\\DEV_CORE\\Cradle.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -142,23 +142,23 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\CARON\\YorkCore\\Caron.CuttingRoomMachine\\Caron.CuttingRoomMachine.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\Caron.CuttingRoomMachine\\Caron.CuttingRoomMachine.csproj"
+            "C:\\CARON\\DEV_CORE\\Caron.CuttingRoomMachine\\Caron.CuttingRoomMachine.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\Caron.CuttingRoomMachine\\Caron.CuttingRoomMachine.csproj"
             },
-            "C:\\CARON\\YorkCore\\Machine.Core\\Machine.Core.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\Machine.Core\\Machine.Core.csproj"
+            "C:\\CARON\\DEV_CORE\\Machine.Core\\Machine.Core.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\Machine.Core\\Machine.Core.csproj"
             },
-            "C:\\CARON\\YorkCore\\Machine.UI.Controls\\Machine.UI.Controls.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\Machine.UI.Controls\\Machine.UI.Controls.csproj"
+            "C:\\CARON\\DEV_CORE\\Machine.UI.Controls\\Machine.UI.Controls.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\Machine.UI.Controls\\Machine.UI.Controls.csproj"
             },
-            "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj"
+            "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj"
             },
-            "C:\\CARON\\YorkCore\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj"
+            "C:\\CARON\\DEV_CORE\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj"
             },
-            "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj"
+            "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CARON\\YorkCore\\ColorSlider\\ColorSlider.csproj": {}
+    "C:\\CARON\\DEV_CORE\\ColorSlider\\ColorSlider.csproj": {}
   },
   "projects": {
-    "C:\\CARON\\YorkCore\\ColorSlider\\ColorSlider.csproj": {
+    "C:\\CARON\\DEV_CORE\\ColorSlider\\ColorSlider.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ColorSlider\\ColorSlider.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ColorSlider\\ColorSlider.csproj",
         "projectName": "ColorSlider",
-        "projectPath": "C:\\CARON\\YorkCore\\ColorSlider\\ColorSlider.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ColorSlider\\ColorSlider.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ColorSlider\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ColorSlider\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

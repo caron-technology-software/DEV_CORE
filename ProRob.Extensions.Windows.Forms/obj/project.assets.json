@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Extensions.Windows.Forms\\ProRob.Extensions.Windows.Forms.csproj",
+      "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Windows.Forms\\ProRob.Extensions.Windows.Forms.csproj",
       "projectName": "ProRob.Extensions.Windows.Forms",
-      "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Windows.Forms\\ProRob.Extensions.Windows.Forms.csproj",
+      "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Windows.Forms\\ProRob.Extensions.Windows.Forms.csproj",
       "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-      "outputPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Windows.Forms\\obj\\",
+      "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Windows.Forms\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

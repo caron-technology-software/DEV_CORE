@@ -1691,11 +1691,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CARON\\YorkCore\\Caron.LicenseBuilder\\Caron.LicenseBuilder.csproj",
+      "projectUniqueName": "C:\\CARON\\DEV_CORE\\Caron.LicenseBuilder\\Caron.LicenseBuilder.csproj",
       "projectName": "Caron.LicenseBuilder",
-      "projectPath": "C:\\CARON\\YorkCore\\Caron.LicenseBuilder\\Caron.LicenseBuilder.csproj",
+      "projectPath": "C:\\CARON\\DEV_CORE\\Caron.LicenseBuilder\\Caron.LicenseBuilder.csproj",
       "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-      "outputPath": "C:\\CARON\\YorkCore\\Caron.LicenseBuilder\\obj\\",
+      "outputPath": "C:\\CARON\\DEV_CORE\\Caron.LicenseBuilder\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1717,20 +1717,20 @@
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
           "projectReferences": {
-            "C:\\CARON\\YorkCore\\Machine.Core\\Machine.Core.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\Machine.Core\\Machine.Core.csproj"
+            "C:\\CARON\\DEV_CORE\\Machine.Core\\Machine.Core.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\Machine.Core\\Machine.Core.csproj"
             },
-            "C:\\CARON\\YorkCore\\Machine.Encryption\\Machine.Security.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\Machine.Encryption\\Machine.Security.csproj"
+            "C:\\CARON\\DEV_CORE\\Machine.Encryption\\Machine.Security.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\Machine.Encryption\\Machine.Security.csproj"
             },
-            "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj"
+            "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj"
             },
-            "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj"
+            "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj"
             },
-            "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj"
+            "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CARON\\YorkCore\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj": {}
+    "C:\\CARON\\DEV_CORE\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj": {}
   },
   "projects": {
-    "C:\\CARON\\YorkCore\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj",
         "projectName": "ProRob.Framework.ApplicationInfo",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.Framework.ApplicationInfo\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.ApplicationInfo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

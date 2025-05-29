@@ -610,11 +610,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Framework.Exceptions\\ProRob.Framework.Exceptions.csproj",
+      "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Exceptions\\ProRob.Framework.Exceptions.csproj",
       "projectName": "ProRob.Framework.Exceptions",
-      "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Exceptions\\ProRob.Framework.Exceptions.csproj",
+      "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Exceptions\\ProRob.Framework.Exceptions.csproj",
       "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-      "outputPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Exceptions\\obj\\",
+      "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Exceptions\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -636,11 +636,11 @@
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
           "projectReferences": {
-            "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj"
+            "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj"
             },
-            "C:\\CARON\\YorkCore\\ProRob.Framework.Log\\ProRob.Framework.Log.csproj": {
-              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Log\\ProRob.Framework.Log.csproj"
+            "C:\\CARON\\DEV_CORE\\ProRob.Framework.Log\\ProRob.Framework.Log.csproj": {
+              "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Log\\ProRob.Framework.Log.csproj"
             }
           }
         }

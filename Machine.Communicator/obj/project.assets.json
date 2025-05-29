@@ -383,11 +383,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CARON\\YorkCore\\Machine.Communicator\\Machine.Communicator.csproj",
+      "projectUniqueName": "C:\\CARON\\DEV_CORE\\Machine.Communicator\\Machine.Communicator.csproj",
       "projectName": "Machine.Communicator",
-      "projectPath": "C:\\CARON\\YorkCore\\Machine.Communicator\\Machine.Communicator.csproj",
+      "projectPath": "C:\\CARON\\DEV_CORE\\Machine.Communicator\\Machine.Communicator.csproj",
       "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-      "outputPath": "C:\\CARON\\YorkCore\\Machine.Communicator\\obj\\",
+      "outputPath": "C:\\CARON\\DEV_CORE\\Machine.Communicator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

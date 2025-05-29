@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JyOXv1CowN8=",
+  "dgSpecHash": "cOuC94dBu30=",
   "success": true,
-  "projectFilePath": "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj",
+  "projectFilePath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UffMarketing\\.nuget\\packages\\apex.analyzers.immutable.attributes\\1.0.1\\apex.analyzers.immutable.attributes.1.0.1.nupkg.sha512",
     "C:\\Users\\UffMarketing\\.nuget\\packages\\apex.serialization\\6.0.0\\apex.serialization.6.0.0.nupkg.sha512",

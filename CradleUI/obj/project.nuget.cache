@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LDG3q/m0f/Y=",
+  "dgSpecHash": "cymv5qA24Cc=",
   "success": true,
-  "projectFilePath": "C:\\CARON\\YorkCore\\CradleUI\\CradleUI.csproj",
+  "projectFilePath": "C:\\CARON\\DEV_CORE\\CradleUI\\CradleUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UffMarketing\\.nuget\\packages\\apex.analyzers.immutable.attributes\\1.0.1\\apex.analyzers.immutable.attributes.1.0.1.nupkg.sha512",
     "C:\\Users\\UffMarketing\\.nuget\\packages\\apex.serialization\\6.0.0\\apex.serialization.6.0.0.nupkg.sha512",

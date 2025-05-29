@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xXmbiQKt/vg=",
+  "dgSpecHash": "CnNLNzktkJ8=",
   "success": false,
-  "projectFilePath": "C:\\CARON\\YorkCore\\Cradle.Proxy\\Cradle.Proxy.csproj",
+  "projectFilePath": "C:\\CARON\\DEV_CORE\\Cradle.Proxy\\Cradle.Proxy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UffMarketing\\.nuget\\packages\\ionic.zlib\\1.9.1.5\\ionic.zlib.1.9.1.5.nupkg.sha512",
     "C:\\Users\\UffMarketing\\.nuget\\packages\\mono.posix-4.5\\4.5.0\\mono.posix-4.5.4.5.0.nupkg.sha512"

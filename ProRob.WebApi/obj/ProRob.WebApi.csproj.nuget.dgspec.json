@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CARON\\YorkCore\\ProRob.WebApi\\ProRob.WebApi.csproj": {}
+    "C:\\CARON\\DEV_CORE\\ProRob.WebApi\\ProRob.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj",
         "projectName": "ProRob.Extensions",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,14 +70,14 @@
         }
       }
     },
-    "C:\\CARON\\YorkCore\\ProRob.Framework.Compression\\ProRob.Framework.Compression.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.Framework.Compression\\ProRob.Framework.Compression.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Framework.Compression\\ProRob.Framework.Compression.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Compression\\ProRob.Framework.Compression.csproj",
         "projectName": "ProRob.Framework.Compression",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Compression\\ProRob.Framework.Compression.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Compression\\ProRob.Framework.Compression.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Compression\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Compression\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -142,14 +142,14 @@
         }
       }
     },
-    "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj",
         "projectName": "ProRob.Framework",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.Framework\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -171,8 +171,8 @@
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj"
               }
             }
           }
@@ -221,14 +221,14 @@
         }
       }
     },
-    "C:\\CARON\\YorkCore\\ProRob.WebApi\\ProRob.WebApi.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.WebApi\\ProRob.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.WebApi\\ProRob.WebApi.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.WebApi\\ProRob.WebApi.csproj",
         "projectName": "ProRob.WebApi",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.WebApi\\ProRob.WebApi.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.WebApi\\ProRob.WebApi.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.WebApi\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -250,11 +250,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\CARON\\YorkCore\\ProRob.Framework.Compression\\ProRob.Framework.Compression.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Compression\\ProRob.Framework.Compression.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Framework.Compression\\ProRob.Framework.Compression.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Compression\\ProRob.Framework.Compression.csproj"
               },
-              "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj"
               }
             }
           }

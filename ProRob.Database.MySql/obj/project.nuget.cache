@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H1dhl1EecNU=",
+  "dgSpecHash": "WhrD5wvFb8c=",
   "success": true,
-  "projectFilePath": "C:\\CARON\\YorkCore\\ProRob.Database.MySql\\ProRob.Database.MySql.csproj",
+  "projectFilePath": "C:\\CARON\\DEV_CORE\\ProRob.Database.MySql\\ProRob.Database.MySql.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UffMarketing\\.nuget\\packages\\apex.analyzers.immutable.attributes\\1.0.1\\apex.analyzers.immutable.attributes.1.0.1.nupkg.sha512",
     "C:\\Users\\UffMarketing\\.nuget\\packages\\apex.serialization\\6.0.0\\apex.serialization.6.0.0.nupkg.sha512",

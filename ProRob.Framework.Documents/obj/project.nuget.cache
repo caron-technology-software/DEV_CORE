@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "48PDOYtihxU=",
+  "dgSpecHash": "qvGifbRTqxY=",
   "success": true,
-  "projectFilePath": "C:\\CARON\\YorkCore\\ProRob.Framework.Documents\\ProRob.Framework.Documents.csproj",
+  "projectFilePath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Documents\\ProRob.Framework.Documents.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UffMarketing\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\UffMarketing\\.nuget\\packages\\enums.net\\4.0.1\\enums.net.4.0.1.nupkg.sha512",

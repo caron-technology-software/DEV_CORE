@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BuObvNkLxv0=",
+  "dgSpecHash": "B32EZekXp/Q=",
   "success": true,
-  "projectFilePath": "C:\\CARON\\YorkCore\\ProRob.OperatingSystems\\ProRob.OperatingSystems.csproj",
+  "projectFilePath": "C:\\CARON\\DEV_CORE\\ProRob.OperatingSystems\\ProRob.OperatingSystems.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UffMarketing\\.nuget\\packages\\mono.posix-4.5\\4.5.0\\mono.posix-4.5.4.5.0.nupkg.sha512"
   ],

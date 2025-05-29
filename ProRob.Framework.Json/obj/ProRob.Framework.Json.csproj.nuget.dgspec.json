@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj": {}
+    "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj": {}
   },
   "projects": {
-    "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj",
         "projectName": "ProRob.Extensions.Object",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj",
         "projectName": "ProRob.Extensions",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -154,14 +154,14 @@
         }
       }
     },
-    "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj",
         "projectName": "ProRob.Framework.Json",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -183,11 +183,11 @@
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj"
               },
-              "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj"
               }
             }
           }

@@ -280,11 +280,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Drawing\\ProRob.Drawing.csproj",
+      "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Drawing\\ProRob.Drawing.csproj",
       "projectName": "ProRob.Drawing",
-      "projectPath": "C:\\CARON\\YorkCore\\ProRob.Drawing\\ProRob.Drawing.csproj",
+      "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Drawing\\ProRob.Drawing.csproj",
       "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-      "outputPath": "C:\\CARON\\YorkCore\\ProRob.Drawing\\obj\\",
+      "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Drawing\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

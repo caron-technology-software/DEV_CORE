@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iA2W9ImzYAw=",
+  "dgSpecHash": "YcxUj7Gj4yY=",
   "success": true,
-  "projectFilePath": "C:\\CARON\\YorkCore\\ProRob.Framework.Compression\\ProRob.Framework.Compression.csproj",
+  "projectFilePath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Compression\\ProRob.Framework.Compression.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UffMarketing\\.nuget\\packages\\ionic.zlib\\1.9.1.5\\ionic.zlib.1.9.1.5.nupkg.sha512"
   ],

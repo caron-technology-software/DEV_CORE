@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CARON\\YorkCore\\Machine.SoftwareUpdate\\Machine.SoftwareUpdate.csproj": {}
+    "C:\\CARON\\DEV_CORE\\Machine.SoftwareUpdate\\Machine.SoftwareUpdate.csproj": {}
   },
   "projects": {
-    "C:\\CARON\\YorkCore\\Machine.SoftwareUpdate\\Machine.SoftwareUpdate.csproj": {
+    "C:\\CARON\\DEV_CORE\\Machine.SoftwareUpdate\\Machine.SoftwareUpdate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\Machine.SoftwareUpdate\\Machine.SoftwareUpdate.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\Machine.SoftwareUpdate\\Machine.SoftwareUpdate.csproj",
         "projectName": "Machine.SoftwareUpdate",
-        "projectPath": "C:\\CARON\\YorkCore\\Machine.SoftwareUpdate\\Machine.SoftwareUpdate.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\Machine.SoftwareUpdate\\Machine.SoftwareUpdate.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\Machine.SoftwareUpdate\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\Machine.SoftwareUpdate\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,20 +33,20 @@
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "C:\\CARON\\YorkCore\\ProRob.Extensions.Hashing\\ProRob.Extensions.Hashing.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Hashing\\ProRob.Extensions.Hashing.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Hashing\\ProRob.Extensions.Hashing.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Hashing\\ProRob.Extensions.Hashing.csproj"
               },
-              "C:\\CARON\\YorkCore\\ProRob.Extensions.Json\\ProRob.Extensions.Json.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Json\\ProRob.Extensions.Json.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Json\\ProRob.Extensions.Json.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Json\\ProRob.Extensions.Json.csproj"
               },
-              "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj"
               },
-              "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj"
               },
-              "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj"
               }
             }
           }
@@ -96,14 +96,14 @@
         }
       }
     },
-    "C:\\CARON\\YorkCore\\ProRob.Extensions.Hashing\\ProRob.Extensions.Hashing.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Hashing\\ProRob.Extensions.Hashing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Extensions.Hashing\\ProRob.Extensions.Hashing.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Hashing\\ProRob.Extensions.Hashing.csproj",
         "projectName": "ProRob.Extensions.Hashing",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Hashing\\ProRob.Extensions.Hashing.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Hashing\\ProRob.Extensions.Hashing.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Hashing\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Hashing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -125,14 +125,14 @@
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj"
               },
-              "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj"
               },
-              "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj"
               }
             }
           }
@@ -172,14 +172,14 @@
         }
       }
     },
-    "C:\\CARON\\YorkCore\\ProRob.Extensions.Json\\ProRob.Extensions.Json.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Json\\ProRob.Extensions.Json.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Extensions.Json\\ProRob.Extensions.Json.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Json\\ProRob.Extensions.Json.csproj",
         "projectName": "ProRob.Extensions.Json",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Json\\ProRob.Extensions.Json.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Json\\ProRob.Extensions.Json.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Json\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Json\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -201,11 +201,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj"
               },
-              "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj"
               }
             }
           }
@@ -255,14 +255,14 @@
         }
       }
     },
-    "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj",
         "projectName": "ProRob.Extensions.Object",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -339,14 +339,14 @@
         }
       }
     },
-    "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj",
         "projectName": "ProRob.Extensions",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -405,14 +405,14 @@
         }
       }
     },
-    "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj",
         "projectName": "ProRob.Framework.Json",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework.Json\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -434,11 +434,11 @@
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj"
               },
-              "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj"
               }
             }
           }
@@ -488,14 +488,14 @@
         }
       }
     },
-    "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj": {
+    "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj",
+        "projectUniqueName": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj",
         "projectName": "ProRob.Framework",
-        "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj",
+        "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\ProRob.Framework.csproj",
         "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
-        "outputPath": "C:\\CARON\\YorkCore\\ProRob.Framework\\obj\\",
+        "outputPath": "C:\\CARON\\DEV_CORE\\ProRob.Framework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -517,8 +517,8 @@
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
-                "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj"
+              "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+                "projectPath": "C:\\CARON\\DEV_CORE\\ProRob.Extensions\\ProRob.Extensions.csproj"
               }
             }
           }

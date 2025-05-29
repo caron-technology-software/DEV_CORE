@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UIrYt3Lp1No=",
+  "dgSpecHash": "8QD3vNZPHHk=",
   "success": true,
-  "projectFilePath": "C:\\CARON\\YorkCore\\Machine.UI.Controls\\Machine.UI.Controls.csproj",
+  "projectFilePath": "C:\\CARON\\DEV_CORE\\Machine.UI.Controls\\Machine.UI.Controls.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UffMarketing\\.nuget\\packages\\fontawesome.sharp\\6.6.0\\fontawesome.sharp.6.6.0.nupkg.sha512"
   ],
