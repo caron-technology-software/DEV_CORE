@@ -1,0 +1,7 @@
+C:\CARON\YorkCore\Cradle.Debugger\obj\x86\Test\net9.0-windows\Cradle.Debugger.csproj.AssemblyReference.cache
+C:\CARON\YorkCore\Cradle.Debugger\obj\x86\Test\net9.0-windows\Cradle.Debugger.FormMain.resources
+C:\CARON\YorkCore\Cradle.Debugger\obj\x86\Test\net9.0-windows\Cradle.Debugger.csproj.GenerateResource.cache
+C:\CARON\YorkCore\Cradle.Debugger\obj\x86\Test\net9.0-windows\Cradle.Debugger.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\Cradle.Debugger\obj\x86\Test\net9.0-windows\Cradle.Debugger.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\Cradle.Debugger\obj\x86\Test\net9.0-windows\Cradle.Debugger.AssemblyInfo.cs
+C:\CARON\YorkCore\Cradle.Debugger\obj\x86\Test\net9.0-windows\Cradle.Debugger.csproj.CoreCompileInputs.cache

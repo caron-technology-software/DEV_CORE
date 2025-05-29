@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "HM1egq20IEM=",
+  "success": false,
+  "projectFilePath": "C:\\CARON\\YorkCore\\Cradle.Bootstrapper\\Cradle.Bootstrapper.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Il progetto ProRob.Framework non è compatibile con net9.0 (.NETCoreApp,Version=v9.0). Il progetto ProRob.Framework supporta: net9.0-windows7.0 (.NETCoreApp,Version=v9.0)",
+      "libraryId": "ProRob.Framework",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Il progetto Machine.SoftwareUpdate non è compatibile con net9.0 (.NETCoreApp,Version=v9.0). Il progetto Machine.SoftwareUpdate supporta: net9.0-windows7.0 (.NETCoreApp,Version=v9.0)",
+      "libraryId": "Machine.SoftwareUpdate",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
+}

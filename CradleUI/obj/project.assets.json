@@ -1,0 +1,4007 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0-windows7.0": {
+      "Apex.Analyzers.Immutable.Attributes/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Apex.Analyzers.Immutable.Attributes.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Apex.Analyzers.Immutable.Attributes.dll": {}
+        }
+      },
+      "Apex.Serialization/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Apex.Analyzers.Immutable.Attributes": "1.0.1",
+          "Mono.Cecil": "0.11.6",
+          "System.Collections.Immutable": "9.0.5",
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "compile": {
+          "lib/net9.0/Apex.Serialization.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0/Apex.Serialization.dll": {}
+        }
+      },
+      "BouncyCastle.Cryptography/2.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CefSharp.Common/136.1.40": {
+        "type": "package",
+        "dependencies": {
+          "chromiumembeddedframework.runtime.win-x64": "[136.1.4]",
+          "chromiumembeddedframework.runtime.win-x86": "[136.1.4]"
+        },
+        "build": {
+          "buildTransitive/CefSharp.Common.props": {},
+          "buildTransitive/CefSharp.Common.targets": {}
+        }
+      },
+      "CefSharp.WinForms/136.1.40": {
+        "type": "package",
+        "dependencies": {
+          "CefSharp.Common": "[136.1.40]"
+        },
+        "compile": {
+          "lib/net462/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net462/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "chromiumembeddedframework.runtime.win-x64/136.1.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/chromiumembeddedframework.runtime.win-x64.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/chrome_100_percent.pak": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/chrome_200_percent.pak": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/chrome_elf.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/d3dcompiler_47.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/dxcompiler.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/dxil.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/icudtl.dat": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/libEGL.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/libGLESv2.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/libcef.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/resources.pak": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/v8_context_snapshot.bin": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/vk_swiftshader.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/vk_swiftshader_icd.json": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/vulkan-1.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      },
+      "chromiumembeddedframework.runtime.win-x86/136.1.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/chromiumembeddedframework.runtime.win-x86.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x86/native/chrome_100_percent.pak": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/chrome_200_percent.pak": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/chrome_elf.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/d3dcompiler_47.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/icudtl.dat": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/libEGL.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/libGLESv2.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/libcef.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/resources.pak": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/v8_context_snapshot.bin": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/vk_swiftshader.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/vk_swiftshader_icd.json": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/vulkan-1.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "CsvHelper/33.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DeviceId/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/DeviceId.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/DeviceId.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Enums.NET/4.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/Enums.NET.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Enums.NET.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "ExtendedNumerics.BigDecimal/2025.1001.2.129": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/ExtendedNumerics.BigDecimal.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/ExtendedNumerics.BigDecimal.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Flurl/4.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flurl.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flurl.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Flurl.Http/4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Flurl": "4.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Flurl.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Flurl.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "FontAwesome.Sharp/6.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows7.0/FontAwesome.Sharp.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0-windows7.0/FontAwesome.Sharp.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
+      },
+      "HarfBuzzSharp/7.3.0.3": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp.NativeAssets.Win32": "7.3.0.3",
+          "HarfBuzzSharp.NativeAssets.macOS": "7.3.0.3"
+        },
+        "compile": {
+          "lib/net6.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Linux/7.3.0.3": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "7.3.0.3"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-musl-x64/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/libHarfBuzzSharp.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.macOS/7.3.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libHarfBuzzSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Win32/7.3.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libHarfBuzzSharp.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libHarfBuzzSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libHarfBuzzSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "InputSimulator/1.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net20/WindowsInput.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net20/WindowsInput.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LiteDB/5.0.21": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/LiteDB.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/LiteDB.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MathNet.Numerics.Signed/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MathNet.Numerics.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MathNet.Numerics.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Database.Collections.Generic/2.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Database.Isam": "2.0.4",
+          "Microsoft.Database.ManagedEsent": "2.0.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/Esent.Collections.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Esent.Collections.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
+      "Microsoft.Database.Isam/2.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Database.ManagedEsent": "2.0.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/Esent.Isam.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Esent.Isam.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Database.ManagedEsent/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Esent.Interop.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Esent.Interop.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.IO.RecyclableMemoryStream/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.PowerShell.5.ReferenceAssemblies/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net4/System.Management.Automation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net4/System.Management.Automation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/9.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net9.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "Mono.Cecil/0.11.6": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Mono.Cecil.Mdb.dll": {
+            "related": ".pdb"
+          },
+          "lib/netstandard2.0/Mono.Cecil.Pdb.dll": {
+            "related": ".pdb"
+          },
+          "lib/netstandard2.0/Mono.Cecil.Rocks.dll": {
+            "related": ".pdb"
+          },
+          "lib/netstandard2.0/Mono.Cecil.dll": {
+            "related": ".Mdb.pdb;.pdb;.Pdb.pdb;.Rocks.pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Mono.Cecil.Mdb.dll": {
+            "related": ".pdb"
+          },
+          "lib/netstandard2.0/Mono.Cecil.Pdb.dll": {
+            "related": ".pdb"
+          },
+          "lib/netstandard2.0/Mono.Cecil.Rocks.dll": {
+            "related": ".pdb"
+          },
+          "lib/netstandard2.0/Mono.Cecil.dll": {
+            "related": ".Mdb.pdb;.pdb;.Pdb.pdb;.Rocks.pdb"
+          }
+        }
+      },
+      "Mono.Posix-4.5/4.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Mono.Posix.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Mono.Posix.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NPOI/2.7.3": {
+        "type": "package",
+        "dependencies": {
+          "BouncyCastle.Cryptography": "2.3.1",
+          "Enums.NET": "4.0.1",
+          "ExtendedNumerics.BigDecimal": "2025.1001.2.129",
+          "MathNet.Numerics.Signed": "5.0.0",
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.0",
+          "SharpZipLib": "1.4.2",
+          "SixLabors.Fonts": "1.0.1",
+          "SixLabors.ImageSharp": "2.1.10",
+          "System.Security.Cryptography.Pkcs": "8.0.1",
+          "System.Security.Cryptography.Xml": "8.0.2"
+        },
+        "compile": {
+          "lib/net8.0/NPOI.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net8.0/NPOI.OOXML.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net8.0/NPOI.OpenXml4Net.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net8.0/NPOI.OpenXmlFormats.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/NPOI.Core.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net8.0/NPOI.OOXML.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net8.0/NPOI.OpenXml4Net.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net8.0/NPOI.OpenXmlFormats.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "OpenCvSharp4/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+        "type": "package",
+        "build": {
+          "build/net5.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/OpenCvSharpExtern.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/opencv_videoio_ffmpeg4110.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "OpenCvSharp4.Windows/4.11.0.20250507": {
+        "type": "package",
+        "dependencies": {
+          "OpenCvSharp4": "4.11.0.20250507",
+          "OpenCvSharp4.runtime.win": "4.11.0.20250507"
+        }
+      },
+      "OpenTK/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net20/OpenTK.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net20/OpenTK.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "OpenTK.GLControl/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK": "3.1.0"
+        },
+        "compile": {
+          "lib/net20/OpenTK.GLControl.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net20/OpenTK.GLControl.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Portable.BouncyCastle/1.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "RestSharp/112.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ScottPlot/5.0.55": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp.NativeAssets.Linux": "7.3.0.3",
+          "SkiaSharp": "2.88.9",
+          "SkiaSharp.HarfBuzz": "2.88.9",
+          "SkiaSharp.NativeAssets.Linux.NoDependencies": "2.88.9"
+        },
+        "compile": {
+          "lib/net8.0/ScottPlot.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/ScottPlot.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ScottPlot.WinForms/5.0.55": {
+        "type": "package",
+        "dependencies": {
+          "ScottPlot": "5.0.55",
+          "SkiaSharp.Views.WindowsForms": "2.88.9"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/ScottPlot.WinForms.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/ScottPlot.WinForms.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "SharpZipLib/1.4.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/ICSharpCode.SharpZipLib.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ICSharpCode.SharpZipLib.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SixLabors.Fonts/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.Fonts.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SixLabors.ImageSharp/2.1.10": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encoding.CodePages": "5.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SkiaSharp/2.88.9": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "2.88.9",
+          "SkiaSharp.NativeAssets.macOS": "2.88.9"
+        },
+        "compile": {
+          "lib/net6.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.HarfBuzz/2.88.9": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "7.3.0.3",
+          "SkiaSharp": "2.88.9"
+        },
+        "compile": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.HarfBuzz.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Linux.NoDependencies/2.88.9": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.88.9"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "linux-arm"
+          },
+          "runtimes/linux-arm64/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "linux-arm64"
+          },
+          "runtimes/linux-musl-x64/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "linux-musl-x64"
+          },
+          "runtimes/linux-x64/native/libSkiaSharp.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/2.88.9": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/2.88.9": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "SkiaSharp.Views.Desktop.Common/2.88.9": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.88.9",
+          "System.Drawing.Common": "4.7.3"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.Views.WindowsForms/2.88.9": {
+        "type": "package",
+        "dependencies": {
+          "OpenTK": "3.1.0",
+          "OpenTK.GLControl": "3.1.0",
+          "SkiaSharp": "2.88.9",
+          "SkiaSharp.Views.Desktop.Common": "2.88.9"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/SkiaSharp.Views.WindowsForms.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SkiaSharp.Views.WindowsForms.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Collections.Immutable/9.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "System.Drawing.Common/9.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "9.0.5"
+        },
+        "compile": {
+          "lib/net9.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net9.0/System.Private.Windows.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/System.Drawing.Common.dll": {
+            "related": ".pdb;.xml"
+          },
+          "lib/net9.0/System.Private.Windows.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "System.Memory/4.6.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net7.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Security.Cryptography.Pkcs/8.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.Xml/8.0.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.Pkcs": "8.0.1"
+        },
+        "compile": {
+          "lib/net8.0/System.Security.Cryptography.Xml.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Security.Cryptography.Xml.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.ValueTuple/4.6.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Caron.CuttingRoomMachine/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ProRob.Extensions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Caron.CuttingRoomMachine.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Caron.CuttingRoomMachine.dll": {}
+        }
+      },
+      "ColorSlider/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ColorSlider.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ColorSlider.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "Cradle.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Caron.CuttingRoomMachine": "1.0.0",
+          "Machine.Core": "1.0.0",
+          "Machine.UI.Controls": "1.0.0",
+          "ProRob.Extensions": "1.0.0",
+          "ProRob.Framework": "1.0.0",
+          "ProRob.Framework.ApplicationInfo": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cradle.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cradle.Core.dll": {}
+        }
+      },
+      "Machine.Communicator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Apex.Serialization": "6.0.0",
+          "Flurl.Http": "4.0.2",
+          "Mono.Cecil": "0.11.6",
+          "Newtonsoft.Json": "13.0.3",
+          "System.Collections.Immutable": "9.0.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2",
+          "System.ValueTuple": "4.6.1"
+        },
+        "compile": {
+          "bin/placeholder/Machine.Communicator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Machine.Communicator.dll": {}
+        }
+      },
+      "Machine.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Flurl.Http": "4.0.2",
+          "LiteDB": "5.0.21",
+          "Machine.Security": "1.0.0",
+          "Machine.UI.Controls": "1.0.0",
+          "Microsoft.Database.Collections.Generic": "2.0.4",
+          "Microsoft.PowerShell.5.ReferenceAssemblies": "1.1.0",
+          "Newtonsoft.Json": "13.0.3",
+          "ProRob.DataPacket": "1.0.0",
+          "ProRob.Extensions": "1.0.0",
+          "ProRob.Extensions.Hashing": "1.0.0",
+          "ProRob.Extensions.Json": "1.0.0",
+          "ProRob.Extensions.Object": "1.0.0",
+          "ProRob.Framework": "1.0.0",
+          "ProRob.Framework.ApplicationInfo": "1.0.0",
+          "ProRob.Framework.Documents": "1.0.0",
+          "ProRob.Framework.Json": "1.0.0",
+          "ProRob.Framework.Log": "1.0.0",
+          "System.ValueTuple": "4.6.1"
+        },
+        "compile": {
+          "bin/placeholder/Machine.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Machine.Core.dll": {}
+        }
+      },
+      "Machine.Security/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Machine.Security.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Machine.Security.dll": {}
+        }
+      },
+      "Machine.Shell/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "FontAwesome.Sharp": "6.6.0",
+          "ProRob.Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Machine.Shell.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Machine.Shell.dll": {}
+        }
+      },
+      "Machine.SoftwareUpdate/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ProRob.Extensions": "1.0.0",
+          "ProRob.Extensions.Hashing": "1.0.0",
+          "ProRob.Extensions.Json": "1.0.0",
+          "ProRob.Framework": "1.0.0",
+          "ProRob.Framework.Json": "1.0.0",
+          "System.Collections.Immutable": "9.0.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "compile": {
+          "bin/placeholder/Machine.SoftwareUpdate.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Machine.SoftwareUpdate.dll": {}
+        }
+      },
+      "Machine.UI/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Apex.Serialization": "6.0.0",
+          "Flurl.Http": "4.0.2",
+          "FontAwesome.Sharp": "6.6.0",
+          "Machine.Core": "1.0.0",
+          "Machine.Shell": "1.0.0",
+          "Machine.UI.Controls": "1.0.0",
+          "Mono.Cecil": "0.11.6",
+          "Newtonsoft.Json": "13.0.3",
+          "OpenCvSharp4.Windows": "4.11.0.20250507",
+          "ProRob.Extensions": "1.0.0",
+          "ProRob.Extensions.Hashing": "1.0.0",
+          "ProRob.Extensions.Object": "1.0.0",
+          "ProRob.Framework": "1.0.0",
+          "ProRob.Framework.Json": "1.0.0",
+          "ProRob.Framework.Log": "1.0.0",
+          "RestSharp": "112.1.0",
+          "System.Collections.Immutable": "9.0.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "compile": {
+          "bin/placeholder/Machine.UI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Machine.UI.dll": {}
+        }
+      },
+      "Machine.UI.Controls/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ColorSlider": "1.0.0",
+          "FontAwesome.Sharp": "6.6.0",
+          "ProRob.Extensions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Machine.UI.Controls.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Machine.UI.Controls.dll": {}
+        }
+      },
+      "ProRob.DataPacket/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ProRob.DataPacket.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProRob.DataPacket.dll": {}
+        }
+      },
+      "ProRob.Extensions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ProRob.Extensions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProRob.Extensions.dll": {}
+        }
+      },
+      "ProRob.Extensions.Hashing/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ProRob.Extensions": "1.0.0",
+          "ProRob.Extensions.Object": "1.0.0",
+          "ProRob.Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProRob.Extensions.Hashing.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProRob.Extensions.Hashing.dll": {}
+        }
+      },
+      "ProRob.Extensions.Json/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CsvHelper": "33.0.1",
+          "Newtonsoft.Json": "13.0.3",
+          "ProRob.Extensions": "1.0.0",
+          "ProRob.Extensions.Object": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProRob.Extensions.Json.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProRob.Extensions.Json.dll": {}
+        }
+      },
+      "ProRob.Extensions.Object/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Apex.Serialization": "6.0.0",
+          "Mono.Cecil": "0.11.6",
+          "System.Collections.Immutable": "9.0.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "compile": {
+          "bin/placeholder/ProRob.Extensions.Object.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProRob.Extensions.Object.dll": {}
+        }
+      },
+      "ProRob.Framework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ProRob.Extensions": "1.0.0",
+          "System.Drawing.Common": "8.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProRob.Framework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProRob.Framework.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "ProRob.Framework.ApplicationInfo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ProRob.Framework.ApplicationInfo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProRob.Framework.ApplicationInfo.dll": {}
+        }
+      },
+      "ProRob.Framework.Documents/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "NPOI": "2.7.3",
+          "Portable.BouncyCastle": "1.9.0",
+          "SharpZipLib": "1.4.2"
+        },
+        "compile": {
+          "bin/placeholder/ProRob.Framework.Documents.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProRob.Framework.Documents.dll": {}
+        }
+      },
+      "ProRob.Framework.Exceptions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ProRob.Framework.Json": "1.0.0",
+          "ProRob.Framework.Log": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProRob.Framework.Exceptions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProRob.Framework.Exceptions.dll": {}
+        }
+      },
+      "ProRob.Framework.Json/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CsvHelper": "33.0.1",
+          "Newtonsoft.Json": "13.0.3",
+          "ProRob.Extensions": "1.0.0",
+          "ProRob.Extensions.Object": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProRob.Framework.Json.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProRob.Framework.Json.dll": {}
+        }
+      },
+      "ProRob.Framework.Log/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "LiteDB": "5.0.21",
+          "ProRob.Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProRob.Framework.Log.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProRob.Framework.Log.dll": {}
+        }
+      },
+      "ProRob.Framework.SystemInfo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "DeviceId": "6.0.0",
+          "ProRob.Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProRob.Framework.SystemInfo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProRob.Framework.SystemInfo.dll": {}
+        }
+      },
+      "ProRob.OperatingSystems/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Mono.Posix-4.5": "4.5.0"
+        },
+        "compile": {
+          "bin/placeholder/ProRob.OperatingSystems.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProRob.OperatingSystems.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Apex.Analyzers.Immutable.Attributes/1.0.1": {
+      "sha512": "ESJdB1n6C16fUA58f+Qm+Q6MvXduGPJep03QllQA5PYld6wz8qGidQ84DomkeMZ4ZJpRd9spq4QlZF0WS87tSA==",
+      "type": "package",
+      "path": "apex.analyzers.immutable.attributes/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "apex.analyzers.immutable.attributes.1.0.1.nupkg.sha512",
+        "apex.analyzers.immutable.attributes.nuspec",
+        "lib/netstandard2.0/Apex.Analyzers.Immutable.Attributes.dll"
+      ]
+    },
+    "Apex.Serialization/6.0.0": {
+      "sha512": "1e92JGfmNM4msDD07NdjtQ/lzHGNmmIMOu8GhURi9YW88LnWa4ExMjkmY1K6b300FiDv7o1MwL/mHMzohqWvag==",
+      "type": "package",
+      "path": "apex.serialization/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "apex.serialization.6.0.0.nupkg.sha512",
+        "apex.serialization.nuspec",
+        "lib/net9.0/Apex.Serialization.dll"
+      ]
+    },
+    "BouncyCastle.Cryptography/2.3.1": {
+      "sha512": "buwoISwecYke3CmgG1AQSg+sNZjJeIb93vTAtJiHZX35hP/teYMxsfg0NDXGUKjGx6BKBTNKc77O2M3vKvlXZQ==",
+      "type": "package",
+      "path": "bouncycastle.cryptography/2.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "bouncycastle.cryptography.2.3.1.nupkg.sha512",
+        "bouncycastle.cryptography.nuspec",
+        "lib/net461/BouncyCastle.Cryptography.dll",
+        "lib/net461/BouncyCastle.Cryptography.xml",
+        "lib/net6.0/BouncyCastle.Cryptography.dll",
+        "lib/net6.0/BouncyCastle.Cryptography.xml",
+        "lib/netstandard2.0/BouncyCastle.Cryptography.dll",
+        "lib/netstandard2.0/BouncyCastle.Cryptography.xml",
+        "packageIcon.png"
+      ]
+    },
+    "CefSharp.Common/136.1.40": {
+      "sha512": "xlPNsUB4nobtvR1x9uLmxD/hCZJ//W8cjnCyAT7VDSEO7KES3HzUHJJDSIs/lOcsH6+l19ZfelCDCPJuCG+h+g==",
+      "type": "package",
+      "path": "cefsharp.common/136.1.40",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CefSharp/x64/CefSharp.BrowserSubprocess.Core.dll",
+        "CefSharp/x64/CefSharp.BrowserSubprocess.Core.pdb",
+        "CefSharp/x64/CefSharp.BrowserSubprocess.exe",
+        "CefSharp/x64/CefSharp.BrowserSubprocess.pdb",
+        "CefSharp/x64/CefSharp.Core.Runtime.dll",
+        "CefSharp/x64/CefSharp.Core.Runtime.pdb",
+        "CefSharp/x64/CefSharp.Core.Runtime.xml",
+        "CefSharp/x86/CefSharp.BrowserSubprocess.Core.dll",
+        "CefSharp/x86/CefSharp.BrowserSubprocess.Core.pdb",
+        "CefSharp/x86/CefSharp.BrowserSubprocess.exe",
+        "CefSharp/x86/CefSharp.BrowserSubprocess.pdb",
+        "CefSharp/x86/CefSharp.Core.Runtime.dll",
+        "CefSharp/x86/CefSharp.Core.Runtime.pdb",
+        "CefSharp/x86/CefSharp.Core.Runtime.xml",
+        "LICENSE",
+        "build/CefSharp.Common.props",
+        "build/CefSharp.Common.targets",
+        "build/app.config.x64.transform",
+        "build/app.config.x86.transform",
+        "buildTransitive/CefSharp.Common.props",
+        "buildTransitive/CefSharp.Common.targets",
+        "cefsharp.common.136.1.40.nupkg.sha512",
+        "cefsharp.common.nuspec",
+        "lib/net462/CefSharp.Core.XML",
+        "lib/net462/CefSharp.Core.dll",
+        "lib/net462/CefSharp.Core.pdb",
+        "lib/net462/CefSharp.XML",
+        "lib/net462/CefSharp.dll",
+        "lib/net462/CefSharp.pdb",
+        "src/CefSharp.BrowserSubprocess.Core/AssemblyInfo.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodCallback.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodCallback.h",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodHandler.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncObjectWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncObjectWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/BindObjectAsyncHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/BrowserSubprocessExecutable.h",
+        "src/CefSharp.BrowserSubprocess.Core/Cef.h",
+        "src/CefSharp.BrowserSubprocess.Core/CefAppUnmanagedWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/CefAppUnmanagedWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/CefBrowserWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptCallbackRegistry.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptCallbackRegistry.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptCallbackWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptMethodHandler.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptMethodHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptMethodWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptMethodWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptObjectWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptObjectWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPostMessageHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPromiseHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPromiseResolverCatch.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPromiseResolverThen.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPropertyHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPropertyWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPropertyWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptRootObjectWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptRootObjectWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/RegisterBoundObjectHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/RegisterBoundObjectRegistry.h",
+        "src/CefSharp.BrowserSubprocess.Core/Serialization/JsObjectsSerialization.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Serialization/JsObjectsSerialization.h",
+        "src/CefSharp.BrowserSubprocess.Core/Serialization/V8Serialization.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Serialization/V8Serialization.h",
+        "src/CefSharp.BrowserSubprocess.Core/Stdafx.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Stdafx.h",
+        "src/CefSharp.BrowserSubprocess.Core/SubProcess.h",
+        "src/CefSharp.BrowserSubprocess.Core/SubProcessApp.h",
+        "src/CefSharp.BrowserSubprocess.Core/TypeUtils.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/TypeUtils.h",
+        "src/CefSharp.BrowserSubprocess.Core/WcfBrowserSubprocessExecutable.h",
+        "src/CefSharp.BrowserSubprocess.Core/WcfEnabledSubProcess.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/WcfEnabledSubProcess.h",
+        "src/CefSharp.BrowserSubprocess.Core/Wrapper/Browser.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Wrapper/Browser.h",
+        "src/CefSharp.BrowserSubprocess.Core/Wrapper/Frame.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Wrapper/Frame.h",
+        "src/CefSharp.BrowserSubprocess.Core/Wrapper/V8Context.h",
+        "src/CefSharp.BrowserSubprocess.Core/obj/Win32/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/obj/x64/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/resource.h",
+        "src/CefSharp.BrowserSubprocess.Core/vcclr_local.h",
+        "src/CefSharp.BrowserSubprocess/Program.cs",
+        "src/CefSharp.BrowserSubprocess/Program.netcore.cs",
+        "src/CefSharp.BrowserSubprocess/Properties/AssemblyInfo.cs",
+        "src/CefSharp.BrowserSubprocess/obj/x64/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs",
+        "src/CefSharp.BrowserSubprocess/obj/x86/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs",
+        "src/CefSharp.Core.Runtime/AssemblyInfo.cpp",
+        "src/CefSharp.Core.Runtime/BrowserSettings.h",
+        "src/CefSharp.Core.Runtime/Cef.h",
+        "src/CefSharp.Core.Runtime/CefSettingsBase.h",
+        "src/CefSharp.Core.Runtime/CookieManager.cpp",
+        "src/CefSharp.Core.Runtime/CookieManager.h",
+        "src/CefSharp.Core.Runtime/DragData.h",
+        "src/CefSharp.Core.Runtime/Internals/CefAuthCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefBeforeDownloadCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefBrowserHostWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefBrowserHostWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefBrowserWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefBrowserWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefCertificateCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefCompletionCallbackAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefContextMenuParamsWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefContextMenuParamsWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefCookieAccessFilterAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefCookieVisitorAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefDeleteCookiesCallbackAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefDevToolsMessageObserverAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefDownloadItemCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefFileDialogCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefFrameWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefFrameWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefImageWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefJSDialogCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefMediaAccessCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefMenuModelWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefNavigationEntryVisitorAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefPdfPrintCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefPermissionPromptCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRefCountManaged.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefRefCountManaged.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRegistrationWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRequestCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRequestContextHandlerAdapter.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefRequestContextHandlerAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResolveCallbackAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResourceHandlerAdapter.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefResourceHandlerAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResourceReadCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResourceRequestHandlerAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResourceSkipCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResponseFilterAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResponseWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRunContextMenuCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRunFileDialogCallbackAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefSchemeHandlerFactoryAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefSchemeRegistrarWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefSetCookieCallbackAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefSharpApp.h",
+        "src/CefSharp.Core.Runtime/Internals/CefSslInfoWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefStringVisitorAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefTaskDelegate.h",
+        "src/CefSharp.Core.Runtime/Internals/CefTaskScheduler.h",
+        "src/CefSharp.Core.Runtime/Internals/CefTaskWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefUrlRequestClientAdapter.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefUrlRequestClientAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefValueWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefValueWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefWriteHandlerWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/ClientAdapter.cpp",
+        "src/CefSharp.Core.Runtime/Internals/ClientAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/JavascriptCallbackFactory.cpp",
+        "src/CefSharp.Core.Runtime/Internals/JavascriptCallbackFactory.h",
+        "src/CefSharp.Core.Runtime/Internals/JavascriptCallbackProxy.cpp",
+        "src/CefSharp.Core.Runtime/Internals/JavascriptCallbackProxy.h",
+        "src/CefSharp.Core.Runtime/Internals/MCefRefPtr.h",
+        "src/CefSharp.Core.Runtime/Internals/Messaging/Messages.h",
+        "src/CefSharp.Core.Runtime/Internals/RenderClientAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/ReportUnhandledExceptions.h",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/JsObjectsSerialization.cpp",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/JsObjectsSerialization.h",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/ObjectsSerialization.cpp",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/ObjectsSerialization.h",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/Primitives.cpp",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/Primitives.h",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/V8Serialization.cpp",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/V8Serialization.h",
+        "src/CefSharp.Core.Runtime/Internals/StringUtils.h",
+        "src/CefSharp.Core.Runtime/Internals/TypeConversion.h",
+        "src/CefSharp.Core.Runtime/ManagedCefBrowserAdapter.cpp",
+        "src/CefSharp.Core.Runtime/ManagedCefBrowserAdapter.h",
+        "src/CefSharp.Core.Runtime/NativeMethodWrapper.cpp",
+        "src/CefSharp.Core.Runtime/NativeMethodWrapper.h",
+        "src/CefSharp.Core.Runtime/PopupFeatures.h",
+        "src/CefSharp.Core.Runtime/PostData.h",
+        "src/CefSharp.Core.Runtime/PostDataElement.h",
+        "src/CefSharp.Core.Runtime/Request.cpp",
+        "src/CefSharp.Core.Runtime/Request.h",
+        "src/CefSharp.Core.Runtime/RequestContext.cpp",
+        "src/CefSharp.Core.Runtime/RequestContext.h",
+        "src/CefSharp.Core.Runtime/RequestContextSettings.h",
+        "src/CefSharp.Core.Runtime/Stdafx.cpp",
+        "src/CefSharp.Core.Runtime/Stdafx.h",
+        "src/CefSharp.Core.Runtime/UrlRequest.cpp",
+        "src/CefSharp.Core.Runtime/UrlRequest.h",
+        "src/CefSharp.Core.Runtime/WindowInfo.h",
+        "src/CefSharp.Core.Runtime/obj/Win32/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cpp",
+        "src/CefSharp.Core.Runtime/obj/x64/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cpp",
+        "src/CefSharp.Core.Runtime/resource.h",
+        "src/CefSharp.Core.Runtime/vcclr_local.h",
+        "src/CefSharp.Core/BrowserSettings.cs",
+        "src/CefSharp.Core/BrowserSettings.netcore.cs",
+        "src/CefSharp.Core/BrowserSubprocess/SelfHost.cs",
+        "src/CefSharp.Core/Cef.cs",
+        "src/CefSharp.Core/CefSettingsBase.cs",
+        "src/CefSharp.Core/DevTools/DevToolsClient.Generated.cs",
+        "src/CefSharp.Core/DevTools/DevToolsClient.Generated.netcore.cs",
+        "src/CefSharp.Core/DevTools/DevToolsClient.Partial.cs",
+        "src/CefSharp.Core/DevTools/DevToolsClient.cs",
+        "src/CefSharp.Core/DevTools/DevToolsClientException.cs",
+        "src/CefSharp.Core/DevTools/DevToolsDomainBase.cs",
+        "src/CefSharp.Core/DevTools/DevToolsDomainEntityBase.cs",
+        "src/CefSharp.Core/DevTools/DevToolsDomainErrorResponse.cs",
+        "src/CefSharp.Core/DevTools/DevToolsDomainEventArgsBase.cs",
+        "src/CefSharp.Core/DevTools/DevToolsDomainResponseBase.cs",
+        "src/CefSharp.Core/DevTools/DevToolsErrorEventArgs.cs",
+        "src/CefSharp.Core/DevTools/DevToolsEventArgs.cs",
+        "src/CefSharp.Core/DevTools/DevToolsMethodResponse.cs",
+        "src/CefSharp.Core/DevTools/DevToolsMethodResponseContext.cs",
+        "src/CefSharp.Core/DevTools/EventProxy.cs",
+        "src/CefSharp.Core/DevTools/Headers.cs",
+        "src/CefSharp.Core/DevTools/IDevToolsClient.cs",
+        "src/CefSharp.Core/DevTools/IEventProxy.cs",
+        "src/CefSharp.Core/DevTools/MemoryDumpConfig.cs",
+        "src/CefSharp.Core/DevTools/TargetFilter.cs",
+        "src/CefSharp.Core/DevToolsExtensions.cs",
+        "src/CefSharp.Core/DragData.cs",
+        "src/CefSharp.Core/Fluent/DownloadHandler.cs",
+        "src/CefSharp.Core/Fluent/DownloadHandlerBuilder.cs",
+        "src/CefSharp.Core/Fluent/UrlRequestClient.cs",
+        "src/CefSharp.Core/Fluent/UrlRequestClientBuilder.cs",
+        "src/CefSharp.Core/Initializer.cs",
+        "src/CefSharp.Core/ManagedCefBrowserAdapter.cs",
+        "src/CefSharp.Core/ModuleInitializerAttribute.cs",
+        "src/CefSharp.Core/NativeMethodWrapper.cs",
+        "src/CefSharp.Core/ObjectFactory.cs",
+        "src/CefSharp.Core/PostData.cs",
+        "src/CefSharp.Core/PostData.netcore.cs",
+        "src/CefSharp.Core/PostDataElement.cs",
+        "src/CefSharp.Core/PostDataElement.netcore.cs",
+        "src/CefSharp.Core/Properties/AssemblyInfo.cs",
+        "src/CefSharp.Core/Request.cs",
+        "src/CefSharp.Core/Request.netcore.cs",
+        "src/CefSharp.Core/RequestContext.cs",
+        "src/CefSharp.Core/RequestContext.netcore.cs",
+        "src/CefSharp.Core/RequestContextBuilder.cs",
+        "src/CefSharp.Core/RequestContextSettings.cs",
+        "src/CefSharp.Core/UrlRequest.cs",
+        "src/CefSharp.Core/UrlRequest.netcore.cs",
+        "src/CefSharp.Core/WebBrowserExtensionsEx.cs",
+        "src/CefSharp.Core/WindowInfo.cs",
+        "src/CefSharp.Core/WindowInfo.netcore.cs",
+        "src/CefSharp.Core/obj/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs",
+        "src/CefSharp/AcceleratedPaintInfo.cs",
+        "src/CefSharp/AsyncExtensions.cs",
+        "src/CefSharp/BindingOptions.cs",
+        "src/CefSharp/Callback/IAuthCallback.cs",
+        "src/CefSharp/Callback/IBeforeDownloadCallback.cs",
+        "src/CefSharp/Callback/ICallback.cs",
+        "src/CefSharp/Callback/ICompletionCallback.cs",
+        "src/CefSharp/Callback/IDeleteCookiesCallback.cs",
+        "src/CefSharp/Callback/IDevToolsMessageObserver.cs",
+        "src/CefSharp/Callback/IDownloadItemCallback.cs",
+        "src/CefSharp/Callback/IFileDialogCallback.cs",
+        "src/CefSharp/Callback/IJavascriptCallback.cs",
+        "src/CefSharp/Callback/IJsDialogCallback.cs",
+        "src/CefSharp/Callback/IMediaAccessCallback.cs",
+        "src/CefSharp/Callback/IPermissionPromptCallback.cs",
+        "src/CefSharp/Callback/IPrintToPdfCallback.cs",
+        "src/CefSharp/Callback/IRequestCallback.cs",
+        "src/CefSharp/Callback/IResolveCallback.cs",
+        "src/CefSharp/Callback/IResourceReadCallback.cs",
+        "src/CefSharp/Callback/IResourceSkipCallback.cs",
+        "src/CefSharp/Callback/IRunContextMenuCallback.cs",
+        "src/CefSharp/Callback/IRunFileDialogCallback.cs",
+        "src/CefSharp/Callback/ISelectClientCertificateCallback.cs",
+        "src/CefSharp/Callback/ISetCookieCallback.cs",
+        "src/CefSharp/Callback/NoOpCompletionCallback.cs",
+        "src/CefSharp/Callback/TaskCompletionCallback.cs",
+        "src/CefSharp/Callback/TaskDeleteCookiesCallback.cs",
+        "src/CefSharp/Callback/TaskPrintToPdfCallback.cs",
+        "src/CefSharp/Callback/TaskResolveCallback.cs",
+        "src/CefSharp/Callback/TaskSetCookieCallback.cs",
+        "src/CefSharp/CefCustomScheme.cs",
+        "src/CefSharp/CefLibraryHandle.cs",
+        "src/CefSharp/CefRuntime.cs",
+        "src/CefSharp/CefSharpSettings.cs",
+        "src/CefSharp/Cookie.cs",
+        "src/CefSharp/DefaultApp.cs",
+        "src/CefSharp/DependencyChecker.cs",
+        "src/CefSharp/DomNode.cs",
+        "src/CefSharp/DownloadItem.cs",
+        "src/CefSharp/Enums/AlphaType.cs",
+        "src/CefSharp/Enums/CefErrorCode.cs",
+        "src/CefSharp/Enums/CefEventFlags.cs",
+        "src/CefSharp/Enums/CefFileDialogMode.cs",
+        "src/CefSharp/Enums/CefFocusSource.cs",
+        "src/CefSharp/Enums/CefJsDialogType.cs",
+        "src/CefSharp/Enums/CefMenuCommand.cs",
+        "src/CefSharp/Enums/CefPdfPrintMarginType.cs",
+        "src/CefSharp/Enums/CefReturnValue.cs",
+        "src/CefSharp/Enums/CefRuntimeStyle.cs",
+        "src/CefSharp/Enums/CefState.cs",
+        "src/CefSharp/Enums/CefTerminationStatus.cs",
+        "src/CefSharp/Enums/CefThreadIds.cs",
+        "src/CefSharp/Enums/CertStatus.cs",
+        "src/CefSharp/Enums/ChannelLayout.cs",
+        "src/CefSharp/Enums/ColorType.cs",
+        "src/CefSharp/Enums/CompositionUnderlineStyle.cs",
+        "src/CefSharp/Enums/ContentSettingTypes.cs",
+        "src/CefSharp/Enums/ContentSettingValues.cs",
+        "src/CefSharp/Enums/ContextMenuEditState.cs",
+        "src/CefSharp/Enums/ContextMenuMediaState.cs",
+        "src/CefSharp/Enums/ContextMenuMediaType.cs",
+        "src/CefSharp/Enums/ContextMenuType.cs",
+        "src/CefSharp/Enums/CookiePriority.cs",
+        "src/CefSharp/Enums/CookieSameSite.cs",
+        "src/CefSharp/Enums/CursorType.cs",
+        "src/CefSharp/Enums/DragOperationsMask.cs",
+        "src/CefSharp/Enums/FilterStatus.cs",
+        "src/CefSharp/Enums/KeyEventType.cs",
+        "src/CefSharp/Enums/KeyType.cs",
+        "src/CefSharp/Enums/LogSeverity.cs",
+        "src/CefSharp/Enums/MediaAccessPermissionType.cs",
+        "src/CefSharp/Enums/MenuItemType.cs",
+        "src/CefSharp/Enums/MouseButtonType.cs",
+        "src/CefSharp/Enums/PaintElementType.cs",
+        "src/CefSharp/Enums/PermissionRequestResult.cs",
+        "src/CefSharp/Enums/PermissionRequestType.cs",
+        "src/CefSharp/Enums/PointerType.cs",
+        "src/CefSharp/Enums/PostDataElementType.cs",
+        "src/CefSharp/Enums/ReferrerPolicy.cs",
+        "src/CefSharp/Enums/ResourceType.cs",
+        "src/CefSharp/Enums/ResultCode.cs",
+        "src/CefSharp/Enums/SchemeOptions.cs",
+        "src/CefSharp/Enums/SslContentStatus.cs",
+        "src/CefSharp/Enums/SslVersion.cs",
+        "src/CefSharp/Enums/TextInputMode.cs",
+        "src/CefSharp/Enums/TouchEventType.cs",
+        "src/CefSharp/Enums/TransitionType.cs",
+        "src/CefSharp/Enums/UrlRequestFlags.cs",
+        "src/CefSharp/Enums/UrlRequestStatus.cs",
+        "src/CefSharp/Enums/ValueType.cs",
+        "src/CefSharp/Enums/WindowOpenDisposition.cs",
+        "src/CefSharp/Event/AddressChangedEventArgs.cs",
+        "src/CefSharp/Event/ConsoleMessageEventArgs.cs",
+        "src/CefSharp/Event/FrameLoadEndEventArgs.cs",
+        "src/CefSharp/Event/FrameLoadStartEventArgs.cs",
+        "src/CefSharp/Event/JavascriptBindingCompleteEventArgs.cs",
+        "src/CefSharp/Event/JavascriptBindingEventArgs.cs",
+        "src/CefSharp/Event/JavascriptBindingMultipleCompleteEventArgs.cs",
+        "src/CefSharp/Event/JavascriptMessageReceivedEventArgs.cs",
+        "src/CefSharp/Event/LoadErrorEventArgs.cs",
+        "src/CefSharp/Event/LoadingStateChangedEventArgs.cs",
+        "src/CefSharp/Event/StatusMessageEventHandler.cs",
+        "src/CefSharp/Event/TitleChangedEventArgs.cs",
+        "src/CefSharp/Handler/AccessibilityHandler.cs",
+        "src/CefSharp/Handler/AudioHandler.cs",
+        "src/CefSharp/Handler/BrowserProcessHandler.cs",
+        "src/CefSharp/Handler/ContextMenuHandler.cs",
+        "src/CefSharp/Handler/CookieAccessFilter.cs",
+        "src/CefSharp/Handler/DialogHandler.cs",
+        "src/CefSharp/Handler/DisplayHandler.cs",
+        "src/CefSharp/Handler/DownloadHandler.cs",
+        "src/CefSharp/Handler/DragHandler .cs",
+        "src/CefSharp/Handler/FindHandler.cs",
+        "src/CefSharp/Handler/FocusHandler.cs",
+        "src/CefSharp/Handler/FrameHandler.cs",
+        "src/CefSharp/Handler/IAccessibilityHandler.cs",
+        "src/CefSharp/Handler/IAudioHandler.cs",
+        "src/CefSharp/Handler/IBrowserProcessHandler.cs",
+        "src/CefSharp/Handler/IContextMenuHandler.cs",
+        "src/CefSharp/Handler/ICookieAccessFilter.cs",
+        "src/CefSharp/Handler/IDialogHandler.cs",
+        "src/CefSharp/Handler/IDisplayHandler.cs",
+        "src/CefSharp/Handler/IDownloadHandler.cs",
+        "src/CefSharp/Handler/IDragHandler.cs",
+        "src/CefSharp/Handler/IFindHandler.cs",
+        "src/CefSharp/Handler/IFocusHandler.cs",
+        "src/CefSharp/Handler/IFrameHandler.cs",
+        "src/CefSharp/Handler/IJsDialogHandler.cs",
+        "src/CefSharp/Handler/IKeyboardHandler.cs",
+        "src/CefSharp/Handler/ILifeSpanHandler.cs",
+        "src/CefSharp/Handler/ILoadHandler.cs",
+        "src/CefSharp/Handler/IPermissionHandler.cs",
+        "src/CefSharp/Handler/IRenderProcessMessageHandler.cs",
+        "src/CefSharp/Handler/IRequestContextHandler.cs",
+        "src/CefSharp/Handler/IRequestHandler.cs",
+        "src/CefSharp/Handler/IResourceHandler.cs",
+        "src/CefSharp/Handler/IResourceRequestHandler.cs",
+        "src/CefSharp/Handler/JsDialogHandler.cs",
+        "src/CefSharp/Handler/KeyboardHandler.cs",
+        "src/CefSharp/Handler/LifeSpanHandler.cs",
+        "src/CefSharp/Handler/LoadHandler.cs",
+        "src/CefSharp/Handler/PermissionHandler.cs",
+        "src/CefSharp/Handler/RequestContextHandler.cs",
+        "src/CefSharp/Handler/RequestHandler.cs",
+        "src/CefSharp/Handler/ResourceRequestHandler.cs",
+        "src/CefSharp/IApp.cs",
+        "src/CefSharp/IBrowser.cs",
+        "src/CefSharp/IBrowserHost.cs",
+        "src/CefSharp/IBrowserSettings.cs",
+        "src/CefSharp/IChromiumWebBrowserBase.cs",
+        "src/CefSharp/IContextMenuParams.cs",
+        "src/CefSharp/ICookieManager.cs",
+        "src/CefSharp/IDomNode.cs",
+        "src/CefSharp/IDragData.cs",
+        "src/CefSharp/IFrame.cs",
+        "src/CefSharp/IImage.cs",
+        "src/CefSharp/IJavascriptObjectRepository.cs",
+        "src/CefSharp/IMenuModel.cs",
+        "src/CefSharp/IPopupFeatures.cs",
+        "src/CefSharp/IPostData.cs",
+        "src/CefSharp/IPostDataElement.cs",
+        "src/CefSharp/IRegistration.cs",
+        "src/CefSharp/IRequest.cs",
+        "src/CefSharp/IRequestContext.cs",
+        "src/CefSharp/IResourceRequestHandlerFactory.cs",
+        "src/CefSharp/IResponse.cs",
+        "src/CefSharp/IResponseFilter.cs",
+        "src/CefSharp/ISchemeRegistrar.cs",
+        "src/CefSharp/ISslInfo.cs",
+        "src/CefSharp/IUrlRequest.cs",
+        "src/CefSharp/IUrlRequestClient.cs",
+        "src/CefSharp/IValue.cs",
+        "src/CefSharp/IWebBrowser.cs",
+        "src/CefSharp/IWindowInfo.cs",
+        "src/CefSharp/Internals/BaseTimeConverter.cs",
+        "src/CefSharp/Internals/BrowserRefCounter.cs",
+        "src/CefSharp/Internals/ByteArrayResourceHandler.cs",
+        "src/CefSharp/Internals/CefSharpArguments.cs",
+        "src/CefSharp/Internals/CefThread.cs",
+        "src/CefSharp/Internals/CefTimeUtils.cs",
+        "src/CefSharp/Internals/CommandLineArgDictionary.cs",
+        "src/CefSharp/Internals/CommandLineArgsParser.cs",
+        "src/CefSharp/Internals/ConcurrentMethodRunnerQueue.cs",
+        "src/CefSharp/Internals/CookieManagerDecorator.cs",
+        "src/CefSharp/Internals/FileResourceHandler.cs",
+        "src/CefSharp/Internals/FreezableBase.cs",
+        "src/CefSharp/Internals/GlobalContextInitialized.cs",
+        "src/CefSharp/Internals/HeaderNameValueCollection.cs",
+        "src/CefSharp/Internals/IBaseTimeConverter.cs",
+        "src/CefSharp/Internals/IBrowserAdapter.cs",
+        "src/CefSharp/Internals/IBrowserRefCounter.cs",
+        "src/CefSharp/Internals/IJavascriptCallbackFactory.cs",
+        "src/CefSharp/Internals/IJavascriptObjectRepositoryInternal.cs",
+        "src/CefSharp/Internals/IMethodRunnerQueue.cs",
+        "src/CefSharp/Internals/IRenderWebBrowser.cs",
+        "src/CefSharp/Internals/ITaskScheduler.cs",
+        "src/CefSharp/Internals/IWebBrowserInternal.cs",
+        "src/CefSharp/Internals/InMemoryResourceRequestHandler.cs",
+        "src/CefSharp/Internals/InitializeAsyncBrowserProcessHandler.cs",
+        "src/CefSharp/Internals/IntPtrExtensions.cs",
+        "src/CefSharp/Internals/JavascriptCallback.cs",
+        "src/CefSharp/Internals/JavascriptMethod.cs",
+        "src/CefSharp/Internals/JavascriptObject.cs",
+        "src/CefSharp/Internals/JavascriptObjectRepository.cs",
+        "src/CefSharp/Internals/JavascriptProperty.cs",
+        "src/CefSharp/Internals/Json/JsonEnumConverter.cs",
+        "src/CefSharp/Internals/Json/JsonEnumConverterFactory.cs",
+        "src/CefSharp/Internals/MethodInvocation.cs",
+        "src/CefSharp/Internals/MethodInvocationCompleteArgs.cs",
+        "src/CefSharp/Internals/MethodInvocationResult.cs",
+        "src/CefSharp/Internals/MethodParameter.cs",
+        "src/CefSharp/Internals/MethodRunnerQueue.cs",
+        "src/CefSharp/Internals/MimeTypeMapping.cs",
+        "src/CefSharp/Internals/NoFocusHandler.cs",
+        "src/CefSharp/Internals/NoOpBrowserRefCounter.cs",
+        "src/CefSharp/Internals/ParentProcessMonitor.cs",
+        "src/CefSharp/Internals/Partial/ChromiumWebBrowser.Partial.cs",
+        "src/CefSharp/Internals/PathCheck.cs",
+        "src/CefSharp/Internals/PendingTaskRepository.cs",
+        "src/CefSharp/Internals/ReflectionUtils.cs",
+        "src/CefSharp/Internals/RenderprocessClientFactory.cs",
+        "src/CefSharp/Internals/StringCheck.cs",
+        "src/CefSharp/Internals/TaskExtensions.cs",
+        "src/CefSharp/Internals/TaskTimeoutExtensions.cs",
+        "src/CefSharp/Internals/Tasks/LimitedConcurrencyLevelTaskScheduler.cs",
+        "src/CefSharp/Internals/Tasks/SyncContextTaskCompletionSource.cs",
+        "src/CefSharp/Internals/TryCallMethodResult.cs",
+        "src/CefSharp/Internals/Wcf/BrowserProcessResponse.cs",
+        "src/CefSharp/Internals/Wcf/BrowserProcessService.cs",
+        "src/CefSharp/Internals/Wcf/BrowserProcessServiceHost.cs",
+        "src/CefSharp/Internals/Wcf/IBrowserProcess.cs",
+        "src/CefSharp/Internals/Wcf/JavascriptCallbackEndpointBehavior.cs",
+        "src/CefSharp/Internals/Wcf/JavascriptCallbackSurrogate.cs",
+        "src/CefSharp/Internals/Wcf/WcfExtensions.cs",
+        "src/CefSharp/JavascriptBinding/CamelCaseJavascriptNameConverter.cs",
+        "src/CefSharp/JavascriptBinding/IJavascriptNameConverter.cs",
+        "src/CefSharp/JavascriptBinding/JavascriptBindingExtensions.cs",
+        "src/CefSharp/JavascriptBinding/JavascriptBindingSettings.cs",
+        "src/CefSharp/JavascriptBinding/LegacyCamelCaseJavascriptNameConverter.cs",
+        "src/CefSharp/JavascriptException.cs",
+        "src/CefSharp/JavascriptIgnoreAttribute.cs",
+        "src/CefSharp/JavascriptResponse.cs",
+        "src/CefSharp/JavascriptStackFrame.cs",
+        "src/CefSharp/Lagacy/ResourceHandler.cs",
+        "src/CefSharp/LoadUrlAsyncResponse.cs",
+        "src/CefSharp/ModelBinding/BindingMemberInfo.cs",
+        "src/CefSharp/ModelBinding/DefaultBinder.cs",
+        "src/CefSharp/ModelBinding/IAsyncMethodInterceptor.cs",
+        "src/CefSharp/ModelBinding/IBinder.cs",
+        "src/CefSharp/ModelBinding/IMethodInterceptor.cs",
+        "src/CefSharp/ModelBinding/IPropertyInterceptor.cs",
+        "src/CefSharp/ModelBinding/ModelBindingExtensions.cs",
+        "src/CefSharp/NavigationEntry.cs",
+        "src/CefSharp/PdfPrintSettings.cs",
+        "src/CefSharp/PostDataExtensions.cs",
+        "src/CefSharp/Preferences/SetPreferenceResponse.cs",
+        "src/CefSharp/Preferences/SetProxyResponse.cs",
+        "src/CefSharp/Properties/AssemblyInfo.cs",
+        "src/CefSharp/ProxyOptions.cs",
+        "src/CefSharp/RenderProcess/IRenderProcessHandler.cs",
+        "src/CefSharp/RenderProcess/IV8Context.cs",
+        "src/CefSharp/RenderProcess/V8Exception.cs",
+        "src/CefSharp/RequestContextExtensions.cs",
+        "src/CefSharp/ResourceHandler.cs",
+        "src/CefSharp/ResourceRequestHandlerFactory.cs",
+        "src/CefSharp/ResourceRequestHandlerFactoryItem.cs",
+        "src/CefSharp/ResponseFilter/StreamResponseFilter.cs",
+        "src/CefSharp/SchemeHandler/FolderSchemeHandlerFactory.cs",
+        "src/CefSharp/SchemeHandler/ISchemeHandlerFactory.cs",
+        "src/CefSharp/SchemeHandler/OwinResourceHandler.cs",
+        "src/CefSharp/SchemeHandler/OwinSchemeHandlerFactory.cs",
+        "src/CefSharp/SslStatus.cs",
+        "src/CefSharp/Structs/AudioParamaters.cs",
+        "src/CefSharp/Structs/CompositionUnderline.cs",
+        "src/CefSharp/Structs/CursorInfo.cs",
+        "src/CefSharp/Structs/DomRect.cs",
+        "src/CefSharp/Structs/DraggableRegion.cs",
+        "src/CefSharp/Structs/KeyEvent.cs",
+        "src/CefSharp/Structs/MouseEvent.cs",
+        "src/CefSharp/Structs/Point.cs",
+        "src/CefSharp/Structs/Range.cs",
+        "src/CefSharp/Structs/Rect.cs",
+        "src/CefSharp/Structs/ResolveCallbackResult.cs",
+        "src/CefSharp/Structs/ScreenInfo.cs",
+        "src/CefSharp/Structs/Size.cs",
+        "src/CefSharp/Structs/TouchEvent.cs",
+        "src/CefSharp/UrlParts.cs",
+        "src/CefSharp/UrlRequestClient.cs",
+        "src/CefSharp/Visitor/ICookieVisitor.cs",
+        "src/CefSharp/Visitor/INavigationEntryVisitor.cs",
+        "src/CefSharp/Visitor/IStringVisitor.cs",
+        "src/CefSharp/Visitor/TaskCookieVisitor.cs",
+        "src/CefSharp/Visitor/TaskNavigationEntryVisitor.cs",
+        "src/CefSharp/Visitor/TaskStringVisitor.cs",
+        "src/CefSharp/WaitForNavigationAsyncResponse.cs",
+        "src/CefSharp/WaitForSelectorAsyncResponse.cs",
+        "src/CefSharp/Web/HtmlString.cs",
+        "src/CefSharp/Web/JsonString.cs",
+        "src/CefSharp/WebBrowserExtensions.cs",
+        "src/CefSharp/obj/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs"
+      ]
+    },
+    "CefSharp.WinForms/136.1.40": {
+      "sha512": "w+IaR9CApRAjjCyW0ttu41ICtWW72Sh/fPVp1qNfU2V8Tir7rYh3FLZYScc7W1a+vigrnuDgz5MJcVTQ5rdF8g==",
+      "type": "package",
+      "path": "cefsharp.winforms/136.1.40",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "Readme.txt",
+        "cefsharp.winforms.136.1.40.nupkg.sha512",
+        "cefsharp.winforms.nuspec",
+        "lib/net462/CefSharp.WinForms.XML",
+        "lib/net462/CefSharp.WinForms.dll",
+        "lib/net462/CefSharp.WinForms.pdb",
+        "src/CefSharp.WinForms/CefSettings.cs",
+        "src/CefSharp.WinForms/ChromiumWebBrowser.cs",
+        "src/CefSharp.WinForms/ChromiumWebBrowserDesigner.cs",
+        "src/CefSharp.WinForms/Experimental/ChromiumRenderWidgetHandleFinder.cs",
+        "src/CefSharp.WinForms/Experimental/ChromiumWidgetNativeWindow.cs",
+        "src/CefSharp.WinForms/Handler/DisplayHandler.cs",
+        "src/CefSharp.WinForms/Handler/LifeSpanHandler.cs",
+        "src/CefSharp.WinForms/Handler/LifeSpanHandlerBuilder.cs",
+        "src/CefSharp.WinForms/Handler/LoadHandler.cs",
+        "src/CefSharp.WinForms/Handler/PopupCreation.cs",
+        "src/CefSharp.WinForms/Host/ChromiumHostControl.cs",
+        "src/CefSharp.WinForms/Host/ChromiumHostControlBase.cs",
+        "src/CefSharp.WinForms/IWinFormsChromiumWebBrowser.cs",
+        "src/CefSharp.WinForms/IWinFormsWebBrowser.cs",
+        "src/CefSharp.WinForms/Internals/ControlExtensions.cs",
+        "src/CefSharp.WinForms/Internals/DefaultFocusHandler.cs",
+        "src/CefSharp.WinForms/Internals/NativeMethods.cs",
+        "src/CefSharp.WinForms/Internals/ParentFormMessageInterceptor.cs",
+        "src/CefSharp.WinForms/Properties/AssemblyInfo.cs",
+        "src/CefSharp.WinForms/WebBrowserExtensions.cs",
+        "src/CefSharp.WinForms/obj/Release/net462/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs"
+      ]
+    },
+    "chromiumembeddedframework.runtime.win-x64/136.1.4": {
+      "sha512": "MzH21FVkMjP54sXSGgLtqe+1OqT81SC92eUwr5wRPebgiIjiYWhgENUoBUnqcWozNSCWr5t3h7fxkH5o/V9GsQ==",
+      "type": "package",
+      "path": "chromiumembeddedframework.runtime.win-x64/136.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CEF/win-x64/locales/af.pak",
+        "CEF/win-x64/locales/am.pak",
+        "CEF/win-x64/locales/ar.pak",
+        "CEF/win-x64/locales/bg.pak",
+        "CEF/win-x64/locales/bn.pak",
+        "CEF/win-x64/locales/ca.pak",
+        "CEF/win-x64/locales/cs.pak",
+        "CEF/win-x64/locales/da.pak",
+        "CEF/win-x64/locales/de.pak",
+        "CEF/win-x64/locales/el.pak",
+        "CEF/win-x64/locales/en-GB.pak",
+        "CEF/win-x64/locales/en-US.pak",
+        "CEF/win-x64/locales/es-419.pak",
+        "CEF/win-x64/locales/es.pak",
+        "CEF/win-x64/locales/et.pak",
+        "CEF/win-x64/locales/fa.pak",
+        "CEF/win-x64/locales/fi.pak",
+        "CEF/win-x64/locales/fil.pak",
+        "CEF/win-x64/locales/fr.pak",
+        "CEF/win-x64/locales/gu.pak",
+        "CEF/win-x64/locales/he.pak",
+        "CEF/win-x64/locales/hi.pak",
+        "CEF/win-x64/locales/hr.pak",
+        "CEF/win-x64/locales/hu.pak",
+        "CEF/win-x64/locales/id.pak",
+        "CEF/win-x64/locales/it.pak",
+        "CEF/win-x64/locales/ja.pak",
+        "CEF/win-x64/locales/kn.pak",
+        "CEF/win-x64/locales/ko.pak",
+        "CEF/win-x64/locales/lt.pak",
+        "CEF/win-x64/locales/lv.pak",
+        "CEF/win-x64/locales/ml.pak",
+        "CEF/win-x64/locales/mr.pak",
+        "CEF/win-x64/locales/ms.pak",
+        "CEF/win-x64/locales/nb.pak",
+        "CEF/win-x64/locales/nl.pak",
+        "CEF/win-x64/locales/pl.pak",
+        "CEF/win-x64/locales/pt-BR.pak",
+        "CEF/win-x64/locales/pt-PT.pak",
+        "CEF/win-x64/locales/ro.pak",
+        "CEF/win-x64/locales/ru.pak",
+        "CEF/win-x64/locales/sk.pak",
+        "CEF/win-x64/locales/sl.pak",
+        "CEF/win-x64/locales/sr.pak",
+        "CEF/win-x64/locales/sv.pak",
+        "CEF/win-x64/locales/sw.pak",
+        "CEF/win-x64/locales/ta.pak",
+        "CEF/win-x64/locales/te.pak",
+        "CEF/win-x64/locales/th.pak",
+        "CEF/win-x64/locales/tr.pak",
+        "CEF/win-x64/locales/uk.pak",
+        "CEF/win-x64/locales/ur.pak",
+        "CEF/win-x64/locales/vi.pak",
+        "CEF/win-x64/locales/zh-CN.pak",
+        "CEF/win-x64/locales/zh-TW.pak",
+        "LICENSE.txt",
+        "README.txt",
+        "build/chromiumembeddedframework.runtime.win-x64.props",
+        "buildTransitive/chromiumembeddedframework.runtime.win-x64.props",
+        "chromiumembeddedframework.runtime.win-x64.136.1.4.nupkg.sha512",
+        "chromiumembeddedframework.runtime.win-x64.nuspec",
+        "images/cef128x128.png",
+        "runtimes/win-x64/native/chrome_100_percent.pak",
+        "runtimes/win-x64/native/chrome_200_percent.pak",
+        "runtimes/win-x64/native/chrome_elf.dll",
+        "runtimes/win-x64/native/d3dcompiler_47.dll",
+        "runtimes/win-x64/native/dxcompiler.dll",
+        "runtimes/win-x64/native/dxil.dll",
+        "runtimes/win-x64/native/icudtl.dat",
+        "runtimes/win-x64/native/libEGL.dll",
+        "runtimes/win-x64/native/libGLESv2.dll",
+        "runtimes/win-x64/native/libcef.dll",
+        "runtimes/win-x64/native/resources.pak",
+        "runtimes/win-x64/native/v8_context_snapshot.bin",
+        "runtimes/win-x64/native/vk_swiftshader.dll",
+        "runtimes/win-x64/native/vk_swiftshader_icd.json",
+        "runtimes/win-x64/native/vulkan-1.dll"
+      ]
+    },
+    "chromiumembeddedframework.runtime.win-x86/136.1.4": {
+      "sha512": "xlEILsLGfwoCeMMyt78o9X8a6fcBPOQQg89rU9ATGIGqJ7eGiDwAHd8kLTWLcMwqCs5c0XPdTJynHbFuQrSkpg==",
+      "type": "package",
+      "path": "chromiumembeddedframework.runtime.win-x86/136.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CEF/win-x86/locales/af.pak",
+        "CEF/win-x86/locales/am.pak",
+        "CEF/win-x86/locales/ar.pak",
+        "CEF/win-x86/locales/bg.pak",
+        "CEF/win-x86/locales/bn.pak",
+        "CEF/win-x86/locales/ca.pak",
+        "CEF/win-x86/locales/cs.pak",
+        "CEF/win-x86/locales/da.pak",
+        "CEF/win-x86/locales/de.pak",
+        "CEF/win-x86/locales/el.pak",
+        "CEF/win-x86/locales/en-GB.pak",
+        "CEF/win-x86/locales/en-US.pak",
+        "CEF/win-x86/locales/es-419.pak",
+        "CEF/win-x86/locales/es.pak",
+        "CEF/win-x86/locales/et.pak",
+        "CEF/win-x86/locales/fa.pak",
+        "CEF/win-x86/locales/fi.pak",
+        "CEF/win-x86/locales/fil.pak",
+        "CEF/win-x86/locales/fr.pak",
+        "CEF/win-x86/locales/gu.pak",
+        "CEF/win-x86/locales/he.pak",
+        "CEF/win-x86/locales/hi.pak",
+        "CEF/win-x86/locales/hr.pak",
+        "CEF/win-x86/locales/hu.pak",
+        "CEF/win-x86/locales/id.pak",
+        "CEF/win-x86/locales/it.pak",
+        "CEF/win-x86/locales/ja.pak",
+        "CEF/win-x86/locales/kn.pak",
+        "CEF/win-x86/locales/ko.pak",
+        "CEF/win-x86/locales/lt.pak",
+        "CEF/win-x86/locales/lv.pak",
+        "CEF/win-x86/locales/ml.pak",
+        "CEF/win-x86/locales/mr.pak",
+        "CEF/win-x86/locales/ms.pak",
+        "CEF/win-x86/locales/nb.pak",
+        "CEF/win-x86/locales/nl.pak",
+        "CEF/win-x86/locales/pl.pak",
+        "CEF/win-x86/locales/pt-BR.pak",
+        "CEF/win-x86/locales/pt-PT.pak",
+        "CEF/win-x86/locales/ro.pak",
+        "CEF/win-x86/locales/ru.pak",
+        "CEF/win-x86/locales/sk.pak",
+        "CEF/win-x86/locales/sl.pak",
+        "CEF/win-x86/locales/sr.pak",
+        "CEF/win-x86/locales/sv.pak",
+        "CEF/win-x86/locales/sw.pak",
+        "CEF/win-x86/locales/ta.pak",
+        "CEF/win-x86/locales/te.pak",
+        "CEF/win-x86/locales/th.pak",
+        "CEF/win-x86/locales/tr.pak",
+        "CEF/win-x86/locales/uk.pak",
+        "CEF/win-x86/locales/ur.pak",
+        "CEF/win-x86/locales/vi.pak",
+        "CEF/win-x86/locales/zh-CN.pak",
+        "CEF/win-x86/locales/zh-TW.pak",
+        "LICENSE.txt",
+        "README.txt",
+        "build/chromiumembeddedframework.runtime.win-x86.props",
+        "buildTransitive/chromiumembeddedframework.runtime.win-x86.props",
+        "chromiumembeddedframework.runtime.win-x86.136.1.4.nupkg.sha512",
+        "chromiumembeddedframework.runtime.win-x86.nuspec",
+        "images/cef128x128.png",
+        "runtimes/win-x86/native/chrome_100_percent.pak",
+        "runtimes/win-x86/native/chrome_200_percent.pak",
+        "runtimes/win-x86/native/chrome_elf.dll",
+        "runtimes/win-x86/native/d3dcompiler_47.dll",
+        "runtimes/win-x86/native/icudtl.dat",
+        "runtimes/win-x86/native/libEGL.dll",
+        "runtimes/win-x86/native/libGLESv2.dll",
+        "runtimes/win-x86/native/libcef.dll",
+        "runtimes/win-x86/native/resources.pak",
+        "runtimes/win-x86/native/v8_context_snapshot.bin",
+        "runtimes/win-x86/native/vk_swiftshader.dll",
+        "runtimes/win-x86/native/vk_swiftshader_icd.json",
+        "runtimes/win-x86/native/vulkan-1.dll"
+      ]
+    },
+    "CsvHelper/33.0.1": {
+      "sha512": "fev4lynklAU2A9GVMLtwarkwaanjSYB4wUqO2nOJX5hnzObORzUqVLe+bDYCUyIIRQM4o5Bsq3CcyJR89iMmEQ==",
+      "type": "package",
+      "path": "csvhelper/33.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "csvhelper.33.0.1.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net462/CsvHelper.dll",
+        "lib/net462/CsvHelper.xml",
+        "lib/net47/CsvHelper.dll",
+        "lib/net47/CsvHelper.xml",
+        "lib/net48/CsvHelper.dll",
+        "lib/net48/CsvHelper.xml",
+        "lib/net6.0/CsvHelper.dll",
+        "lib/net6.0/CsvHelper.xml",
+        "lib/net7.0/CsvHelper.dll",
+        "lib/net7.0/CsvHelper.xml",
+        "lib/net8.0/CsvHelper.dll",
+        "lib/net8.0/CsvHelper.xml",
+        "lib/netstandard2.0/CsvHelper.dll",
+        "lib/netstandard2.0/CsvHelper.xml",
+        "lib/netstandard2.1/CsvHelper.dll",
+        "lib/netstandard2.1/CsvHelper.xml"
+      ]
+    },
+    "DeviceId/6.0.0": {
+      "sha512": "sK00mJ+4tlZDuCgktPIrQL0CRHzMe1bN0xEv3JXLx1ImMEuYCpnXjqTaq3YVSebhip1Tch5+zvT+ONNBEJSnWQ==",
+      "type": "package",
+      "path": "deviceid/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "deviceid.6.0.0.nupkg.sha512",
+        "deviceid.nuspec",
+        "lib/net35/DeviceId.dll",
+        "lib/net35/DeviceId.xml",
+        "lib/net40/DeviceId.dll",
+        "lib/net40/DeviceId.xml",
+        "lib/net5.0/DeviceId.dll",
+        "lib/net5.0/DeviceId.xml",
+        "lib/netstandard2.0/DeviceId.dll",
+        "lib/netstandard2.0/DeviceId.xml"
+      ]
+    },
+    "Enums.NET/4.0.1": {
+      "sha512": "OUGCd5L8zHZ61GAf436G0gf/H6yrSUkEpV5vm2CbCUuz9Rx7iLFLP5iHSSfmOtqNpuyo4vYte0CvYEmPZXRmRQ==",
+      "type": "package",
+      "path": "enums.net/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "enums.net.4.0.1.nupkg.sha512",
+        "enums.net.nuspec",
+        "lib/net45/Enums.NET.dll",
+        "lib/net45/Enums.NET.pdb",
+        "lib/net45/Enums.NET.xml",
+        "lib/netcoreapp3.0/Enums.NET.dll",
+        "lib/netcoreapp3.0/Enums.NET.pdb",
+        "lib/netcoreapp3.0/Enums.NET.xml",
+        "lib/netstandard1.0/Enums.NET.dll",
+        "lib/netstandard1.0/Enums.NET.pdb",
+        "lib/netstandard1.0/Enums.NET.xml",
+        "lib/netstandard1.1/Enums.NET.dll",
+        "lib/netstandard1.1/Enums.NET.pdb",
+        "lib/netstandard1.1/Enums.NET.xml",
+        "lib/netstandard1.3/Enums.NET.dll",
+        "lib/netstandard1.3/Enums.NET.pdb",
+        "lib/netstandard1.3/Enums.NET.xml",
+        "lib/netstandard2.0/Enums.NET.dll",
+        "lib/netstandard2.0/Enums.NET.pdb",
+        "lib/netstandard2.0/Enums.NET.xml",
+        "lib/netstandard2.1/Enums.NET.dll",
+        "lib/netstandard2.1/Enums.NET.pdb",
+        "lib/netstandard2.1/Enums.NET.xml"
+      ]
+    },
+    "ExtendedNumerics.BigDecimal/2025.1001.2.129": {
+      "sha512": "+woGT1lsBtwkntOpx2EZbdbySv0aWPefE0vrfvclxVdbi4oa2bbtphFPWgMiQe+kRCPICbfFJwp6w1DuR7Ge2Q==",
+      "type": "package",
+      "path": "extendednumerics.bigdecimal/2025.1001.2.129",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "extendednumerics.bigdecimal.2025.1001.2.129.nupkg.sha512",
+        "extendednumerics.bigdecimal.nuspec",
+        "lib/net45/ExtendedNumerics.BigDecimal.dll",
+        "lib/net45/ExtendedNumerics.BigDecimal.xml",
+        "lib/net46/ExtendedNumerics.BigDecimal.dll",
+        "lib/net46/ExtendedNumerics.BigDecimal.xml",
+        "lib/net472/ExtendedNumerics.BigDecimal.dll",
+        "lib/net472/ExtendedNumerics.BigDecimal.xml",
+        "lib/net48/ExtendedNumerics.BigDecimal.dll",
+        "lib/net48/ExtendedNumerics.BigDecimal.xml",
+        "lib/net5.0/ExtendedNumerics.BigDecimal.dll",
+        "lib/net5.0/ExtendedNumerics.BigDecimal.xml",
+        "lib/net6.0/ExtendedNumerics.BigDecimal.dll",
+        "lib/net6.0/ExtendedNumerics.BigDecimal.xml",
+        "lib/net7.0/ExtendedNumerics.BigDecimal.dll",
+        "lib/net7.0/ExtendedNumerics.BigDecimal.xml",
+        "lib/net8.0/ExtendedNumerics.BigDecimal.dll",
+        "lib/net8.0/ExtendedNumerics.BigDecimal.xml",
+        "lib/netcoreapp3.1/ExtendedNumerics.BigDecimal.dll",
+        "lib/netcoreapp3.1/ExtendedNumerics.BigDecimal.xml",
+        "lib/netstandard2.0/ExtendedNumerics.BigDecimal.dll",
+        "lib/netstandard2.0/ExtendedNumerics.BigDecimal.xml",
+        "lib/netstandard2.1/ExtendedNumerics.BigDecimal.dll",
+        "lib/netstandard2.1/ExtendedNumerics.BigDecimal.xml"
+      ]
+    },
+    "Flurl/4.0.0": {
+      "sha512": "rpts69yYgvJqg6PPgqShBQEZ4aNzWQqWpWppcT0oDWxDCIsBqiod4pj6LQZdhk+1OozLFagemldMRACdHF3CsA==",
+      "type": "package",
+      "path": "flurl/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flurl.4.0.0.nupkg.sha512",
+        "flurl.nuspec",
+        "icon.png",
+        "lib/net461/Flurl.dll",
+        "lib/net461/Flurl.xml",
+        "lib/net472/Flurl.dll",
+        "lib/net472/Flurl.xml",
+        "lib/netstandard2.0/Flurl.dll",
+        "lib/netstandard2.0/Flurl.xml"
+      ]
+    },
+    "Flurl.Http/4.0.2": {
+      "sha512": "9vCqFFyceA11yplkFD8AbCFFTvG1Lrw3tpsgOpL5sLUc28p6zcvGszNleuT6nDymRvtt5eS+rqUX+bRztg1fhA==",
+      "type": "package",
+      "path": "flurl.http/4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "flurl.http.4.0.2.nupkg.sha512",
+        "flurl.http.nuspec",
+        "icon.png",
+        "lib/net461/Flurl.Http.dll",
+        "lib/net461/Flurl.Http.xml",
+        "lib/net6.0/Flurl.Http.dll",
+        "lib/net6.0/Flurl.Http.xml",
+        "lib/netstandard2.0/Flurl.Http.dll",
+        "lib/netstandard2.0/Flurl.Http.xml"
+      ]
+    },
+    "FontAwesome.Sharp/6.6.0": {
+      "sha512": "bJCb2x73UC1nD9+9iMLaUy6Ujf9Pf+buL6FHwVnaoDYT4CQNLazz59hO5gQ0+SMSW0G+ZXmjjShOYr3Jn2UZiw==",
+      "type": "package",
+      "path": "fontawesome.sharp/6.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fontawesome.sharp.6.6.0.nupkg.sha512",
+        "fontawesome.sharp.nuspec",
+        "lib/net472/FontAwesome.Sharp.dll",
+        "lib/net48/FontAwesome.Sharp.dll",
+        "lib/net6.0-windows7.0/FontAwesome.Sharp.dll",
+        "lib/net7.0-windows7.0/FontAwesome.Sharp.dll",
+        "lib/net8.0-windows7.0/FontAwesome.Sharp.dll",
+        "lib/netcoreapp3.1/FontAwesome.Sharp.dll"
+      ]
+    },
+    "HarfBuzzSharp/7.3.0.3": {
+      "sha512": "Hq+5+gx10coOvuRgB13KBwiWxJq1QeYuhtVLbA01ZCWaugOnolUahF44KvrQTUUHDNk/C7HB6SMaebsZeOdhgg==",
+      "type": "package",
+      "path": "harfbuzzsharp/7.3.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "harfbuzzsharp.7.3.0.3.nupkg.sha512",
+        "harfbuzzsharp.nuspec",
+        "lib/monoandroid1.0/HarfBuzzSharp.dll",
+        "lib/monoandroid1.0/HarfBuzzSharp.pdb",
+        "lib/monoandroid1.0/HarfBuzzSharp.xml",
+        "lib/net462/HarfBuzzSharp.dll",
+        "lib/net462/HarfBuzzSharp.pdb",
+        "lib/net462/HarfBuzzSharp.xml",
+        "lib/net6.0-android30.0/HarfBuzzSharp.dll",
+        "lib/net6.0-android30.0/HarfBuzzSharp.pdb",
+        "lib/net6.0-android30.0/HarfBuzzSharp.xml",
+        "lib/net6.0-ios13.6/HarfBuzzSharp.dll",
+        "lib/net6.0-ios13.6/HarfBuzzSharp.pdb",
+        "lib/net6.0-ios13.6/HarfBuzzSharp.xml",
+        "lib/net6.0-maccatalyst13.5/HarfBuzzSharp.dll",
+        "lib/net6.0-maccatalyst13.5/HarfBuzzSharp.pdb",
+        "lib/net6.0-maccatalyst13.5/HarfBuzzSharp.xml",
+        "lib/net6.0-macos10.15/HarfBuzzSharp.dll",
+        "lib/net6.0-macos10.15/HarfBuzzSharp.pdb",
+        "lib/net6.0-macos10.15/HarfBuzzSharp.xml",
+        "lib/net6.0-tvos13.4/HarfBuzzSharp.dll",
+        "lib/net6.0-tvos13.4/HarfBuzzSharp.pdb",
+        "lib/net6.0-tvos13.4/HarfBuzzSharp.xml",
+        "lib/net6.0/HarfBuzzSharp.dll",
+        "lib/net6.0/HarfBuzzSharp.pdb",
+        "lib/net6.0/HarfBuzzSharp.xml",
+        "lib/netcoreapp3.1/HarfBuzzSharp.dll",
+        "lib/netcoreapp3.1/HarfBuzzSharp.pdb",
+        "lib/netcoreapp3.1/HarfBuzzSharp.xml",
+        "lib/netstandard1.3/HarfBuzzSharp.dll",
+        "lib/netstandard1.3/HarfBuzzSharp.pdb",
+        "lib/netstandard1.3/HarfBuzzSharp.xml",
+        "lib/netstandard2.0/HarfBuzzSharp.dll",
+        "lib/netstandard2.0/HarfBuzzSharp.pdb",
+        "lib/netstandard2.0/HarfBuzzSharp.xml",
+        "lib/netstandard2.1/HarfBuzzSharp.dll",
+        "lib/netstandard2.1/HarfBuzzSharp.pdb",
+        "lib/netstandard2.1/HarfBuzzSharp.xml",
+        "lib/tizen40/HarfBuzzSharp.dll",
+        "lib/tizen40/HarfBuzzSharp.pdb",
+        "lib/tizen40/HarfBuzzSharp.xml",
+        "lib/uap10.0.10240/HarfBuzzSharp.dll",
+        "lib/uap10.0.10240/HarfBuzzSharp.pdb",
+        "lib/uap10.0.10240/HarfBuzzSharp.xml",
+        "lib/uap10.0.16299/HarfBuzzSharp.dll",
+        "lib/uap10.0.16299/HarfBuzzSharp.pdb",
+        "lib/uap10.0.16299/HarfBuzzSharp.xml",
+        "lib/xamarinios1.0/HarfBuzzSharp.dll",
+        "lib/xamarinios1.0/HarfBuzzSharp.pdb",
+        "lib/xamarinios1.0/HarfBuzzSharp.xml",
+        "lib/xamarinmac2.0/HarfBuzzSharp.dll",
+        "lib/xamarinmac2.0/HarfBuzzSharp.pdb",
+        "lib/xamarinmac2.0/HarfBuzzSharp.xml",
+        "lib/xamarintvos1.0/HarfBuzzSharp.dll",
+        "lib/xamarintvos1.0/HarfBuzzSharp.pdb",
+        "lib/xamarintvos1.0/HarfBuzzSharp.xml",
+        "lib/xamarinwatchos1.0/HarfBuzzSharp.dll",
+        "lib/xamarinwatchos1.0/HarfBuzzSharp.pdb",
+        "lib/xamarinwatchos1.0/HarfBuzzSharp.xml"
+      ]
+    },
+    "HarfBuzzSharp.NativeAssets.Linux/7.3.0.3": {
+      "sha512": "hkcHeTfOyIeJuPtO/QfoqkDvV/MXebZYaA/Bn/S+nXsjH3Wt9oQ6okH2kklYO+1UUdBSJFd67bi9IrpQXI2mPw==",
+      "type": "package",
+      "path": "harfbuzzsharp.nativeassets.linux/7.3.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net462/HarfBuzzSharp.NativeAssets.Linux.targets",
+        "buildTransitive/net462/HarfBuzzSharp.NativeAssets.Linux.targets",
+        "harfbuzzsharp.nativeassets.linux.7.3.0.3.nupkg.sha512",
+        "harfbuzzsharp.nativeassets.linux.nuspec",
+        "lib/net462/_._",
+        "lib/net6.0/_._",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard1.3/_._",
+        "runtimes/linux-arm/native/libHarfBuzzSharp.so",
+        "runtimes/linux-arm64/native/libHarfBuzzSharp.so",
+        "runtimes/linux-musl-x64/native/libHarfBuzzSharp.so",
+        "runtimes/linux-x64/native/libHarfBuzzSharp.so"
+      ]
+    },
+    "HarfBuzzSharp.NativeAssets.macOS/7.3.0.3": {
+      "sha512": "UAwIYnkbBTzBJv1Id8FijY/i8QiIepRemSXufU8fyzwWhYJdx4+ajG8yQUie5HW/uusbVLFSr26muSlJOFDgSw==",
+      "type": "package",
+      "path": "harfbuzzsharp.nativeassets.macos/7.3.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net462/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "build/net6.0-macos10.15/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "build/xamarinmac2.0/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "buildTransitive/net462/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "buildTransitive/net6.0-macos10.15/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "buildTransitive/xamarinmac2.0/HarfBuzzSharp.NativeAssets.macOS.targets",
+        "harfbuzzsharp.nativeassets.macos.7.3.0.3.nupkg.sha512",
+        "harfbuzzsharp.nativeassets.macos.nuspec",
+        "lib/net462/_._",
+        "lib/net6.0-macos10.15/_._",
+        "lib/net6.0/_._",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard1.3/_._",
+        "lib/xamarinmac2.0/_._",
+        "runtimes/osx/native/libHarfBuzzSharp.dylib"
+      ]
+    },
+    "HarfBuzzSharp.NativeAssets.Win32/7.3.0.3": {
+      "sha512": "RPxRXD16KtSs8Yxr2RK9Qs7AwyN9MlpqZIYs0AvfaJwl7RAtVhC0+u2f2SKwX0uMYYd3O98Z+OBA1sj6aWVKQA==",
+      "type": "package",
+      "path": "harfbuzzsharp.nativeassets.win32/7.3.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net462/HarfBuzzSharp.NativeAssets.Win32.targets",
+        "buildTransitive/net462/HarfBuzzSharp.NativeAssets.Win32.targets",
+        "harfbuzzsharp.nativeassets.win32.7.3.0.3.nupkg.sha512",
+        "harfbuzzsharp.nativeassets.win32.nuspec",
+        "lib/net462/_._",
+        "lib/net6.0/_._",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard1.3/_._",
+        "runtimes/win-arm64/native/libHarfBuzzSharp.dll",
+        "runtimes/win-x64/native/libHarfBuzzSharp.dll",
+        "runtimes/win-x86/native/libHarfBuzzSharp.dll"
+      ]
+    },
+    "InputSimulator/1.0.4": {
+      "sha512": "D0LvRCPQMX6/FJHBjng+RO+wRDuHTJrfo7IAc7rmkPvRqchdVGJWg3y70peOtDy3OLNK+HSOwVkH4GiuLnkKgA==",
+      "type": "package",
+      "path": "inputsimulator/1.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "inputsimulator.1.0.4.nupkg.sha512",
+        "inputsimulator.nuspec",
+        "lib/net20/WindowsInput.dll",
+        "lib/net20/WindowsInput.xml"
+      ]
+    },
+    "LiteDB/5.0.21": {
+      "sha512": "ykJ7ffFl7P9YQKR/PLci6zupiLrsSCNkOTiw6OtzntH7d2kCYp5L1+3a/pksKgTEHcJBoPXFtg7VZSGVBseN9w==",
+      "type": "package",
+      "path": "litedb/5.0.21",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "AppVeyorSettings.json",
+        "LICENSE",
+        "icon_64x64.png",
+        "lib/net45/LiteDB.dll",
+        "lib/net45/LiteDB.xml",
+        "lib/netstandard1.3/LiteDB.dll",
+        "lib/netstandard1.3/LiteDB.xml",
+        "lib/netstandard2.0/LiteDB.dll",
+        "lib/netstandard2.0/LiteDB.xml",
+        "litedb.5.0.21.nupkg.sha512",
+        "litedb.nuspec"
+      ]
+    },
+    "MathNet.Numerics.Signed/5.0.0": {
+      "sha512": "PSrHBVMf41SjbhlnpOMnoir8YgkyEJ6/nwxvjYpH+vJCexNcx2ms6zRww5yLVqLet1xLJgZ39swtKRTLhWdnAw==",
+      "type": "package",
+      "path": "mathnet.numerics.signed/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net461/MathNet.Numerics.dll",
+        "lib/net461/MathNet.Numerics.xml",
+        "lib/net48/MathNet.Numerics.dll",
+        "lib/net48/MathNet.Numerics.xml",
+        "lib/net5.0/MathNet.Numerics.dll",
+        "lib/net5.0/MathNet.Numerics.xml",
+        "lib/net6.0/MathNet.Numerics.dll",
+        "lib/net6.0/MathNet.Numerics.xml",
+        "lib/netstandard2.0/MathNet.Numerics.dll",
+        "lib/netstandard2.0/MathNet.Numerics.xml",
+        "mathnet.numerics.signed.5.0.0.nupkg.sha512",
+        "mathnet.numerics.signed.nuspec"
+      ]
+    },
+    "Microsoft.Database.Collections.Generic/2.0.4": {
+      "sha512": "T2PZvJ7PVjjjRbD9Ne7W8d5nPqmmURI9b8FB3l9shtJR1jJzachpEY1cMcqzotXowNOdpVAUT+D17E1ISASnww==",
+      "type": "package",
+      "path": "microsoft.database.collections.generic/2.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Esent.Collections.XML",
+        "lib/netstandard2.0/Esent.Collections.dll",
+        "lib/netstandard2.0/Esent.Collections.pdb",
+        "microsoft.database.collections.generic.2.0.4.nupkg.sha512",
+        "microsoft.database.collections.generic.nuspec"
+      ]
+    },
+    "Microsoft.Database.Isam/2.0.4": {
+      "sha512": "tsQDk3OTDHlOxrdvpe3ZazBXZjcRuZ2VlPamdvYWMXXNsXf87moSQSSqXsKZDB3MBVJMOCeQVo9N6AdFgx89bg==",
+      "type": "package",
+      "path": "microsoft.database.isam/2.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Esent.Isam.dll",
+        "lib/netstandard2.0/Esent.Isam.pdb",
+        "lib/netstandard2.0/Esent.Isam.xml",
+        "microsoft.database.isam.2.0.4.nupkg.sha512",
+        "microsoft.database.isam.nuspec"
+      ]
+    },
+    "Microsoft.Database.ManagedEsent/2.0.4": {
+      "sha512": "xNhAuy71rxRipVgUDfk63b9C5h48E482H2n3095ZLy84CVqUA8Alwp35RvJJpzv5CBoKHurn0dRLz8bXqB7P4Q==",
+      "type": "package",
+      "path": "microsoft.database.managedesent/2.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Esent.Interop.dll",
+        "lib/netstandard2.0/Esent.Interop.pdb",
+        "lib/netstandard2.0/Esent.Interop.xml",
+        "microsoft.database.managedesent.2.0.4.nupkg.sha512",
+        "microsoft.database.managedesent.nuspec"
+      ]
+    },
+    "Microsoft.IO.RecyclableMemoryStream/3.0.0": {
+      "sha512": "irv0HuqoH8Ig5i2fO+8dmDNdFdsrO+DoQcedwIlb810qpZHBNQHZLW7C/AHBQDgLLpw2T96vmMAy/aE4Yj55Sg==",
+      "type": "package",
+      "path": "microsoft.io.recyclablememorystream/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/net6.0/Microsoft.IO.RecyclableMemoryStream.xml",
+        "lib/netstandard2.0/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/netstandard2.0/Microsoft.IO.RecyclableMemoryStream.xml",
+        "lib/netstandard2.1/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/netstandard2.1/Microsoft.IO.RecyclableMemoryStream.xml",
+        "microsoft.io.recyclablememorystream.3.0.0.nupkg.sha512",
+        "microsoft.io.recyclablememorystream.nuspec"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/5.0.0": {
+      "sha512": "VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.PowerShell.5.ReferenceAssemblies/1.1.0": {
+      "sha512": "EE87t3aUXlO0Rjq83Ti8z1g4wwsWnB4W+pOn84i3QWzUOOuP5gZg8n4Y8XTZ7GkxGcoSR6w/d/kBJTJbc3VZPQ==",
+      "type": "package",
+      "path": "microsoft.powershell.5.referenceassemblies/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net4/Microsoft.Management.Infrastructure.dll",
+        "lib/net4/Microsoft.PowerShell.Activities.dll",
+        "lib/net4/Microsoft.PowerShell.Activities.xml",
+        "lib/net4/Microsoft.PowerShell.Commands.Diagnostics.dll",
+        "lib/net4/Microsoft.PowerShell.ConsoleHost.dll",
+        "lib/net4/Microsoft.PowerShell.ConsoleHost.xml",
+        "lib/net4/Microsoft.PowerShell.Core.Activities.dll",
+        "lib/net4/Microsoft.PowerShell.Core.Activities.xml",
+        "lib/net4/Microsoft.PowerShell.Diagnostics.Activities.dll",
+        "lib/net4/Microsoft.PowerShell.Diagnostics.Activities.xml",
+        "lib/net4/Microsoft.PowerShell.Editor.dll",
+        "lib/net4/Microsoft.PowerShell.GPowerShell.dll",
+        "lib/net4/Microsoft.PowerShell.GPowerShell.xml",
+        "lib/net4/Microsoft.PowerShell.GraphicalHost.dll",
+        "lib/net4/Microsoft.PowerShell.GraphicalHost.xml",
+        "lib/net4/Microsoft.PowerShell.ISECommon.dll",
+        "lib/net4/Microsoft.PowerShell.ISECommon.xml",
+        "lib/net4/Microsoft.PowerShell.Management.Activities.dll",
+        "lib/net4/Microsoft.PowerShell.Management.Activities.xml",
+        "lib/net4/Microsoft.PowerShell.PSReadLine.dll",
+        "lib/net4/Microsoft.PowerShell.PackageManagement.dll",
+        "lib/net4/Microsoft.PowerShell.Security.Activities.dll",
+        "lib/net4/Microsoft.PowerShell.Security.Activities.xml",
+        "lib/net4/Microsoft.PowerShell.Security.dll",
+        "lib/net4/Microsoft.PowerShell.Security.xml",
+        "lib/net4/Microsoft.PowerShell.Utility.Activities.dll",
+        "lib/net4/Microsoft.PowerShell.Utility.Activities.xml",
+        "lib/net4/Microsoft.PowerShell.Workflow.ServiceCore.xml",
+        "lib/net4/Microsoft.Powershell.Workflow.ServiceCore.dll",
+        "lib/net4/System.Management.Automation.dll",
+        "lib/net4/System.Management.Automation.xml",
+        "microsoft.powershell.5.referenceassemblies.1.1.0.nupkg.sha512",
+        "microsoft.powershell.5.referenceassemblies.nuspec"
+      ]
+    },
+    "Microsoft.Win32.SystemEvents/9.0.5": {
+      "sha512": "D4OYNpmvAsF9MkaY2W8Jue2XuNHDhygvwzo019hs+lP85KaVnOlXmqsjDKr1dHb1DPxDnOKpe6mAgJN7S6ttwg==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/9.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Win32.SystemEvents.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Win32.SystemEvents.targets",
+        "lib/net462/Microsoft.Win32.SystemEvents.dll",
+        "lib/net462/Microsoft.Win32.SystemEvents.xml",
+        "lib/net8.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net8.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/net9.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/net9.0/Microsoft.Win32.SystemEvents.xml",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
+        "microsoft.win32.systemevents.9.0.5.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/net9.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/net9.0/Microsoft.Win32.SystemEvents.xml",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Mono.Cecil/0.11.6": {
+      "sha512": "f33RkDtZO8VlGXCtmQIviOtxgnUdym9xx/b1p9h91CRGOsJFxCFOFK1FDbVt1OCf1aWwYejUFa2MOQyFWTFjbA==",
+      "type": "package",
+      "path": "mono.cecil/0.11.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Mono.Cecil.Mdb.dll",
+        "lib/net40/Mono.Cecil.Mdb.pdb",
+        "lib/net40/Mono.Cecil.Pdb.dll",
+        "lib/net40/Mono.Cecil.Pdb.pdb",
+        "lib/net40/Mono.Cecil.Rocks.dll",
+        "lib/net40/Mono.Cecil.Rocks.pdb",
+        "lib/net40/Mono.Cecil.dll",
+        "lib/net40/Mono.Cecil.pdb",
+        "lib/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "lib/netstandard2.0/Mono.Cecil.Mdb.pdb",
+        "lib/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "lib/netstandard2.0/Mono.Cecil.Pdb.pdb",
+        "lib/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "lib/netstandard2.0/Mono.Cecil.Rocks.pdb",
+        "lib/netstandard2.0/Mono.Cecil.dll",
+        "lib/netstandard2.0/Mono.Cecil.pdb",
+        "mono.cecil.0.11.6.nupkg.sha512",
+        "mono.cecil.nuspec"
+      ]
+    },
+    "Mono.Posix-4.5/4.5.0": {
+      "sha512": "QMynhYKbgqz/FiXUeP3+RL8eSPnYIqD3bZcGJ2oOOZQ0yr+BVRMuw40c2Id6s1dg7l8Ei+mdUD77xOdaXGHlqA==",
+      "type": "package",
+      "path": "mono.posix-4.5/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Mono.Posix.dll",
+        "mono.posix-4.5.4.5.0.nupkg.sha512",
+        "mono.posix-4.5.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "NPOI/2.7.3": {
+      "sha512": "iCZx3DSwUSwaV61E8tXgPlPuxYmcYV/Zi405nGlxQvWaGTAbuc0KvSBjsLucQUJ92iMeetT8iK9makLfF4uZ3g==",
+      "type": "package",
+      "path": "npoi/2.7.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "lib/net472/NPOI.Core.dll",
+        "lib/net472/NPOI.Core.pdb",
+        "lib/net472/NPOI.Core.xml",
+        "lib/net472/NPOI.OOXML.dll",
+        "lib/net472/NPOI.OOXML.pdb",
+        "lib/net472/NPOI.OOXML.xml",
+        "lib/net472/NPOI.OpenXml4Net.dll",
+        "lib/net472/NPOI.OpenXml4Net.pdb",
+        "lib/net472/NPOI.OpenXml4Net.xml",
+        "lib/net472/NPOI.OpenXmlFormats.dll",
+        "lib/net472/NPOI.OpenXmlFormats.pdb",
+        "lib/net472/NPOI.OpenXmlFormats.xml",
+        "lib/net8.0/NPOI.Core.dll",
+        "lib/net8.0/NPOI.Core.pdb",
+        "lib/net8.0/NPOI.Core.xml",
+        "lib/net8.0/NPOI.OOXML.dll",
+        "lib/net8.0/NPOI.OOXML.pdb",
+        "lib/net8.0/NPOI.OOXML.xml",
+        "lib/net8.0/NPOI.OpenXml4Net.dll",
+        "lib/net8.0/NPOI.OpenXml4Net.pdb",
+        "lib/net8.0/NPOI.OpenXml4Net.xml",
+        "lib/net8.0/NPOI.OpenXmlFormats.dll",
+        "lib/net8.0/NPOI.OpenXmlFormats.pdb",
+        "lib/net8.0/NPOI.OpenXmlFormats.xml",
+        "lib/netstandard2.0/NPOI.Core.dll",
+        "lib/netstandard2.0/NPOI.Core.pdb",
+        "lib/netstandard2.0/NPOI.Core.xml",
+        "lib/netstandard2.0/NPOI.OOXML.dll",
+        "lib/netstandard2.0/NPOI.OOXML.pdb",
+        "lib/netstandard2.0/NPOI.OOXML.xml",
+        "lib/netstandard2.0/NPOI.OpenXml4Net.dll",
+        "lib/netstandard2.0/NPOI.OpenXml4Net.pdb",
+        "lib/netstandard2.0/NPOI.OpenXml4Net.xml",
+        "lib/netstandard2.0/NPOI.OpenXmlFormats.dll",
+        "lib/netstandard2.0/NPOI.OpenXmlFormats.pdb",
+        "lib/netstandard2.0/NPOI.OpenXmlFormats.xml",
+        "lib/netstandard2.1/NPOI.Core.dll",
+        "lib/netstandard2.1/NPOI.Core.pdb",
+        "lib/netstandard2.1/NPOI.Core.xml",
+        "lib/netstandard2.1/NPOI.OOXML.dll",
+        "lib/netstandard2.1/NPOI.OOXML.pdb",
+        "lib/netstandard2.1/NPOI.OOXML.xml",
+        "lib/netstandard2.1/NPOI.OpenXml4Net.dll",
+        "lib/netstandard2.1/NPOI.OpenXml4Net.pdb",
+        "lib/netstandard2.1/NPOI.OpenXml4Net.xml",
+        "lib/netstandard2.1/NPOI.OpenXmlFormats.dll",
+        "lib/netstandard2.1/NPOI.OpenXmlFormats.pdb",
+        "lib/netstandard2.1/NPOI.OpenXmlFormats.xml",
+        "logo/120_120.jpg",
+        "logo/240_240.png",
+        "logo/32_32.jpg",
+        "logo/60_60.jpg",
+        "npoi.2.7.3.nupkg.sha512",
+        "npoi.nuspec"
+      ]
+    },
+    "OpenCvSharp4/4.11.0.20250507": {
+      "sha512": "j/R+G6xGC5IV2wGRU0/GF5qG/FrP+Uxp8dmNnXFlIdiw8Gfo4mtvKcBOBfS/bn4pP/7FNHLFX/xvMtgPJeDjAA==",
+      "type": "package",
+      "path": "opencvsharp4/4.11.0.20250507",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net48/OpenCvSharp.dll",
+        "lib/net48/OpenCvSharp.xml",
+        "lib/net6.0/OpenCvSharp.dll",
+        "lib/net6.0/OpenCvSharp.xml",
+        "lib/netstandard2.0/OpenCvSharp.dll",
+        "lib/netstandard2.0/OpenCvSharp.xml",
+        "lib/netstandard2.1/OpenCvSharp.dll",
+        "lib/netstandard2.1/OpenCvSharp.xml",
+        "opencvsharp4.4.11.0.20250507.nupkg.sha512",
+        "opencvsharp4.nuspec"
+      ]
+    },
+    "OpenCvSharp4.runtime.win/4.11.0.20250507": {
+      "sha512": "3PxMXyzR+pkL9UOx2PiBjZm+/iyCIu5D6OlA1sq9MH7oWrfvVnCXJlUYhIJv67F7SLUwUuGwXDIQBfdsL/54lg==",
+      "type": "package",
+      "path": "opencvsharp4.runtime.win/4.11.0.20250507",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net48/OpenCvSharp4.runtime.win.props",
+        "build/net5.0/OpenCvSharp4.runtime.win.props",
+        "build/netcoreapp/OpenCvSharp4.runtime.win.props",
+        "build/netstandard/OpenCvSharp4.runtime.win.props",
+        "opencvsharp4.runtime.win.4.11.0.20250507.nupkg.sha512",
+        "opencvsharp4.runtime.win.nuspec",
+        "runtimes/win-x64/native/OpenCvSharpExtern.dll",
+        "runtimes/win-x64/native/opencv_videoio_ffmpeg4110_64.dll",
+        "runtimes/win-x86/native/OpenCvSharpExtern.dll",
+        "runtimes/win-x86/native/opencv_videoio_ffmpeg4110.dll"
+      ]
+    },
+    "OpenCvSharp4.Windows/4.11.0.20250507": {
+      "sha512": "Vwbvv8mkK9L8kbaTpQyiguuVj7+2wbXVM2FJkJjsfEIjXjSvzt5mWX/yfYJA6aPH0Mn89FwlBtHo84Cl143C7g==",
+      "type": "package",
+      "path": "opencvsharp4.windows/4.11.0.20250507",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "opencvsharp4.windows.4.11.0.20250507.nupkg.sha512",
+        "opencvsharp4.windows.nuspec"
+      ]
+    },
+    "OpenTK/3.1.0": {
+      "sha512": "xoP5kb81lRSY5RzbntaFA9yXK+aGF5SLShhns55MyZtxtNafIxRH5KvRTFss/N653brTzE+AfepjKsbMexYlBQ==",
+      "type": "package",
+      "path": "opentk/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/OpenTK.dll.config",
+        "lib/net20/OpenTK.dll",
+        "lib/net20/OpenTK.pdb",
+        "lib/net20/OpenTK.xml",
+        "opentk.3.1.0.nupkg.sha512",
+        "opentk.nuspec"
+      ]
+    },
+    "OpenTK.GLControl/3.1.0": {
+      "sha512": "BjDzF+MhJd2LaZYzkXmgkzzXgHAko/Iur4rGy6+DPdZA1Jcc0X6jXZ6QsUsjlLRNzgevO7uAj2h1TqX7sguaYg==",
+      "type": "package",
+      "path": "opentk.glcontrol/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/OpenTK.GLControl.dll",
+        "lib/net20/OpenTK.GLControl.pdb",
+        "lib/net20/OpenTK.GLControl.xml",
+        "opentk.glcontrol.3.1.0.nupkg.sha512",
+        "opentk.glcontrol.nuspec"
+      ]
+    },
+    "Portable.BouncyCastle/1.9.0": {
+      "sha512": "eZZBCABzVOek+id9Xy04HhmgykF0wZg9wpByzrWN7q8qEI0Qen9b7tfd7w8VA3dOeesumMG7C5ZPy0jk7PSRHw==",
+      "type": "package",
+      "path": "portable.bouncycastle/1.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/BouncyCastle.Crypto.dll",
+        "lib/net40/BouncyCastle.Crypto.xml",
+        "lib/netstandard2.0/BouncyCastle.Crypto.dll",
+        "lib/netstandard2.0/BouncyCastle.Crypto.xml",
+        "portable.bouncycastle.1.9.0.nupkg.sha512",
+        "portable.bouncycastle.nuspec"
+      ]
+    },
+    "RestSharp/112.1.0": {
+      "sha512": "bOUGNZqhhv/QeCXHTKEUil846yBjwWXpzPKjO67kFvaAOoF361z7jLY5BMnuZ6WD2WQRA750sNMcK7MSPCQ5Mg==",
+      "type": "package",
+      "path": "restsharp/112.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net471/RestSharp.dll",
+        "lib/net471/RestSharp.xml",
+        "lib/net48/RestSharp.dll",
+        "lib/net48/RestSharp.xml",
+        "lib/net6.0/RestSharp.dll",
+        "lib/net6.0/RestSharp.xml",
+        "lib/net7.0/RestSharp.dll",
+        "lib/net7.0/RestSharp.xml",
+        "lib/net8.0/RestSharp.dll",
+        "lib/net8.0/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.112.1.0.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
+      ]
+    },
+    "ScottPlot/5.0.55": {
+      "sha512": "afhqrtF/eZ08QWunp56tDGg8gKiSAnNfUaB9XTAp3xt7QlVPhEkNmJKImTDC+/j6EbWENiezHaOKt9bD/kLm0w==",
+      "type": "package",
+      "path": "scottplot/5.0.55",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net462/ScottPlot.dll",
+        "lib/net462/ScottPlot.xml",
+        "lib/net6.0/ScottPlot.dll",
+        "lib/net6.0/ScottPlot.xml",
+        "lib/net8.0/ScottPlot.dll",
+        "lib/net8.0/ScottPlot.xml",
+        "lib/netstandard2.0/ScottPlot.dll",
+        "lib/netstandard2.0/ScottPlot.xml",
+        "readme.md",
+        "scottplot.5.0.55.nupkg.sha512",
+        "scottplot.nuspec"
+      ]
+    },
+    "ScottPlot.WinForms/5.0.55": {
+      "sha512": "FfEIXHxVNAb9YvCvz1pr6BwUNZHghYLiEoivuA8us1RmAWsMdUYaN+dZuoltSdT3L6usAIQrT+8gc/Hhbje8qg==",
+      "type": "package",
+      "path": "scottplot.winforms/5.0.55",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net462/ScottPlot.WinForms.dll",
+        "lib/net462/ScottPlot.WinForms.xml",
+        "lib/net6.0-windows7.0/ScottPlot.WinForms.dll",
+        "lib/net6.0-windows7.0/ScottPlot.WinForms.xml",
+        "readme.md",
+        "scottplot.winforms.5.0.55.nupkg.sha512",
+        "scottplot.winforms.nuspec"
+      ]
+    },
+    "SharpZipLib/1.4.2": {
+      "sha512": "yjj+3zgz8zgXpiiC3ZdF/iyTBbz2fFvMxZFEBPUcwZjIvXOf37Ylm+K58hqMfIBt5JgU/Z2uoUS67JmTLe973A==",
+      "type": "package",
+      "path": "sharpziplib/1.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/sharpziplib-nuget-256x256.png",
+        "lib/net6.0/ICSharpCode.SharpZipLib.dll",
+        "lib/net6.0/ICSharpCode.SharpZipLib.pdb",
+        "lib/net6.0/ICSharpCode.SharpZipLib.xml",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.pdb",
+        "lib/netstandard2.0/ICSharpCode.SharpZipLib.xml",
+        "lib/netstandard2.1/ICSharpCode.SharpZipLib.dll",
+        "lib/netstandard2.1/ICSharpCode.SharpZipLib.pdb",
+        "lib/netstandard2.1/ICSharpCode.SharpZipLib.xml",
+        "sharpziplib.1.4.2.nupkg.sha512",
+        "sharpziplib.nuspec"
+      ]
+    },
+    "SixLabors.Fonts/1.0.1": {
+      "sha512": "ljezRHWc7N0azdQViib7Aa5v+DagRVkKI2/93kEbtjVczLs+yTkSq6gtGmvOcx4IqyNbO3GjLt7SAQTpLkySNw==",
+      "type": "package",
+      "path": "sixlabors.fonts/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.1/SixLabors.Fonts.dll",
+        "lib/netcoreapp3.1/SixLabors.Fonts.xml",
+        "lib/netstandard2.0/SixLabors.Fonts.dll",
+        "lib/netstandard2.0/SixLabors.Fonts.xml",
+        "lib/netstandard2.1/SixLabors.Fonts.dll",
+        "lib/netstandard2.1/SixLabors.Fonts.xml",
+        "sixlabors.fonts.1.0.1.nupkg.sha512",
+        "sixlabors.fonts.128.png",
+        "sixlabors.fonts.nuspec"
+      ]
+    },
+    "SixLabors.ImageSharp/2.1.10": {
+      "sha512": "hk1E7U3RSlxrBVo6Gb6OjeM52fChpFYH+SZvyT/M2vzSGlzAaKE33hc3V/Pvnjcnn1opT8/Z+0QfqdM5HsIaeA==",
+      "type": "package",
+      "path": "sixlabors.imagesharp/2.1.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/SixLabors.ImageSharp.dll",
+        "lib/net472/SixLabors.ImageSharp.xml",
+        "lib/netcoreapp2.1/SixLabors.ImageSharp.dll",
+        "lib/netcoreapp2.1/SixLabors.ImageSharp.xml",
+        "lib/netcoreapp3.1/SixLabors.ImageSharp.dll",
+        "lib/netcoreapp3.1/SixLabors.ImageSharp.xml",
+        "lib/netstandard2.0/SixLabors.ImageSharp.dll",
+        "lib/netstandard2.0/SixLabors.ImageSharp.xml",
+        "lib/netstandard2.1/SixLabors.ImageSharp.dll",
+        "lib/netstandard2.1/SixLabors.ImageSharp.xml",
+        "sixlabors.imagesharp.128.png",
+        "sixlabors.imagesharp.2.1.10.nupkg.sha512",
+        "sixlabors.imagesharp.nuspec"
+      ]
+    },
+    "SkiaSharp/2.88.9": {
+      "sha512": "3MD5VHjXXieSHCleRLuaTXmL2pD0mB7CcOB1x2kA1I4bhptf4e3R27iM93264ZYuAq6mkUyX5XbcxnZvMJYc1Q==",
+      "type": "package",
+      "path": "skiasharp/2.88.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "interactive-extensions/dotnet/SkiaSharp.DotNet.Interactive.dll",
+        "lib/monoandroid1.0/SkiaSharp.dll",
+        "lib/monoandroid1.0/SkiaSharp.pdb",
+        "lib/monoandroid1.0/SkiaSharp.xml",
+        "lib/net462/SkiaSharp.dll",
+        "lib/net462/SkiaSharp.pdb",
+        "lib/net462/SkiaSharp.xml",
+        "lib/net6.0-android30.0/SkiaSharp.dll",
+        "lib/net6.0-android30.0/SkiaSharp.pdb",
+        "lib/net6.0-android30.0/SkiaSharp.xml",
+        "lib/net6.0-ios13.6/SkiaSharp.dll",
+        "lib/net6.0-ios13.6/SkiaSharp.pdb",
+        "lib/net6.0-ios13.6/SkiaSharp.xml",
+        "lib/net6.0-maccatalyst13.5/SkiaSharp.dll",
+        "lib/net6.0-maccatalyst13.5/SkiaSharp.pdb",
+        "lib/net6.0-maccatalyst13.5/SkiaSharp.xml",
+        "lib/net6.0-macos10.15/SkiaSharp.dll",
+        "lib/net6.0-macos10.15/SkiaSharp.pdb",
+        "lib/net6.0-macos10.15/SkiaSharp.xml",
+        "lib/net6.0-tizen7.0/SkiaSharp.dll",
+        "lib/net6.0-tizen7.0/SkiaSharp.pdb",
+        "lib/net6.0-tizen7.0/SkiaSharp.xml",
+        "lib/net6.0-tvos13.4/SkiaSharp.dll",
+        "lib/net6.0-tvos13.4/SkiaSharp.pdb",
+        "lib/net6.0-tvos13.4/SkiaSharp.xml",
+        "lib/net6.0/SkiaSharp.dll",
+        "lib/net6.0/SkiaSharp.pdb",
+        "lib/net6.0/SkiaSharp.xml",
+        "lib/netcoreapp3.1/SkiaSharp.dll",
+        "lib/netcoreapp3.1/SkiaSharp.pdb",
+        "lib/netcoreapp3.1/SkiaSharp.xml",
+        "lib/netstandard1.3/SkiaSharp.dll",
+        "lib/netstandard1.3/SkiaSharp.pdb",
+        "lib/netstandard1.3/SkiaSharp.xml",
+        "lib/netstandard2.0/SkiaSharp.dll",
+        "lib/netstandard2.0/SkiaSharp.pdb",
+        "lib/netstandard2.0/SkiaSharp.xml",
+        "lib/netstandard2.1/SkiaSharp.dll",
+        "lib/netstandard2.1/SkiaSharp.pdb",
+        "lib/netstandard2.1/SkiaSharp.xml",
+        "lib/tizen40/SkiaSharp.dll",
+        "lib/tizen40/SkiaSharp.pdb",
+        "lib/tizen40/SkiaSharp.xml",
+        "lib/uap10.0.10240/SkiaSharp.dll",
+        "lib/uap10.0.10240/SkiaSharp.pdb",
+        "lib/uap10.0.10240/SkiaSharp.xml",
+        "lib/uap10.0.16299/SkiaSharp.dll",
+        "lib/uap10.0.16299/SkiaSharp.pdb",
+        "lib/uap10.0.16299/SkiaSharp.xml",
+        "lib/xamarinios1.0/SkiaSharp.dll",
+        "lib/xamarinios1.0/SkiaSharp.pdb",
+        "lib/xamarinios1.0/SkiaSharp.xml",
+        "lib/xamarinmac2.0/SkiaSharp.dll",
+        "lib/xamarinmac2.0/SkiaSharp.pdb",
+        "lib/xamarinmac2.0/SkiaSharp.xml",
+        "lib/xamarintvos1.0/SkiaSharp.dll",
+        "lib/xamarintvos1.0/SkiaSharp.pdb",
+        "lib/xamarintvos1.0/SkiaSharp.xml",
+        "lib/xamarinwatchos1.0/SkiaSharp.dll",
+        "lib/xamarinwatchos1.0/SkiaSharp.pdb",
+        "lib/xamarinwatchos1.0/SkiaSharp.xml",
+        "skiasharp.2.88.9.nupkg.sha512",
+        "skiasharp.nuspec"
+      ]
+    },
+    "SkiaSharp.HarfBuzz/2.88.9": {
+      "sha512": "5lyjX04CSWTKFYMSNN6SMupV2qzYDr8W/u8S3ZEkr+Sg3kOi0YE06EOqG0tzn/YPBID89xam4L3rz3hUUKOGEQ==",
+      "type": "package",
+      "path": "skiasharp.harfbuzz/2.88.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net462/SkiaSharp.HarfBuzz.dll",
+        "lib/net462/SkiaSharp.HarfBuzz.pdb",
+        "lib/net462/SkiaSharp.HarfBuzz.xml",
+        "lib/net6.0/SkiaSharp.HarfBuzz.dll",
+        "lib/net6.0/SkiaSharp.HarfBuzz.pdb",
+        "lib/net6.0/SkiaSharp.HarfBuzz.xml",
+        "lib/netcoreapp3.1/SkiaSharp.HarfBuzz.dll",
+        "lib/netcoreapp3.1/SkiaSharp.HarfBuzz.pdb",
+        "lib/netcoreapp3.1/SkiaSharp.HarfBuzz.xml",
+        "lib/netstandard1.3/SkiaSharp.HarfBuzz.dll",
+        "lib/netstandard1.3/SkiaSharp.HarfBuzz.pdb",
+        "lib/netstandard1.3/SkiaSharp.HarfBuzz.xml",
+        "lib/netstandard2.0/SkiaSharp.HarfBuzz.dll",
+        "lib/netstandard2.0/SkiaSharp.HarfBuzz.pdb",
+        "lib/netstandard2.0/SkiaSharp.HarfBuzz.xml",
+        "lib/netstandard2.1/SkiaSharp.HarfBuzz.dll",
+        "lib/netstandard2.1/SkiaSharp.HarfBuzz.pdb",
+        "lib/netstandard2.1/SkiaSharp.HarfBuzz.xml",
+        "skiasharp.harfbuzz.2.88.9.nupkg.sha512",
+        "skiasharp.harfbuzz.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.Linux.NoDependencies/2.88.9": {
+      "sha512": "ZA9syMvIuoqxPhyFTgde/bNV6VMdeYT9gRdNQT5O+ZjPK+a/nVkKRrqBbn7EVA7XQiW+xIycyT4gW/sea9eh+w==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.linux.nodependencies/2.88.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net462/SkiaSharp.NativeAssets.Linux.NoDependencies.targets",
+        "buildTransitive/net462/SkiaSharp.NativeAssets.Linux.NoDependencies.targets",
+        "lib/net462/_._",
+        "lib/net6.0/_._",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard1.3/_._",
+        "runtimes/linux-arm/native/libSkiaSharp.so",
+        "runtimes/linux-arm64/native/libSkiaSharp.so",
+        "runtimes/linux-musl-x64/native/libSkiaSharp.so",
+        "runtimes/linux-x64/native/libSkiaSharp.so",
+        "skiasharp.nativeassets.linux.nodependencies.2.88.9.nupkg.sha512",
+        "skiasharp.nativeassets.linux.nodependencies.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.macOS/2.88.9": {
+      "sha512": "Nv5spmKc4505Ep7oUoJ5vp3KweFpeNqxpyGDWyeEPTX2uR6S6syXIm3gj75dM0YJz7NPvcix48mR5laqs8dPuA==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.macos/2.88.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net462/SkiaSharp.NativeAssets.macOS.targets",
+        "build/net6.0-macos10.15/SkiaSharp.NativeAssets.macOS.targets",
+        "build/xamarinmac2.0/SkiaSharp.NativeAssets.macOS.targets",
+        "buildTransitive/net462/SkiaSharp.NativeAssets.macOS.targets",
+        "buildTransitive/net6.0-macos10.15/SkiaSharp.NativeAssets.macOS.targets",
+        "buildTransitive/xamarinmac2.0/SkiaSharp.NativeAssets.macOS.targets",
+        "lib/net462/_._",
+        "lib/net6.0-macos10.15/_._",
+        "lib/net6.0/_._",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard1.3/_._",
+        "lib/xamarinmac2.0/_._",
+        "runtimes/osx/native/libSkiaSharp.dylib",
+        "skiasharp.nativeassets.macos.2.88.9.nupkg.sha512",
+        "skiasharp.nativeassets.macos.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.Win32/2.88.9": {
+      "sha512": "wb2kYgU7iy84nQLYZwMeJXixvK++GoIuECjU4ECaUKNuflyRlJKyiRhN1MAHswvlvzuvkrjRWlK0Za6+kYQK7w==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.win32/2.88.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net462/SkiaSharp.NativeAssets.Win32.targets",
+        "buildTransitive/net462/SkiaSharp.NativeAssets.Win32.targets",
+        "lib/net462/_._",
+        "lib/net6.0/_._",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard1.3/_._",
+        "runtimes/win-arm64/native/libSkiaSharp.dll",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
+        "skiasharp.nativeassets.win32.2.88.9.nupkg.sha512",
+        "skiasharp.nativeassets.win32.nuspec"
+      ]
+    },
+    "SkiaSharp.Views.Desktop.Common/2.88.9": {
+      "sha512": "a9geU/Xe5Tn6OnadnfnMCUqqO3vB7GwCxJM8f7rRay8JrGXm7rgYKBPQX0baymxmVlPqYXeMm8AWhQj5RVtwPw==",
+      "type": "package",
+      "path": "skiasharp.views.desktop.common/2.88.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net462/SkiaSharp.Views.Desktop.Common.dll",
+        "lib/net462/SkiaSharp.Views.Desktop.Common.pdb",
+        "lib/net462/SkiaSharp.Views.Desktop.Common.xml",
+        "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.dll",
+        "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.pdb",
+        "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.xml",
+        "lib/netstandard2.0/SkiaSharp.Views.Desktop.Common.dll",
+        "lib/netstandard2.0/SkiaSharp.Views.Desktop.Common.pdb",
+        "lib/netstandard2.0/SkiaSharp.Views.Desktop.Common.xml",
+        "skiasharp.views.desktop.common.2.88.9.nupkg.sha512",
+        "skiasharp.views.desktop.common.nuspec"
+      ]
+    },
+    "SkiaSharp.Views.WindowsForms/2.88.9": {
+      "sha512": "Zsx151g2jKk+Skbon+Gj3ZQtcLblJZ4mtKkL7pN5UXlqhjPhqLRhqESw8tANijLUQHABJ44YaHLWZwqcNuvZFg==",
+      "type": "package",
+      "path": "skiasharp.views.windowsforms/2.88.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/net462/SkiaSharp.Views.WindowsForms.dll",
+        "lib/net462/SkiaSharp.Views.WindowsForms.pdb",
+        "lib/net462/SkiaSharp.Views.WindowsForms.xml",
+        "lib/netcoreapp3.1/SkiaSharp.Views.WindowsForms.dll",
+        "lib/netcoreapp3.1/SkiaSharp.Views.WindowsForms.pdb",
+        "lib/netcoreapp3.1/SkiaSharp.Views.WindowsForms.xml",
+        "skiasharp.views.windowsforms.2.88.9.nupkg.sha512",
+        "skiasharp.views.windowsforms.nuspec"
+      ]
+    },
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "type": "package",
+      "path": "system.buffers/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Collections.Immutable/9.0.5": {
+      "sha512": "lVPwqkFWucEB13zcXpvMCmG+xp0HTSxVyAiG7c0AC8qsQ1ZaC5O8evb9QGR6PKmJZch3VuFKnzkl+SA78dvjeA==",
+      "type": "package",
+      "path": "system.collections.immutable/9.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Collections.Immutable.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Collections.Immutable.targets",
+        "lib/net462/System.Collections.Immutable.dll",
+        "lib/net462/System.Collections.Immutable.xml",
+        "lib/net8.0/System.Collections.Immutable.dll",
+        "lib/net8.0/System.Collections.Immutable.xml",
+        "lib/net9.0/System.Collections.Immutable.dll",
+        "lib/net9.0/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
+        "system.collections.immutable.9.0.5.nupkg.sha512",
+        "system.collections.immutable.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Drawing.Common/9.0.5": {
+      "sha512": "T/6nqx0B7/uTe5JjBwrKZilLuwfhHLOVmNKlT/wr4A9Dna94mgTdz3lTfrdJ72QRx7IHCv/LzoJPmFSfK/N6WA==",
+      "type": "package",
+      "path": "system.drawing.common/9.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Drawing.Common.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Drawing.Common.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/System.Drawing.Common.dll",
+        "lib/net462/System.Drawing.Common.pdb",
+        "lib/net462/System.Drawing.Common.xml",
+        "lib/net8.0/System.Drawing.Common.dll",
+        "lib/net8.0/System.Drawing.Common.pdb",
+        "lib/net8.0/System.Drawing.Common.xml",
+        "lib/net8.0/System.Private.Windows.Core.dll",
+        "lib/net8.0/System.Private.Windows.Core.xml",
+        "lib/net9.0/System.Drawing.Common.dll",
+        "lib/net9.0/System.Drawing.Common.pdb",
+        "lib/net9.0/System.Drawing.Common.xml",
+        "lib/net9.0/System.Private.Windows.Core.dll",
+        "lib/net9.0/System.Private.Windows.Core.xml",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.pdb",
+        "lib/netstandard2.0/System.Drawing.Common.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "system.drawing.common.9.0.5.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Memory/4.6.3": {
+      "sha512": "qdcDOgnFZY40+Q9876JUHnlHu7bosOHX8XISRoH94fwk6hgaeQGSgfZd8srWRZNt5bV9ZW2TljcegDNxsf+96A==",
+      "type": "package",
+      "path": "system.memory/4.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "buildTransitive/net461/System.Memory.targets",
+        "buildTransitive/net462/_._",
+        "lib/net462/System.Memory.dll",
+        "lib/net462/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "lib/netstandard2.1/_._",
+        "system.memory.4.6.3.nupkg.sha512",
+        "system.memory.nuspec"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.1.2": {
+      "sha512": "2hBr6zdbIBTDE3EhK7NSVNdX58uTK6iHW/P/Axmm9sl1xoGSLqDvMtpecn226TNwHByFokYwJmt/aQQNlO5CRw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/6.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "buildTransitive/net461/System.Runtime.CompilerServices.Unsafe.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
+        "lib/net462/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net462/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net7.0/_._",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec"
+      ]
+    },
+    "System.Security.Cryptography.Pkcs/8.0.1": {
+      "sha512": "CoCRHFym33aUSf/NtWSVSZa99dkd0Hm7OCZUxORBjRB16LNhIEOf8THPqzIYlvKM0nNDAPTRBa1FxEECrgaxxA==",
+      "type": "package",
+      "path": "system.security.cryptography.pkcs/8.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Security.Cryptography.Pkcs.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.Pkcs.targets",
+        "lib/net462/System.Security.Cryptography.Pkcs.dll",
+        "lib/net462/System.Security.Cryptography.Pkcs.xml",
+        "lib/net6.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/net6.0/System.Security.Cryptography.Pkcs.xml",
+        "lib/net7.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/net7.0/System.Security.Cryptography.Pkcs.xml",
+        "lib/net8.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/net8.0/System.Security.Cryptography.Pkcs.xml",
+        "lib/netstandard2.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.Pkcs.xml",
+        "lib/netstandard2.1/System.Security.Cryptography.Pkcs.dll",
+        "lib/netstandard2.1/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.xml",
+        "system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
+        "system.security.cryptography.pkcs.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Security.Cryptography.Xml/8.0.2": {
+      "sha512": "aDM/wm0ZGEZ6ZYJLzgqjp2FZdHbDHh6/OmpGfb7AdZ105zYmPn/83JRU2xLIbwgoNz9U1SLUTJN0v5th3qmvjA==",
+      "type": "package",
+      "path": "system.security.cryptography.xml/8.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Security.Cryptography.Xml.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.Xml.targets",
+        "lib/net462/System.Security.Cryptography.Xml.dll",
+        "lib/net462/System.Security.Cryptography.Xml.xml",
+        "lib/net6.0/System.Security.Cryptography.Xml.dll",
+        "lib/net6.0/System.Security.Cryptography.Xml.xml",
+        "lib/net7.0/System.Security.Cryptography.Xml.dll",
+        "lib/net7.0/System.Security.Cryptography.Xml.xml",
+        "lib/net8.0/System.Security.Cryptography.Xml.dll",
+        "lib/net8.0/System.Security.Cryptography.Xml.xml",
+        "lib/netstandard2.0/System.Security.Cryptography.Xml.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.Xml.xml",
+        "system.security.cryptography.xml.8.0.2.nupkg.sha512",
+        "system.security.cryptography.xml.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Text.Encoding.CodePages/5.0.0": {
+      "sha512": "NyscU59xX6Uo91qvhOs2Ccho3AR2TnZPomo1Z0K6YpyztBPM/A5VbkzOO19sy3A3i1TtEnTxA7bCe3Us+r5MWg==",
+      "type": "package",
+      "path": "system.text.encoding.codepages/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.xml",
+        "lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "system.text.encoding.codepages.5.0.0.nupkg.sha512",
+        "system.text.encoding.codepages.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ValueTuple/4.6.1": {
+      "sha512": "+RJT4qaekpZ7DDLhf+LTjq+E48jieKiY9ulJ+BoxKmZblIJfIJT8Ufcaa/clQqnYvWs8jugfGSMu8ylS0caG0w==",
+      "type": "package",
+      "path": "system.valuetuple/4.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "build/net471/System.ValueTuple.targets",
+        "buildTransitive/net461/System.ValueTuple.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net471/System.ValueTuple.targets",
+        "lib/net462/System.ValueTuple.dll",
+        "lib/net462/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/net471/_._",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard2.0/_._",
+        "system.valuetuple.4.6.1.nupkg.sha512",
+        "system.valuetuple.nuspec"
+      ]
+    },
+    "Caron.CuttingRoomMachine/1.0.0": {
+      "type": "project",
+      "path": "../Caron.CuttingRoomMachine/Caron.CuttingRoomMachine.csproj",
+      "msbuildProject": "../Caron.CuttingRoomMachine/Caron.CuttingRoomMachine.csproj"
+    },
+    "ColorSlider/1.0.0": {
+      "type": "project",
+      "path": "../ColorSlider/ColorSlider.csproj",
+      "msbuildProject": "../ColorSlider/ColorSlider.csproj"
+    },
+    "Cradle.Core/1.0.0": {
+      "type": "project",
+      "path": "../Cradle.Core/Cradle.Core.csproj",
+      "msbuildProject": "../Cradle.Core/Cradle.Core.csproj"
+    },
+    "Machine.Communicator/1.0.0": {
+      "type": "project",
+      "path": "../Machine.Communicator/Machine.Communicator.csproj",
+      "msbuildProject": "../Machine.Communicator/Machine.Communicator.csproj"
+    },
+    "Machine.Core/1.0.0": {
+      "type": "project",
+      "path": "../Machine.Core/Machine.Core.csproj",
+      "msbuildProject": "../Machine.Core/Machine.Core.csproj"
+    },
+    "Machine.Security/1.0.0": {
+      "type": "project",
+      "path": "../Machine.Encryption/Machine.Security.csproj",
+      "msbuildProject": "../Machine.Encryption/Machine.Security.csproj"
+    },
+    "Machine.Shell/1.0.0": {
+      "type": "project",
+      "path": "../Machine.Shell/Machine.Shell.csproj",
+      "msbuildProject": "../Machine.Shell/Machine.Shell.csproj"
+    },
+    "Machine.SoftwareUpdate/1.0.0": {
+      "type": "project",
+      "path": "../Machine.SoftwareUpdate/Machine.SoftwareUpdate.csproj",
+      "msbuildProject": "../Machine.SoftwareUpdate/Machine.SoftwareUpdate.csproj"
+    },
+    "Machine.UI/1.0.0": {
+      "type": "project",
+      "path": "../Machine.Common.UI/Machine.UI.csproj",
+      "msbuildProject": "../Machine.Common.UI/Machine.UI.csproj"
+    },
+    "Machine.UI.Controls/1.0.0": {
+      "type": "project",
+      "path": "../Machine.UI.Controls/Machine.UI.Controls.csproj",
+      "msbuildProject": "../Machine.UI.Controls/Machine.UI.Controls.csproj"
+    },
+    "ProRob.DataPacket/1.0.0": {
+      "type": "project",
+      "path": "../ProRob.DataPacket/ProRob.DataPacket.csproj",
+      "msbuildProject": "../ProRob.DataPacket/ProRob.DataPacket.csproj"
+    },
+    "ProRob.Extensions/1.0.0": {
+      "type": "project",
+      "path": "../ProRob.Extensions/ProRob.Extensions.csproj",
+      "msbuildProject": "../ProRob.Extensions/ProRob.Extensions.csproj"
+    },
+    "ProRob.Extensions.Hashing/1.0.0": {
+      "type": "project",
+      "path": "../ProRob.Extensions.Hashing/ProRob.Extensions.Hashing.csproj",
+      "msbuildProject": "../ProRob.Extensions.Hashing/ProRob.Extensions.Hashing.csproj"
+    },
+    "ProRob.Extensions.Json/1.0.0": {
+      "type": "project",
+      "path": "../ProRob.Extensions.Json/ProRob.Extensions.Json.csproj",
+      "msbuildProject": "../ProRob.Extensions.Json/ProRob.Extensions.Json.csproj"
+    },
+    "ProRob.Extensions.Object/1.0.0": {
+      "type": "project",
+      "path": "../ProRob.Extensions.Object/ProRob.Extensions.Object.csproj",
+      "msbuildProject": "../ProRob.Extensions.Object/ProRob.Extensions.Object.csproj"
+    },
+    "ProRob.Framework/1.0.0": {
+      "type": "project",
+      "path": "../ProRob.Framework/ProRob.Framework.csproj",
+      "msbuildProject": "../ProRob.Framework/ProRob.Framework.csproj"
+    },
+    "ProRob.Framework.ApplicationInfo/1.0.0": {
+      "type": "project",
+      "path": "../ProRob.Framework.ApplicationInfo/ProRob.Framework.ApplicationInfo.csproj",
+      "msbuildProject": "../ProRob.Framework.ApplicationInfo/ProRob.Framework.ApplicationInfo.csproj"
+    },
+    "ProRob.Framework.Documents/1.0.0": {
+      "type": "project",
+      "path": "../ProRob.Framework.Documents/ProRob.Framework.Documents.csproj",
+      "msbuildProject": "../ProRob.Framework.Documents/ProRob.Framework.Documents.csproj"
+    },
+    "ProRob.Framework.Exceptions/1.0.0": {
+      "type": "project",
+      "path": "../ProRob.Framework.Exceptions/ProRob.Framework.Exceptions.csproj",
+      "msbuildProject": "../ProRob.Framework.Exceptions/ProRob.Framework.Exceptions.csproj"
+    },
+    "ProRob.Framework.Json/1.0.0": {
+      "type": "project",
+      "path": "../ProRob.Framework.Json/ProRob.Framework.Json.csproj",
+      "msbuildProject": "../ProRob.Framework.Json/ProRob.Framework.Json.csproj"
+    },
+    "ProRob.Framework.Log/1.0.0": {
+      "type": "project",
+      "path": "../ProRob.Framework.Log/ProRob.Framework.Log.csproj",
+      "msbuildProject": "../ProRob.Framework.Log/ProRob.Framework.Log.csproj"
+    },
+    "ProRob.Framework.SystemInfo/1.0.0": {
+      "type": "project",
+      "path": "../ProRob.Framework.SystemInfo/ProRob.Framework.SystemInfo.csproj",
+      "msbuildProject": "../ProRob.Framework.SystemInfo/ProRob.Framework.SystemInfo.csproj"
+    },
+    "ProRob.OperatingSystems/1.0.0": {
+      "type": "project",
+      "path": "../ProRob.OperatingSystems/ProRob.OperatingSystems.csproj",
+      "msbuildProject": "../ProRob.OperatingSystems/ProRob.OperatingSystems.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0-windows7.0": [
+      "Apex.Analyzers.Immutable.Attributes >= 1.0.1",
+      "Caron.CuttingRoomMachine >= 1.0.0",
+      "CefSharp.WinForms >= 136.1.40",
+      "Cradle.Core >= 1.0.0",
+      "Flurl >= 4.0.0",
+      "FontAwesome.Sharp >= 6.6.0",
+      "InputSimulator >= 1.0.4",
+      "Machine.Communicator >= 1.0.0",
+      "Machine.Core >= 1.0.0",
+      "Machine.Security >= 1.0.0",
+      "Machine.Shell >= 1.0.0",
+      "Machine.SoftwareUpdate >= 1.0.0",
+      "Machine.UI >= 1.0.0",
+      "Machine.UI.Controls >= 1.0.0",
+      "Mono.Cecil >= 0.11.6",
+      "Newtonsoft.Json >= 13.0.3",
+      "ProRob.Extensions >= 1.0.0",
+      "ProRob.Extensions.Hashing >= 1.0.0",
+      "ProRob.Extensions.Json >= 1.0.0",
+      "ProRob.Extensions.Object >= 1.0.0",
+      "ProRob.Framework >= 1.0.0",
+      "ProRob.Framework.ApplicationInfo >= 1.0.0",
+      "ProRob.Framework.Exceptions >= 1.0.0",
+      "ProRob.Framework.Json >= 1.0.0",
+      "ProRob.Framework.Log >= 1.0.0",
+      "ProRob.Framework.SystemInfo >= 1.0.0",
+      "ProRob.OperatingSystems >= 1.0.0",
+      "ScottPlot.WinForms >= 5.0.55",
+      "System.Collections.Immutable >= 9.0.5",
+      "System.Drawing.Common >= 9.0.5",
+      "System.Runtime.CompilerServices.Unsafe >= 6.1.2",
+      "System.ValueTuple >= 4.6.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\UffMarketing\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\CARON\\YorkCore\\CradleUI\\CradleUI.csproj",
+      "projectName": "CradleUI",
+      "projectPath": "C:\\CARON\\YorkCore\\CradleUI\\CradleUI.csproj",
+      "packagesPath": "C:\\Users\\UffMarketing\\.nuget\\packages\\",
+      "outputPath": "C:\\CARON\\YorkCore\\CradleUI\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\UffMarketing\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
+          "projectReferences": {
+            "C:\\CARON\\YorkCore\\Caron.CuttingRoomMachine\\Caron.CuttingRoomMachine.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\Caron.CuttingRoomMachine\\Caron.CuttingRoomMachine.csproj"
+            },
+            "C:\\CARON\\YorkCore\\Cradle.Core\\Cradle.Core.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\Cradle.Core\\Cradle.Core.csproj"
+            },
+            "C:\\CARON\\YorkCore\\Machine.Common.UI\\Machine.UI.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\Machine.Common.UI\\Machine.UI.csproj"
+            },
+            "C:\\CARON\\YorkCore\\Machine.Communicator\\Machine.Communicator.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\Machine.Communicator\\Machine.Communicator.csproj"
+            },
+            "C:\\CARON\\YorkCore\\Machine.Core\\Machine.Core.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\Machine.Core\\Machine.Core.csproj"
+            },
+            "C:\\CARON\\YorkCore\\Machine.Encryption\\Machine.Security.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\Machine.Encryption\\Machine.Security.csproj"
+            },
+            "C:\\CARON\\YorkCore\\Machine.Shell\\Machine.Shell.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\Machine.Shell\\Machine.Shell.csproj"
+            },
+            "C:\\CARON\\YorkCore\\Machine.SoftwareUpdate\\Machine.SoftwareUpdate.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\Machine.SoftwareUpdate\\Machine.SoftwareUpdate.csproj"
+            },
+            "C:\\CARON\\YorkCore\\Machine.UI.Controls\\Machine.UI.Controls.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\Machine.UI.Controls\\Machine.UI.Controls.csproj"
+            },
+            "C:\\CARON\\YorkCore\\ProRob.Extensions.Hashing\\ProRob.Extensions.Hashing.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Hashing\\ProRob.Extensions.Hashing.csproj"
+            },
+            "C:\\CARON\\YorkCore\\ProRob.Extensions.Json\\ProRob.Extensions.Json.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Json\\ProRob.Extensions.Json.csproj"
+            },
+            "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions.Object\\ProRob.Extensions.Object.csproj"
+            },
+            "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Extensions\\ProRob.Extensions.csproj"
+            },
+            "C:\\CARON\\YorkCore\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.ApplicationInfo\\ProRob.Framework.ApplicationInfo.csproj"
+            },
+            "C:\\CARON\\YorkCore\\ProRob.Framework.Exceptions\\ProRob.Framework.Exceptions.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Exceptions\\ProRob.Framework.Exceptions.csproj"
+            },
+            "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Json\\ProRob.Framework.Json.csproj"
+            },
+            "C:\\CARON\\YorkCore\\ProRob.Framework.Log\\ProRob.Framework.Log.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.Log\\ProRob.Framework.Log.csproj"
+            },
+            "C:\\CARON\\YorkCore\\ProRob.Framework.SystemInfo\\ProRob.Framework.SystemInfo.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework.SystemInfo\\ProRob.Framework.SystemInfo.csproj"
+            },
+            "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\ProRob.Framework\\ProRob.Framework.csproj"
+            },
+            "C:\\CARON\\YorkCore\\ProRob.OperatingSystems\\ProRob.OperatingSystems.csproj": {
+              "projectPath": "C:\\CARON\\YorkCore\\ProRob.OperatingSystems\\ProRob.OperatingSystems.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0-windows7.0": {
+        "targetAlias": "net9.0-windows",
+        "dependencies": {
+          "Apex.Analyzers.Immutable.Attributes": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
+          "CefSharp.WinForms": {
+            "target": "Package",
+            "version": "[136.1.40, )"
+          },
+          "Flurl": {
+            "target": "Package",
+            "version": "[4.0.0, )"
+          },
+          "FontAwesome.Sharp": {
+            "target": "Package",
+            "version": "[6.6.0, )"
+          },
+          "InputSimulator": {
+            "target": "Package",
+            "version": "[1.0.4, )"
+          },
+          "Mono.Cecil": {
+            "target": "Package",
+            "version": "[0.11.6, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          },
+          "ScottPlot.WinForms": {
+            "target": "Package",
+            "version": "[5.0.55, )"
+          },
+          "System.Collections.Immutable": {
+            "target": "Package",
+            "version": "[9.0.5, )"
+          },
+          "System.Drawing.Common": {
+            "target": "Package",
+            "version": "[9.0.5, )"
+          },
+          "System.Runtime.CompilerServices.Unsafe": {
+            "target": "Package",
+            "version": "[6.1.2, )"
+          },
+          "System.ValueTuple": {
+            "target": "Package",
+            "version": "[4.6.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Il pacchetto 'CefSharp.WinForms 136.1.40' è stato ripristinato mediante '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' e non mediante il framework di destinazione del progetto 'net9.0-windows7.0'. Questo pacchetto potrebbe non essere completamente compatibile con il progetto.",
+      "libraryId": "CefSharp.WinForms",
+      "targetGraphs": [
+        "net9.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Il pacchetto 'InputSimulator 1.0.4' è stato ripristinato mediante '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' e non mediante il framework di destinazione del progetto 'net9.0-windows7.0'. Questo pacchetto potrebbe non essere completamente compatibile con il progetto.",
+      "libraryId": "InputSimulator",
+      "targetGraphs": [
+        "net9.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Il pacchetto 'Microsoft.PowerShell.5.ReferenceAssemblies 1.1.0' è stato ripristinato mediante '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' e non mediante il framework di destinazione del progetto 'net9.0-windows7.0'. Questo pacchetto potrebbe non essere completamente compatibile con il progetto.",
+      "libraryId": "Microsoft.PowerShell.5.ReferenceAssemblies",
+      "targetGraphs": [
+        "net9.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Il pacchetto 'Mono.Posix-4.5 4.5.0' è stato ripristinato mediante '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' e non mediante il framework di destinazione del progetto 'net9.0-windows7.0'. Questo pacchetto potrebbe non essere completamente compatibile con il progetto.",
+      "libraryId": "Mono.Posix-4.5",
+      "targetGraphs": [
+        "net9.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Il pacchetto 'OpenTK 3.1.0' è stato ripristinato mediante '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' e non mediante il framework di destinazione del progetto 'net9.0-windows7.0'. Questo pacchetto potrebbe non essere completamente compatibile con il progetto.",
+      "libraryId": "OpenTK",
+      "targetGraphs": [
+        "net9.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Il pacchetto 'OpenTK.GLControl 3.1.0' è stato ripristinato mediante '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' e non mediante il framework di destinazione del progetto 'net9.0-windows7.0'. Questo pacchetto potrebbe non essere completamente compatibile con il progetto.",
+      "libraryId": "OpenTK.GLControl",
+      "targetGraphs": [
+        "net9.0-windows7.0"
+      ]
+    }
+  ]
+}

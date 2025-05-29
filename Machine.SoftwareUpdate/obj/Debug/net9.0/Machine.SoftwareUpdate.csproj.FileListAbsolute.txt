@@ -1,0 +1,5 @@
+C:\CARON\YorkCore\Machine.SoftwareUpdate\obj\Debug\net9.0\Machine.SoftwareUpdate.csproj.AssemblyReference.cache
+C:\CARON\YorkCore\Machine.SoftwareUpdate\obj\Debug\net9.0\Machine.SoftwareUpdate.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\Machine.SoftwareUpdate\obj\Debug\net9.0\Machine.SoftwareUpdate.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\Machine.SoftwareUpdate\obj\Debug\net9.0\Machine.SoftwareUpdate.AssemblyInfo.cs
+C:\CARON\YorkCore\Machine.SoftwareUpdate\obj\Debug\net9.0\Machine.SoftwareUpdate.csproj.CoreCompileInputs.cache

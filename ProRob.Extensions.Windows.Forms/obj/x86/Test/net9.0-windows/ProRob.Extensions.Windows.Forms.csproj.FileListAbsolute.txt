@@ -1,0 +1,11 @@
+C:\CARON\YorkCore\ProRob.Extensions.Windows.Forms\obj\x86\Test\net9.0-windows\ProRob.Extensions.Windows.Forms.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\ProRob.Extensions.Windows.Forms\obj\x86\Test\net9.0-windows\ProRob.Extensions.Windows.Forms.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\ProRob.Extensions.Windows.Forms\obj\x86\Test\net9.0-windows\ProRob.Extensions.Windows.Forms.AssemblyInfo.cs
+C:\CARON\YorkCore\ProRob.Extensions.Windows.Forms\obj\x86\Test\net9.0-windows\ProRob.Extensions.Windows.Forms.csproj.CoreCompileInputs.cache
+C:\CARON\YorkCore\ProRob.Extensions.Windows.Forms\bin\x86\Test\net9.0-windows\ProRob.Extensions.Windows.Forms.deps.json
+C:\CARON\YorkCore\ProRob.Extensions.Windows.Forms\bin\x86\Test\net9.0-windows\ProRob.Extensions.Windows.Forms.dll
+C:\CARON\YorkCore\ProRob.Extensions.Windows.Forms\bin\x86\Test\net9.0-windows\ProRob.Extensions.Windows.Forms.pdb
+C:\CARON\YorkCore\ProRob.Extensions.Windows.Forms\obj\x86\Test\net9.0-windows\ProRob.Extensions.Windows.Forms.dll
+C:\CARON\YorkCore\ProRob.Extensions.Windows.Forms\obj\x86\Test\net9.0-windows\refint\ProRob.Extensions.Windows.Forms.dll
+C:\CARON\YorkCore\ProRob.Extensions.Windows.Forms\obj\x86\Test\net9.0-windows\ProRob.Extensions.Windows.Forms.pdb
+C:\CARON\YorkCore\ProRob.Extensions.Windows.Forms\obj\x86\Test\net9.0-windows\ref\ProRob.Extensions.Windows.Forms.dll

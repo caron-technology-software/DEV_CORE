@@ -1,0 +1,5 @@
+C:\CARON\YorkCore\Cradle.Bootstrapper\obj\x86\Test\net9.0\Cradle.Bootstrapper.csproj.AssemblyReference.cache
+C:\CARON\YorkCore\Cradle.Bootstrapper\obj\x86\Test\net9.0\Cradle.Bootstrapper.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\Cradle.Bootstrapper\obj\x86\Test\net9.0\Cradle.Bootstrapper.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\Cradle.Bootstrapper\obj\x86\Test\net9.0\Cradle.Bootstrapper.AssemblyInfo.cs
+C:\CARON\YorkCore\Cradle.Bootstrapper\obj\x86\Test\net9.0\Cradle.Bootstrapper.csproj.CoreCompileInputs.cache

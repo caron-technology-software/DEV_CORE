@@ -1,0 +1,15 @@
+C:\CARON\YorkCore\ProRob.Framework\obj\x86\Test\net9.0-windows\ProRob.Framework.csproj.AssemblyReference.cache
+C:\CARON\YorkCore\ProRob.Framework\obj\x86\Test\net9.0-windows\ProRob.Framework.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\ProRob.Framework\obj\x86\Test\net9.0-windows\ProRob.Framework.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\ProRob.Framework\obj\x86\Test\net9.0-windows\ProRob.Framework.AssemblyInfo.cs
+C:\CARON\YorkCore\ProRob.Framework\obj\x86\Test\net9.0-windows\ProRob.Framework.csproj.CoreCompileInputs.cache
+C:\CARON\YorkCore\ProRob.Framework\bin\x86\Test\net9.0-windows\ProRob.Framework.deps.json
+C:\CARON\YorkCore\ProRob.Framework\bin\x86\Test\net9.0-windows\ProRob.Framework.dll
+C:\CARON\YorkCore\ProRob.Framework\bin\x86\Test\net9.0-windows\ProRob.Framework.pdb
+C:\CARON\YorkCore\ProRob.Framework\bin\x86\Test\net9.0-windows\ProRob.Extensions.dll
+C:\CARON\YorkCore\ProRob.Framework\bin\x86\Test\net9.0-windows\ProRob.Extensions.pdb
+C:\CARON\YorkCore\ProRob.Framework\obj\x86\Test\net9.0-windows\ProRob.F.9A2FF243.Up2Date
+C:\CARON\YorkCore\ProRob.Framework\obj\x86\Test\net9.0-windows\ProRob.Framework.dll
+C:\CARON\YorkCore\ProRob.Framework\obj\x86\Test\net9.0-windows\refint\ProRob.Framework.dll
+C:\CARON\YorkCore\ProRob.Framework\obj\x86\Test\net9.0-windows\ProRob.Framework.pdb
+C:\CARON\YorkCore\ProRob.Framework\obj\x86\Test\net9.0-windows\ref\ProRob.Framework.dll

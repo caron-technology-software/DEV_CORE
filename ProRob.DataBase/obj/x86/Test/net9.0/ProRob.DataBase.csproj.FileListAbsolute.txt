@@ -1,0 +1,12 @@
+C:\CARON\YorkCore\ProRob.DataBase\bin\x86\Test\net9.0\ProRob.DataBase.deps.json
+C:\CARON\YorkCore\ProRob.DataBase\bin\x86\Test\net9.0\ProRob.DataBase.dll
+C:\CARON\YorkCore\ProRob.DataBase\bin\x86\Test\net9.0\ProRob.DataBase.pdb
+C:\CARON\YorkCore\ProRob.DataBase\obj\x86\Test\net9.0\ProRob.DataBase.csproj.AssemblyReference.cache
+C:\CARON\YorkCore\ProRob.DataBase\obj\x86\Test\net9.0\ProRob.DataBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\ProRob.DataBase\obj\x86\Test\net9.0\ProRob.DataBase.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\ProRob.DataBase\obj\x86\Test\net9.0\ProRob.DataBase.AssemblyInfo.cs
+C:\CARON\YorkCore\ProRob.DataBase\obj\x86\Test\net9.0\ProRob.DataBase.csproj.CoreCompileInputs.cache
+C:\CARON\YorkCore\ProRob.DataBase\obj\x86\Test\net9.0\ProRob.DataBase.dll
+C:\CARON\YorkCore\ProRob.DataBase\obj\x86\Test\net9.0\refint\ProRob.DataBase.dll
+C:\CARON\YorkCore\ProRob.DataBase\obj\x86\Test\net9.0\ProRob.DataBase.pdb
+C:\CARON\YorkCore\ProRob.DataBase\obj\x86\Test\net9.0\ref\ProRob.DataBase.dll

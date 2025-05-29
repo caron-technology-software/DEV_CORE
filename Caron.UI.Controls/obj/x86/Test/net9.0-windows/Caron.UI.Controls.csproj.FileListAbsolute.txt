@@ -1,0 +1,14 @@
+C:\CARON\YorkCore\Caron.UI.Controls\obj\x86\Test\net9.0-windows\Caron.UI.Controls.csproj.AssemblyReference.cache
+C:\CARON\YorkCore\Caron.UI.Controls\obj\x86\Test\net9.0-windows\Caron.UI.Controls.SpreaderCellTableColorHeader.resources
+C:\CARON\YorkCore\Caron.UI.Controls\obj\x86\Test\net9.0-windows\Caron.UI.Controls.SpreaderCellTableMarkerHeader.resources
+C:\CARON\YorkCore\Caron.UI.Controls\obj\x86\Test\net9.0-windows\Caron.UI.Controls.SpreaderCellTableProgramming.resources
+C:\CARON\YorkCore\Caron.UI.Controls\obj\x86\Test\net9.0-windows\Caron.UI.Controls.SpreaderCellTableVisualization.resources
+C:\CARON\YorkCore\Caron.UI.Controls\obj\x86\Test\net9.0-windows\Caron.UI.Controls.SpreaderTableProgrammingInternal.resources
+C:\CARON\YorkCore\Caron.UI.Controls\obj\x86\Test\net9.0-windows\Caron.UI.Controls.SpreaderTableVisualizationInternal.resources
+C:\CARON\YorkCore\Caron.UI.Controls\obj\x86\Test\net9.0-windows\Caron.UI.Controls.SpreaderProgrammingTable.resources
+C:\CARON\YorkCore\Caron.UI.Controls\obj\x86\Test\net9.0-windows\Caron.UI.Controls.SpreaderVisualizationTable.resources
+C:\CARON\YorkCore\Caron.UI.Controls\obj\x86\Test\net9.0-windows\Caron.UI.Controls.csproj.GenerateResource.cache
+C:\CARON\YorkCore\Caron.UI.Controls\obj\x86\Test\net9.0-windows\Caron.UI.Controls.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\Caron.UI.Controls\obj\x86\Test\net9.0-windows\Caron.UI.Controls.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\Caron.UI.Controls\obj\x86\Test\net9.0-windows\Caron.UI.Controls.AssemblyInfo.cs
+C:\CARON\YorkCore\Caron.UI.Controls\obj\x86\Test\net9.0-windows\Caron.UI.Controls.csproj.CoreCompileInputs.cache

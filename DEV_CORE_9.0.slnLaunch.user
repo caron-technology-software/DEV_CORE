@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuovo profilo",
+    "Projects": [
+      {
+        "Path": "Cradle.Console\\Cradle.Control.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "CradleUI\\CradleUI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

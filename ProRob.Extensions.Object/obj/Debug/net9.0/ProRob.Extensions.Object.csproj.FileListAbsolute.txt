@@ -1,0 +1,12 @@
+C:\CARON\YorkCore\ProRob.Extensions.Object\bin\Debug\net9.0\ProRob.Extensions.Object.deps.json
+C:\CARON\YorkCore\ProRob.Extensions.Object\bin\Debug\net9.0\ProRob.Extensions.Object.dll
+C:\CARON\YorkCore\ProRob.Extensions.Object\bin\Debug\net9.0\ProRob.Extensions.Object.pdb
+C:\CARON\YorkCore\ProRob.Extensions.Object\obj\Debug\net9.0\ProRob.Extensions.Object.csproj.AssemblyReference.cache
+C:\CARON\YorkCore\ProRob.Extensions.Object\obj\Debug\net9.0\ProRob.Extensions.Object.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\ProRob.Extensions.Object\obj\Debug\net9.0\ProRob.Extensions.Object.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\ProRob.Extensions.Object\obj\Debug\net9.0\ProRob.Extensions.Object.AssemblyInfo.cs
+C:\CARON\YorkCore\ProRob.Extensions.Object\obj\Debug\net9.0\ProRob.Extensions.Object.csproj.CoreCompileInputs.cache
+C:\CARON\YorkCore\ProRob.Extensions.Object\obj\Debug\net9.0\ProRob.Extensions.Object.dll
+C:\CARON\YorkCore\ProRob.Extensions.Object\obj\Debug\net9.0\refint\ProRob.Extensions.Object.dll
+C:\CARON\YorkCore\ProRob.Extensions.Object\obj\Debug\net9.0\ProRob.Extensions.Object.pdb
+C:\CARON\YorkCore\ProRob.Extensions.Object\obj\Debug\net9.0\ref\ProRob.Extensions.Object.dll

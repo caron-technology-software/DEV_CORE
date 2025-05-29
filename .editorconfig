@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# WFO1000: Configurazione di serializzazione del codice mancante per il contenuto della proprietà
+dotnet_diagnostic.WFO1000.severity = warning

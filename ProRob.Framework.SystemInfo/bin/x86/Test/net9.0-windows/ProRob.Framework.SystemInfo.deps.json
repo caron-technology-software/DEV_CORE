@@ -1,0 +1,92 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "ProRob.Framework.SystemInfo/1.0.0": {
+        "dependencies": {
+          "DeviceId": "6.0.0",
+          "ProRob.Framework": "1.0.0"
+        },
+        "runtime": {
+          "ProRob.Framework.SystemInfo.dll": {}
+        }
+      },
+      "DeviceId/6.0.0": {
+        "runtime": {
+          "lib/net5.0/DeviceId.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/8.0.0": {},
+      "System.Drawing.Common/8.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        }
+      },
+      "ProRob.Extensions/1.0.0": {
+        "runtime": {
+          "ProRob.Extensions.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ProRob.Framework/1.0.0": {
+        "dependencies": {
+          "ProRob.Extensions": "1.0.0",
+          "System.Drawing.Common": "8.0.0"
+        },
+        "runtime": {
+          "ProRob.Framework.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProRob.Framework.SystemInfo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DeviceId/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sK00mJ+4tlZDuCgktPIrQL0CRHzMe1bN0xEv3JXLx1ImMEuYCpnXjqTaq3YVSebhip1Tch5+zvT+ONNBEJSnWQ==",
+      "path": "deviceid/6.0.0",
+      "hashPath": "deviceid.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9opKRyOKMCi2xJ7Bj7kxtZ1r9vbzosMvRrdEhVhDz8j8MoBGgB+WmC94yH839NPH+BclAjtQ/pyagvi/8gDLkw==",
+      "path": "microsoft.win32.systemevents/8.0.0",
+      "hashPath": "microsoft.win32.systemevents.8.0.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JkbHJjtI/dWc5dfmEdJlbe3VwgZqCkZRtfuWFh5GOv0f+gGCfBtzMpIVkmdkj2AObO9y+oiOi81UGwH3aBYuqA==",
+      "path": "system.drawing.common/8.0.0",
+      "hashPath": "system.drawing.common.8.0.0.nupkg.sha512"
+    },
+    "ProRob.Extensions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProRob.Framework/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

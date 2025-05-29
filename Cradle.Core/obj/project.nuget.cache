@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "dgSpecHash": "jzaDTN+AVjY=",
+  "success": false,
+  "projectFilePath": "C:\\CARON\\YorkCore\\Cradle.Core\\Cradle.Core.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Il progetto Machine.Core non è compatibile con net9.0 (.NETCoreApp,Version=v9.0). Il progetto Machine.Core supporta: net9.0-windows7.0 (.NETCoreApp,Version=v9.0)",
+      "libraryId": "Machine.Core",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Il progetto Machine.UI.Controls non è compatibile con net9.0 (.NETCoreApp,Version=v9.0). Il progetto Machine.UI.Controls supporta: net9.0-windows7.0 (.NETCoreApp,Version=v9.0)",
+      "libraryId": "Machine.UI.Controls",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Il progetto ProRob.Framework non è compatibile con net9.0 (.NETCoreApp,Version=v9.0). Il progetto ProRob.Framework supporta: net9.0-windows7.0 (.NETCoreApp,Version=v9.0)",
+      "libraryId": "ProRob.Framework",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
+}

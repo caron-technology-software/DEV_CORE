@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "GOkT7hJURB8=",
+  "success": false,
+  "projectFilePath": "C:\\CARON\\YorkCore\\Caron.FileFabricsCopier\\Caron.FileFabricsCopier.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Il progetto ProRob.Framework non è compatibile con net9.0 (.NETCoreApp,Version=v9.0). Il progetto ProRob.Framework supporta: net9.0-windows7.0 (.NETCoreApp,Version=v9.0)",
+      "libraryId": "ProRob.Framework",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
+}

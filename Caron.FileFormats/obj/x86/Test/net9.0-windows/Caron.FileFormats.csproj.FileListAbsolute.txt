@@ -1,0 +1,5 @@
+C:\CARON\YorkCore\Caron.FileFormats\obj\x86\Test\net9.0-windows\Caron.FileFormats.csproj.AssemblyReference.cache
+C:\CARON\YorkCore\Caron.FileFormats\obj\x86\Test\net9.0-windows\Caron.FileFormats.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\Caron.FileFormats\obj\x86\Test\net9.0-windows\Caron.FileFormats.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\Caron.FileFormats\obj\x86\Test\net9.0-windows\Caron.FileFormats.AssemblyInfo.cs
+C:\CARON\YorkCore\Caron.FileFormats\obj\x86\Test\net9.0-windows\Caron.FileFormats.csproj.CoreCompileInputs.cache

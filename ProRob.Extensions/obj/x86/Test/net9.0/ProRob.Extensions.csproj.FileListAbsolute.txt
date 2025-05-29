@@ -1,0 +1,11 @@
+C:\CARON\YorkCore\ProRob.Extensions\bin\x86\Test\net9.0\ProRob.Extensions.deps.json
+C:\CARON\YorkCore\ProRob.Extensions\bin\x86\Test\net9.0\ProRob.Extensions.dll
+C:\CARON\YorkCore\ProRob.Extensions\bin\x86\Test\net9.0\ProRob.Extensions.pdb
+C:\CARON\YorkCore\ProRob.Extensions\obj\x86\Test\net9.0\ProRob.Extensions.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\ProRob.Extensions\obj\x86\Test\net9.0\ProRob.Extensions.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\ProRob.Extensions\obj\x86\Test\net9.0\ProRob.Extensions.AssemblyInfo.cs
+C:\CARON\YorkCore\ProRob.Extensions\obj\x86\Test\net9.0\ProRob.Extensions.csproj.CoreCompileInputs.cache
+C:\CARON\YorkCore\ProRob.Extensions\obj\x86\Test\net9.0\ProRob.Extensions.dll
+C:\CARON\YorkCore\ProRob.Extensions\obj\x86\Test\net9.0\refint\ProRob.Extensions.dll
+C:\CARON\YorkCore\ProRob.Extensions\obj\x86\Test\net9.0\ProRob.Extensions.pdb
+C:\CARON\YorkCore\ProRob.Extensions\obj\x86\Test\net9.0\ref\ProRob.Extensions.dll

@@ -1,0 +1,5 @@
+C:\CARON\YorkCore\ProRob.Framework.Log\obj\Debug\net9.0\ProRob.Framework.Log.csproj.AssemblyReference.cache
+C:\CARON\YorkCore\ProRob.Framework.Log\obj\Debug\net9.0\ProRob.Framework.Log.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\ProRob.Framework.Log\obj\Debug\net9.0\ProRob.Framework.Log.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\ProRob.Framework.Log\obj\Debug\net9.0\ProRob.Framework.Log.AssemblyInfo.cs
+C:\CARON\YorkCore\ProRob.Framework.Log\obj\Debug\net9.0\ProRob.Framework.Log.csproj.CoreCompileInputs.cache

@@ -1,0 +1,13 @@
+C:\CARON\YorkCore\ColorSlider\obj\Debug\net9.0-windows\ColorSlider.ColorSlider.resources
+C:\CARON\YorkCore\ColorSlider\obj\Debug\net9.0-windows\ColorSlider.csproj.GenerateResource.cache
+C:\CARON\YorkCore\ColorSlider\obj\Debug\net9.0-windows\ColorSlider.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\ColorSlider\obj\Debug\net9.0-windows\ColorSlider.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\ColorSlider\obj\Debug\net9.0-windows\ColorSlider.AssemblyInfo.cs
+C:\CARON\YorkCore\ColorSlider\obj\Debug\net9.0-windows\ColorSlider.csproj.CoreCompileInputs.cache
+C:\CARON\YorkCore\ColorSlider\bin\Debug\net9.0-windows\ColorSlider.deps.json
+C:\CARON\YorkCore\ColorSlider\bin\Debug\net9.0-windows\ColorSlider.dll
+C:\CARON\YorkCore\ColorSlider\bin\Debug\net9.0-windows\ColorSlider.pdb
+C:\CARON\YorkCore\ColorSlider\obj\Debug\net9.0-windows\ColorSlider.dll
+C:\CARON\YorkCore\ColorSlider\obj\Debug\net9.0-windows\refint\ColorSlider.dll
+C:\CARON\YorkCore\ColorSlider\obj\Debug\net9.0-windows\ColorSlider.pdb
+C:\CARON\YorkCore\ColorSlider\obj\Debug\net9.0-windows\ref\ColorSlider.dll

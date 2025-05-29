@@ -1,0 +1,12 @@
+C:\CARON\YorkCore\ProRob.Framework.Compression\bin\x86\Test\net9.0\ProRob.Framework.Compression.deps.json
+C:\CARON\YorkCore\ProRob.Framework.Compression\bin\x86\Test\net9.0\ProRob.Framework.Compression.dll
+C:\CARON\YorkCore\ProRob.Framework.Compression\bin\x86\Test\net9.0\ProRob.Framework.Compression.pdb
+C:\CARON\YorkCore\ProRob.Framework.Compression\obj\x86\Test\net9.0\ProRob.Framework.Compression.csproj.AssemblyReference.cache
+C:\CARON\YorkCore\ProRob.Framework.Compression\obj\x86\Test\net9.0\ProRob.Framework.Compression.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\ProRob.Framework.Compression\obj\x86\Test\net9.0\ProRob.Framework.Compression.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\ProRob.Framework.Compression\obj\x86\Test\net9.0\ProRob.Framework.Compression.AssemblyInfo.cs
+C:\CARON\YorkCore\ProRob.Framework.Compression\obj\x86\Test\net9.0\ProRob.Framework.Compression.csproj.CoreCompileInputs.cache
+C:\CARON\YorkCore\ProRob.Framework.Compression\obj\x86\Test\net9.0\ProRob.Framework.Compression.dll
+C:\CARON\YorkCore\ProRob.Framework.Compression\obj\x86\Test\net9.0\refint\ProRob.Framework.Compression.dll
+C:\CARON\YorkCore\ProRob.Framework.Compression\obj\x86\Test\net9.0\ProRob.Framework.Compression.pdb
+C:\CARON\YorkCore\ProRob.Framework.Compression\obj\x86\Test\net9.0\ref\ProRob.Framework.Compression.dll

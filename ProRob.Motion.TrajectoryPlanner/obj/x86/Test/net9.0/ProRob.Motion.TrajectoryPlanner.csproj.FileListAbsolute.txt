@@ -1,0 +1,5 @@
+C:\CARON\YorkCore\ProRob.Motion.TrajectoryPlanner\obj\x86\Test\net9.0\ProRob.Motion.TrajectoryPlanner.csproj.AssemblyReference.cache
+C:\CARON\YorkCore\ProRob.Motion.TrajectoryPlanner\obj\x86\Test\net9.0\ProRob.Motion.TrajectoryPlanner.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\ProRob.Motion.TrajectoryPlanner\obj\x86\Test\net9.0\ProRob.Motion.TrajectoryPlanner.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\ProRob.Motion.TrajectoryPlanner\obj\x86\Test\net9.0\ProRob.Motion.TrajectoryPlanner.AssemblyInfo.cs
+C:\CARON\YorkCore\ProRob.Motion.TrajectoryPlanner\obj\x86\Test\net9.0\ProRob.Motion.TrajectoryPlanner.csproj.CoreCompileInputs.cache

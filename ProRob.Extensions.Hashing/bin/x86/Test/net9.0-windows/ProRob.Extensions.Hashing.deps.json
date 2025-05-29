@@ -1,0 +1,192 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "ProRob.Extensions.Hashing/1.0.0": {
+        "dependencies": {
+          "ProRob.Extensions": "1.0.0",
+          "ProRob.Extensions.Object": "1.0.0",
+          "ProRob.Framework": "1.0.0"
+        },
+        "runtime": {
+          "ProRob.Extensions.Hashing.dll": {}
+        }
+      },
+      "Apex.Analyzers.Immutable.Attributes/1.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Apex.Analyzers.Immutable.Attributes.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Apex.Serialization/6.0.0": {
+        "dependencies": {
+          "Apex.Analyzers.Immutable.Attributes": "1.0.1",
+          "Mono.Cecil": "0.11.6",
+          "System.Collections.Immutable": "9.0.5",
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "runtime": {
+          "lib/net9.0/Apex.Serialization.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/8.0.0": {},
+      "Mono.Cecil/0.11.6": {
+        "runtime": {
+          "lib/netstandard2.0/Mono.Cecil.Mdb.dll": {
+            "assemblyVersion": "0.11.6.0",
+            "fileVersion": "0.11.6.0"
+          },
+          "lib/netstandard2.0/Mono.Cecil.Pdb.dll": {
+            "assemblyVersion": "0.11.6.0",
+            "fileVersion": "0.11.6.0"
+          },
+          "lib/netstandard2.0/Mono.Cecil.Rocks.dll": {
+            "assemblyVersion": "0.11.6.0",
+            "fileVersion": "0.11.6.0"
+          },
+          "lib/netstandard2.0/Mono.Cecil.dll": {
+            "assemblyVersion": "0.11.6.0",
+            "fileVersion": "0.11.6.0"
+          }
+        }
+      },
+      "System.Collections.Immutable/9.0.5": {
+        "runtime": {
+          "lib/net9.0/System.Collections.Immutable.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.525.21509"
+          }
+        }
+      },
+      "System.Drawing.Common/8.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        }
+      },
+      "System.Memory/4.6.3": {},
+      "System.Runtime.CompilerServices.Unsafe/6.1.2": {},
+      "ProRob.Extensions/1.0.0": {
+        "runtime": {
+          "ProRob.Extensions.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ProRob.Extensions.Object/1.0.0": {
+        "dependencies": {
+          "Apex.Serialization": "6.0.0",
+          "Mono.Cecil": "0.11.6",
+          "System.Collections.Immutable": "9.0.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "runtime": {
+          "ProRob.Extensions.Object.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "ProRob.Framework/1.0.0": {
+        "dependencies": {
+          "ProRob.Extensions": "1.0.0",
+          "System.Drawing.Common": "8.0.0"
+        },
+        "runtime": {
+          "ProRob.Framework.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProRob.Extensions.Hashing/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Apex.Analyzers.Immutable.Attributes/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ESJdB1n6C16fUA58f+Qm+Q6MvXduGPJep03QllQA5PYld6wz8qGidQ84DomkeMZ4ZJpRd9spq4QlZF0WS87tSA==",
+      "path": "apex.analyzers.immutable.attributes/1.0.1",
+      "hashPath": "apex.analyzers.immutable.attributes.1.0.1.nupkg.sha512"
+    },
+    "Apex.Serialization/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1e92JGfmNM4msDD07NdjtQ/lzHGNmmIMOu8GhURi9YW88LnWa4ExMjkmY1K6b300FiDv7o1MwL/mHMzohqWvag==",
+      "path": "apex.serialization/6.0.0",
+      "hashPath": "apex.serialization.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9opKRyOKMCi2xJ7Bj7kxtZ1r9vbzosMvRrdEhVhDz8j8MoBGgB+WmC94yH839NPH+BclAjtQ/pyagvi/8gDLkw==",
+      "path": "microsoft.win32.systemevents/8.0.0",
+      "hashPath": "microsoft.win32.systemevents.8.0.0.nupkg.sha512"
+    },
+    "Mono.Cecil/0.11.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f33RkDtZO8VlGXCtmQIviOtxgnUdym9xx/b1p9h91CRGOsJFxCFOFK1FDbVt1OCf1aWwYejUFa2MOQyFWTFjbA==",
+      "path": "mono.cecil/0.11.6",
+      "hashPath": "mono.cecil.0.11.6.nupkg.sha512"
+    },
+    "System.Collections.Immutable/9.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lVPwqkFWucEB13zcXpvMCmG+xp0HTSxVyAiG7c0AC8qsQ1ZaC5O8evb9QGR6PKmJZch3VuFKnzkl+SA78dvjeA==",
+      "path": "system.collections.immutable/9.0.5",
+      "hashPath": "system.collections.immutable.9.0.5.nupkg.sha512"
+    },
+    "System.Drawing.Common/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JkbHJjtI/dWc5dfmEdJlbe3VwgZqCkZRtfuWFh5GOv0f+gGCfBtzMpIVkmdkj2AObO9y+oiOi81UGwH3aBYuqA==",
+      "path": "system.drawing.common/8.0.0",
+      "hashPath": "system.drawing.common.8.0.0.nupkg.sha512"
+    },
+    "System.Memory/4.6.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qdcDOgnFZY40+Q9876JUHnlHu7bosOHX8XISRoH94fwk6hgaeQGSgfZd8srWRZNt5bV9ZW2TljcegDNxsf+96A==",
+      "path": "system.memory/4.6.3",
+      "hashPath": "system.memory.4.6.3.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2hBr6zdbIBTDE3EhK7NSVNdX58uTK6iHW/P/Axmm9sl1xoGSLqDvMtpecn226TNwHByFokYwJmt/aQQNlO5CRw==",
+      "path": "system.runtime.compilerservices.unsafe/6.1.2",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512"
+    },
+    "ProRob.Extensions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProRob.Extensions.Object/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProRob.Framework/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

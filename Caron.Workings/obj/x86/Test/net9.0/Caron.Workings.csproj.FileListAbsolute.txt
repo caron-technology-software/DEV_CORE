@@ -1,0 +1,11 @@
+C:\CARON\YorkCore\Caron.Workings\bin\x86\Test\net9.0\Caron.Workings.deps.json
+C:\CARON\YorkCore\Caron.Workings\bin\x86\Test\net9.0\Caron.Workings.dll
+C:\CARON\YorkCore\Caron.Workings\bin\x86\Test\net9.0\Caron.Workings.pdb
+C:\CARON\YorkCore\Caron.Workings\obj\x86\Test\net9.0\Caron.Workings.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\Caron.Workings\obj\x86\Test\net9.0\Caron.Workings.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\Caron.Workings\obj\x86\Test\net9.0\Caron.Workings.AssemblyInfo.cs
+C:\CARON\YorkCore\Caron.Workings\obj\x86\Test\net9.0\Caron.Workings.csproj.CoreCompileInputs.cache
+C:\CARON\YorkCore\Caron.Workings\obj\x86\Test\net9.0\Caron.Workings.dll
+C:\CARON\YorkCore\Caron.Workings\obj\x86\Test\net9.0\refint\Caron.Workings.dll
+C:\CARON\YorkCore\Caron.Workings\obj\x86\Test\net9.0\Caron.Workings.pdb
+C:\CARON\YorkCore\Caron.Workings\obj\x86\Test\net9.0\ref\Caron.Workings.dll

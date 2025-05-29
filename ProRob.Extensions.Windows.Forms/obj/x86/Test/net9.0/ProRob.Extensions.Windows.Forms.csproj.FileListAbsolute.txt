@@ -1,0 +1,4 @@
+C:\CARON\YorkCore\ProRob.Extensions.Windows.Forms\obj\x86\Test\net9.0\ProRob.Extensions.Windows.Forms.GeneratedMSBuildEditorConfig.editorconfig
+C:\CARON\YorkCore\ProRob.Extensions.Windows.Forms\obj\x86\Test\net9.0\ProRob.Extensions.Windows.Forms.AssemblyInfoInputs.cache
+C:\CARON\YorkCore\ProRob.Extensions.Windows.Forms\obj\x86\Test\net9.0\ProRob.Extensions.Windows.Forms.AssemblyInfo.cs
+C:\CARON\YorkCore\ProRob.Extensions.Windows.Forms\obj\x86\Test\net9.0\ProRob.Extensions.Windows.Forms.csproj.CoreCompileInputs.cache
