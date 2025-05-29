@@ -300,6 +300,20 @@ node_modules/
 **/*.Server/ModelManifest.xml
 _Pvt_Extensions
 
+# files that every time create a different VersionAttribute 
+**/obj/**/Caron.LicenseBuilder.AssemblyInfo.cs
+**/obj/**/Caron.UI.Controls.AssemblyInfo.cs
+**/obj/**/Machine.SoftwareUpdate.Updater.AssemblyInfo.cs
+**/obj/**/CradleUI.AssemblyInfo.cs
+**/obj/**/Machine.UI.AssemblyInfo.cs
+**/obj/**/Machine.Core.AssemblyInfo.cs
+**/obj/**/Machine.Metacompiler.Localization.AssemblyInfo.cs
+**/obj/**/Machine.Remote.AssemblyInfo.cs
+**/obj/**/Machine.Utility.UdpLogger.AssemblyInfo.cs
+**/obj/**/ProRob.DataBase.MySql.AssemblyInfo.cs
+**/obj/**/ProRob.Framework.Compression.AssemblyInfo.cs
+**/obj/**/ProRob.OperatingSystems.AssemblyInfo.cs
+
 # Paket dependency manager
 .paket/paket.exe
 paket-files/
