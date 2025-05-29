@@ -1,5 +1,0 @@
-C:\CARON\YorkCore\TrajectoryPlotter\obj\x86\Test\net9.0\TrajectoryPlotter.csproj.AssemblyReference.cache
-C:\CARON\YorkCore\TrajectoryPlotter\obj\x86\Test\net9.0\TrajectoryPlotter.GeneratedMSBuildEditorConfig.editorconfig
-C:\CARON\YorkCore\TrajectoryPlotter\obj\x86\Test\net9.0\TrajectoryPlotter.AssemblyInfoInputs.cache
-C:\CARON\YorkCore\TrajectoryPlotter\obj\x86\Test\net9.0\TrajectoryPlotter.AssemblyInfo.cs
-C:\CARON\YorkCore\TrajectoryPlotter\obj\x86\Test\net9.0\TrajectoryPlotter.csproj.CoreCompileInputs.cache

@@ -1,5 +1,0 @@
-C:\CARON\YorkCore\ProRob.Extensions.Hashing\obj\Debug\net9.0\ProRob.Extensions.Hashing.csproj.AssemblyReference.cache
-C:\CARON\YorkCore\ProRob.Extensions.Hashing\obj\Debug\net9.0\ProRob.Extensions.Hashing.GeneratedMSBuildEditorConfig.editorconfig
-C:\CARON\YorkCore\ProRob.Extensions.Hashing\obj\Debug\net9.0\ProRob.Extensions.Hashing.AssemblyInfoInputs.cache
-C:\CARON\YorkCore\ProRob.Extensions.Hashing\obj\Debug\net9.0\ProRob.Extensions.Hashing.AssemblyInfo.cs
-C:\CARON\YorkCore\ProRob.Extensions.Hashing\obj\Debug\net9.0\ProRob.Extensions.Hashing.csproj.CoreCompileInputs.cache

@@ -1,7 +1,0 @@
-C:\CARON\YorkCore\Caron.LicenseBuilder\obj\x86\Test\net9.0-windows\Caron.LicenseBuilder.csproj.AssemblyReference.cache
-C:\CARON\YorkCore\Caron.LicenseBuilder\obj\x86\Test\net9.0-windows\Caron.LicenseBuilder.FormMain.resources
-C:\CARON\YorkCore\Caron.LicenseBuilder\obj\x86\Test\net9.0-windows\Caron.LicenseBuilder.csproj.GenerateResource.cache
-C:\CARON\YorkCore\Caron.LicenseBuilder\obj\x86\Test\net9.0-windows\Caron.LicenseBuilder.GeneratedMSBuildEditorConfig.editorconfig
-C:\CARON\YorkCore\Caron.LicenseBuilder\obj\x86\Test\net9.0-windows\Caron.LicenseBuilder.AssemblyInfoInputs.cache
-C:\CARON\YorkCore\Caron.LicenseBuilder\obj\x86\Test\net9.0-windows\Caron.LicenseBuilder.AssemblyInfo.cs
-C:\CARON\YorkCore\Caron.LicenseBuilder\obj\x86\Test\net9.0-windows\Caron.LicenseBuilder.csproj.CoreCompileInputs.cache

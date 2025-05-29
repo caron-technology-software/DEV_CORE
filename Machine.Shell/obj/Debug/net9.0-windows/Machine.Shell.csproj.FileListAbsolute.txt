@@ -1,8 +1,0 @@
-C:\CARON\YorkCore\Machine.Shell\obj\Debug\net9.0-windows\Machine.Shell.csproj.AssemblyReference.cache
-C:\CARON\YorkCore\Machine.Shell\obj\Debug\net9.0-windows\Machine.Shell.FormMessageBox.resources
-C:\CARON\YorkCore\Machine.Shell\obj\Debug\net9.0-windows\Machine.Shell.FormShell.resources
-C:\CARON\YorkCore\Machine.Shell\obj\Debug\net9.0-windows\Machine.Shell.csproj.GenerateResource.cache
-C:\CARON\YorkCore\Machine.Shell\obj\Debug\net9.0-windows\Machine.Shell.GeneratedMSBuildEditorConfig.editorconfig
-C:\CARON\YorkCore\Machine.Shell\obj\Debug\net9.0-windows\Machine.Shell.AssemblyInfoInputs.cache
-C:\CARON\YorkCore\Machine.Shell\obj\Debug\net9.0-windows\Machine.Shell.AssemblyInfo.cs
-C:\CARON\YorkCore\Machine.Shell\obj\Debug\net9.0-windows\Machine.Shell.csproj.CoreCompileInputs.cache

@@ -1,5 +1,0 @@
-C:\CARON\YorkCore\ProRob.Framework.Exceptions\obj\Debug\net9.0\ProRob.Framework.Exceptions.csproj.AssemblyReference.cache
-C:\CARON\YorkCore\ProRob.Framework.Exceptions\obj\Debug\net9.0\ProRob.Framework.Exceptions.GeneratedMSBuildEditorConfig.editorconfig
-C:\CARON\YorkCore\ProRob.Framework.Exceptions\obj\Debug\net9.0\ProRob.Framework.Exceptions.AssemblyInfoInputs.cache
-C:\CARON\YorkCore\ProRob.Framework.Exceptions\obj\Debug\net9.0\ProRob.Framework.Exceptions.AssemblyInfo.cs
-C:\CARON\YorkCore\ProRob.Framework.Exceptions\obj\Debug\net9.0\ProRob.Framework.Exceptions.csproj.CoreCompileInputs.cache

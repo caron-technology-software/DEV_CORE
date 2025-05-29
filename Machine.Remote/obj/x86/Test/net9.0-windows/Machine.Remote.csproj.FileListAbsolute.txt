@@ -1,7 +1,0 @@
-C:\CARON\YorkCore\Machine.Remote\obj\x86\Test\net9.0-windows\Machine.Remote.csproj.AssemblyReference.cache
-C:\CARON\YorkCore\Machine.Remote\obj\x86\Test\net9.0-windows\Machine.Remote.FormMain.resources
-C:\CARON\YorkCore\Machine.Remote\obj\x86\Test\net9.0-windows\Machine.Remote.csproj.GenerateResource.cache
-C:\CARON\YorkCore\Machine.Remote\obj\x86\Test\net9.0-windows\Machine.Remote.GeneratedMSBuildEditorConfig.editorconfig
-C:\CARON\YorkCore\Machine.Remote\obj\x86\Test\net9.0-windows\Machine.Remote.AssemblyInfoInputs.cache
-C:\CARON\YorkCore\Machine.Remote\obj\x86\Test\net9.0-windows\Machine.Remote.AssemblyInfo.cs
-C:\CARON\YorkCore\Machine.Remote\obj\x86\Test\net9.0-windows\Machine.Remote.csproj.CoreCompileInputs.cache

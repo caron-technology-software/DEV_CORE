@@ -1,5 +1,0 @@
-C:\CARON\YorkCore\Machine.Core\obj\x86\Test\net9.0-windows\Machine.Core.csproj.AssemblyReference.cache
-C:\CARON\YorkCore\Machine.Core\obj\x86\Test\net9.0-windows\Machine.Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\CARON\YorkCore\Machine.Core\obj\x86\Test\net9.0-windows\Machine.Core.AssemblyInfoInputs.cache
-C:\CARON\YorkCore\Machine.Core\obj\x86\Test\net9.0-windows\Machine.Core.AssemblyInfo.cs
-C:\CARON\YorkCore\Machine.Core\obj\x86\Test\net9.0-windows\Machine.Core.csproj.CoreCompileInputs.cache

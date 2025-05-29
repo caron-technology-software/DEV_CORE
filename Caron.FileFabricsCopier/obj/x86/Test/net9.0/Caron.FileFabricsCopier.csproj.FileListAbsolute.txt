@@ -1,5 +1,0 @@
-C:\CARON\YorkCore\Caron.FileFabricsCopier\obj\x86\Test\net9.0\Caron.FileFabricsCopier.csproj.AssemblyReference.cache
-C:\CARON\YorkCore\Caron.FileFabricsCopier\obj\x86\Test\net9.0\Caron.FileFabricsCopier.GeneratedMSBuildEditorConfig.editorconfig
-C:\CARON\YorkCore\Caron.FileFabricsCopier\obj\x86\Test\net9.0\Caron.FileFabricsCopier.AssemblyInfoInputs.cache
-C:\CARON\YorkCore\Caron.FileFabricsCopier\obj\x86\Test\net9.0\Caron.FileFabricsCopier.AssemblyInfo.cs
-C:\CARON\YorkCore\Caron.FileFabricsCopier\obj\x86\Test\net9.0\Caron.FileFabricsCopier.csproj.CoreCompileInputs.cache

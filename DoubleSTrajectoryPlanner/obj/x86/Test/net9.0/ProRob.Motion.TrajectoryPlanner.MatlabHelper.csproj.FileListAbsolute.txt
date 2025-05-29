@@ -1,5 +1,0 @@
-C:\CARON\YorkCore\DoubleSTrajectoryPlanner\obj\x86\Test\net9.0\ProRob.Motion.TrajectoryPlanner.MatlabHelper.csproj.AssemblyReference.cache
-C:\CARON\YorkCore\DoubleSTrajectoryPlanner\obj\x86\Test\net9.0\ProRob.Motion.TrajectoryPlanner.MatlabHelper.GeneratedMSBuildEditorConfig.editorconfig
-C:\CARON\YorkCore\DoubleSTrajectoryPlanner\obj\x86\Test\net9.0\ProRob.Motion.TrajectoryPlanner.MatlabHelper.AssemblyInfoInputs.cache
-C:\CARON\YorkCore\DoubleSTrajectoryPlanner\obj\x86\Test\net9.0\ProRob.Motion.TrajectoryPlanner.MatlabHelper.AssemblyInfo.cs
-C:\CARON\YorkCore\DoubleSTrajectoryPlanner\obj\x86\Test\net9.0\ProRob.Motion.TrajectoryPlanner.MatlabHelper.csproj.CoreCompileInputs.cache

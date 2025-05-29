@@ -1,5 +1,0 @@
-C:\CARON\YorkCore\ProRob.WebApi\obj\Debug\net9.0\ProRob.WebApi.csproj.AssemblyReference.cache
-C:\CARON\YorkCore\ProRob.WebApi\obj\Debug\net9.0\ProRob.WebApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\CARON\YorkCore\ProRob.WebApi\obj\Debug\net9.0\ProRob.WebApi.AssemblyInfoInputs.cache
-C:\CARON\YorkCore\ProRob.WebApi\obj\Debug\net9.0\ProRob.WebApi.AssemblyInfo.cs
-C:\CARON\YorkCore\ProRob.WebApi\obj\Debug\net9.0\ProRob.WebApi.csproj.CoreCompileInputs.cache

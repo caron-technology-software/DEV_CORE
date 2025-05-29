@@ -1,5 +1,0 @@
-C:\CARON\YorkCore\Machine.Metacompiler.Localization\obj\x86\Test\net9.0-windows\Machine.Metacompiler.Localization.csproj.AssemblyReference.cache
-C:\CARON\YorkCore\Machine.Metacompiler.Localization\obj\x86\Test\net9.0-windows\Machine.Metacompiler.Localization.GeneratedMSBuildEditorConfig.editorconfig
-C:\CARON\YorkCore\Machine.Metacompiler.Localization\obj\x86\Test\net9.0-windows\Machine.Metacompiler.Localization.AssemblyInfoInputs.cache
-C:\CARON\YorkCore\Machine.Metacompiler.Localization\obj\x86\Test\net9.0-windows\Machine.Metacompiler.Localization.AssemblyInfo.cs
-C:\CARON\YorkCore\Machine.Metacompiler.Localization\obj\x86\Test\net9.0-windows\Machine.Metacompiler.Localization.csproj.CoreCompileInputs.cache

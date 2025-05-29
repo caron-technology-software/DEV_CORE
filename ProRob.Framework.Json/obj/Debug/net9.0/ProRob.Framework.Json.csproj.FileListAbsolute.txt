@@ -1,5 +1,0 @@
-C:\CARON\YorkCore\ProRob.Framework.Json\obj\Debug\net9.0\ProRob.Framework.Json.csproj.AssemblyReference.cache
-C:\CARON\YorkCore\ProRob.Framework.Json\obj\Debug\net9.0\ProRob.Framework.Json.GeneratedMSBuildEditorConfig.editorconfig
-C:\CARON\YorkCore\ProRob.Framework.Json\obj\Debug\net9.0\ProRob.Framework.Json.AssemblyInfoInputs.cache
-C:\CARON\YorkCore\ProRob.Framework.Json\obj\Debug\net9.0\ProRob.Framework.Json.AssemblyInfo.cs
-C:\CARON\YorkCore\ProRob.Framework.Json\obj\Debug\net9.0\ProRob.Framework.Json.csproj.CoreCompileInputs.cache

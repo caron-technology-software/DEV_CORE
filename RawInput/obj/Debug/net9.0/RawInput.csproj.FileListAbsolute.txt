@@ -1,4 +1,0 @@
-C:\CARON\YorkCore\RawInput\obj\Debug\net9.0\RawInput.GeneratedMSBuildEditorConfig.editorconfig
-C:\CARON\YorkCore\RawInput\obj\Debug\net9.0\RawInput.AssemblyInfoInputs.cache
-C:\CARON\YorkCore\RawInput\obj\Debug\net9.0\RawInput.AssemblyInfo.cs
-C:\CARON\YorkCore\RawInput\obj\Debug\net9.0\RawInput.csproj.CoreCompileInputs.cache
