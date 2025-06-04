@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -10,14 +11,9 @@ namespace ProRob.WebApi
 {
     public static class Extensions
     {
-        public static string GetClientIpAddress(this HttpRequestMessage request)
+        public static string GetClientIpAddress(this HttpContext context)
         {
-            if (request.Properties.ContainsKey("MS_HttpContext"))
-            {
-                return ((HttpContextWrapper)request.Properties["MS_HttpContext"]).Request.UserHostAddress;
-            }
-
-            return "0.0.0.0";
+            return context.Connection.RemoteIpAddress?.ToString() ?? "0.0.0.0";
         }
 
         public static string ToCamelCase(this string source)

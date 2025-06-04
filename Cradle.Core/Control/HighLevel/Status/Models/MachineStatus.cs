@@ -1,11 +1,9 @@
 using System;
-using System.Runtime.Remoting.Contexts;
 
 using Caron.Cradle.Control.HighLevel.Settings;
 
 namespace Caron.Cradle.Control.HighLevel
 {
-    [Synchronization()]
     public partial class MachineStatus
     {
         public Control.HighLevel.ControlState HighLevelControlState { get; set; }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 
@@ -12,7 +12,8 @@ using Caron.Cradle.Control.Database;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("working_context")]
+    [ApiController]
+    [Route("working_context")]
     public class WorkingContextController : CradleApiController
     {
         [HttpGet]
@@ -26,11 +27,11 @@ namespace Caron.Cradle.Control.Api
 
         [HttpPost]
         [Route("")]
-        public void SetWorkingContext()
+        public async void SetWorkingContext()
         {
             ProConsole.WriteLine($"[API] SetWorkingContext()", ConsoleColor.Yellow);
 
-            var json = ProRob.WebApi.Helpers.GetContentFromBody(Request);
+            var json = await ProRob.WebApi.Helpers.GetContentFromBody(Request);
 
             MachineController.HighLevel.WorkingContext = ProRob.Json.Deserialize<WorkingContext>(json);
 
@@ -48,11 +49,11 @@ namespace Caron.Cradle.Control.Api
 
         [HttpPost]
         [Route("parameters")]
-        public void SetWorkingParameters()
+        public async void SetWorkingParameters()
         {
             ProConsole.WriteLine($"[API] SetWorkingParameters()", ConsoleColor.Yellow);
 
-            var json = ProRob.WebApi.Helpers.GetContentFromBody(Request);
+            var json = await ProRob.WebApi.Helpers.GetContentFromBody(Request);
 
             MachineController.HighLevel.WorkingContext.Parameters = ProRob.Json.Deserialize<WorkingParameters>(json);
 

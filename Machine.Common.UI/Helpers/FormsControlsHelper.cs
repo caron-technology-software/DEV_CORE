@@ -106,14 +106,14 @@ namespace Machine.UI
 
         public static void OpacityFade(Form form, double start, double end, int n = 100, int delay = 1)
         {
-            form?.Invoke((MethodInvoker)delegate ()
+            form?.Invoke((System.Windows.Forms.MethodInvoker)delegate ()
             {
                 form.Opacity = start;
             });
 
             for (int i = 0; i < n; i++)
             {
-                form?.Invoke((MethodInvoker)delegate ()
+                form?.Invoke((System.Windows.Forms.MethodInvoker)delegate ()
                 {
                     form.Opacity = form.Opacity + (end - start) / n;
                     form.Refresh();

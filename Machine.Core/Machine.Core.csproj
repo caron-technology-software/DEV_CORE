@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
     <Configurations>Debug;Release;Test</Configurations>
     <Platforms>AnyCPU;x86</Platforms>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +15,8 @@
     <PackageReference Include="Microsoft.Database.Collections.Generic" Version="2.0.4" />
     <PackageReference Include="Microsoft.PowerShell.5.ReferenceAssemblies" Version="1.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Management" Version="9.0.5" />
+    <PackageReference Include="System.Reactive" Version="6.0.1" />
     <PackageReference Include="System.ValueTuple" Version="4.6.1" />
   </ItemGroup>
 

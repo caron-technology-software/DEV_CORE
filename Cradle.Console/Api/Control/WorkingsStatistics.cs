@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
@@ -28,7 +28,8 @@ using Machine;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("workings_statistics")]
+    [ApiController]
+    [Route("workings_statistics")]
     public class WorkingsStatisticsController : CradleApiController
     {
         [Route("")]

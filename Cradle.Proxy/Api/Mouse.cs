@@ -2,14 +2,14 @@
 //using System.Collections.Generic;
 //using System.Linq;
 //using System.Text;
-//using System.Web.Http;
+//using Microsoft.AspNetCore.Mvc;
 //using System.Threading.Tasks;
 
 //using ProRob.WebApi.Auth;
 
 //namespace Cradle.Proxy
 //{
-//    [RoutePrefix("mouse")]
+//    [Route("mouse")]
 //    public class MouseController : ProxyApiController
 //    {
 //        [HttpGet]

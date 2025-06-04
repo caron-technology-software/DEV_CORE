@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Threading;
 
 using ProRob;
@@ -13,7 +13,8 @@ using Caron.Cradle.Control.LowLevel;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("cradle")]
+    [ApiController]
+    [Route("cradle")]
     public class CradleController : CradleApiController
     {
         private void WaitLowLevelCommandState()

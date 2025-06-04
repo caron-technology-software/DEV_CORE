@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -13,7 +12,6 @@ using ProRob;
 
 namespace Machine.RealTime
 {
-    [Synchronization()]
     public static class RealTime
     {
         #region TEST TIMER
@@ -92,7 +90,6 @@ namespace Machine.RealTime
         ////}
         #endregion
 
-        [Synchronization()]
         public static class HighLevel
         {
             private static volatile object locker = new object();
@@ -147,7 +144,6 @@ namespace Machine.RealTime
         }
 
 
-        [Synchronization()]
         public static class LowLevel
         {
             private static volatile object locker = new object();

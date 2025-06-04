@@ -5,13 +5,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("working_mode")]
+    [ApiController]
+    [Route("working_mode")]
     public class WorkingModeController : CradleApiController
     {
         [Route("get_cradle_sync")]

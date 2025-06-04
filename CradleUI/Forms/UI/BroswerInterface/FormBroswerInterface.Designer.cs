@@ -37,12 +37,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.browser = new CefSharp.WinForms.ChromiumWebBrowser();
+            this.browser = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.SuspendLayout();
             // 
             // browser
             // 
-            this.browser.ActivateBrowserOnCreation = false;
+            this.browser.CreationProperties = null;
             this.browser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.browser.Location = new System.Drawing.Point(0, 0);
             this.browser.Name = "browser";
@@ -67,6 +67,6 @@
         #endregion
 #pragma warning restore CS0618
 
-        private CefSharp.WinForms.ChromiumWebBrowser browser;
+        private Microsoft.Web.WebView2.WinForms.WebView2 browser;
     }
 }

@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 
@@ -7,7 +7,8 @@ using Caron.Cradle.Control.Database;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("machine_configuration")]
+    [ApiController]
+    [Route("machine_configuration")]
     public class MachineConfigurationController : CradleApiController
     {
         [HttpGet]
@@ -21,11 +22,11 @@ namespace Caron.Cradle.Control.Api
 
         [HttpPost]
         [Route("")]
-        public void SetMachineConfiguration()
+        public async void SetMachineConfiguration()
         {
             ProConsole.WriteLine($"[API] SetMachineConfiguration()", ConsoleColor.Yellow);
 
-            var json = ProRob.WebApi.Helpers.GetContentFromBody(Request);
+            var json = await ProRob.WebApi.Helpers.GetContentFromBody(Request);
 
             MachineController.HighLevel.Configuration = ProRob.Json.Deserialize<MachineConfiguration>(json);
 

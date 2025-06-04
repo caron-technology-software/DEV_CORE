@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("change_ui_page_permission")]
+    [ApiController]
+    [Route("change_ui_page_permission")]
     public class RequestChangeUIPagePermissionController : CradleApiController
     {
         [HttpGet]

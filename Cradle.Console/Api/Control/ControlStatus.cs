@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob.WebApi;
 
@@ -12,7 +12,9 @@ using ProRob.Extensions.Object;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("control_status")]
+    [ApiController]
+    [Route("control_status")]
+    [Serializable]
     public class ControlStatusController : CradleApiController
     {
         [HttpGet]
@@ -32,15 +34,15 @@ namespace Caron.Cradle.Control.Api
         {
             var cs = new ControlStatus()
             {
-                LowLevel = MachineController.LowLevel.Clone(),
-                HighLevel = MachineController.HighLevel.Clone()
+                LowLevel = MachineController.LowLevel.JClone(),
+                HighLevel = MachineController.HighLevel.JClone()
             };
 
-            return EncodeData<ControlStatus>(cs);
+            return JEncodeData<ControlStatus>(cs);
         }
     }
 
-    [RoutePrefix("high_level_control_status")]
+    [Route("high_level_control_status")]
     public class HighLevelStatusController : CradleApiController
     {
         [HttpGet]
@@ -51,7 +53,7 @@ namespace Caron.Cradle.Control.Api
         }
     }
 
-    [RoutePrefix("low_level_control_status")]
+    [Route("low_level_control_status")]
     public class LowLevelStatusController : CradleApiController
     {
         [HttpGet]

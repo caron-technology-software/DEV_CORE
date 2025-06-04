@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
 using ProRob;
@@ -13,14 +13,19 @@ using Machine.Utility;
 
 using Caron.Cradle.Control.HighLevel.Settings;
 using Caron.Cradle.Control.Database;
+using Microsoft.AspNetCore.Mvc;
+using HttpGetAttribute = Microsoft.AspNetCore.Mvc.HttpGetAttribute;
+using HttpPostAttribute = Microsoft.AspNetCore.Mvc.HttpPostAttribute;
+using HttpDeleteAttribute = Microsoft.AspNetCore.Mvc.HttpDeleteAttribute;
+using ProRob.WebApi;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("workings_settings")]
+    [ApiController]
+    [Route("workings_settings")]
     public class WorkingsSettingsController : CradleApiController
     {
-        [Route("")]
-        [HttpGet]
+        [HttpGet("")]
         public WorkingsSettings GetWorkingsSettings()
         {
             ProConsole.WriteLine($"[API] GetWorkingsSettings()", ConsoleColor.Yellow);
@@ -28,9 +33,8 @@ namespace Caron.Cradle.Control.Api
             return MachineController.HighLevel.WorkingsSettings;
         }
 
-        [Route("current")]
-        [HttpGet]
-        public IHttpActionResult GetCurrentWorkingsSettings()
+        [HttpGet("current")]
+        public IActionResult GetCurrentWorkingsSettings()
         {
             ProConsole.WriteLine($"[API] GetCurrentWorkingsSettings()", ConsoleColor.Yellow);
 
@@ -40,9 +44,8 @@ namespace Caron.Cradle.Control.Api
             return Ok(new { Name = name, Parameters = parameters });
         }
 
-        [Route("by_name")]
-        [HttpGet]
-        public IHttpActionResult GetWorkingsSettingsByName(string name)
+        [HttpGet("by_name")]
+        public IActionResult GetWorkingsSettingsByName(string name)
         {
             ProConsole.WriteLine($"[API] GetWorkingsSettings({name})", ConsoleColor.Yellow);
 
@@ -58,9 +61,8 @@ namespace Caron.Cradle.Control.Api
             }
         }
 
-        [Route("")]
-        [HttpPost]
-        public HttpStatusCode SetWorkingsSettings([FromBody] WorkingsSettings workingsSettings)
+        [HttpPost("")]
+        public HttpStatusCode SetWorkingsSettings([Microsoft.AspNetCore.Mvc.FromBody] WorkingsSettings workingsSettings)
         {
             ProConsole.WriteLine($"[API] SetWorkingsSettings()", ConsoleColor.Yellow);
 
@@ -87,17 +89,15 @@ namespace Caron.Cradle.Control.Api
             return HttpStatusCode.OK;
         }
 
-        [Route("names")]
-        [HttpGet]
-        public IHttpActionResult GetWorkingsSettingsNames()
+        [HttpGet("names")]
+        public IActionResult GetWorkingsSettingsNames()
         {
             ProConsole.WriteLine($"[API] GetWorkingsSettingsNames()", ConsoleColor.Yellow);
 
             return Ok(MachineController.HighLevel.WorkingsSettings.Items.Select(x => x.Name));
         }
 
-        [Route("apply")]
-        [HttpGet]
+        [HttpGet("apply")]
         public HttpStatusCode ApplyWorkingSetting(string name)
         {
             ProConsole.WriteLine($"[API] ApplyWorkingSetting({name})", ConsoleColor.Yellow);
@@ -150,8 +150,7 @@ namespace Caron.Cradle.Control.Api
             return HttpStatusCode.OK;
         }
 
-        [Route("save")]
-        [HttpGet]
+        [HttpGet("save")]
         public HttpStatusCode SaveCurrentSettings()
         {
             ProConsole.WriteLine($"[API] SaveCurrentSettings", ConsoleColor.Yellow);
@@ -170,8 +169,7 @@ namespace Caron.Cradle.Control.Api
             return HttpStatusCode.OK;
         }
 
-        [Route("add_default")]
-        [HttpGet]
+        [HttpGet("add_default")]
         public HttpStatusCode AddDefaultWorkingSetting()
         {
             ProConsole.WriteLine($"[API] AddDefaultWorkingSetting", ConsoleColor.Yellow);
@@ -189,13 +187,12 @@ namespace Caron.Cradle.Control.Api
             return HttpStatusCode.OK;
         }
 
-        [Route("add")]
-        [HttpPost]
-        public HttpStatusCode AddWorkingSetting()
+        [HttpPost("add")]
+        public async Task<IActionResult> AddWorkingSetting()
         {
             ProConsole.WriteLine($"[API] AddWorkingSetting", ConsoleColor.Yellow);
 
-            var json = ProRob.WebApi.Helpers.GetContentFromBody(Request);
+            var json = await Helpers.GetContentFromBody(Request);
             var setting = ProRob.Json.Deserialize<WorkingSetting>(json);
 
             bool exist = true;
@@ -203,13 +200,13 @@ namespace Caron.Cradle.Control.Api
             exist = MachineController.HighLevel.WorkingsSettings.Items.Where(x => x.Name == setting.Name).Count() > 0;
             if (exist)
             {
-                return HttpStatusCode.Conflict;
+                return Conflict("A setting with this name already exists.");
             }
 
             exist = MachineController.HighLevel.WorkingsSettings.Items.Where(x => x.Guid == setting.Guid).Count() > 0;
             if (exist)
             {
-                return HttpStatusCode.Conflict;
+                return Conflict("A setting with this GUID already exists.");
             }
 
             MachineController.HighLevel.WorkingsSettings.Items.Add(setting);
@@ -218,11 +215,10 @@ namespace Caron.Cradle.Control.Api
 
             DatabaseSettings.Update(MachineController.HighLevel.WorkingsSettings);
 
-            return HttpStatusCode.OK;
+            return Ok();
         }
 
-        [Route("rename_by_id")]
-        [HttpGet]
+        [HttpGet("rename_by_id")]
         public HttpStatusCode RenameWorkingSettingByID(Guid guid, string name)
         {
             ProConsole.WriteLine($"[API] RenameWorkingSetting({guid},{name})", ConsoleColor.Yellow);
@@ -248,8 +244,7 @@ namespace Caron.Cradle.Control.Api
             return HttpStatusCode.BadRequest;
         }
 
-        [Route("rename")]
-        [HttpGet]
+        [HttpGet("rename")]
         public HttpStatusCode RenameWorkingSetting(string name, string newName)
         {
             ProConsole.WriteLine($"[API] RenameWorkingSetting({name},{newName})", ConsoleColor.Yellow);
@@ -275,8 +270,7 @@ namespace Caron.Cradle.Control.Api
             return HttpStatusCode.BadRequest;
         }
 
-        [Route("reset")]
-        [HttpGet]
+        [HttpGet("reset")]
         public HttpStatusCode ResetCurrentWorkingSettingToCurrentSelectedGuid()
         {
             ProConsole.WriteLine($"[API] ResetCurrentWorkingSettingToCurrentSelectedSetting", ConsoleColor.Yellow);
@@ -286,8 +280,7 @@ namespace Caron.Cradle.Control.Api
             return HttpStatusCode.OK;
         }
 
-        [Route("")]
-        [HttpDelete]
+        [HttpDelete("")]
         public HttpStatusCode DeleteWorkingSetting(string name)
         {
             ProConsole.WriteLine($"[API] DeleteWorkingSetting({name})", ConsoleColor.Yellow);
@@ -299,8 +292,7 @@ namespace Caron.Cradle.Control.Api
             return count > 0 ? HttpStatusCode.OK : HttpStatusCode.BadRequest;
         }
 
-        [Route("delete")]
-        [HttpGet]
+        [HttpGet("delete")]
         public HttpStatusCode DeleteFromGetRequestWorkingSetting(string name)
         {
             ProConsole.WriteLine($"[API] DeleteFromGetRequestWorkingSetting({name})", ConsoleColor.Yellow);
@@ -312,8 +304,7 @@ namespace Caron.Cradle.Control.Api
             return count > 0 ? HttpStatusCode.OK : HttpStatusCode.BadRequest;
         }
 
-        [Route("delete_by_id")]
-        [HttpGet]
+        [HttpGet("delete_by_id")]
         public HttpStatusCode DeleteWorkingSettingByID(Guid guid)
         {
             ProConsole.WriteLine($"[API] DeleteWorkingSetting({guid})", ConsoleColor.Yellow);

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using System.IO;
 
@@ -18,7 +18,8 @@ using Caron.Cradle.Control.Database;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("machine_settings")]
+    [ApiController]
+    [Route("machine_settings")]
     public class MachineSettingsController : CradleApiController
     {
         [Route("")]
@@ -71,7 +72,7 @@ namespace Caron.Cradle.Control.Api
 
             try
             {
-                var settings = ProRob.Json.Deserialize<MachineSettings>(File.ReadAllText(Constants.Path.Settings.DefaultSettingsFile));
+                var settings = ProRob.Json.Deserialize<MachineSettings>(System.IO.File.ReadAllText(Constants.Path.Settings.DefaultSettingsFile));
 
                 MachineController.HighLevel.Settings = settings;
 

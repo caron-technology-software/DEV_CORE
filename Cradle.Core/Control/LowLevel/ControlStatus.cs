@@ -1,9 +1,7 @@
 using System;
-using System.Runtime.Remoting.Contexts;
 
 namespace Caron.Cradle.Control.LowLevel
 {
-    [Synchronization()]
     public class ControlStatus
     {
         public MachineInfo Info { get; private set; } = new MachineInfo();

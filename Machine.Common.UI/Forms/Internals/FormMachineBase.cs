@@ -55,7 +55,7 @@ namespace Machine.UI.Common
 
         public static void DisablePanel(MachinePanel panel)
         {
-            panel?.Invoke((MethodInvoker)delegate ()
+            panel?.Invoke((System.Windows.Forms.MethodInvoker)delegate ()
             {
                 panel.CurrentFormShowing = String.Empty;
 

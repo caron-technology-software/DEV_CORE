@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Threading;
 using System.Runtime.CompilerServices;
 using System.Net;
@@ -15,7 +15,7 @@ using ProRob.WebApi.Auth;
 
 namespace Cradle.Proxy
 {
-    public class ProxyApiController : ApiController
+    public class ProxyApiController : ControllerBase
     {
         public static IUserAuthetification UserAuthentification = new UserAuthentification();
         public static Func<string, string, bool> Authenticator = (user, pass) => { return UserAuthentification.CheckCredential(user, pass); };

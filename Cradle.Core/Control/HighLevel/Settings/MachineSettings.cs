@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 
 namespace Caron.Cradle.Control.HighLevel.Settings
 {
-    [Synchronization()]
     public class MachineSettings
     {
         public string SoftwareVersion { get; set; }

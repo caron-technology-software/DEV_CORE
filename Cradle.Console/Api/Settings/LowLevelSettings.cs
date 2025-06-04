@@ -1,18 +1,18 @@
 ﻿using System;
-using System.Web.Http;
 
 using ProRob;
 
 using Caron.Cradle.Control.HighLevel.Settings;
 using Caron.Cradle.Control.Database;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("settings/low_level")]
+    [ApiController]
+    [Route("settings/low_level")]
     public class LowLevelSettingsController : CradleApiController
     {
-        [Route("set_to_controller")]
-        [HttpGet]
+        [HttpGet("set_to_controller")]
         public void SetLowLevelSettings()
         {
             ProConsole.WriteLine($"[API] SetLowLevelSettings()", ConsoleColor.Yellow);
@@ -36,15 +36,17 @@ namespace Caron.Cradle.Control.Api
 
         [HttpPost]
         [Route("general")]
-        public void SetGeneralCradleSettings()
+        public async Task<IActionResult> SetGeneralCradleSettings()
         {
             ProConsole.WriteLine($"[API] SetGeneralCradleSettings()", ConsoleColor.Yellow);
 
-            var json = ProRob.WebApi.Helpers.GetContentFromBody(Request);
+            var json = await ProRob.WebApi.Helpers.GetContentFromBody(Request);
 
             MachineController.HighLevel.Settings.LowLevelMotion.General = ProRob.Json.Deserialize<GeneralCradleSettings>(json);
 
             DatabaseSettings.Update(MachineController.HighLevel.Settings.LowLevelMotion);
+
+            return Ok();
         }
         #endregion
 
@@ -60,15 +62,17 @@ namespace Caron.Cradle.Control.Api
 
         [HttpPost]
         [Route("axis")]
-        public void SetAxisSettings()
+        public async Task<IActionResult> SetAxisSettings()
         {
             ProConsole.WriteLine($"[API] SetAxisSettings()", ConsoleColor.Yellow);
 
-            var json = ProRob.WebApi.Helpers.GetContentFromBody(Request);
+            var json = await ProRob.WebApi.Helpers.GetContentFromBody(Request);
 
             MachineController.HighLevel.Settings.LowLevelMotion.Axis = ProRob.Json.Deserialize<AxisSettings>(json);
 
             DatabaseSettings.Update(MachineController.HighLevel.Settings.LowLevelMotion);
+
+            return Ok();
         }
         #endregion
 
@@ -84,15 +88,17 @@ namespace Caron.Cradle.Control.Api
 
         [HttpPost]
         [Route("motion_encoder")]
-        public void SetMotionEncoderSettings()
+        public async Task<IActionResult> SetMotionEncoderSettings()
         {
             ProConsole.WriteLine($"[API] SetMotionDancerSettings()", ConsoleColor.Yellow);
 
-            var json = ProRob.WebApi.Helpers.GetContentFromBody(Request);
+            var json = await ProRob.WebApi.Helpers.GetContentFromBody(Request);
 
             MachineController.HighLevel.Settings.LowLevelMotion.Encoder = ProRob.Json.Deserialize<MotionEncoderSettings>(json);
 
             DatabaseSettings.Update(MachineController.HighLevel.Settings.LowLevelMotion);
+
+            return Ok();
         }
         #endregion
 
@@ -108,15 +114,17 @@ namespace Caron.Cradle.Control.Api
 
         [HttpPost]
         [Route("motion_dancer")]
-        public void SetMotionDancerSettings()
+        public async Task<IActionResult> SetMotionDancerSettings()
         {
             ProConsole.WriteLine($"[API] SetMotionDancerSettings()", ConsoleColor.Yellow);
 
-            var json = ProRob.WebApi.Helpers.GetContentFromBody(Request);
+            var json = await ProRob.WebApi.Helpers.GetContentFromBody(Request);
 
             MachineController.HighLevel.Settings.LowLevelMotion.Dancer = ProRob.Json.Deserialize<MotionDancerSettings>(json);
 
             DatabaseSettings.Update(MachineController.HighLevel.Settings.LowLevelMotion);
+
+            return Ok();
         }
         #endregion
 
@@ -132,15 +140,17 @@ namespace Caron.Cradle.Control.Api
 
         [HttpPost]
         [Route("motion_encoder_dancer")]
-        public void SetMotionDancerEncoderSettings()
+        public async Task<IActionResult> SetMotionDancerEncoderSettings()
         {
             ProConsole.WriteLine($"[API] SetMotionDancerEncoderSettings()", ConsoleColor.Yellow);
 
-            var json = ProRob.WebApi.Helpers.GetContentFromBody(Request);
+            var json = await ProRob.WebApi.Helpers.GetContentFromBody(Request);
 
             MachineController.HighLevel.Settings.LowLevelMotion.EncoderDancer = ProRob.Json.Deserialize<MotionEncoderDancerSettings>(json);
 
             DatabaseSettings.Update(MachineController.HighLevel.Settings.LowLevelMotion);
+
+            return Ok();
         }
 
         #endregion

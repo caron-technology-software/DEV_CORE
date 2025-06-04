@@ -1,65 +1,68 @@
-﻿using Microsoft.Owin;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
+using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
-using Owin;
-using Swashbuckle.Application;
-using System.Linq;
-using System.Web.Http;
-using System.Web.Http.Controllers;
-
-[assembly: OwinStartup(typeof(ProRob.WebApi.WebApiStartup))]
 
 namespace ProRob.WebApi
 {
-    public class WebApiStartup
+    public class Startup
     {
-        public void Configuration(IAppBuilder app)
+        public void ConfigureServices(IServiceCollection services)
         {
-            //MMIx67 Abilita CORS per tutte le origini
-            app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
-            //MMFx67
+            services.AddControllers()
+                .AddNewtonsoftJson(options =>
+                {
+                    options.SerializerSettings.Converters.Add(new StringEnumConverter());
+                    options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver
+                    {
+                        IgnoreSerializableAttribute = true
+                    };
+                });
 
-            HttpConfiguration config = new HttpConfiguration();
-
-            // Enable Attribute Routing
-            config.MapHttpAttributeRoutes();
-
-            //MMIx67
-            config
-            .EnableSwagger(c =>
+            services.AddCors(options =>
             {
-                c.SingleApiVersion("v1", "YORK API");
-                // ↓ per evitare prblemi di ID duplicati che si creano quando ci sono 2 classi con nome uguale in manespace diversi
-                c.UseFullTypeNameInSchemaIds();
-                // ↓ Esclude controller/metodi decorati con [SwaggerIgnore]
-                c.DocumentFilter<SwaggerIgnoreFilter>();
-                // ↓ Sostituisce i caratteri che swagger non accetta come le parentesi graffe
-                c.DocumentFilter<FixGenericSchemaIdsFilter>();
-            })
-            .EnableSwaggerUi(c =>
-               c.DisableValidator() // disabilita il pulsante validate
-            );
-            //MMFx67
+                options.AddPolicy("AllowAll", policy =>
+                {
+                    policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
+            });
 
-            // Json output
-            var appXmlType = config.Formatters.XmlFormatter.SupportedMediaTypes.FirstOrDefault(t => t.MediaType == "application/xml");
-            config.Formatters.XmlFormatter.SupportedMediaTypes.Remove(appXmlType);
+            services.AddEndpointsApiExplorer();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "YORK API",
+                    Version = "v1"
+                });
 
-            config.Services.Replace(typeof(IHttpActionSelector), new SnakeCaseActionSelector());
+                c.CustomSchemaIds(type => type.FullName);
+            });
+        }
 
-            ////Filters
-            //config.Filters.Add(new BasicAuthorizationAttribute());
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+            if (env.IsDevelopment() || env.IsStaging())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "YORK API V1");
+                    c.ConfigObject.AdditionalItems["validatorUrl"] = "";
+                });
+            }
 
-            //Json Converters
-            config.Formatters.JsonFormatter.SerializerSettings.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter());
+            app.UseCors("AllowAll");
 
-            //Json Contract Resolver
-            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
-            ((DefaultContractResolver)(config.Formatters.JsonFormatter.SerializerSettings.ContractResolver)).IgnoreSerializableAttribute = true;
-
-            //Verifica della configurazione
-            config.EnsureInitialized();
-
-            app.UseWebApi(config);
+            app.UseRouting();
+            app.UseAuthorization(); 
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
     }
 }

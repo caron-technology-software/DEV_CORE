@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Net.Http;
@@ -18,7 +18,7 @@ using ProRob.WebApi;
 
 namespace Cradle.Proxy
 {
-    [RoutePrefix("test")]
+    [Route("test")]
     public class TestController : ProxyApiController
     {
         static int Counter = 0;
@@ -40,7 +40,7 @@ namespace Cradle.Proxy
 
         [HttpGet]
         [Route("wait")]
-        public IHttpActionResult Wait(int milliseconds)
+        public IActionResult Wait(int milliseconds)
         {
             Console.WriteLine($"[Wait {milliseconds} ms]");
 
@@ -51,7 +51,7 @@ namespace Cradle.Proxy
 
         [HttpGet]
         [Route("mouse")]
-        public IHttpActionResult Mouse(int x, int y)
+        public IActionResult Mouse(int x, int y)
         {
             Console.WriteLine($"[Mouse] {x} {y}");
 

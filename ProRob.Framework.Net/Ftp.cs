@@ -40,7 +40,7 @@ namespace ProRob.Net
 
                 var ms = new MemoryStream(Encoding.ASCII.GetBytes(data));
 
-                FtpStatus status = ftp.Upload(ms, remotePath, existMode);
+                FtpStatus status = ftp.UploadStream(ms, remotePath, existMode);
 
                 ms.Dispose();
 

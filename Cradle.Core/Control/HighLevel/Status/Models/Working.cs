@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,7 +8,6 @@ using LiteDB;
 
 namespace Caron.Cradle.Control.HighLevel
 {
-    [Synchronization()]
     public class Working
     {
         [BsonId]

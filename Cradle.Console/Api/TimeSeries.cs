@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
-using System.Web.Http;
 
 using ProRob.WebApi;
 using ProRob.Extensions.Object;
@@ -12,83 +11,77 @@ using Machine.DataCollections;
 
 using Caron.Cradle.Control.DataCollections;
 using Caron.Cradle.Control.HighLevel;
+using Microsoft.AspNetCore.Components;
+using HttpGetAttribute = Microsoft.AspNetCore.Mvc.HttpGetAttribute;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("time_series")]
-    public class TimeSeriesController : CradleApiController
+    [ApiController]
+    [Microsoft.AspNetCore.Mvc.Route("time_series")]
+    public class WorkingsSettingsTimeSeriesController : CradleApiController
     {
-        public TimeSeriesController()
+        public WorkingsSettingsTimeSeriesController()
         {
             Thread.CurrentThread.Priority = ThreadPriority.Lowest;
         }
 
-        [HttpGet]
-        [Route("")]
+        [HttpGet("")]
         public TimeSeries GetDataCollections()
         {
             return MachineController.TimeSeries.Clone();
         }
 
-        [HttpGet]
-        [Route("encoded")]
+        [HttpGet("encoded")]
         public byte[] GetDataCollectionsEncoded()
         {
             return EncodeData(MachineController.TimeSeries);
         }
 
-        [HttpGet]
-        [Route("machine_status")]
+        [HttpGet("machine_status")]
         public List<MachineDataElement<MachineStatus>> GetMachineStatus()
         {
             return MachineController.TimeSeries.MachineStatus.Clone();
         }
 
-        [HttpGet]
+        [HttpGet("machine_status/compressed")]
         [DeflateCompression]
-        [Route("machine_status/compressed")]
         public List<MachineDataElement<MachineStatus>> GetMachineStatusCompressed()
         {
             return MachineController.TimeSeries.MachineStatus.Clone();
         }
 
-        [HttpGet]
-        [Route("machine_status/encoded")]
+        [HttpGet("machine_status/encoded")]
         public byte[] GetMachineStatusEncoded()
         {
             return EncodeData(MachineController.TimeSeries.MachineStatus);
         }
 
-        [HttpGet]
-        [Route("working_context")]
+        [HttpGet("working_context")]
         public List<MachineDataElement<WorkingContext>> GetMachineContext()
         {
             return MachineController.TimeSeries.MachineContext.Clone();
         }
 
-        [HttpGet]
-        [Route("working_context/encoded")]
+        [HttpGet("working_context/encoded")]
         public byte[] GetMachineContextEncoded()
         {
             return EncodeData(MachineController.TimeSeries.MachineContext);
         }
 
-        [HttpGet]
-        [Route("low_level_control_status")]
+        [HttpGet("low_level_control_status")]
         public List<MachineDataElement<LowLevel.ControlStatus>> GetLowLevelControlStatus()
         {
             return MachineController.TimeSeries.LowLevelControlStatus.Clone();
         }
 
-        [HttpGet]
-        [Route("low_level_control_status/encoded")]
+        [HttpGet("low_level_control_status/encoded")]
         public byte[] GetLowLevelControlStatusEncoded()
         {
             return EncodeData(MachineController.TimeSeries.LowLevelControlStatus);
         }
 
-        [HttpGet]
-        [Route("plot_time_series")]
+        [HttpGet("plot_time_series")]
         public PlotsTimeSeries GetPlotsTimeSeries()
         {
             var dc = MachineController.TimeSeries.LowLevelControlStatus;

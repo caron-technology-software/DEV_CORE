@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,7 +9,6 @@ using Machine.Settings;
 
 namespace Caron.Cradle.Control.HighLevel.Settings
 {
-    [Synchronization()]
     public class LowLevelMotionSettings : MachineGroupOfSettings
     {
         [UserAccess(UserType.Distributor, UserType.Manufacturer)]
@@ -29,7 +27,6 @@ namespace Caron.Cradle.Control.HighLevel.Settings
         public MotionEncoderDancerSettings EncoderDancer { get; set; } = new MotionEncoderDancerSettings();
     }
 
-    [Synchronization()]
     public class GeneralCradleSettings : MachineGroupOfSettings
     {
         [UserAccess(UserType.Distributor, UserType.Manufacturer)]
@@ -42,7 +39,6 @@ namespace Caron.Cradle.Control.HighLevel.Settings
         public FloatingMachineSetting DeltaCradleScalingFactorRewinding { get; set; } = new FloatingMachineSetting(-0.05, -0.15, 0.15);
     }
 
-    [Synchronization()]
     public class AxisSettings : MachineGroupOfSettings
     {
         [UserAccess(UserType.Distributor, UserType.Manufacturer)]
@@ -67,7 +63,6 @@ namespace Caron.Cradle.Control.HighLevel.Settings
         public FloatingMachineSetting FeedForwardVelocityFactor { get; set; } = new FloatingMachineSetting(1.0, -1.5, 1.5);
     }
 
-    [Synchronization()]
     public class MotionDancerSettings : MachineGroupOfSettings
     {
         [UserAccess(UserType.Distributor, UserType.Manufacturer)]
@@ -92,7 +87,6 @@ namespace Caron.Cradle.Control.HighLevel.Settings
         public FloatingMachineSetting MaxTableVelocity { get; set; } = new FloatingMachineSetting(450, 0, 2000);
     }
 
-    [Synchronization()]
     public class MotionEncoderSettings : MachineGroupOfSettings
     {
         [UserAccess(UserType.Distributor, UserType.Manufacturer)]
@@ -102,7 +96,6 @@ namespace Caron.Cradle.Control.HighLevel.Settings
         public FloatingMachineSetting DancerReferenceTarget { get; set; } = new FloatingMachineSetting(0.25, 0.001, 1.0);
     }
 
-    [Synchronization()]
     public class MotionEncoderDancerSettings : MachineGroupOfSettings
     {
         [UserAccess(UserType.Distributor, UserType.Manufacturer)]

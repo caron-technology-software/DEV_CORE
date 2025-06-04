@@ -5,15 +5,16 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob.WebApi;
 using ProRob.WebApi.Auth;
 
 namespace Cradle.Proxy
 {
+    [ApiController]
     [BasicAuthorization]
-    [RoutePrefix("logs")]
+    [Route("logs")]
     public class LogsController : ProxyApiController
     {
         //GPIx6

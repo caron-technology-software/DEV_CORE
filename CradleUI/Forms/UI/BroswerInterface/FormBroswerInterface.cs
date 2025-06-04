@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-using CefSharp;
-using CefSharp.WinForms;
+using Microsoft.Web.WebView2.WinForms;
 
 namespace Caron.Cradle.UI
 {
@@ -14,46 +13,45 @@ namespace Caron.Cradle.UI
         public FormBroswerInterface()
         {
             InitializeComponent();
-
-            //Monitor parent process exit and close subprocesses if parent process exits first
-            CefSharpSettings.SubprocessExitIfParentProcessClosed = true;
-
-            //For Windows 7 and above, best to include relevant app.manifest entries as well
-            Cef.EnableHighDPISupport();
-
-            var settings = new CefSettings();
-
-            //Perform dependency check to make sure all relevant resources are in our output directory.
-            Cef.Initialize(settings, performDependencyCheck: true, browserProcessHandler: null);
         }
 
-        private void FormBroswerInterface_Load(object sender, EventArgs e)
+        private async void FormBroswerInterface_Load(object sender, EventArgs e)
         {
-            browser.Visible = true;
+            try
+            {
+                await browser.EnsureCoreWebView2Async();
+                browser.Source = new Uri("http://localhost/pdf/manuals/");
+                browser.Visible = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Errore durante l'inizializzazione del browser: " + ex.Message);
+            }
         }
 
         protected override void OnVisibleChanged(EventArgs e)
         {
             base.OnVisibleChanged(e);
 
-            if (Visible)
+            // In caso tu voglia ricaricare ogni volta che diventa visibile
+            // (opzionale, puoi ometterlo se non serve)
+            if (Visible && browser?.CoreWebView2 != null)
             {
-                browser.Load(@"http://localhost/pdf/manuals/");
+                browser.Reload();
             }
         }
 
         private void FormBroswerInterface_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Console.WriteLine("[FormBroswerInterface] Disposing internal broswer..");
-
-            browser.Dispose();
-
-            Cef.Shutdown();
+            Console.WriteLine("[FormBroswerInterface] Disposing internal browser...");
+            browser?.Dispose();
         }
 
         protected override void UpdateUIForm()
         {
-            //--
+            //-- eventuali aggiornamenti UI
         }
     }
+
+
 }

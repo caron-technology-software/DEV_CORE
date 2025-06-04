@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 
@@ -9,7 +9,8 @@ using Machine.Models;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("statistics")]
+    [ApiController]
+    [Route("statistics")]
     public class StatisticsController : CradleApiController
     {
         private static DateTime lastRequestDatetime = DateTime.UtcNow;

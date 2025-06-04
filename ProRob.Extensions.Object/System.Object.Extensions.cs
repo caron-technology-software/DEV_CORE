@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
-
+using System.Text.Json;
 using Apex.Serialization;
 
 namespace ProRob.Extensions.Object
@@ -17,9 +17,21 @@ namespace ProRob.Extensions.Object
 
         static ObjectExtensions()
         {
-            locker = new object();
-            serializer = Binary.Create(new Apex.Serialization.Settings());
-            deserializer = Binary.Create(new Apex.Serialization.Settings());
+            var settings = new Apex.Serialization.Settings();
+
+            //settings.MarkSerializable(typeof(Caron.Cradle.Control.ControlStatus));
+            //settings.MarkSerializable(typeof(Caron.Cradle.Control.LowLevel.ControlStatus));
+            //settings.MarkSerializable(typeof(Caron.Cradle.Control.HighLevel.ControlStatus));
+            //settings.AllowFunctionSerialization = true;
+
+            serializer = Binary.Create(settings);
+            deserializer = Binary.Create(settings);
+        }
+
+        public static T JClone<T>(this T obj)
+        {
+            var json = JsonSerializer.Serialize(obj);
+            return JsonSerializer.Deserialize<T>(json)!;
         }
 
         public static T Clone<T>(this T obj)

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 
@@ -11,7 +11,8 @@ using Caron.Cradle.Control.HighLevel;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("state_machine")]
+    [ApiController]
+    [Route("state_machine")]
     public class FiniteStateMachineController : CradleApiController
     {
         [HttpGet]
@@ -23,7 +24,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("")]
-        public IHttpActionResult SetHighLevelControlState(string state)
+        public IActionResult SetHighLevelControlState(string state)
         {
             state = state.ToLower();
 

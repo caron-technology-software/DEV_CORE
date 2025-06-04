@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,7 +8,6 @@ using Machine.Common;
 
 namespace Caron.Cradle.Control.HighLevel.Settings
 {
-    [Synchronization()]
     public class MachineWorkingHours
     {
         [UserAccess(UserType.Manufacturer, UserType.Root)]

@@ -1,25 +1,16 @@
-﻿using System;
-using System.Linq;
-using System.Web.Http;
-using System.Threading;
-using System.Runtime.CompilerServices;
-using System.Runtime.Remoting.Contexts;
-
-using Apex.Serialization;
-
+﻿using Microsoft.AspNetCore.Mvc;
 using ProRob;
-using ProRob.WebApi;
-
+using System;
+using System.IO;
+using Caron.Cradle.Control.LowLevel;
+using Apex.Serialization;
 using Caron.Cradle.Control.HighLevel;
+using System.Text;
+using System.Text.Json;
 
 namespace Caron.Cradle.Control.Api
 {
-#if !TEST
-    [IpAuthorize(Machine.Constants.Networking.IPAddressHighLevelControl)]
-#endif
-
-    [Synchronization]
-    public class CradleApiController : ApiController
+    public class CradleApiController : ControllerBase
     {
         protected static MachineController MachineController { get; private set; }
 
@@ -32,13 +23,21 @@ namespace Caron.Cradle.Control.Api
         static CradleApiController()
         {
             StartUp = DateTime.Now;
-            serializer = Binary.Create(new Settings());
+
+            var settings = new Settings();
+            settings.MarkSerializable(typeof(ControlStatus));
+            settings.MarkSerializable(typeof(Caron.Cradle.Control.HighLevel.ControlStatus));
+            settings.MarkSerializable(typeof(Caron.Cradle.Control.LowLevel.ControlStatus));
+            settings.MarkSerializable(typeof(ProRob.Extensions.Object.ObjectExtensions));
+            settings.MarkSerializable(typeof(Caron.MachineConfiguration));
+
+            serializer = Binary.Create(settings);
+
             ProConsole.WriteLine("[CradleApiController] Initialization completed", ConsoleColor.DarkYellow);
 
-            //GPI18
+            // GPI18
             MachineControllerApplication.NoInitCheckPhotocell = false;
-            //GPF18
-
+            // GPF18
         }
 
         public CradleApiController()
@@ -51,22 +50,34 @@ namespace Caron.Cradle.Control.Api
             MachineController = machineController;
         }
 
+        protected byte[] JEncodeData<T>(T obj)
+        {
+            try
+            {
+                var json = JsonSerializer.Serialize(obj);
+                return Encoding.UTF8.GetBytes(json);
+            }
+            catch (Exception ex)
+            {
+                ProConsole.WriteLine("[ENCODED DATA] " + ex.Message);
+                return null;
+            }
+        }
+
         protected byte[] EncodeData<T>(T obj)
         {
             try
             {
-
                 lock (lockerEncoding)
                 {
-                    var stream = new System.IO.MemoryStream();
-
+                    var stream = new MemoryStream();
                     serializer.Write(obj, stream);
-
                     return stream.ToArray();
                 }
             }
-            catch
+            catch(Exception ex)
             {
+                ProConsole.WriteLine(@"[ENCODED DATA]" + ex.Message);
                 return null;
             }
         }

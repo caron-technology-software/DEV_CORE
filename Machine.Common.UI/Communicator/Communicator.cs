@@ -121,21 +121,17 @@ namespace Machine.UI.Communication
                     (sender, certificate, chain, sslPolicyErrors) => true;
                 //MMFx67
 
-                var client = new RestClient($"http://{IpAddress}:{Port}/{route}/");
-
-                if (timeout.TotalMilliseconds > 0)
+                var options = new RestClientOptions($"http://{IpAddress}:{Port}/{route}/")
                 {
-                    client.Timeout = (int)timeout.TotalMilliseconds;
-                }
-
-                var request = new RestRequest(Method.GET)
-                {
-                    Resource = resource,
-
-                    RequestFormat = DataFormat.Json
+                    Timeout = timeout
                 };
 
-                IRestResponse response = client.Execute(request);
+                var client = new RestClient(options);
+
+                var request = new RestRequest(resource, Method.Get);
+                request.RequestFormat = DataFormat.Json;
+
+                RestResponse response = client.Execute(request);
 
                 if ((response.StatusCode != HttpStatusCode.OK) && (response.StatusCode != HttpStatusCode.NoContent))
                 {
@@ -166,13 +162,20 @@ namespace Machine.UI.Communication
 
             try
             {
-                var client = new RestClient($"http://{IpAddress}:{Port}/{route}/");
+                // Usa RestClientOptions per specificare il timeout se necessario
+                var client = new RestClient(new RestClientOptions($"http://{IpAddress}:{Port}/{route}/")
+                {
+                    Timeout = TimeSpan.FromSeconds(30) // puoi parametrizzare questo valore
+                });
 
-                var request = new RestRequest(Method.POST);
-                request.AddJsonBody(ProRob.Json.Serialize(obj));
-                request.RequestFormat = DataFormat.Json;
+                // Crea la richiesta POST e specifica l'endpoint/resource
+                var request = new RestRequest("", Method.Post); // "" indica la root del route
 
-                IRestResponse response = client.Execute(request);
+                // Aggiungi il corpo come oggetto, non come stringa JSON
+                request.AddJsonBody(obj);
+
+                // Esegui la richiesta
+                var response = client.Execute(request);
 
                 if ((response.StatusCode != HttpStatusCode.OK) && (response.StatusCode != HttpStatusCode.NoContent))
                 {

@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 
@@ -14,7 +14,8 @@ using ProRob.WebApi;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("localization")]
+    [ApiController]
+    [Route("localization")]
     public class LocalizationsController : CradleApiController
     {
         [HttpGet]

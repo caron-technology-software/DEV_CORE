@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Runtime.Remoting.Contexts;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -9,9 +8,10 @@ using ProRob;
 
 namespace Caron.Cradle.Control.HighLevel.StateMachine
 {
-    [Synchronization()]
     public partial class StateMachineManager : IDisposable
     {
+        private readonly object _lock = new();
+
         private MachineController Cradle { get; }
 
         //-----------------------------
@@ -83,44 +83,56 @@ namespace Caron.Cradle.Control.HighLevel.StateMachine
 
         public StateMachineManager(MachineController cradle)
         {
-            this.Cradle = cradle;
+            lock (_lock)
+            {
+                this.Cradle = cradle;
 
-            //-----------------------------
-            // INITIAL STATE
-            //-----------------------------
-            ProConsole.WriteLine("[LAUNCHING INITIAL STATE]", ConsoleColor.Yellow);
-            SetState(ControlState.WaitMarch);
+                //-----------------------------
+                // INITIAL STATE
+                //-----------------------------
+                ProConsole.WriteLine("[LAUNCHING INITIAL STATE]", ConsoleColor.Yellow);
+                SetState(ControlState.WaitMarch);
+            }
         }
 
         internal void AddThread(Thread thread)
         {
-            if (stateThreads != null)
+            lock (_lock)
             {
-                stateThreads.Add(thread);
+                if (stateThreads != null)
+                {
+                    stateThreads.Add(thread);
+                }
             }
         }
 
         #region IDisposable
         public void Dispose()
         {
-            Dispose(true);
+            lock (_lock)
+            {
+                Dispose(true);
+            }
         }
 
         protected virtual void Dispose(bool disposing)
         {
-            if (disposing)
+            lock (_lock)
             {
-                if (cancellationTokenSource != null)
+                if (disposing)
                 {
-                    cancellationTokenSource.Cancel();
-                }
+                    if (cancellationTokenSource != null)
+                    {
+                        cancellationTokenSource.Cancel();
+                    }
 
-                Thread.Sleep(Machine.Constants.Intervals.TaskDispose);
+                    Thread.Sleep(Machine.Constants.Intervals.TaskDispose);
 
-                if (cancellationTokenSource != null)
-                {
-                    cancellationTokenSource.Dispose();
-                    cancellationTokenSource = null;
+                    if (cancellationTokenSource != null)
+                    {
+                        cancellationTokenSource.Dispose();
+                        cancellationTokenSource = null;
+                    }
                 }
             }
         }

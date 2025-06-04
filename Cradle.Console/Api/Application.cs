@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 //GPIx7
 using Machine.Control.LowLevel.MachineController;
 //GPFx7
@@ -9,7 +9,8 @@ using ProRob;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("application")]
+    [ApiController]
+    [Route("application")]
     public class ApplicationController : CradleApiController
     {
         [HttpGet]
@@ -23,7 +24,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("close")]
-        public IHttpActionResult Close()
+        public IActionResult Close()
         {
             ProConsole.WriteLine($"[API] Shutdown()", ConsoleColor.Yellow);
 
@@ -49,7 +50,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("shutdown")]
-        public IHttpActionResult ShutdownIndustrialPC()
+        public IActionResult ShutdownIndustrialPC()
         {
             ProConsole.WriteLine($"[API] ShutdownIndustrialPC()", ConsoleColor.Yellow);
 #if !DEBUG || !TEST
@@ -81,7 +82,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("reboot")]
-        public IHttpActionResult RebootIndustrialPC()
+        public IActionResult RebootIndustrialPC()
         {
             ProConsole.WriteLine($"[API] RebootIndustrialPC()", ConsoleColor.Yellow);
 #if !DEBUG || !TEST

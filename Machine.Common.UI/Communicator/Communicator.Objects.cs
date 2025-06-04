@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -55,7 +56,8 @@ namespace Machine.UI.Communication
 
                 lock (instance.lockerSerializer)
                 {
-                    data = instance.serializer.Read<T>(new System.IO.MemoryStream(buffer));
+                    //data = instance.serializer.Read<T>(new System.IO.MemoryStream(buffer));
+                    data = JsonSerializer.Deserialize<T>(buffer);
                 }
 
                 return data;

@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Runtime.Remoting.Contexts;
 
 namespace Caron.Cradle.Control.HighLevel
 {
-    [Synchronization()]
     public class ZundConnection
     {
         public bool Status { get; set; } = false;

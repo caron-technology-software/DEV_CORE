@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob.WebApi.Auth;
 
@@ -15,7 +15,7 @@ using ProRob.WebApi;
 namespace Cradle.Proxy.Api
 {
     [BasicAuthorization]
-    [RoutePrefix("workings_settings")]
+    [Route("workings_settings")]
     public class WorkingsSettingsController : ProxyApiController
     {
         [HttpGet]

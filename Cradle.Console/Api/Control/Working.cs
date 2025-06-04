@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
@@ -17,14 +16,15 @@ using Caron.Cradle.Control.HighLevel;
 using Caron.Cradle.Control.HighLevel.Settings;
 
 using TicToc = ProRob.WebApi.TicToc;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("working")]
+    [ApiController]
+    [Route("working")]
     public class WorkingController : CradleApiController
     {
-        [Route("get_current_Working")]
-        [HttpGet]
+        [HttpGet("get_current_Working")]
         public Working GetCurrentWorking()
         {
             //ProConsole.WriteLine($"[API] GetCurrentWorking()", ConsoleColor.Yellow);

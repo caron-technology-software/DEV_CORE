@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 using ProRob.Extensions.Object;
@@ -15,7 +15,8 @@ using Caron.Cradle.Control.HighLevel.Settings;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("working_status")]
+    [ApiController]
+    [Route("working_status")]
     public class WorkingStatusController : CradleApiController
     {
         [Route("start")]

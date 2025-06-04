@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 
@@ -7,7 +7,8 @@ using Caron.Cradle.Control.LowLevel;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("cutter")]
+    [ApiController]
+    [Route("cutter")]
     public class CutterController : CradleApiController
     {
         [HttpGet]

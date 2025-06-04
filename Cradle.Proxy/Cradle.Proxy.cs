@@ -5,8 +5,6 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-using Microsoft.Owin.Hosting;
-
 using ProRob;
 using ProRob.OperatingSystems.Signals;
 
@@ -65,7 +63,8 @@ namespace Cradle.Proxy
 #else
             string serverUri = $"http://*:{Machine.Constants.Networking.WebApiProxyPort}/";
 #endif
-            var api = WebApp.Start<ProRob.WebApi.WebApiStartup>(serverUri);
+            var cts = new CancellationTokenSource();
+            var apiTask = Task.Run(() => Caron.Cradle.Control.Api.RunAsync(serverUri, cts.Token));
 
             Console.WriteLine($"Server started at {serverUri}");
             #endregion
@@ -101,7 +100,8 @@ namespace Cradle.Proxy
             {
                 Console.WriteLine("Exiting...");
 
-                api.Dispose();
+                cts.Cancel();
+                apiTask.Wait();
 
                 Console.Beep();
                 Thread.Sleep(100);

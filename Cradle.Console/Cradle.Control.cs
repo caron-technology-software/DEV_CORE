@@ -13,8 +13,6 @@ using System.Windows.Forms;
 using System.Runtime.ExceptionServices;
 using System.Diagnostics;
 
-using Microsoft.Owin.Hosting;
-
 using ProRob;
 using ProRob.Log;
 using ProRob.OperatingSystems.Signals;
@@ -844,10 +842,11 @@ output_driver04                    :20";
                 // Web Api
                 //-----------------------------------------------------------
                 #region Web Api 
-                var url = String.Format("http://{0}:{1}", Machine.Constants.Networking.IPAddressHighLevelControl, Machine.Constants.Networking.WebApiPort);
-                
-                CradleWebApi = WebApp.Start<ProRob.WebApi.WebApiStartup>(url);
-                
+                //var url = String.Format("http://{0}:{1}", Machine.Constants.Networking.IPAddressHighLevelControl, Machine.Constants.Networking.WebApiPort);
+                var url = $"http://0.0.0.0:{Machine.Constants.Networking.WebApiPort}";
+                var cts = new CancellationTokenSource();
+                var apiTask = Task.Run(() => Caron.Cradle.Control.Api.WebApiHost.RunAsync(url, cts.Token));
+
                 Api.CradleApiController.SetMachineController(Cradle);
                 
                 Console.WriteLine($"[WebApi] url: {url}");

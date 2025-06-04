@@ -3,20 +3,22 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 
 using Caron.Cradle.Control.LowLevel;
+using Microsoft.AspNetCore.Mvc;
+using HttpGetAttribute = Microsoft.AspNetCore.Mvc.HttpGetAttribute;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("command")]
+    [ApiController]
+    [Route("command")]
     public class LowLevelActionsController : CradleApiController
     {
-        [HttpGet]
-        [Route("stop")]
-        public IHttpActionResult StopAllActions()
+        [HttpGet("stop")]
+        public IActionResult StopAllActions()
         {
             ProConsole.WriteLine("[API] StopAllActions", ConsoleColor.Yellow);
 
@@ -25,9 +27,8 @@ namespace Caron.Cradle.Control.Api
             return Ok(DateTime.Now);
         }
 
-        [HttpGet]
-        [Route("autocentering")]
-        public IHttpActionResult Autocentering()
+        [HttpGet("autocentering")]
+        public IActionResult Autocentering()
         {
             ProConsole.WriteLine("[API] Autocentering", ConsoleColor.Yellow);
 
@@ -36,9 +37,10 @@ namespace Caron.Cradle.Control.Api
             return Ok(DateTime.Now);
         }
 
+
         [HttpGet]
         [Route("material_alignment")]
-        public IHttpActionResult MaterialAlignment()
+        public IActionResult MaterialAlignment()
         {
             ProConsole.WriteLine("[API] (START) MaterialAlignment", ConsoleColor.Yellow);
 
@@ -88,7 +90,7 @@ namespace Caron.Cradle.Control.Api
         #region Alignment
         [HttpGet]
         [Route("stop_task_alignment")]
-        public IHttpActionResult StopTaskAlignment()
+        public IActionResult StopTaskAlignment()
         {
             ProConsole.WriteLine("[API] StopTaskAlignment", ConsoleColor.Yellow);
             MachineController.Devices.ElectricDrives.StopTaskAlignment();
@@ -98,7 +100,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("start_alignment_mt_side")]
-        public IHttpActionResult StartAlignmentMotorSide()
+        public IActionResult StartAlignmentMotorSide()
         {
             ProConsole.WriteLine("[API] start_alignment_mt_side", ConsoleColor.Yellow);
             MachineController.Devices.ElectricDrives.StartAlignmentMotorSide();
@@ -108,7 +110,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("stop_alignment_mt_side")]
-        public IHttpActionResult StopAlignmentMotorSide()
+        public IActionResult StopAlignmentMotorSide()
         {
             ProConsole.WriteLine("[API] stop_alignment_mt_side", ConsoleColor.Yellow);
             MachineController.Devices.ElectricDrives.StopAlignmentMotorSide();
@@ -118,7 +120,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("start_alignment_op_side")]
-        public IHttpActionResult StartAlignmentOperatorSide()
+        public IActionResult StartAlignmentOperatorSide()
         {
             ProConsole.WriteLine("[API] start_alignment_op_side", ConsoleColor.Yellow);
             MachineController.Devices.ElectricDrives.StartAlignmentOperatorSide();
@@ -128,7 +130,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("stop_alignment_op_side")]
-        public IHttpActionResult StopAlignmentOperatorSide()
+        public IActionResult StopAlignmentOperatorSide()
         {
             ProConsole.WriteLine("[API] stop_alignment_op_side", ConsoleColor.Yellow);
             MachineController.Devices.ElectricDrives.StopAlignmentOperatorSide();
@@ -140,7 +142,7 @@ namespace Caron.Cradle.Control.Api
         #region Spoon
         [HttpGet]
         [Route("spoon_up")]
-        public IHttpActionResult SpoonUp()
+        public IActionResult SpoonUp()
         {
             ProConsole.WriteLine("[API] spoon_up", ConsoleColor.Yellow);
             MachineController.Devices.ElectricDrives.SpoonUp();
@@ -150,7 +152,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("spoon_down")]
-        public IHttpActionResult SpoonDown()
+        public IActionResult SpoonDown()
         {
             ProConsole.WriteLine("[API] spoon_down", ConsoleColor.Yellow);
             MachineController.Devices.ElectricDrives.SpoonDown();
@@ -162,7 +164,7 @@ namespace Caron.Cradle.Control.Api
         #region Cradle Up/Down
         [HttpGet]
         [Route("start_cradle_up")]
-        public IHttpActionResult StartCradleUp()
+        public IActionResult StartCradleUp()
         {
             ProConsole.WriteLine("[API] start_cradle_up", ConsoleColor.Yellow);
             MachineController.Devices.ElectricDrives.StartCradleUp();
@@ -172,7 +174,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("stop_cradle_up")]
-        public IHttpActionResult StopCradleUp()
+        public IActionResult StopCradleUp()
         {
             ProConsole.WriteLine("[API] stop_cradle_up", ConsoleColor.Yellow);
             MachineController.Devices.ElectricDrives.StopCradleUp();
@@ -182,7 +184,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("start_cradle_down")]
-        public IHttpActionResult StartCradleDown()
+        public IActionResult StartCradleDown()
         {
             ProConsole.WriteLine("[API] start_cradle_down", ConsoleColor.Yellow);
             MachineController.Devices.ElectricDrives.StartCradleDown();
@@ -192,7 +194,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("stop_cradle_down")]
-        public IHttpActionResult StopCradleDown()
+        public IActionResult StopCradleDown()
         {
             ProConsole.WriteLine("[API] stop_cradle_down", ConsoleColor.Yellow);
             MachineController.Devices.ElectricDrives.StopCradleDown();
@@ -204,7 +206,7 @@ namespace Caron.Cradle.Control.Api
         #region Titan
         [HttpGet]
         [Route("start_titan_up")]
-        public IHttpActionResult StartTitanUp()
+        public IActionResult StartTitanUp()
         {
             ProConsole.WriteLine("[API] StartTitanUp", ConsoleColor.Yellow);
             MachineController.Devices.ElectricDrives.StartTitanUp();
@@ -214,7 +216,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("stop_titan_up")]
-        public IHttpActionResult StopTitanUp()
+        public IActionResult StopTitanUp()
         {
             ProConsole.WriteLine("[API] StopTitanUp", ConsoleColor.Yellow);
             MachineController.Devices.ElectricDrives.StopTitanUp();
@@ -224,7 +226,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("start_titan_down")]
-        public IHttpActionResult StartTitanDown()
+        public IActionResult StartTitanDown()
         {
             ProConsole.WriteLine("[API] StartTitanDown", ConsoleColor.Yellow);
             MachineController.Devices.ElectricDrives.StartTitanDown();
@@ -234,7 +236,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("stop_titan_down")]
-        public IHttpActionResult StopTitanDown()
+        public IActionResult StopTitanDown()
         {
             ProConsole.WriteLine("[API] StopTitanDown", ConsoleColor.Yellow);
             MachineController.Devices.ElectricDrives.StopTitanDown();

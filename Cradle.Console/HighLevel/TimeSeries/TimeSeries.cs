@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,7 +8,6 @@ using Machine.DataCollections;
 
 namespace Caron.Cradle.Control.DataCollections
 {
-    [Synchronization()]
     public class TimeSeries
     {
         protected internal MachineDataBag<long> LowLevelCycleTicksBag { get; set; } = new MachineDataBag<long>(Machine.Constants.Intervals.DataCollections.RefreshRate, Machine.Constants.Intervals.DataCollections.SamplingWindow);

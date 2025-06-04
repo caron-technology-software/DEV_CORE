@@ -2,13 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Caron.Cradle.Control.HighLevel.Settings
 {
-    [Synchronization()]
     public class WorkingsSettings
     {
         public string SoftwareVersion { get; set; }
@@ -24,7 +22,6 @@ namespace Caron.Cradle.Control.HighLevel.Settings
         }
     }
 
-    [Synchronization()]
     public class WorkingSetting
     {
         public Guid Guid { get; set; }
@@ -47,7 +44,6 @@ namespace Caron.Cradle.Control.HighLevel.Settings
         }
     }
 
-    [Synchronization()]
     public class WorkingParameters
     {
         public uint PreFeedMaterial { get; set; }

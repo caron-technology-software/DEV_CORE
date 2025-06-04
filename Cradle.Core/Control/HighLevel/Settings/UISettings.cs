@@ -1,11 +1,9 @@
-﻿using System.Runtime.Remoting.Contexts;
-
+﻿
 using Machine.Common;
 using Machine.Settings;
 
 namespace Caron.Cradle.Control.HighLevel.Settings
 {
-    [Synchronization()]
     public class UISettings : MachineGroupOfSettings
     {
         [UserAccess(UserType.Distributor)]

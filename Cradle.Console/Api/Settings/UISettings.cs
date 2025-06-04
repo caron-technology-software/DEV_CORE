@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 
@@ -8,7 +8,8 @@ using Caron.Cradle.Control.Database;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("settings/ui")]
+    [ApiController]
+    [Route("settings/ui")]
     public class UISettingsController : CradleApiController
     {
         [HttpGet]
@@ -22,11 +23,11 @@ namespace Caron.Cradle.Control.Api
 
         [HttpPost]
         [Route("")]
-        public void SetUISettings()
+        public async void SetUISettings()
         {
             ProConsole.WriteLine($"[API] SetUISettings()", ConsoleColor.Yellow);
 
-            var json = ProRob.WebApi.Helpers.GetContentFromBody(Request);
+            var json = await ProRob.WebApi.Helpers.GetContentFromBody(Request);
 
             MachineController.HighLevel.Settings.UI = ProRob.Json.Deserialize<UISettings>(json);
 

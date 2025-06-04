@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 using ProRob.Extensions.Object;
@@ -11,7 +11,8 @@ using Caron.Cradle.Control.Database;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("endurance")]
+    [ApiController]
+    [Route("endurance")]
     public class MachineEnduranceController : CradleApiController
     {
         [HttpGet]
@@ -25,7 +26,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpPost]
         [Route("")]
-        public IHttpActionResult SetMachineEndurance([FromBody] HighLevel.Settings.MachineEndurance machineEndurance)
+        public IActionResult SetMachineEndurance([FromBody] HighLevel.Settings.MachineEndurance machineEndurance)
         {
             ProConsole.WriteLine($"[API] SetMachineEndurance()", ConsoleColor.Yellow);
 

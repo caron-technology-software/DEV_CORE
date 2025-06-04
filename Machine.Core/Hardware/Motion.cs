@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Machine.Hardware.Motion
 {
-    [Synchronization()]
     public class MachineAxis
     {
         public volatile float Position;
@@ -28,7 +26,6 @@ namespace Machine.Hardware.Motion
         }
     }
 
-    [Synchronization()]
     public class MachineAxisNoDriverWithScalingFactorStatus
     {
         public volatile float Position;
@@ -41,7 +38,6 @@ namespace Machine.Hardware.Motion
         }
     }
 
-    [Synchronization()]
     public class MachineAxisNoDriver
     {
         public volatile float Position;
@@ -52,7 +48,6 @@ namespace Machine.Hardware.Motion
         }
     }
 
-    [Synchronization()]
     public class MachineAxisNoEncoder
     {
         public volatile byte Status;
@@ -62,7 +57,6 @@ namespace Machine.Hardware.Motion
         }
     }
 
-    [Synchronization()]
     public class MachineAxisNoDriverAnalogEncoder
     {
         public volatile float NormalizedValue;

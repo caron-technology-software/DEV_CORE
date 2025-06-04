@@ -26,7 +26,8 @@ namespace Machine.SoftwareUpdate
 
         public override string ToString()
         {
-            return $"Path: {Path} Hash: {string.Concat(Hash.Take(8))}...{string.Concat(Hash.TakeLast(8))}";
+            //return $"Path: {Path} Hash: {string.Concat(Hash.Take(8))}...{string.Concat(Hash.TakeLast(8))}";
+            return $"Path: {Path} Hash: {string.Concat(Hash.Take(8))}";
         }
     }
 }

@@ -8,7 +8,6 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Runtime.Remoting.Contexts;
 
 using ProRob;
 
@@ -17,9 +16,10 @@ using Caron.Cradle.Control.DataCollections;
 
 namespace Caron.Cradle.Control
 {
-    [Synchronization()]
     public partial class LowLevelControlStatusGrabber : IDisposable
     {
+        private readonly object _lock = new();
+
         private CancellationTokenSource cancellationTokenSource;
         private CancellationToken cancellationToken;
 
@@ -50,31 +50,39 @@ namespace Caron.Cradle.Control
 
         public LowLevelControlStatusGrabber(LowLevel.ControlStatus lowLevelStatus, TimeSeries timeSeries)
         {
-            this.lowLevelControlStatus = lowLevelStatus;
-            this.timeSeries = timeSeries;
+            lock (_lock)
+            {
+                this.lowLevelControlStatus = lowLevelStatus;
+                this.timeSeries = timeSeries;
 
-            //GPIx129 se il socket è in uso riutilizza l'indirizzo (porta):
-            udpClient = new UdpClient(Machine.Constants.Networking.LowLevelControlUdpPort);
-            udpClient.Client.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, true);  //GPIx164 6) riutilizza socket anche se già utilizzato!
-            ipEndPoint = new IPEndPoint(IPAddress.Parse(Machine.Constants.Networking.IPAddressLowLevelControl), Machine.Constants.Networking.LowLevelControlUdpPort);
-            //GPFx129
-            udpClient.Connect(ipEndPoint);
-            udpClient.Client.ReceiveTimeout = (int)Machine.Constants.Timeouts.LowLevelTimeoutCommunication.TotalMilliseconds;
+                //GPIx129 se il socket è in uso riutilizza l'indirizzo (porta):
+                udpClient = new UdpClient(Machine.Constants.Networking.LowLevelControlUdpPort);
+                udpClient.Client.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, true);  //GPIx164 6) riutilizza socket anche se già utilizzato!
+                ipEndPoint = new IPEndPoint(IPAddress.Parse(Machine.Constants.Networking.IPAddressLowLevelControl), Machine.Constants.Networking.LowLevelControlUdpPort);
+                //GPFx129
+                udpClient.Connect(ipEndPoint);
+                udpClient.Client.ReceiveTimeout = (int)Machine.Constants.Timeouts.LowLevelTimeoutCommunication.TotalMilliseconds;
 
-            cancellationTokenSource = new CancellationTokenSource();
-            cancellationToken = cancellationTokenSource.Token;
+                cancellationTokenSource = new CancellationTokenSource();
+                cancellationToken = cancellationTokenSource.Token;
 
-            Task.Run(() => { TaskLowLevelControlStatusGrabber(cancellationToken); });
+                Task.Run(() => { TaskLowLevelControlStatusGrabber(cancellationToken); });
+            }
         }
 
         public void Stop()
         {
-            isRunning = false;
+            lock (_lock)
+            {
+                isRunning = false;
+            }
         }
 
         private void TaskLowLevelControlStatusGrabber(CancellationToken cancellationToken)
         {
-            ProConsole.WriteLine("[ENTERING] LowLevelControlStatusGrabber (TaskGrabber)", ConsoleColor.Green);
+            lock (_lock)
+            {
+                ProConsole.WriteLine("[ENTERING] LowLevelControlStatusGrabber (TaskGrabber)", ConsoleColor.Green);
 
 #if !TEST
             //int ciclo = 0;
@@ -259,39 +267,43 @@ namespace Caron.Cradle.Control
                 }
             }
 #else
-            firstPacketReceivedTimestamp = DateTime.UtcNow;
-            lowLevelControlStatus.IO.MachineInputs[(byte)MachineInput.MarchEnabled] = true;
+                firstPacketReceivedTimestamp = DateTime.UtcNow;
+                lowLevelControlStatus.IO.MachineInputs[(byte)MachineInput.MarchEnabled] = true;
 
-            while (!cancellationToken.IsCancellationRequested)
-            {
-                lastPacketReceivedTimestamp = DateTime.UtcNow;
-
-                lock (lockerLowLevelControlStatus)
+                while (!cancellationToken.IsCancellationRequested)
                 {
-                    lowLevelControlStatus.Info.Cycles = 0 + (uint)(lastPacketReceivedTimestamp.Millisecond);
+                    lastPacketReceivedTimestamp = DateTime.UtcNow;
 
-                    lowLevelControlStatus.Axes.Cradle.Position = 1 + (float)Math.Sin(2 * Math.PI * 0.1 * Uptime.TotalSeconds);
-                    lowLevelControlStatus.Axes.Cradle.PositionError = 0.01f * (float)Math.Sin(2 * Math.PI * 1.0 * Uptime.TotalSeconds);
-                    lowLevelControlStatus.Axes.Cradle.Velocity = (float)Math.Sin(2 * Math.PI * 0.2 * Uptime.TotalSeconds);
-                    lowLevelControlStatus.Axes.Table.Position = (float)Math.Sin(2 * Math.PI * 0.3 * Uptime.TotalSeconds);
-                    lowLevelControlStatus.Axes.Table.Velocity = (float)Math.Sin(2 * Math.PI * 0.4 * Uptime.TotalSeconds);
-                    lowLevelControlStatus.IO.AnalogInputs[0] = (float)Math.Sin(2 * Math.PI * 0.5 * Uptime.TotalSeconds);
+                    lock (lockerLowLevelControlStatus)
+                    {
+                        lowLevelControlStatus.Info.Cycles = 0 + (uint)(lastPacketReceivedTimestamp.Millisecond);
 
-                    TimeSeriesUpdater();
+                        lowLevelControlStatus.Axes.Cradle.Position = 1 + (float)Math.Sin(2 * Math.PI * 0.1 * Uptime.TotalSeconds);
+                        lowLevelControlStatus.Axes.Cradle.PositionError = 0.01f * (float)Math.Sin(2 * Math.PI * 1.0 * Uptime.TotalSeconds);
+                        lowLevelControlStatus.Axes.Cradle.Velocity = (float)Math.Sin(2 * Math.PI * 0.2 * Uptime.TotalSeconds);
+                        lowLevelControlStatus.Axes.Table.Position = (float)Math.Sin(2 * Math.PI * 0.3 * Uptime.TotalSeconds);
+                        lowLevelControlStatus.Axes.Table.Velocity = (float)Math.Sin(2 * Math.PI * 0.4 * Uptime.TotalSeconds);
+                        lowLevelControlStatus.IO.AnalogInputs[0] = (float)Math.Sin(2 * Math.PI * 0.5 * Uptime.TotalSeconds);
+
+                        TimeSeriesUpdater();
+                    }
+
+                    Interlocked.Increment(ref this.packetsReceived);
+
+                    Thread.Sleep(Machine.Constants.Intervals.HighLevelControlCycle);
                 }
-                
-                Interlocked.Increment(ref this.packetsReceived);
-
-                Thread.Sleep(Machine.Constants.Intervals.HighLevelControlCycle);
-            }
 #endif
-            ProConsole.WriteLine("[EXITING] LowLevelStatusGrabber (TaskGrabber)", ConsoleColor.Red);
+                ProConsole.WriteLine("[EXITING] LowLevelStatusGrabber (TaskGrabber)", ConsoleColor.Red);
+            }
         }
 
         internal void TimeSeriesUpdater()
         {
-            timeSeries.LowLevelCycleTicksBag.AddData(lastPacketReceivedTimestamp, lastPacketReceivedTimestamp.Ticks);
-            timeSeries.LowLevelControlStatusBag.AddData(lastPacketReceivedTimestamp, lowLevelControlStatus);
+            lock (_lock)
+            {
+                timeSeries.LowLevelCycleTicksBag.AddData(lastPacketReceivedTimestamp, lastPacketReceivedTimestamp.Ticks);
+                timeSeries.LowLevelControlStatusBag.AddData(lastPacketReceivedTimestamp, lowLevelControlStatus);
+            }
         }
 
         public void ResetCommunicationErrors()
@@ -302,30 +314,35 @@ namespace Caron.Cradle.Control
         #region IDisposable
         public void Dispose()
         {
-
-            Dispose(true);
+            lock (_lock)
+            {
+                Dispose(true);
+            }
         }
 
         protected virtual void Dispose(bool disposing)
         {
-            if (disposing)
+            lock (_lock)
             {
-                isRunning = false;
-
-                if (cancellationTokenSource != null)
+                if (disposing)
                 {
-                    cancellationTokenSource.Cancel();
-                }
+                    isRunning = false;
 
-                if (udpClient != null)
-                {
-                    udpClient.Dispose();
-                }
+                    if (cancellationTokenSource != null)
+                    {
+                        cancellationTokenSource.Cancel();
+                    }
 
-                if (cancellationTokenSource != null)
-                {
-                    cancellationTokenSource.Dispose();
-                    cancellationTokenSource = null;
+                    if (udpClient != null)
+                    {
+                        udpClient.Dispose();
+                    }
+
+                    if (cancellationTokenSource != null)
+                    {
+                        cancellationTokenSource.Dispose();
+                        cancellationTokenSource = null;
+                    }
                 }
             }
         }

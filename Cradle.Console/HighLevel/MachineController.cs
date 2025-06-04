@@ -6,7 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Runtime.Remoting.Contexts;
 using System.Windows.Forms;
 using System.Diagnostics;
 
@@ -29,9 +28,10 @@ using Caron.Cradle.Control.LowLevel;
 
 namespace Caron.Cradle.Control.HighLevel
 {
-    [Synchronization()]
     public partial class MachineController : IDisposable
     {
+        private readonly object _lock = new();
+
         private CancellationTokenSource cancellationTokenSource;
         private CancellationToken cancellationToken;
 
@@ -79,38 +79,44 @@ namespace Caron.Cradle.Control.HighLevel
             // LOAD SETTINGS
             //---------------------------------
             #region Load Settings
-            Console.WriteLine($"Loading root settings..");
-            HighLevel.Settings.HighLevel = MachineData.Read<Settings.HighLevelSettings>(Constants.Path.Settings.SettingsFile);
+            lock (_lock)
+            {
+                Console.WriteLine($"Loading root settings..");
+                HighLevel.Settings.HighLevel = MachineData.Read<Settings.HighLevelSettings>(Constants.Path.Settings.SettingsFile);
 
-            Console.WriteLine($"Loading low level settings..");
-            HighLevel.Settings.LowLevelMotion = MachineData.Read<LowLevelMotionSettings>(Constants.Path.Settings.LowLevelMotionSettingsFile);
+                Console.WriteLine($"Loading low level settings..");
+                HighLevel.Settings.LowLevelMotion = MachineData.Read<LowLevelMotionSettings>(Constants.Path.Settings.LowLevelMotionSettingsFile);
 
-            Console.WriteLine($"Loading UI settings..");
-            HighLevel.Settings.UI = MachineData.Read<UISettings>(Constants.Path.Settings.UISettingsFile);
+                Console.WriteLine($"Loading UI settings..");
+                HighLevel.Settings.UI = MachineData.Read<UISettings>(Constants.Path.Settings.UISettingsFile);
 
-            Console.WriteLine($"Loading workings settings..");
-            HighLevel.WorkingsSettings = MachineData.Read<WorkingsSettings>(Constants.Path.Settings.WorkingsSettingsFile);
+                Console.WriteLine($"Loading workings settings..");
+                HighLevel.WorkingsSettings = MachineData.Read<WorkingsSettings>(Constants.Path.Settings.WorkingsSettingsFile);
 
-            Console.WriteLine($"Loading workings statistics..");
-            HighLevel.Working = MachineData.Read<Working>(Constants.Path.Settings.WorkingsStatisticsFile);
+                Console.WriteLine($"Loading workings statistics..");
+                HighLevel.Working = MachineData.Read<Working>(Constants.Path.Settings.WorkingsStatisticsFile);
 
-            Console.WriteLine($"Loading machine configuration..");
-            HighLevel.Configuration = MachineData.Read<MachineConfiguration>(Constants.Path.Settings.MachineConfigurationFile);
+                Console.WriteLine($"Loading machine configuration..");
+                HighLevel.Configuration = MachineData.Read<MachineConfiguration>(Constants.Path.Settings.MachineConfigurationFile);
 
-            Console.WriteLine($"Loading machine endurance..");
-            HighLevel.MachineEndurance = MachineData.Read<MachineEndurance>(Constants.Path.Settings.MachineEndurance);
+                Console.WriteLine($"Loading machine endurance..");
+                HighLevel.MachineEndurance = MachineData.Read<MachineEndurance>(Constants.Path.Settings.MachineEndurance);
 
-            Console.WriteLine($"Loading working context..");
-            HighLevel.WorkingContext = MachineData.Read<WorkingContext>(Constants.Path.Settings.WorkingContextFile);
+                Console.WriteLine($"Loading working context..");
+                HighLevel.WorkingContext = MachineData.Read<WorkingContext>(Constants.Path.Settings.WorkingContextFile);
+            }
             #endregion
 
             //-----------------------------------------------------------
             // Gestione trigger settings
             //-----------------------------------------------------------
             #region Gestione trigger settings
-            if (HighLevel.MachineEndurance.WorkingHours.MachineMaintenanceHours < TimeSpan.FromMinutes(5).TotalHours)
+            lock (_lock)
             {
-                HighLevel.MachineEndurance.Cutter.NumberOfCutOff = 0;
+                if (HighLevel.MachineEndurance.WorkingHours.MachineMaintenanceHours < TimeSpan.FromMinutes(5).TotalHours)
+                {
+                    HighLevel.MachineEndurance.Cutter.NumberOfCutOff = 0;
+                }
             }
             #endregion
 
@@ -118,10 +124,13 @@ namespace Caron.Cradle.Control.HighLevel
             // Localization Settings
             //-----------------------------------------------------------
             #region Localization
-            Machine.Localization.Initialize(Constants.Path.Data.LocalizationsFile);
-            Machine.Localization.MachineLanguage = MachineData.Read<LocalizationSettings>(Constants.Path.Settings.Localization).MachineLanguage;
-            MachineLanguage = Machine.Localization.MachineLanguage;
-            Console.WriteLine($"MachineLanguage: {Machine.Localization.MachineLanguage.ToString()}");
+            lock (_lock)
+            {
+                Machine.Localization.Initialize(Constants.Path.Data.LocalizationsFile);
+                Machine.Localization.MachineLanguage = MachineData.Read<LocalizationSettings>(Constants.Path.Settings.Localization).MachineLanguage;
+                MachineLanguage = Machine.Localization.MachineLanguage;
+                Console.WriteLine($"MachineLanguage: {Machine.Localization.MachineLanguage.ToString()}");
+            }
             #endregion
 
             //---------------------------------
@@ -129,7 +138,6 @@ namespace Caron.Cradle.Control.HighLevel
             //---------------------------------
             #region Log
             Log = new DbLog(lowLevelLogger, highLevelLogger, uiLogger);
-
             //Log.LowLevel.RemoveOldLogs(TimeSpan.FromDays(Machine.Constants.Maintenance.NumberOfDaysToKeepLogs));
             //Log.HighLevel.RemoveOldLogs(TimeSpan.FromDays(Machine.Constants.Maintenance.NumberOfDaysToKeepLogs));
             //Log.UI.RemoveOldLogs(TimeSpan.FromDays(Machine.Constants.Maintenance.NumberOfDaysToKeepLogs));
@@ -139,20 +147,26 @@ namespace Caron.Cradle.Control.HighLevel
             // Maintenance
             //---------------------------------
             #region Maintenance
-            Maintenance.RemoveOldFiles(Constants.Path.LogsFolder, Machine.Constants.Maintenance.NumberOfDaysToKeepLogs);
+            lock (_lock)
+            {
+                Maintenance.RemoveOldFiles(Constants.Path.LogsFolder, Machine.Constants.Maintenance.NumberOfDaysToKeepLogs);
+            }
             #endregion
 
             //---------------------------------
             // DB UPDATES
             //---------------------------------
             #region DB Updates
-            Console.WriteLine($"Updating data..");
+            lock (_lock)
+            {
+                Console.WriteLine($"Updating data..");
 
-            HighLevel.MachineEndurance.Statistics.NumberPowerOn++;
-            DatabaseSettings.Update(HighLevel.MachineEndurance);
+                HighLevel.MachineEndurance.Statistics.NumberPowerOn++;
+                DatabaseSettings.Update(HighLevel.MachineEndurance);
 
-            var totalPowerOnTime = TimeSpan.FromHours(HighLevel.MachineEndurance.WorkingHours.PowerOnHours);
-            ProConsole.WriteLine($"Total power on time: {totalPowerOnTime.TotalDays.ToString("0.00")} hours");
+                var totalPowerOnTime = TimeSpan.FromHours(HighLevel.MachineEndurance.WorkingHours.PowerOnHours);
+                ProConsole.WriteLine($"Total power on time: {totalPowerOnTime.TotalDays.ToString("0.00")} hours");
+            }
             #endregion
 
             //---------------------------------
@@ -166,8 +180,10 @@ namespace Caron.Cradle.Control.HighLevel
             //---------------------------------
             // START
             //---------------------------------
-            Application.Start();
-
+            lock (_lock)
+            {
+                Application.Start();
+            }
             //---------------------------------
             // STATE MACHINE MANAGER
             //---------------------------------
@@ -178,57 +194,60 @@ namespace Caron.Cradle.Control.HighLevel
             //---------------------------------
             #region Tasks
             {
-                int threadsCounter = 0;
-
-                threadsCounter++;
-                Task.Run(() =>
+                lock (_lock)
                 {
-                    TaskHighLevelControlStatusUpdater(cancellationToken);
-                });
+                    int threadsCounter = 0;
 
-                threadsCounter++;
-                Task.Run(() =>
-                {
-                    TaskCountingStatisticsHandler(cancellationToken);
-                });
+                    threadsCounter++;
+                    Task.Run(() =>
+                    {
+                        TaskHighLevelControlStatusUpdater(cancellationToken);
+                    });
 
-                threadsCounter++;
-                Task.Run(() =>
-                {
-                    TaskMarchHandler(cancellationToken);
-                });
+                    threadsCounter++;
+                    Task.Run(() =>
+                    {
+                        TaskCountingStatisticsHandler(cancellationToken);
+                    });
+
+                    threadsCounter++;
+                    Task.Run(() =>
+                    {
+                        TaskMarchHandler(cancellationToken);
+                    });
 
 #if !TEST
-                threadsCounter++;
-                Task.Run(() =>
-                {
-                    TaskAlignementHandler(cancellationToken);
-                });
+                    threadsCounter++;
+                    Task.Run(() =>
+                    {
+                        TaskAlignementHandler(cancellationToken);
+                    });
 
-                threadsCounter++;
-                Task.Run(() =>
-                {
-                    TaskEmergencyHandler(cancellationToken);
-                });
+                    threadsCounter++;
+                    Task.Run(() =>
+                    {
+                        TaskEmergencyHandler(cancellationToken);
+                    });
 
-                threadsCounter++;
-                Task.Run(() =>
-                {
-                    TaskZundHandler(cancellationToken);
-                });
+                    threadsCounter++;
+                    Task.Run(() =>
+                    {
+                        TaskZundHandler(cancellationToken);
+                    });
 
-                threadsCounter++;
-                Task.Run(() =>
-                {
-                    TaskZundCutterLockHandler(cancellationToken);
-                });
+                    threadsCounter++;
+                    Task.Run(() =>
+                    {
+                        TaskZundCutterLockHandler(cancellationToken);
+                    });
 #endif
-                //--------------------------
-                // Wait start
-                //--------------------------
-                while (ThreadsStarted != threadsCounter)
-                {
-                    Thread.Sleep(Machine.Constants.Intervals.HighLevelControlCycle);
+                    //--------------------------
+                    // Wait start
+                    //--------------------------
+                    while (ThreadsStarted != threadsCounter)
+                    {
+                        Thread.Sleep(Machine.Constants.Intervals.HighLevelControlCycle);
+                    }
                 }
             }
 
@@ -239,27 +258,32 @@ namespace Caron.Cradle.Control.HighLevel
             // Errors
             //---------------------------------
             #region Errors
-            //GPIx243
-            if (EnduranceLimit.Check(HighLevel.Settings.HighLevel.EnduranceLimits.WorkingHours.WorkingFakeHours, HighLevel.MachineEndurance.WorkingHours.WorkingFakeHours))
+            lock (_lock)
             {
-                Console.WriteLine("[ETHERCAT ERROR]");
-                HighLevel.Errors.EtherCat = true;
+                //GPIx243
+                if (EnduranceLimit.Check(HighLevel.Settings.HighLevel.EnduranceLimits.WorkingHours.WorkingFakeHours, HighLevel.MachineEndurance.WorkingHours.WorkingFakeHours))
+                {
+                    Console.WriteLine("[ETHERCAT ERROR]");
+                    HighLevel.Errors.EtherCat = true;
 
-                HighLevel.MachineEndurance.Statistics.EthercatCode = (uint)MachineController.EthercutCodeError; // 135;
+                    HighLevel.MachineEndurance.Statistics.EthercatCode = (uint)MachineController.EthercutCodeError; // 135;
+                }
+                //GPFx243
             }
-            //GPFx243
             #endregion
 
             //---------------------------------
             // Send settings to low level
             //---------------------------------
-            Communicator.SetMachineLowLevelSettings(
+            lock (_lock)
+            {
+                Communicator.SetMachineLowLevelSettings(
                 HighLevel.Settings.LowLevelMotion,
                 HighLevel.Settings.HighLevel.FunctionsEnabled,
                 HighLevel.Settings.HighLevel.MachineParameters);
 
-            Communicator.SetStraightRoller(HighLevel.WorkingContext.Parameters.StraightRoller);
-
+                Communicator.SetStraightRoller(HighLevel.WorkingContext.Parameters.StraightRoller);
+            }
             //GPIx164
             //---------------------------------
             // Heartbeat
@@ -304,10 +328,13 @@ namespace Caron.Cradle.Control.HighLevel
             //---------------------------------
             // Control Ready
             //---------------------------------
-            HighLevel.Signals.ControlReady = true;
+            lock (_lock)
+            {
+                HighLevel.Signals.ControlReady = true;
 
-            //Reset errori (generati durante la fase iniziale di attesa controllore)
-            LowLevelControlStatusGrabber.ResetCommunicationErrors();
+                //Reset errori (generati durante la fase iniziale di attesa controllore)
+                LowLevelControlStatusGrabber.ResetCommunicationErrors();
+            }
         }
 
         public void Close()

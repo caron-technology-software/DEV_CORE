@@ -1,10 +1,8 @@
 ﻿using Machine.Common;
 using Machine.Settings;
-using System.Runtime.Remoting.Contexts;
 
 namespace Caron.Cradle.Control.HighLevel.Settings
 {
-    [Synchronization()]
     public class MachineParameters : MachineGroupOfSettings
     {
         [UserAccess(UserType.Distributor)]

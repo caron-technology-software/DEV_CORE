@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Diagnostics;
-using System.Runtime.Remoting.Contexts;
 
 using ProRob;
 using ProRob.Extensions.Object;
@@ -20,21 +19,35 @@ using Caron.Cradle.Control.HighLevel;
 
 namespace Caron.Cradle.UI
 {
-    [Synchronization()]
     public class ControlStatusGrabber
     {
-        private Control.ControlStatus controlStatus;
+        private readonly object _lock = new();
 
-        private Counter controlStatusReceived;
-        private Counter controlStatusErrors;
-        private EventsManager eventsManager;
+        private Control.ControlStatus controlStatus;
+        public Caron.Cradle.Control.ControlStatus ControlStatus
+        {
+            get
+            {
+                lock (_lock)
+                {
+                    return controlStatus;
+                }
+            }
+        }
+
+        private readonly Counter controlStatusReceived;
+        private readonly Counter controlStatusErrors;
+        private readonly EventsManager eventsManager;
+        private readonly CancellationToken cancellationToken;
 
         private TimeSpan LastSystemControlUpdateDuration { get; set; } = TimeSpan.MinValue;
         private static readonly Stopwatch stopWatch = new Stopwatch();
 
-        private CancellationToken cancellationToken;
-
-        public ControlStatusGrabber(Counter controlStatusReceived, Counter controlStatusErrors, EventsManager eventsManager, CancellationToken cancellationToken)
+        public ControlStatusGrabber(
+            Counter controlStatusReceived,
+            Counter controlStatusErrors,
+            EventsManager eventsManager,
+            CancellationToken cancellationToken)
         {
             this.controlStatus = new Control.ControlStatus();
             this.controlStatusReceived = controlStatusReceived;
@@ -43,11 +56,9 @@ namespace Caron.Cradle.UI
             this.cancellationToken = cancellationToken;
         }
 
-        public Caron.Cradle.Control.ControlStatus ControlStatus => controlStatus;
-
         public void Start()
         {
-            Task.Run(() => { TaskHighLevelControlStatusGrabber(cancellationToken); });
+            Task.Run(() => TaskHighLevelControlStatusGrabber(cancellationToken));
         }
 
         private void TaskHighLevelControlStatusGrabber(CancellationToken cancellationToken)
@@ -60,9 +71,6 @@ namespace Caron.Cradle.UI
                 {
                     stopWatch.Restart();
 
-                    //-------------------------------------------------------
-                    //System Control Status Update
-                    //-------------------------------------------------------                 
                     var cs = Communicator.GetEncodedData<Control.ControlStatus>("control_status/encoded");
 
                     if (cs is null)
@@ -73,19 +81,14 @@ namespace Caron.Cradle.UI
                     {
                         controlStatusReceived.Increment();
 
-                        //In caso di errori i valori dello stato saranno esattamente quelli del ciclo precedente
-                        lock (controlStatus)
+                        lock (_lock)
                         {
                             controlStatus = cs;
                         }
 
-                        //-------------------------------------------------------
-                        //Events Manager
-                        //-------------------------------------------------------
-                        eventsManager.Check(controlStatus);
+                        eventsManager.Check(cs);
 
                         stopWatch.Stop();
-
                         LastSystemControlUpdateDuration = stopWatch.Elapsed;
 
                         if (LastSystemControlUpdateDuration < Machine.UI.Constants.Intervals.UpdateControlStatus)
@@ -103,4 +106,5 @@ namespace Caron.Cradle.UI
             ProConsole.WriteLine($"[EXITING] TaskHighLevelControlStatusGrabber ({controlStatusErrors})", ConsoleColor.Red);
         }
     }
+
 }

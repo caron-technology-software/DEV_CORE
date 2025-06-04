@@ -1,64 +1,53 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
+﻿using Microsoft.AspNetCore.Mvc.Filters;
+using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
-using System.Web.Http;
-using System.Web.Http.Controllers;
-using System.Web.Http.Filters;
 
 namespace ProRob.WebApi
 {
     public class TicToc : ActionFilterAttribute
     {
-        private static DateTime timestamp;
-        private static string controllerName;
+        private const string StopwatchKey = "__TICTOC__";
 
-        public override void OnActionExecuting(HttpActionContext context)
+        public override void OnActionExecuting(ActionExecutingContext context)
         {
-            timestamp = DateTime.Now;
-            controllerName = context.ControllerContext.ControllerDescriptor.ControllerName;
+            context.HttpContext.Items[StopwatchKey] = Stopwatch.StartNew();
         }
 
-        public override void OnActionExecuted(HttpActionExecutedContext context)
+        public override void OnActionExecuted(ActionExecutedContext context)
         {
-            Console.WriteLine($"[{controllerName}] Elapsed time: {(DateTime.Now - timestamp).TotalMilliseconds} ms\n");
+            if (context.HttpContext.Items[StopwatchKey] is Stopwatch sw)
+            {
+                sw.Stop();
+                var controllerName = context.Controller.GetType().Name;
+                Console.WriteLine($"[{controllerName}] Elapsed time: {sw.Elapsed.TotalMilliseconds} ms");
+            }
         }
     }
 
-    public class PrintRemoteIp : ActionFilterAttribute
+    public class PrintRemoteIpAttribute : ActionFilterAttribute
     {
-        public override void OnActionExecuted(HttpActionExecutedContext context)
+        public override void OnActionExecuted(ActionExecutedContext context)
         {
-            var ip = context.Request.GetOwinContext().Request.RemoteIpAddress;
-
+            var ip = context.HttpContext.Connection.RemoteIpAddress?.ToString();
             Console.WriteLine($"[{ip}]");
         }
     }
 
-    public class PrintSourceUrl : ActionFilterAttribute
+    public class PrintSourceUrlAttribute : ActionFilterAttribute
     {
-        public override void OnActionExecuting(HttpActionContext context)
+        public override void OnActionExecuting(ActionExecutingContext context)
         {
-            var url = context.Request.RequestUri;
-
-            Console.WriteLine($"url:{url}");
+            var url = context.HttpContext.Request.Path + context.HttpContext.Request.QueryString;
+            Console.WriteLine($"url: {url}");
         }
     }
 
-    public class Beep : ActionFilterAttribute
+    public class BeepAttribute : ActionFilterAttribute
     {
-
-        public override void OnActionExecuting(HttpActionContext context)
+        public override void OnActionExecuted(ActionExecutedContext context)
         {
-
-        }
-
-        public override void OnActionExecuted(HttpActionExecutedContext context)
-        {
-            Task.Run(() => { Console.Beep(); });
+            Task.Run(() => Console.Beep());
         }
     }
-
 }

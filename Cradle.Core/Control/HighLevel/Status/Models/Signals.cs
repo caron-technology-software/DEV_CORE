@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Caron.Cradle.Control.HighLevel
 {
-    [Synchronization()]
     public class Signals
     {
         public bool ControlReady { get; set; } = false;

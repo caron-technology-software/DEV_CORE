@@ -84,6 +84,6 @@ namespace ProRob
             if (string.IsNullOrEmpty(templateFile))
                 throw new InvalidOperationException("Host.TemplateFile è null. Assicurati di eseguire la trasformazione all'interno di Visual Studio.");
 
-            return Path.GetFullPath(Path.Combine(Path.GetDirectoryName(templateFile), "..", "..", ".."));
+            return Path.GetFullPath(Path.Combine(Path.GetDirectoryName(templateFile), "..", ".."));
         }          
 #>

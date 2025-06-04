@@ -4,18 +4,19 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 using Machine.Models;
 using Machine.UI.Controls;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("message")]
+    [ApiController]
+    [Route("message")]
     public class MessageBoxController : CradleApiController
     {
         [HttpGet]
         [Route("")]
-        public IHttpActionResult Show(string title, string message)
+        public IActionResult Show(string title, string message)
         {
             var dialogOpened = DateTime.Now;
 

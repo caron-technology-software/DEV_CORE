@@ -4,13 +4,14 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("settings")]
+    [ApiController]
+    [Route("settings")]
     public class SettingController : CradleApiController
     {
         [HttpGet]

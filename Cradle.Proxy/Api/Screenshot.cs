@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Threading;
 using System.Net;
 using System.Net.Http;
@@ -16,7 +16,7 @@ using ProRob.WebApi.Auth;
 
 namespace Cradle.Proxy
 {
-    [RoutePrefix("screenshot")]
+    [Route("screenshot")]
     public class ScreenshotController : ProxyApiController
     {
         [SwaggerIgnore]

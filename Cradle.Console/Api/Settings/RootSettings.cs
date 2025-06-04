@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 
@@ -8,7 +8,8 @@ using Caron.Cradle.Control.Database;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("settings/root")]
+    [ApiController]
+    [Route("settings/root")]
     public class RootSettingsController : CradleApiController
     {
         [HttpGet]
@@ -22,11 +23,11 @@ namespace Caron.Cradle.Control.Api
 
         [HttpPost]
         [Route("")]
-        public void SetRootSettings()
+        public async void SetRootSettings()
         {
             ProConsole.WriteLine($"[API] SetRootSettings()", ConsoleColor.Yellow);
 
-            var json = ProRob.WebApi.Helpers.GetContentFromBody(Request);
+            var json = await ProRob.WebApi.Helpers.GetContentFromBody(Request);
 
             MachineController.HighLevel.Settings.HighLevel = ProRob.Json.Deserialize<HighLevelSettings>(json);
 
@@ -44,11 +45,11 @@ namespace Caron.Cradle.Control.Api
 
         [HttpPost]
         [Route("machine_parameters")]
-        public void SetMachineParameters()
+        public async void SetMachineParameters()
         {
             ProConsole.WriteLine($"[API] SetMachineParameters()", ConsoleColor.Yellow);
 
-            var json = ProRob.WebApi.Helpers.GetContentFromBody(Request);
+            var json = await ProRob.WebApi.Helpers.GetContentFromBody(Request);
 
             MachineController.HighLevel.Settings.HighLevel.MachineParameters = ProRob.Json.Deserialize<MachineParameters>(json);
 
@@ -66,11 +67,11 @@ namespace Caron.Cradle.Control.Api
 
         [HttpPost]
         [Route("endurance_limits")]
-        public void SetEnduranceLimits()
+        public async void SetEnduranceLimits()
         {
             ProConsole.WriteLine($"[API] SetEnduranceLimits()", ConsoleColor.Yellow);
 
-            var json = ProRob.WebApi.Helpers.GetContentFromBody(Request);
+            var json = await ProRob.WebApi.Helpers.GetContentFromBody(Request);
 
             MachineController.HighLevel.Settings.HighLevel.EnduranceLimits = ProRob.Json.Deserialize<MachineEnduranceLimits>(json);
 

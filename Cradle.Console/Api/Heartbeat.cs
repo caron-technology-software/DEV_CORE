@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 //aggiunte 29/06/2022:
 using System.Net.Http;
 using System.Net;
@@ -17,12 +17,13 @@ using Machine;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("heartbeat")]
+    [ApiController]
+    [Route("heartbeat")]
     public class HeartbeatController : CradleApiController
     {
         [HttpGet]
         [Route("")]
-        public IHttpActionResult Heartbeat()
+        public IActionResult Heartbeat()
         {
             var heartbeat = new Heartbeat()
             {

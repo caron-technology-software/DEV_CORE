@@ -2,13 +2,14 @@
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("tasks_status")]
+    [ApiController]
+    [Route("tasks_status")]
     public class TasksStatusController : CradleApiController
     {
         //----------------------------------------------

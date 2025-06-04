@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
-using System.Web.Http;
 
 using ProRob;
 using ProRob.Extensions.Object;
@@ -15,10 +14,12 @@ using Machine.Control.LowLevel.MachineController;
 //GPFx7
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("external_commands")]
+    [ApiController]
+    [Route("external_commands")]
     public class ExternalCommandsController : CradleApiController
     {
 
@@ -27,7 +28,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("shutdown_twincat2")]
-        public IHttpActionResult ShutdownTwincat2()
+        public IActionResult ShutdownTwincat2()
         {
             ProConsole.WriteLine("[API] shutdown_twincat2", ConsoleColor.Yellow);
             MachineControllerManager.ShutdownTwincat2();
@@ -39,7 +40,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("status")]
-        public IHttpActionResult Status()
+        public IActionResult Status()
         {
             ProConsole.WriteLine($"[API] Status()", ConsoleColor.Yellow);
 
@@ -55,7 +56,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("cut")]
-        public IHttpActionResult Cut()
+        public IActionResult Cut()
         {
             ProConsole.WriteLine($"[API] Cut()", ConsoleColor.Yellow);
 
@@ -97,7 +98,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("cut/status")]
-        public IHttpActionResult CutStatus()
+        public IActionResult CutStatus()
         {
             ProConsole.WriteLine($"[API] CutStatus()", ConsoleColor.Yellow);
 
@@ -111,7 +112,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("sync/status")]
-        public IHttpActionResult GetSync()
+        public IActionResult GetSync()
         {
             ProConsole.WriteLine($"[API] GetSync()", ConsoleColor.Yellow);
 
@@ -128,7 +129,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("sync/enable")]
-        public IHttpActionResult EnableSync()
+        public IActionResult EnableSync()
         {
             ProConsole.WriteLine($"[API] EnableSync()", ConsoleColor.Yellow);
 
@@ -139,7 +140,7 @@ namespace Caron.Cradle.Control.Api
 
         [HttpGet]
         [Route("sync/disable")]
-        public IHttpActionResult DisableSync()
+        public IActionResult DisableSync()
         {
             ProConsole.WriteLine($"[API] DisableSync()", ConsoleColor.Yellow);
 
@@ -152,7 +153,7 @@ namespace Caron.Cradle.Control.Api
         #region DigitalOutput     
         [HttpGet]
         [Route("set_digital_output")]
-        public IHttpActionResult SetDigitalOutput(int index, int value)
+        public IActionResult SetDigitalOutput(int index, int value)
         {
             ProConsole.WriteLine($"[API] SetDigitalOutput({index} - {value})", ConsoleColor.Yellow);
 
@@ -164,7 +165,7 @@ namespace Caron.Cradle.Control.Api
         //SetEnableIOSettings
         [HttpGet]
         [Route("set_enable_io_settings")]
-        public IHttpActionResult SetEnableIOSettings(bool enable)
+        public IActionResult SetEnableIOSettings(bool enable)
         {
             ProConsole.WriteLine($"[API] SetEnableIOSettings({enable})", ConsoleColor.Yellow);
 

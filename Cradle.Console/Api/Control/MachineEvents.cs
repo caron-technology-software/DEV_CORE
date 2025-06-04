@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
@@ -16,7 +16,8 @@ using TicToc = ProRob.WebApi.TicToc;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("machine_events")]
+    [ApiController]
+    [Route("machine_events")]
     public class MachineEventsController : CradleApiController
     {
         [Route("")]

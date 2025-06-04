@@ -1,4 +1,6 @@
 ﻿
+using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
@@ -10,61 +12,34 @@ using System.Security.Principal;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Web.Http.Controllers;
 using System.Web.Http.Filters;
 
 namespace ProRob.WebApi
 {
-    public class IpAuthorizeAttribute : AuthorizationFilterAttribute
+    public class IpAuthorizeAttribute : Attribute, Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter
     {
-        private readonly string ipAllowed;
+        private readonly string _ipAllowed;
 
         public IpAuthorizeAttribute(string ipAllowed)
         {
-            this.ipAllowed = ipAllowed;
+            _ipAllowed = ipAllowed;
         }
 
-        private static bool SkipAuthorization(HttpActionContext actionContext)
+        public void OnAuthorization(AuthorizationFilterContext context)
         {
-            Contract.Assert(actionContext != null);
-
-            return (actionContext.ActionDescriptor.GetCustomAttributes<AllowAnonymousAttribute>().Any() ||
-                    actionContext.ControllerContext.ControllerDescriptor.GetCustomAttributes<AllowAnonymousAttribute>().Any());
-        }
-
-        public override void OnAuthorization(HttpActionContext actionContext)
-        {
-            if (SkipAuthorization(actionContext))
-            {
+            var endpoint = context.ActionDescriptor.EndpointMetadata;
+            if (endpoint.OfType<Microsoft.AspNetCore.Authorization.AllowAnonymousAttribute>().Any())
                 return;
-            }
 
-            var ip = actionContext.Request.GetOwinContext().Request.RemoteIpAddress;
+            var remoteIp = context.HttpContext.Connection.RemoteIpAddress?.ToString();
 
-            //Console.WriteLine($"DEBUG AUTH {ip} {ipAllowed}");
-
-            // Validate username and password  
-            if (String.Equals(ip, ipAllowed))
+            if (!string.Equals(remoteIp, _ipAllowed, StringComparison.OrdinalIgnoreCase))
             {
-                ////////var claims = new List<Claim>()
-                ////////{
-                ////////    new Claim("RemoteIpAddress",ip)
-                ////////};
-
-                ////////var identity = new ClaimsIdentity(claims, "Auth");
-                ////////IPrincipal user = new ClaimsPrincipal(identity);
-
-                ////////Thread.CurrentPrincipal = user;
+                context.Result = new UnauthorizedResult();
             }
-            else
-            {
-                // returns unauthorized error
-                actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.Unauthorized);
-            }
-
-            base.OnAuthorization(actionContext);
-
         }
     }
+
 }

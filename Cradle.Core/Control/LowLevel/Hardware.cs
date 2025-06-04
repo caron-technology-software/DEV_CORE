@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,7 +8,6 @@ using Machine.Hardware.Motion;
 
 namespace Caron.Cradle.Control.LowLevel
 {
-    [Synchronization()]
     public class MachineInfo
     {
         public volatile UInt32 Cycles;
@@ -28,7 +26,6 @@ namespace Caron.Cradle.Control.LowLevel
         }
     }
 
-    [Synchronization()]
     public class MachineIO
     {
         public volatile bool[] DigitalInputs;
@@ -47,7 +44,6 @@ namespace Caron.Cradle.Control.LowLevel
         }
     }
 
-    [Synchronization()]
     public class MachineActions
     {
         public volatile bool SpoonUp;
@@ -63,7 +59,6 @@ namespace Caron.Cradle.Control.LowLevel
         }
     }
 
-    [Synchronization()]
     public class MachineAxes
     {
         public volatile MachineAxis Cradle = new MachineAxis();

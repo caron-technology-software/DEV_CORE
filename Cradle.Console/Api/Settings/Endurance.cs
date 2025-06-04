@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using System.IO;
 
@@ -18,7 +18,8 @@ using Caron.Cradle.Control.Database;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("endurance")]
+    [ApiController]
+    [Route("endurance")]
     public class EnduranceController : CradleApiController
     {
         [Route("reset")]

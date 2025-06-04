@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 using System.Web.Http.Controllers;
 using System.Web.Http.Filters;
 
@@ -32,7 +32,7 @@ namespace ProRob.WebApi
             }
             catch
             {
-                throw new HttpResponseException(System.Net.HttpStatusCode.NotFound);
+                return null;
             }
         }
 

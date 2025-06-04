@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Web.Http;
+using Microsoft.AspNetCore.Mvc;
 
 using ProRob;
 
 namespace Caron.Cradle.Control.Api
 {
-    [RoutePrefix("signal")]
+    [ApiController]
+    [Route("signal")]
     public class UISignalController : CradleApiController
     {
         [HttpGet]
