@@ -958,7 +958,7 @@ output_driver04                    :20";
 
                 bool promiseToDeleteSettings = Cradle.HighLevel.Signals.DeleteSettingsAtShutdown;
 
-                CradleWebApi.Dispose();
+                CradleWebApi?.Dispose();
 
                 //-----------------------------------------------------------
                 // Databases

@@ -10,7 +10,7 @@ namespace ProRob.Extensions.Object
 {
     public static class ObjectExtensions
     {
-        private static readonly object locker;
+        private static readonly object locker = new object ();
 
         private static readonly IBinary serializer;
         private static readonly IBinary deserializer;
@@ -28,13 +28,16 @@ namespace ProRob.Extensions.Object
             deserializer = Binary.Create(settings);
         }
 
-        public static T JClone<T>(this T obj)
+        public static T Clone<T>(this T obj)
         {
-            var json = JsonSerializer.Serialize(obj);
-            return JsonSerializer.Deserialize<T>(json)!;
+            lock (locker)
+            {
+                var json = JsonSerializer.Serialize(obj);
+                return JsonSerializer.Deserialize<T>(json)!;
+            }
         }
 
-        public static T Clone<T>(this T obj)
+        public static T JClone<T>(this T obj)
         {
             lock (locker)
             {
@@ -52,7 +55,7 @@ namespace ProRob.Extensions.Object
             {
                 var stream = new System.IO.MemoryStream();
 
-                serializer.Write(obj, stream);
+                JsonSerializer.Serialize(stream, obj);
 
                 return stream.ToArray();
             }

@@ -34,8 +34,8 @@ namespace Caron.Cradle.Control.Api
         {
             var cs = new ControlStatus()
             {
-                LowLevel = MachineController.LowLevel.JClone(),
-                HighLevel = MachineController.HighLevel.JClone()
+                LowLevel = MachineController.LowLevel.Clone(),
+                HighLevel = MachineController.HighLevel.Clone()
             };
 
             return JEncodeData<ControlStatus>(cs);
