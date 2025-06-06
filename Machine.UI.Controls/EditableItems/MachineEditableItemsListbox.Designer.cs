@@ -28,41 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelListbox = new System.Windows.Forms.Panel();
-            this.vScrollBar = new System.Windows.Forms.VScrollBar();
-            this.panelListbox.SuspendLayout();
-            this.SuspendLayout();
+            panelListbox = new System.Windows.Forms.Panel();
+            vScrollBar = new System.Windows.Forms.VScrollBar();
+            panelListbox.SuspendLayout();
+            SuspendLayout();
             // 
             // panelListbox
             // 
-            this.panelListbox.Controls.Add(this.vScrollBar);
-            this.panelListbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelListbox.Location = new System.Drawing.Point(0, 0);
-            this.panelListbox.Name = "panelListbox";
-            this.panelListbox.Size = new System.Drawing.Size(478, 168);
-            this.panelListbox.TabIndex = 0;
-            this.panelListbox.Paint += new System.Windows.Forms.PaintEventHandler(this.panelListbox_Paint);
+            panelListbox.Controls.Add(vScrollBar);
+            panelListbox.Location = new System.Drawing.Point(0, 0);
+            panelListbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panelListbox.Name = "panelListbox";
+            panelListbox.Size = new System.Drawing.Size(492, 194);
+            panelListbox.TabIndex = 0;
+            panelListbox.Paint += panelListbox_Paint;
             // 
             // vScrollBar
             // 
-            this.vScrollBar.Location = new System.Drawing.Point(446, 0);
-            this.vScrollBar.Name = "vScrollBar";
-            this.vScrollBar.Size = new System.Drawing.Size(35, 168);
-            this.vScrollBar.TabIndex = 1;
-            this.vScrollBar.ValueChanged += new System.EventHandler(this.vScrollBar_ValueChanged);
+            vScrollBar.Location = new System.Drawing.Point(457, 0);
+            vScrollBar.Name = "vScrollBar";
+            vScrollBar.Size = new System.Drawing.Size(35, 194);
+            vScrollBar.TabIndex = 1;
+            vScrollBar.ValueChanged += vScrollBar_ValueChanged;
             // 
             // MachineEditableItemsListbox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panelListbox);
-            this.Name = "MachineEditableItemsListbox";
-            this.Size = new System.Drawing.Size(478, 168);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.MachineFloatingEditableItemsListbox_Paint);
-            this.Resize += new System.EventHandler(this.MachineEditableItemsListbox_Resize);
-            this.panelListbox.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(panelListbox);
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "MachineEditableItemsListbox";
+            Size = new System.Drawing.Size(493, 194);
+            Paint += MachineFloatingEditableItemsListbox_Paint;
+            Resize += MachineEditableItemsListbox_Resize;
+            panelListbox.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

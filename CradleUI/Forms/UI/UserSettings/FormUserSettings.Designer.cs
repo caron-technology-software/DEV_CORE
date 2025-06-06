@@ -31,168 +31,168 @@ namespace Caron.Cradle.UI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUserSettings));
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.cbPhotocellMaterialPresence = new Machine.UI.Controls.MachineButtonLabel();
-            this.cbPhotocellAlignment = new Machine.UI.Controls.MachineButtonLabel();
-            this.cbDanceBarEnabled = new Machine.UI.Controls.MachineButtonLabel();
-            this.cbEncoderEnabled = new Machine.UI.Controls.MachineButtonLabel();
-            this.mlCutterVelocity = new Machine.UI.Controls.MachineLabel();
-            this.mpbsCutterVelocity = new Machine.UI.Controls.MachinePanelButtonSlider();
-            this.panelBorder = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.mpPreFeed = new Machine.UI.Controls.MachinePropertyNumericEditBox();
-            this.cbEnablePhotocellRollPresence = new Machine.UI.Controls.MachineButtonLabel();
-            this.SuspendLayout();
+            labelTitle = new System.Windows.Forms.Label();
+            cbPhotocellMaterialPresence = new MachineButtonLabel();
+            cbPhotocellAlignment = new MachineButtonLabel();
+            cbDanceBarEnabled = new MachineButtonLabel();
+            cbEncoderEnabled = new MachineButtonLabel();
+            mlCutterVelocity = new MachineLabel();
+            mpbsCutterVelocity = new MachinePanelButtonSlider();
+            panelBorder = new System.Windows.Forms.Panel();
+            panel1 = new System.Windows.Forms.Panel();
+            mpPreFeed = new MachinePropertyNumericEditBox();
+            cbEnablePhotocellRollPresence = new MachineButtonLabel();
+            SuspendLayout();
             // 
             // labelTitle
             // 
-            this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.ForeColor = System.Drawing.Color.Black;
-            this.labelTitle.Location = new System.Drawing.Point(12, 18);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(203, 33);
-            this.labelTitle.TabIndex = 2;
-            this.labelTitle.Text = "User settings";
+            labelTitle.AutoSize = true;
+            labelTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            labelTitle.ForeColor = System.Drawing.Color.Black;
+            labelTitle.Location = new System.Drawing.Point(14, 21);
+            labelTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelTitle.Name = "labelTitle";
+            labelTitle.Size = new System.Drawing.Size(203, 33);
+            labelTitle.TabIndex = 2;
+            labelTitle.Text = "User settings";
             // 
             // cbPhotocellMaterialPresence
             // 
-            this.cbPhotocellMaterialPresence.Active = false;
-            this.cbPhotocellMaterialPresence.ActiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbPhotocellMaterialPresence.ActiveBackgroundImage")));
-            this.cbPhotocellMaterialPresence.ButtonSize = 102;
-            this.cbPhotocellMaterialPresence.InactiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbPhotocellMaterialPresence.InactiveBackgroundImage")));
-            this.cbPhotocellMaterialPresence.Location = new System.Drawing.Point(602, 166);
-            this.cbPhotocellMaterialPresence.Name = "cbPhotocellMaterialPresence";
-            this.cbPhotocellMaterialPresence.PropertyName = "Material Presence";
-            this.cbPhotocellMaterialPresence.Size = new System.Drawing.Size(450, 110);
-            this.cbPhotocellMaterialPresence.TabIndex = 5;
+            cbPhotocellMaterialPresence.Active = false;
+            cbPhotocellMaterialPresence.ActiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbPhotocellMaterialPresence.ActiveBackgroundImage");
+            cbPhotocellMaterialPresence.ButtonSize = 102;
+            cbPhotocellMaterialPresence.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbPhotocellMaterialPresence.InactiveBackgroundImage");
+            cbPhotocellMaterialPresence.Location = new System.Drawing.Point(601, 191);
+            cbPhotocellMaterialPresence.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            cbPhotocellMaterialPresence.Name = "cbPhotocellMaterialPresence";
+            cbPhotocellMaterialPresence.PropertyName = "Material Presence";
+            cbPhotocellMaterialPresence.Size = new System.Drawing.Size(525, 127);
+            cbPhotocellMaterialPresence.TabIndex = 5;
             // 
             // cbPhotocellAlignment
             // 
-            this.cbPhotocellAlignment.Active = false;
-            this.cbPhotocellAlignment.ActiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbPhotocellAlignment.ActiveBackgroundImage")));
-            this.cbPhotocellAlignment.ButtonSize = 102;
-            this.cbPhotocellAlignment.InactiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbPhotocellAlignment.InactiveBackgroundImage")));
-            this.cbPhotocellAlignment.Location = new System.Drawing.Point(602, 50);
-            this.cbPhotocellAlignment.Name = "cbPhotocellAlignment";
-            this.cbPhotocellAlignment.PropertyName = "Photocell Alignment";
-            this.cbPhotocellAlignment.Size = new System.Drawing.Size(450, 110);
-            this.cbPhotocellAlignment.TabIndex = 4;
+            cbPhotocellAlignment.Active = false;
+            cbPhotocellAlignment.ActiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbPhotocellAlignment.ActiveBackgroundImage");
+            cbPhotocellAlignment.ButtonSize = 102;
+            cbPhotocellAlignment.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbPhotocellAlignment.InactiveBackgroundImage");
+            cbPhotocellAlignment.Location = new System.Drawing.Point(601, 57);
+            cbPhotocellAlignment.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            cbPhotocellAlignment.Name = "cbPhotocellAlignment";
+            cbPhotocellAlignment.PropertyName = "Photocell Alignment";
+            cbPhotocellAlignment.Size = new System.Drawing.Size(525, 127);
+            cbPhotocellAlignment.TabIndex = 4;
             // 
             // cbDanceBarEnabled
             // 
-            this.cbDanceBarEnabled.Active = false;
-            this.cbDanceBarEnabled.ActiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbDanceBarEnabled.ActiveBackgroundImage")));
-            this.cbDanceBarEnabled.ButtonSize = 102;
-            this.cbDanceBarEnabled.InactiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbDanceBarEnabled.InactiveBackgroundImage")));
-            this.cbDanceBarEnabled.Location = new System.Drawing.Point(99, 166);
-            this.cbDanceBarEnabled.Name = "cbDanceBarEnabled";
-            this.cbDanceBarEnabled.PropertyName = "Dance Bar";
-            this.cbDanceBarEnabled.Size = new System.Drawing.Size(450, 110);
-            this.cbDanceBarEnabled.TabIndex = 3;
+            cbDanceBarEnabled.Active = false;
+            cbDanceBarEnabled.ActiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbDanceBarEnabled.ActiveBackgroundImage");
+            cbDanceBarEnabled.ButtonSize = 102;
+            cbDanceBarEnabled.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbDanceBarEnabled.InactiveBackgroundImage");
+            cbDanceBarEnabled.Location = new System.Drawing.Point(14, 191);
+            cbDanceBarEnabled.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            cbDanceBarEnabled.Name = "cbDanceBarEnabled";
+            cbDanceBarEnabled.PropertyName = "Dance Bar";
+            cbDanceBarEnabled.Size = new System.Drawing.Size(525, 127);
+            cbDanceBarEnabled.TabIndex = 3;
             // 
             // cbEncoderEnabled
             // 
-            this.cbEncoderEnabled.Active = false;
-            this.cbEncoderEnabled.ActiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbEncoderEnabled.ActiveBackgroundImage")));
-            this.cbEncoderEnabled.ButtonSize = 102;
-            this.cbEncoderEnabled.InactiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbEncoderEnabled.InactiveBackgroundImage")));
-            this.cbEncoderEnabled.Location = new System.Drawing.Point(99, 50);
-            this.cbEncoderEnabled.Name = "cbEncoderEnabled";
-            this.cbEncoderEnabled.PropertyName = "Enable Encoder";
-            this.cbEncoderEnabled.Size = new System.Drawing.Size(450, 110);
-            this.cbEncoderEnabled.TabIndex = 2;
+            cbEncoderEnabled.Active = false;
+            cbEncoderEnabled.ActiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbEncoderEnabled.ActiveBackgroundImage");
+            cbEncoderEnabled.ButtonSize = 102;
+            cbEncoderEnabled.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbEncoderEnabled.InactiveBackgroundImage");
+            cbEncoderEnabled.Location = new System.Drawing.Point(14, 57);
+            cbEncoderEnabled.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            cbEncoderEnabled.Name = "cbEncoderEnabled";
+            cbEncoderEnabled.PropertyName = "Enable Encoder";
+            cbEncoderEnabled.Size = new System.Drawing.Size(525, 127);
+            cbEncoderEnabled.TabIndex = 2;
             // 
             // mlCutterVelocity
             // 
-            this.mlCutterVelocity.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mlCutterVelocity.Location = new System.Drawing.Point(625, 413);
-            this.mlCutterVelocity.Name = "mlCutterVelocity";
-            this.mlCutterVelocity.Size = new System.Drawing.Size(246, 30);
-            this.mlCutterVelocity.TabIndex = 8;
-            this.mlCutterVelocity.Text = "mlCutterVelocity";
-            this.mlCutterVelocity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            mlCutterVelocity.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            mlCutterVelocity.Location = new System.Drawing.Point(712, 457);
+            mlCutterVelocity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            mlCutterVelocity.Name = "mlCutterVelocity";
+            mlCutterVelocity.Size = new System.Drawing.Size(287, 35);
+            mlCutterVelocity.TabIndex = 8;
+            mlCutterVelocity.Text = "mlCutterVelocity";
+            mlCutterVelocity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mpbsCutterVelocity
             // 
-            this.mpbsCutterVelocity.Location = new System.Drawing.Point(674, 455);
-            this.mpbsCutterVelocity.MaxValue = 100F;
-            this.mpbsCutterVelocity.MinValue = 0F;
-            this.mpbsCutterVelocity.Name = "mpbsCutterVelocity";
-            this.mpbsCutterVelocity.PropertyName = "";
-            this.mpbsCutterVelocity.Size = new System.Drawing.Size(140, 192);
-            this.mpbsCutterVelocity.TabIndex = 9;
-            this.mpbsCutterVelocity.Value = 0F;
-            this.mpbsCutterVelocity.ValueChangedEventEnabled = false;
+            mpbsCutterVelocity.Location = new System.Drawing.Point(774, 495);
+            mpbsCutterVelocity.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mpbsCutterVelocity.Name = "mpbsCutterVelocity";
+            mpbsCutterVelocity.Size = new System.Drawing.Size(163, 217);
+            mpbsCutterVelocity.TabIndex = 9;
             // 
             // panelBorder
             // 
-            this.panelBorder.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panelBorder.Location = new System.Drawing.Point(6, 398);
-            this.panelBorder.Name = "panelBorder";
-            this.panelBorder.Size = new System.Drawing.Size(1135, 4);
-            this.panelBorder.TabIndex = 56;
+            panelBorder.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            panelBorder.Location = new System.Drawing.Point(13, 446);
+            panelBorder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panelBorder.Name = "panelBorder";
+            panelBorder.Size = new System.Drawing.Size(1324, 5);
+            panelBorder.TabIndex = 56;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel1.Location = new System.Drawing.Point(4, 666);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1135, 4);
-            this.panel1.TabIndex = 57;
+            panel1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            panel1.Location = new System.Drawing.Point(14, 727);
+            panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(1324, 5);
+            panel1.TabIndex = 57;
             // 
             // mpPreFeed
             // 
-            this.mpPreFeed.BackColor = System.Drawing.SystemColors.Control;
-            this.mpPreFeed.ForeColor = System.Drawing.Color.DarkGray;
-            this.mpPreFeed.Location = new System.Drawing.Point(186, 490);
-            this.mpPreFeed.MaxValue = null;
-            this.mpPreFeed.MinValue = null;
-            this.mpPreFeed.Name = "mpPreFeed";
-            this.mpPreFeed.PropertyName = "Pre Feed";
-            this.mpPreFeed.PropertyValue = 0F;
-            this.mpPreFeed.Size = new System.Drawing.Size(190, 85);
-            this.mpPreFeed.TabIndex = 58;
-            this.mpPreFeed.TabStop = false;
-            this.mpPreFeed.UnitMeasure = "";
-            this.mpPreFeed.ValueChangedEventEnabled = false;
-            this.mpPreFeed.ValueChanged += new System.EventHandler<Machine.UI.Controls.MachinePropertyNumericEditBox.MachinePropertyBoxEvent>(this.MpPreFeed_ValueChanged);
+            mpPreFeed.BackColor = System.Drawing.SystemColors.Control;
+            mpPreFeed.ForeColor = System.Drawing.Color.DarkGray;
+            mpPreFeed.Location = new System.Drawing.Point(165, 457);
+            mpPreFeed.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mpPreFeed.Name = "mpPreFeed";
+            mpPreFeed.Size = new System.Drawing.Size(222, 98);
+            mpPreFeed.TabIndex = 58;
+            mpPreFeed.TabStop = false;
+            mpPreFeed.ValueChanged += MpPreFeed_ValueChanged;
             // 
             // cbEnablePhotocellRollPresence
             // 
-            this.cbEnablePhotocellRollPresence.Active = false;
-            this.cbEnablePhotocellRollPresence.ActiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbEnablePhotocellRollPresence.ActiveBackgroundImage")));
-            this.cbEnablePhotocellRollPresence.ButtonSize = 102;
-            this.cbEnablePhotocellRollPresence.InactiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbEnablePhotocellRollPresence.InactiveBackgroundImage")));
-            this.cbEnablePhotocellRollPresence.Location = new System.Drawing.Point(99, 282);
-            this.cbEnablePhotocellRollPresence.Name = "cbEnablePhotocellRollPresence";
-            this.cbEnablePhotocellRollPresence.PropertyName = "Enable Photocell Roll Presence";
-            this.cbEnablePhotocellRollPresence.Size = new System.Drawing.Size(450, 110);
-            this.cbEnablePhotocellRollPresence.TabIndex = 59;
+            cbEnablePhotocellRollPresence.Active = false;
+            cbEnablePhotocellRollPresence.ActiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbEnablePhotocellRollPresence.ActiveBackgroundImage");
+            cbEnablePhotocellRollPresence.ButtonSize = 102;
+            cbEnablePhotocellRollPresence.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbEnablePhotocellRollPresence.InactiveBackgroundImage");
+            cbEnablePhotocellRollPresence.Location = new System.Drawing.Point(14, 324);
+            cbEnablePhotocellRollPresence.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            cbEnablePhotocellRollPresence.Name = "cbEnablePhotocellRollPresence";
+            cbEnablePhotocellRollPresence.PropertyName = "Enable Photocell Roll Presence";
+            cbEnablePhotocellRollPresence.Size = new System.Drawing.Size(525, 116);
+            cbEnablePhotocellRollPresence.TabIndex = 59;
             // 
             // FormUserSettings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1145, 720);
-            this.Controls.Add(this.cbEnablePhotocellRollPresence);
-            this.Controls.Add(this.mpPreFeed);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panelBorder);
-            this.Controls.Add(this.mpbsCutterVelocity);
-            this.Controls.Add(this.mlCutterVelocity);
-            this.Controls.Add(this.labelTitle);
-            this.Controls.Add(this.cbPhotocellMaterialPresence);
-            this.Controls.Add(this.cbPhotocellAlignment);
-            this.Controls.Add(this.cbDanceBarEnabled);
-            this.Controls.Add(this.cbEncoderEnabled);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormUserSettings";
-            this.Load += new System.EventHandler(this.FormUserSettings_Load);
-            this.Shown += new System.EventHandler(this.FormUserSettings_Shown);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(1280, 800);
+            Controls.Add(cbEnablePhotocellRollPresence);
+            Controls.Add(mpPreFeed);
+            Controls.Add(panel1);
+            Controls.Add(panelBorder);
+            Controls.Add(mpbsCutterVelocity);
+            Controls.Add(mlCutterVelocity);
+            Controls.Add(labelTitle);
+            Controls.Add(cbPhotocellMaterialPresence);
+            Controls.Add(cbPhotocellAlignment);
+            Controls.Add(cbDanceBarEnabled);
+            Controls.Add(cbEncoderEnabled);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "FormUserSettings";
+            Load += FormUserSettings_Load;
+            Shown += FormUserSettings_Shown;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

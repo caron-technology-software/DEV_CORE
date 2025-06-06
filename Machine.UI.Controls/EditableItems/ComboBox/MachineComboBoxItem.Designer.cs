@@ -28,57 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.machinePanelEdgeRounded = new Machine.UI.Controls.MachinePanelEdgeRounded();
-            this.slPropertyName = new Machine.UI.Controls.MachineLabel();
-            this.comboBoxPropertyValue = new System.Windows.Forms.ComboBox();
-            this.machinePanelEdgeRounded.SuspendLayout();
-            this.SuspendLayout();
+            machinePanelEdgeRounded = new MachinePanelEdgeRounded();
+            slPropertyName = new MachineLabel();
+            comboBoxPropertyValue = new System.Windows.Forms.ComboBox();
+            machinePanelEdgeRounded.SuspendLayout();
+            SuspendLayout();
             // 
             // machinePanelEdgeRounded
             // 
-            this.machinePanelEdgeRounded.Controls.Add(this.slPropertyName);
-            this.machinePanelEdgeRounded.Controls.Add(this.comboBoxPropertyValue);
-            this.machinePanelEdgeRounded.LineColor = System.Drawing.Color.LightGray;
-            this.machinePanelEdgeRounded.LineWidth = 2;
-            this.machinePanelEdgeRounded.Location = new System.Drawing.Point(0, 0);
-            this.machinePanelEdgeRounded.Name = "machinePanelEdgeRounded";
-            this.machinePanelEdgeRounded.Radius = 4;
-            this.machinePanelEdgeRounded.Size = new System.Drawing.Size(595, 42);
-            this.machinePanelEdgeRounded.TabIndex = 2;
+            machinePanelEdgeRounded.Controls.Add(slPropertyName);
+            machinePanelEdgeRounded.Controls.Add(comboBoxPropertyValue);
+            machinePanelEdgeRounded.LineColor = System.Drawing.Color.LightGray;
+            machinePanelEdgeRounded.LineWidth = 2;
+            machinePanelEdgeRounded.Location = new System.Drawing.Point(0, 0);
+            machinePanelEdgeRounded.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            machinePanelEdgeRounded.Name = "machinePanelEdgeRounded";
+            machinePanelEdgeRounded.Radius = 4;
+            machinePanelEdgeRounded.Size = new System.Drawing.Size(694, 48);
+            machinePanelEdgeRounded.TabIndex = 2;
             // 
             // slPropertyName
             // 
-            this.slPropertyName.BackColor = System.Drawing.Color.Transparent;
-            this.slPropertyName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.slPropertyName.Location = new System.Drawing.Point(7, 10);
-            this.slPropertyName.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.slPropertyName.Name = "slPropertyName";
-            this.slPropertyName.Size = new System.Drawing.Size(380, 26);
-            this.slPropertyName.TabIndex = 0;
-            this.slPropertyName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.slPropertyName.Enter += new System.EventHandler(this.slPropertyName_Enter);
-            this.slPropertyName.Leave += new System.EventHandler(this.slPropertyName_Leave);
+            slPropertyName.BackColor = System.Drawing.Color.Transparent;
+            slPropertyName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            slPropertyName.Location = new System.Drawing.Point(8, 11);
+            slPropertyName.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            slPropertyName.Name = "slPropertyName";
+            slPropertyName.Size = new System.Drawing.Size(510, 30);
+            slPropertyName.TabIndex = 0;
+            slPropertyName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            slPropertyName.Enter += slPropertyName_Enter;
+            slPropertyName.Leave += slPropertyName_Leave;
             // 
             // comboBoxPropertyValue
             // 
-            this.comboBoxPropertyValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxPropertyValue.FormattingEnabled = true;
-            this.comboBoxPropertyValue.Location = new System.Drawing.Point(397, 6);
-            this.comboBoxPropertyValue.Name = "comboBoxPropertyValue";
-            this.comboBoxPropertyValue.Size = new System.Drawing.Size(189, 30);
-            this.comboBoxPropertyValue.TabIndex = 0;
+            comboBoxPropertyValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            comboBoxPropertyValue.FormattingEnabled = true;
+            comboBoxPropertyValue.Location = new System.Drawing.Point(519, 13);
+            comboBoxPropertyValue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            comboBoxPropertyValue.Name = "comboBoxPropertyValue";
+            comboBoxPropertyValue.Size = new System.Drawing.Size(171, 30);
+            comboBoxPropertyValue.TabIndex = 0;
             // 
             // MachineComboBoxItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.machinePanelEdgeRounded);
-            this.Name = "MachineComboBoxItem";
-            this.Size = new System.Drawing.Size(595, 42);
-            this.machinePanelEdgeRounded.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.Transparent;
+            Controls.Add(machinePanelEdgeRounded);
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "MachineComboBoxItem";
+            Size = new System.Drawing.Size(694, 48);
+            machinePanelEdgeRounded.ResumeLayout(false);
+            ResumeLayout(false);
         }
         #endregion
 

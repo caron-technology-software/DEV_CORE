@@ -28,336 +28,357 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn0 = new System.Windows.Forms.Button();
-            this.labalRepeat = new System.Windows.Forms.Label();
-            this.btn1 = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btn3 = new System.Windows.Forms.Button();
-            this.btn4 = new System.Windows.Forms.Button();
-            this.btn5 = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btn6 = new System.Windows.Forms.Button();
-            this.btnPlusMinus = new System.Windows.Forms.Button();
-            this.btn7 = new System.Windows.Forms.Button();
-            this.btn9 = new System.Windows.Forms.Button();
-            this.btn8 = new System.Windows.Forms.Button();
-            this.labelPropertyName = new System.Windows.Forms.Label();
-            this.btnComma = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnEnter = new System.Windows.Forms.Button();
-            this.labelRange = new System.Windows.Forms.Label();
-            this.btnCancelDigit = new System.Windows.Forms.Button();
-            this.labelUnitMeasure = new System.Windows.Forms.Label();
-            this.labelNotes = new System.Windows.Forms.Label();
-            this.labelValue = new Machine.UI.Controls.MachineLabel();
-            this.SuspendLayout();
+            btn0 = new System.Windows.Forms.Button();
+            labalRepeat = new System.Windows.Forms.Label();
+            btn1 = new System.Windows.Forms.Button();
+            btn2 = new System.Windows.Forms.Button();
+            btn3 = new System.Windows.Forms.Button();
+            btn4 = new System.Windows.Forms.Button();
+            btn5 = new System.Windows.Forms.Button();
+            btnClear = new System.Windows.Forms.Button();
+            btn6 = new System.Windows.Forms.Button();
+            btnPlusMinus = new System.Windows.Forms.Button();
+            btn7 = new System.Windows.Forms.Button();
+            btn9 = new System.Windows.Forms.Button();
+            btn8 = new System.Windows.Forms.Button();
+            labelPropertyName = new System.Windows.Forms.Label();
+            btnComma = new System.Windows.Forms.Button();
+            btnCancel = new System.Windows.Forms.Button();
+            btnEnter = new System.Windows.Forms.Button();
+            labelRange = new System.Windows.Forms.Label();
+            btnCancelDigit = new System.Windows.Forms.Button();
+            labelUnitMeasure = new System.Windows.Forms.Label();
+            labelNotes = new System.Windows.Forms.Label();
+            labelValue = new MachineLabel();
+            SuspendLayout();
             // 
             // btn0
             // 
-            this.btn0.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btn0.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn0.Location = new System.Drawing.Point(110, 475);
-            this.btn0.Name = "btn0";
-            this.btn0.Size = new System.Drawing.Size(85, 85);
-            this.btn0.TabIndex = 41;
-            this.btn0.Text = "0";
-            this.btn0.UseVisualStyleBackColor = true;
-            this.btn0.Click += new System.EventHandler(this.btn0_Click);
+            btn0.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btn0.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btn0.Location = new System.Drawing.Point(115, 468);
+            btn0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btn0.Name = "btn0";
+            btn0.Size = new System.Drawing.Size(85, 85);
+            btn0.TabIndex = 41;
+            btn0.Text = "0";
+            btn0.UseVisualStyleBackColor = true;
+            btn0.Click += btn0_Click;
             // 
             // labalRepeat
             // 
-            this.labalRepeat.AutoSize = true;
-            this.labalRepeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labalRepeat.Location = new System.Drawing.Point(254, -43);
-            this.labalRepeat.Name = "labalRepeat";
-            this.labalRepeat.Size = new System.Drawing.Size(110, 31);
-            this.labalRepeat.TabIndex = 29;
-            this.labalRepeat.Text = "Velocity";
+            labalRepeat.AutoSize = true;
+            labalRepeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            labalRepeat.Location = new System.Drawing.Point(296, -50);
+            labalRepeat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labalRepeat.Name = "labalRepeat";
+            labalRepeat.Size = new System.Drawing.Size(110, 31);
+            labalRepeat.TabIndex = 29;
+            labalRepeat.Text = "Velocity";
             // 
             // btn1
             // 
-            this.btn1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btn1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(19, 202);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(85, 85);
-            this.btn1.TabIndex = 30;
-            this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = true;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            btn1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btn1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btn1.Location = new System.Drawing.Point(22, 195);
+            btn1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btn1.Name = "btn1";
+            btn1.Size = new System.Drawing.Size(85, 85);
+            btn1.TabIndex = 30;
+            btn1.Text = "1";
+            btn1.UseVisualStyleBackColor = true;
+            btn1.Click += btn1_Click;
             // 
             // btn2
             // 
-            this.btn2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btn2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(110, 202);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(85, 85);
-            this.btn2.TabIndex = 31;
-            this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = true;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            btn2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btn2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btn2.Location = new System.Drawing.Point(115, 195);
+            btn2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btn2.Name = "btn2";
+            btn2.Size = new System.Drawing.Size(85, 85);
+            btn2.TabIndex = 31;
+            btn2.Text = "2";
+            btn2.UseVisualStyleBackColor = true;
+            btn2.Click += btn2_Click;
             // 
             // btn3
             // 
-            this.btn3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btn3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(201, 202);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(85, 85);
-            this.btn3.TabIndex = 32;
-            this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = true;
-            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            btn3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btn3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btn3.Location = new System.Drawing.Point(208, 195);
+            btn3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btn3.Name = "btn3";
+            btn3.Size = new System.Drawing.Size(85, 85);
+            btn3.TabIndex = 32;
+            btn3.Text = "3";
+            btn3.UseVisualStyleBackColor = true;
+            btn3.Click += btn3_Click;
             // 
             // btn4
             // 
-            this.btn4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btn4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.Location = new System.Drawing.Point(19, 293);
-            this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(85, 85);
-            this.btn4.TabIndex = 33;
-            this.btn4.Text = "4";
-            this.btn4.UseVisualStyleBackColor = true;
-            this.btn4.Click += new System.EventHandler(this.btn4_Click);
+            btn4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btn4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btn4.Location = new System.Drawing.Point(22, 286);
+            btn4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btn4.Name = "btn4";
+            btn4.Size = new System.Drawing.Size(85, 85);
+            btn4.TabIndex = 33;
+            btn4.Text = "4";
+            btn4.UseVisualStyleBackColor = true;
+            btn4.Click += btn4_Click;
             // 
             // btn5
             // 
-            this.btn5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btn5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(110, 293);
-            this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(85, 85);
-            this.btn5.TabIndex = 34;
-            this.btn5.Text = "5";
-            this.btn5.UseVisualStyleBackColor = true;
-            this.btn5.Click += new System.EventHandler(this.btn5_Click);
+            btn5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btn5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btn5.Location = new System.Drawing.Point(115, 286);
+            btn5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btn5.Name = "btn5";
+            btn5.Size = new System.Drawing.Size(85, 85);
+            btn5.TabIndex = 34;
+            btn5.Text = "5";
+            btn5.UseVisualStyleBackColor = true;
+            btn5.Click += btn5_Click;
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(37)))), ((int)(((byte)(43)))));
-            this.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnClear.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnClear.Location = new System.Drawing.Point(292, 202);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(176, 85);
-            this.btnClear.TabIndex = 40;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            btnClear.BackColor = System.Drawing.Color.FromArgb(26, 37, 43);
+            btnClear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btnClear.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnClear.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            btnClear.Location = new System.Drawing.Point(301, 195);
+            btnClear.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new System.Drawing.Size(149, 85);
+            btnClear.TabIndex = 40;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
             // 
             // btn6
             // 
-            this.btn6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btn6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(201, 293);
-            this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(85, 85);
-            this.btn6.TabIndex = 35;
-            this.btn6.Text = "6";
-            this.btn6.UseVisualStyleBackColor = true;
-            this.btn6.Click += new System.EventHandler(this.btn6_Click);
+            btn6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btn6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btn6.Location = new System.Drawing.Point(208, 286);
+            btn6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btn6.Name = "btn6";
+            btn6.Size = new System.Drawing.Size(85, 85);
+            btn6.TabIndex = 35;
+            btn6.Text = "6";
+            btn6.UseVisualStyleBackColor = true;
+            btn6.Click += btn6_Click;
             // 
             // btnPlusMinus
             // 
-            this.btnPlusMinus.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnPlusMinus.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlusMinus.Location = new System.Drawing.Point(201, 475);
-            this.btnPlusMinus.Name = "btnPlusMinus";
-            this.btnPlusMinus.Size = new System.Drawing.Size(85, 85);
-            this.btnPlusMinus.TabIndex = 39;
-            this.btnPlusMinus.Text = "±";
-            this.btnPlusMinus.UseVisualStyleBackColor = true;
-            this.btnPlusMinus.Click += new System.EventHandler(this.btnMinusPlus_Click);
+            btnPlusMinus.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btnPlusMinus.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnPlusMinus.Location = new System.Drawing.Point(208, 468);
+            btnPlusMinus.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnPlusMinus.Name = "btnPlusMinus";
+            btnPlusMinus.Size = new System.Drawing.Size(85, 85);
+            btnPlusMinus.TabIndex = 39;
+            btnPlusMinus.Text = "±";
+            btnPlusMinus.UseVisualStyleBackColor = true;
+            btnPlusMinus.Click += btnMinusPlus_Click;
             // 
             // btn7
             // 
-            this.btn7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btn7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(19, 384);
-            this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(85, 85);
-            this.btn7.TabIndex = 36;
-            this.btn7.Text = "7";
-            this.btn7.UseVisualStyleBackColor = true;
-            this.btn7.Click += new System.EventHandler(this.btn7_Click);
+            btn7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btn7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btn7.Location = new System.Drawing.Point(22, 377);
+            btn7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btn7.Name = "btn7";
+            btn7.Size = new System.Drawing.Size(85, 85);
+            btn7.TabIndex = 36;
+            btn7.Text = "7";
+            btn7.UseVisualStyleBackColor = true;
+            btn7.Click += btn7_Click;
             // 
             // btn9
             // 
-            this.btn9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btn9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(201, 384);
-            this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(85, 85);
-            this.btn9.TabIndex = 38;
-            this.btn9.Text = "9";
-            this.btn9.UseVisualStyleBackColor = true;
-            this.btn9.Click += new System.EventHandler(this.btn9_Click);
+            btn9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btn9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btn9.Location = new System.Drawing.Point(208, 377);
+            btn9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btn9.Name = "btn9";
+            btn9.Size = new System.Drawing.Size(85, 85);
+            btn9.TabIndex = 38;
+            btn9.Text = "9";
+            btn9.UseVisualStyleBackColor = true;
+            btn9.Click += btn9_Click;
             // 
             // btn8
             // 
-            this.btn8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btn8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(110, 384);
-            this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(85, 85);
-            this.btn8.TabIndex = 37;
-            this.btn8.Text = "8";
-            this.btn8.UseVisualStyleBackColor = true;
-            this.btn8.Click += new System.EventHandler(this.btn8_Click);
+            btn8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btn8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btn8.Location = new System.Drawing.Point(115, 377);
+            btn8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btn8.Name = "btn8";
+            btn8.Size = new System.Drawing.Size(85, 85);
+            btn8.TabIndex = 37;
+            btn8.Text = "8";
+            btn8.UseVisualStyleBackColor = true;
+            btn8.Click += btn8_Click;
             // 
             // labelPropertyName
             // 
-            this.labelPropertyName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPropertyName.Location = new System.Drawing.Point(17, 9);
-            this.labelPropertyName.Name = "labelPropertyName";
-            this.labelPropertyName.Size = new System.Drawing.Size(451, 72);
-            this.labelPropertyName.TabIndex = 43;
-            this.labelPropertyName.Text = "labelPropertyName";
-            this.labelPropertyName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            labelPropertyName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            labelPropertyName.Location = new System.Drawing.Point(20, 10);
+            labelPropertyName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelPropertyName.Name = "labelPropertyName";
+            labelPropertyName.Size = new System.Drawing.Size(429, 55);
+            labelPropertyName.TabIndex = 43;
+            labelPropertyName.Text = "labelPropertyName";
+            labelPropertyName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnComma
             // 
-            this.btnComma.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnComma.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComma.Location = new System.Drawing.Point(19, 475);
-            this.btnComma.Name = "btnComma";
-            this.btnComma.Size = new System.Drawing.Size(85, 85);
-            this.btnComma.TabIndex = 44;
-            this.btnComma.Text = ".";
-            this.btnComma.UseVisualStyleBackColor = true;
-            this.btnComma.Click += new System.EventHandler(this.btnComma_Click);
+            btnComma.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btnComma.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnComma.Location = new System.Drawing.Point(22, 468);
+            btnComma.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnComma.Name = "btnComma";
+            btnComma.Size = new System.Drawing.Size(85, 85);
+            btnComma.TabIndex = 44;
+            btnComma.Text = ".";
+            btnComma.UseVisualStyleBackColor = true;
+            btnComma.Click += btnComma_Click;
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(37)))), ((int)(((byte)(43)))));
-            this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnCancel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnCancel.Location = new System.Drawing.Point(292, 384);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(176, 85);
-            this.btnCancel.TabIndex = 46;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            btnCancel.BackColor = System.Drawing.Color.FromArgb(26, 37, 43);
+            btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btnCancel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnCancel.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            btnCancel.Location = new System.Drawing.Point(301, 377);
+            btnCancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new System.Drawing.Size(149, 85);
+            btnCancel.TabIndex = 46;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = false;
+            btnCancel.Click += btnCancel_Click;
             // 
             // btnEnter
             // 
-            this.btnEnter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(37)))), ((int)(((byte)(43)))));
-            this.btnEnter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnEnter.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnter.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnEnter.Location = new System.Drawing.Point(292, 475);
-            this.btnEnter.Name = "btnEnter";
-            this.btnEnter.Size = new System.Drawing.Size(176, 85);
-            this.btnEnter.TabIndex = 47;
-            this.btnEnter.Text = "Enter";
-            this.btnEnter.UseVisualStyleBackColor = false;
-            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
+            btnEnter.BackColor = System.Drawing.Color.FromArgb(26, 37, 43);
+            btnEnter.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btnEnter.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnEnter.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            btnEnter.Location = new System.Drawing.Point(301, 468);
+            btnEnter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnEnter.Name = "btnEnter";
+            btnEnter.Size = new System.Drawing.Size(149, 85);
+            btnEnter.TabIndex = 47;
+            btnEnter.Text = "Enter";
+            btnEnter.UseVisualStyleBackColor = false;
+            btnEnter.Click += btnEnter_Click;
             // 
             // labelRange
             // 
-            this.labelRange.AutoSize = true;
-            this.labelRange.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRange.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelRange.Location = new System.Drawing.Point(18, 150);
-            this.labelRange.Name = "labelRange";
-            this.labelRange.Size = new System.Drawing.Size(98, 18);
-            this.labelRange.TabIndex = 48;
-            this.labelRange.Text = "labelRange";
+            labelRange.AutoSize = true;
+            labelRange.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            labelRange.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            labelRange.Location = new System.Drawing.Point(22, 144);
+            labelRange.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelRange.Name = "labelRange";
+            labelRange.Size = new System.Drawing.Size(98, 18);
+            labelRange.TabIndex = 48;
+            labelRange.Text = "labelRange";
             // 
             // btnCancelDigit
             // 
-            this.btnCancelDigit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(37)))), ((int)(((byte)(43)))));
-            this.btnCancelDigit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.btnCancelDigit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelDigit.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnCancelDigit.Location = new System.Drawing.Point(292, 293);
-            this.btnCancelDigit.Name = "btnCancelDigit";
-            this.btnCancelDigit.Size = new System.Drawing.Size(176, 85);
-            this.btnCancelDigit.TabIndex = 49;
-            this.btnCancelDigit.Text = "<";
-            this.btnCancelDigit.UseVisualStyleBackColor = false;
-            this.btnCancelDigit.Click += new System.EventHandler(this.btnCancelDigit_Click);
+            btnCancelDigit.BackColor = System.Drawing.Color.FromArgb(26, 37, 43);
+            btnCancelDigit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            btnCancelDigit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btnCancelDigit.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            btnCancelDigit.Location = new System.Drawing.Point(301, 286);
+            btnCancelDigit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnCancelDigit.Name = "btnCancelDigit";
+            btnCancelDigit.Size = new System.Drawing.Size(149, 85);
+            btnCancelDigit.TabIndex = 49;
+            btnCancelDigit.Text = "<";
+            btnCancelDigit.UseVisualStyleBackColor = false;
+            btnCancelDigit.Click += btnCancelDigit_Click;
             // 
             // labelUnitMeasure
             // 
-            this.labelUnitMeasure.AutoSize = true;
-            this.labelUnitMeasure.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUnitMeasure.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelUnitMeasure.Location = new System.Drawing.Point(352, 150);
-            this.labelUnitMeasure.Name = "labelUnitMeasure";
-            this.labelUnitMeasure.Size = new System.Drawing.Size(78, 18);
-            this.labelUnitMeasure.TabIndex = 51;
-            this.labelUnitMeasure.Text = "labelUnit";
-            this.labelUnitMeasure.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            labelUnitMeasure.AutoSize = true;
+            labelUnitMeasure.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            labelUnitMeasure.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            labelUnitMeasure.Location = new System.Drawing.Point(372, 144);
+            labelUnitMeasure.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelUnitMeasure.Name = "labelUnitMeasure";
+            labelUnitMeasure.Size = new System.Drawing.Size(78, 18);
+            labelUnitMeasure.TabIndex = 51;
+            labelUnitMeasure.Text = "labelUnit";
+            labelUnitMeasure.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelNotes
             // 
-            this.labelNotes.AutoSize = true;
-            this.labelNotes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNotes.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelNotes.Location = new System.Drawing.Point(18, 176);
-            this.labelNotes.Name = "labelNotes";
-            this.labelNotes.Size = new System.Drawing.Size(93, 18);
-            this.labelNotes.TabIndex = 52;
-            this.labelNotes.Text = "labelNotes";
-            this.labelNotes.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            labelNotes.AutoSize = true;
+            labelNotes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            labelNotes.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            labelNotes.Location = new System.Drawing.Point(22, 174);
+            labelNotes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            labelNotes.Name = "labelNotes";
+            labelNotes.Size = new System.Drawing.Size(93, 18);
+            labelNotes.TabIndex = 52;
+            labelNotes.Text = "labelNotes";
+            labelNotes.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // labelValue
             // 
-            this.labelValue.BackColor = System.Drawing.Color.White;
-            this.labelValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelValue.Location = new System.Drawing.Point(19, 90);
-            this.labelValue.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
-            this.labelValue.Name = "labelValue";
-            this.labelValue.Size = new System.Drawing.Size(449, 57);
-            this.labelValue.TabIndex = 50;
-            this.labelValue.Text = "••••••";
-            this.labelValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            labelValue.BackColor = System.Drawing.Color.White;
+            labelValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            labelValue.Location = new System.Drawing.Point(22, 75);
+            labelValue.Margin = new System.Windows.Forms.Padding(12, 10, 12, 10);
+            labelValue.Name = "labelValue";
+            labelValue.Size = new System.Drawing.Size(427, 59);
+            labelValue.TabIndex = 50;
+            labelValue.Text = "••••••";
+            labelValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TouchNumericKeyboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 570);
-            this.ControlBox = false;
-            this.Controls.Add(this.labelNotes);
-            this.Controls.Add(this.labelUnitMeasure);
-            this.Controls.Add(this.labelValue);
-            this.Controls.Add(this.btnCancelDigit);
-            this.Controls.Add(this.labelRange);
-            this.Controls.Add(this.btnEnter);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnComma);
-            this.Controls.Add(this.labelPropertyName);
-            this.Controls.Add(this.btn0);
-            this.Controls.Add(this.labalRepeat);
-            this.Controls.Add(this.btn1);
-            this.Controls.Add(this.btn2);
-            this.Controls.Add(this.btn3);
-            this.Controls.Add(this.btn4);
-            this.Controls.Add(this.btn5);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btn6);
-            this.Controls.Add(this.btnPlusMinus);
-            this.Controls.Add(this.btn7);
-            this.Controls.Add(this.btn9);
-            this.Controls.Add(this.btn8);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "TouchNumericKeyboard";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "   ";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(462, 558);
+            ControlBox = false;
+            Controls.Add(labelNotes);
+            Controls.Add(labelUnitMeasure);
+            Controls.Add(labelValue);
+            Controls.Add(btnCancelDigit);
+            Controls.Add(labelRange);
+            Controls.Add(btnEnter);
+            Controls.Add(btnCancel);
+            Controls.Add(btnComma);
+            Controls.Add(labelPropertyName);
+            Controls.Add(btn0);
+            Controls.Add(labalRepeat);
+            Controls.Add(btn1);
+            Controls.Add(btn2);
+            Controls.Add(btn3);
+            Controls.Add(btn4);
+            Controls.Add(btn5);
+            Controls.Add(btnClear);
+            Controls.Add(btn6);
+            Controls.Add(btnPlusMinus);
+            Controls.Add(btn7);
+            Controls.Add(btn9);
+            Controls.Add(btn8);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "TouchNumericKeyboard";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "   ";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

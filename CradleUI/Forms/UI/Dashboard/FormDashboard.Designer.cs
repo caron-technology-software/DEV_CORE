@@ -31,490 +31,500 @@ namespace Caron.Cradle.UI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDashboard));
-            this.mlSync = new Machine.UI.Controls.MachineLabel();
-            this.cbCradleSync = new Machine.UI.Controls.MachineButton();
-            this.mlCutter = new Machine.UI.Controls.MachineLabel();
-            this.mlAlignment = new Machine.UI.Controls.MachineLabel();
-            this.panelAlignment = new Machine.UI.Controls.MachinePanelEdgeRounded();
-            this.mbAlignmentMotorSide = new Machine.UI.Controls.MachineButton();
-            this.mbAlignmentOperatorSide = new Machine.UI.Controls.MachineButton();
-            this.mlCradleJog = new Machine.UI.Controls.MachineLabel();
-            this.panelJog = new Machine.UI.Controls.MachinePanelEdgeRounded();
-            this.cbCradleJogACW = new Machine.UI.Controls.MachineButton();
-            this.cbCradleJogCW = new Machine.UI.Controls.MachineButton();
-            this.panelCuttOff = new Machine.UI.Controls.MachinePanelEdgeRounded();
-            this.mbSharpening = new Machine.UI.Controls.MachineButton();
-            this.cbCutOff = new Machine.UI.Controls.MachineButton();
-            this.panelWorkingMode = new Machine.UI.Controls.MachinePanelEdgeRounded();
-            this.mlWorkingModeTitle = new System.Windows.Forms.Label();
-            this.mlWorkingMode = new System.Windows.Forms.Label();
-            this.mlMaterialRegulation = new Machine.UI.Controls.MachineLabel();
-            this.mSearchBox = new Machine.UI.Controls.MachineSettingsSearchBox();
-            this.cmbStraightRoller = new Machine.UI.Controls.MachineMultiTwoButtons();
-            this.cpbsCradleScalingFactor = new Machine.UI.Controls.MachinePanelButtonSlider();
-            this.mlStraightRoller = new Machine.UI.Controls.MachineLabel();
-            this.mpStatistics = new Machine.UI.Controls.MachinePanelEdgeRounded();
-            this.mlWorkingsStatistics = new Machine.UI.Controls.MachineLabel();
-            this.mlCutterVelocity = new Machine.UI.Controls.MachineLabel();
-            this.mpbsCutterVelocity = new Machine.UI.Controls.MachinePanelButtonSlider();
-            this.cbStop = new Machine.UI.Controls.MachineButton();
-            this.panelAlignment.SuspendLayout();
-            this.panelJog.SuspendLayout();
-            this.panelCuttOff.SuspendLayout();
-            this.panelWorkingMode.SuspendLayout();
-            this.mpStatistics.SuspendLayout();
-            this.SuspendLayout();
+            mlSync = new MachineLabel();
+            cbCradleSync = new MachineButton();
+            mlCutter = new MachineLabel();
+            mlAlignment = new MachineLabel();
+            panelAlignment = new MachinePanelEdgeRounded();
+            mbAlignmentMotorSide = new MachineButton();
+            mbAlignmentOperatorSide = new MachineButton();
+            mlCradleJog = new MachineLabel();
+            panelJog = new MachinePanelEdgeRounded();
+            cbCradleJogACW = new MachineButton();
+            cbCradleJogCW = new MachineButton();
+            panelCuttOff = new MachinePanelEdgeRounded();
+            mbSharpening = new MachineButton();
+            cbCutOff = new MachineButton();
+            panelWorkingMode = new MachinePanelEdgeRounded();
+            mlWorkingModeTitle = new System.Windows.Forms.Label();
+            mlWorkingMode = new System.Windows.Forms.Label();
+            mlMaterialRegulation = new MachineLabel();
+            mSearchBox = new MachineSettingsSearchBox();
+            cmbStraightRoller = new MachineMultiTwoButtons();
+            cpbsCradleScalingFactor = new MachinePanelButtonSlider();
+            mlStraightRoller = new MachineLabel();
+            mpStatistics = new MachinePanelEdgeRounded();
+            mlWorkingsStatistics = new MachineLabel();
+            mlCutterVelocity = new MachineLabel();
+            mpbsCutterVelocity = new MachinePanelButtonSlider();
+            cbStop = new MachineButton();
+            panelAlignment.SuspendLayout();
+            panelJog.SuspendLayout();
+            panelCuttOff.SuspendLayout();
+            panelWorkingMode.SuspendLayout();
+            mpStatistics.SuspendLayout();
+            SuspendLayout();
             // 
             // mlSync
             // 
-            this.mlSync.BackColor = System.Drawing.Color.Transparent;
-            this.mlSync.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mlSync.Location = new System.Drawing.Point(55, 98);
-            this.mlSync.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
-            this.mlSync.Name = "mlSync";
-            this.mlSync.Size = new System.Drawing.Size(255, 59);
-            this.mlSync.TabIndex = 46;
-            this.mlSync.Text = "mlSync";
-            this.mlSync.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            mlSync.BackColor = System.Drawing.Color.Transparent;
+            mlSync.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            mlSync.Location = new System.Drawing.Point(-2, 112);
+            mlSync.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            mlSync.Name = "mlSync";
+            mlSync.Size = new System.Drawing.Size(298, 30);
+            mlSync.TabIndex = 46;
+            mlSync.Text = "mlSync";
+            mlSync.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // cbCradleSync
             // 
-            this.cbCradleSync.Active = false;
-            this.cbCradleSync.ActiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbCradleSync.ActiveBackgroundImage")));
-            this.cbCradleSync.BackColor = System.Drawing.Color.Transparent;
-            this.cbCradleSync.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cbCradleSync.BackgroundImage")));
-            this.cbCradleSync.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cbCradleSync.ButtonSize = 125;
-            this.cbCradleSync.FlatAppearance.BorderSize = 0;
-            this.cbCradleSync.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.cbCradleSync.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.cbCradleSync.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbCradleSync.ForeColor = System.Drawing.Color.Transparent;
-            this.cbCradleSync.InactiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbCradleSync.InactiveBackgroundImage")));
-            this.cbCradleSync.Location = new System.Drawing.Point(120, 168);
-            this.cbCradleSync.Name = "cbCradleSync";
-            this.cbCradleSync.Size = new System.Drawing.Size(125, 125);
-            this.cbCradleSync.StateChangeActivated = true;
-            this.cbCradleSync.TabIndex = 36;
-            this.cbCradleSync.TabStop = false;
-            this.cbCradleSync.UseVisualStyleBackColor = false;
-            this.cbCradleSync.Click += new System.EventHandler(this.CbCradleSync_Click);
+            cbCradleSync.Active = false;
+            cbCradleSync.ActiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbCradleSync.ActiveBackgroundImage");
+            cbCradleSync.BackColor = System.Drawing.Color.Transparent;
+            cbCradleSync.BackgroundImage = (System.Drawing.Image)resources.GetObject("cbCradleSync.BackgroundImage");
+            cbCradleSync.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            cbCradleSync.ButtonSize = 125;
+            cbCradleSync.FlatAppearance.BorderSize = 0;
+            cbCradleSync.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            cbCradleSync.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            cbCradleSync.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            cbCradleSync.ForeColor = System.Drawing.Color.Transparent;
+            cbCradleSync.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbCradleSync.InactiveBackgroundImage");
+            cbCradleSync.Location = new System.Drawing.Point(66, 151);
+            cbCradleSync.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            cbCradleSync.Name = "cbCradleSync";
+            cbCradleSync.Size = new System.Drawing.Size(125, 125);
+            cbCradleSync.StateChangeActivated = true;
+            cbCradleSync.TabIndex = 36;
+            cbCradleSync.TabStop = false;
+            cbCradleSync.UseVisualStyleBackColor = false;
+            cbCradleSync.Click += CbCradleSync_Click;
             // 
             // mlCutter
             // 
-            this.mlCutter.BackColor = System.Drawing.Color.Transparent;
-            this.mlCutter.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mlCutter.Location = new System.Drawing.Point(856, 486);
-            this.mlCutter.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.mlCutter.Name = "mlCutter";
-            this.mlCutter.Size = new System.Drawing.Size(251, 59);
-            this.mlCutter.TabIndex = 50;
-            this.mlCutter.Text = "mlCutter";
-            this.mlCutter.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            mlCutter.BackColor = System.Drawing.Color.Transparent;
+            mlCutter.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            mlCutter.Location = new System.Drawing.Point(844, 520);
+            mlCutter.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            mlCutter.Name = "mlCutter";
+            mlCutter.Size = new System.Drawing.Size(293, 35);
+            mlCutter.TabIndex = 50;
+            mlCutter.Text = "mlCutter";
+            mlCutter.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // mlAlignment
             // 
-            this.mlAlignment.BackColor = System.Drawing.Color.Transparent;
-            this.mlAlignment.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mlAlignment.Location = new System.Drawing.Point(253, 355);
-            this.mlAlignment.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.mlAlignment.Name = "mlAlignment";
-            this.mlAlignment.Size = new System.Drawing.Size(175, 68);
-            this.mlAlignment.TabIndex = 49;
-            this.mlAlignment.Text = "mlAlignment";
-            this.mlAlignment.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            mlAlignment.BackColor = System.Drawing.Color.Transparent;
+            mlAlignment.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            mlAlignment.Location = new System.Drawing.Point(253, 376);
+            mlAlignment.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            mlAlignment.Name = "mlAlignment";
+            mlAlignment.Size = new System.Drawing.Size(204, 32);
+            mlAlignment.TabIndex = 49;
+            mlAlignment.Text = "mlAlignment";
+            mlAlignment.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // panelAlignment
             // 
-            this.panelAlignment.Controls.Add(this.mbAlignmentMotorSide);
-            this.panelAlignment.Controls.Add(this.mbAlignmentOperatorSide);
-            this.panelAlignment.LineColor = System.Drawing.Color.LightGray;
-            this.panelAlignment.LineWidth = 5;
-            this.panelAlignment.Location = new System.Drawing.Point(270, 427);
-            this.panelAlignment.Name = "panelAlignment";
-            this.panelAlignment.Radius = 10;
-            this.panelAlignment.Size = new System.Drawing.Size(135, 280);
-            this.panelAlignment.TabIndex = 45;
+            panelAlignment.Controls.Add(mbAlignmentMotorSide);
+            panelAlignment.Controls.Add(mbAlignmentOperatorSide);
+            panelAlignment.LineColor = System.Drawing.Color.LightGray;
+            panelAlignment.LineWidth = 5;
+            panelAlignment.Location = new System.Drawing.Point(273, 413);
+            panelAlignment.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panelAlignment.Name = "panelAlignment";
+            panelAlignment.Radius = 10;
+            panelAlignment.Size = new System.Drawing.Size(158, 295);
+            panelAlignment.TabIndex = 45;
             // 
             // mbAlignmentMotorSide
             // 
-            this.mbAlignmentMotorSide.Active = false;
-            this.mbAlignmentMotorSide.ActiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("mbAlignmentMotorSide.ActiveBackgroundImage")));
-            this.mbAlignmentMotorSide.BackColor = System.Drawing.Color.Transparent;
-            this.mbAlignmentMotorSide.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mbAlignmentMotorSide.BackgroundImage")));
-            this.mbAlignmentMotorSide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.mbAlignmentMotorSide.ButtonSize = 102;
-            this.mbAlignmentMotorSide.FlatAppearance.BorderSize = 0;
-            this.mbAlignmentMotorSide.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.mbAlignmentMotorSide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.mbAlignmentMotorSide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mbAlignmentMotorSide.ForeColor = System.Drawing.Color.Transparent;
-            this.mbAlignmentMotorSide.InactiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("mbAlignmentMotorSide.InactiveBackgroundImage")));
-            this.mbAlignmentMotorSide.Location = new System.Drawing.Point(18, 18);
-            this.mbAlignmentMotorSide.Name = "mbAlignmentMotorSide";
-            this.mbAlignmentMotorSide.Size = new System.Drawing.Size(102, 102);
-            this.mbAlignmentMotorSide.StateChangeActivated = true;
-            this.mbAlignmentMotorSide.TabIndex = 40;
-            this.mbAlignmentMotorSide.TabStop = false;
-            this.mbAlignmentMotorSide.UseVisualStyleBackColor = false;
-            this.mbAlignmentMotorSide.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mbAlignmentMotorSide_MouseDown);
-            this.mbAlignmentMotorSide.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mbAlignmentMotorSide_MouseUp);
+            mbAlignmentMotorSide.Active = false;
+            mbAlignmentMotorSide.ActiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("mbAlignmentMotorSide.ActiveBackgroundImage");
+            mbAlignmentMotorSide.BackColor = System.Drawing.Color.Transparent;
+            mbAlignmentMotorSide.BackgroundImage = (System.Drawing.Image)resources.GetObject("mbAlignmentMotorSide.BackgroundImage");
+            mbAlignmentMotorSide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            mbAlignmentMotorSide.ButtonSize = 102;
+            mbAlignmentMotorSide.FlatAppearance.BorderSize = 0;
+            mbAlignmentMotorSide.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            mbAlignmentMotorSide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            mbAlignmentMotorSide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            mbAlignmentMotorSide.ForeColor = System.Drawing.Color.Transparent;
+            mbAlignmentMotorSide.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("mbAlignmentMotorSide.InactiveBackgroundImage");
+            mbAlignmentMotorSide.Location = new System.Drawing.Point(21, 21);
+            mbAlignmentMotorSide.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            mbAlignmentMotorSide.Name = "mbAlignmentMotorSide";
+            mbAlignmentMotorSide.Size = new System.Drawing.Size(102, 102);
+            mbAlignmentMotorSide.StateChangeActivated = true;
+            mbAlignmentMotorSide.TabIndex = 40;
+            mbAlignmentMotorSide.TabStop = false;
+            mbAlignmentMotorSide.UseVisualStyleBackColor = false;
+            mbAlignmentMotorSide.MouseDown += mbAlignmentMotorSide_MouseDown;
+            mbAlignmentMotorSide.MouseUp += mbAlignmentMotorSide_MouseUp;
             // 
             // mbAlignmentOperatorSide
             // 
-            this.mbAlignmentOperatorSide.Active = false;
-            this.mbAlignmentOperatorSide.ActiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("mbAlignmentOperatorSide.ActiveBackgroundImage")));
-            this.mbAlignmentOperatorSide.BackColor = System.Drawing.Color.Transparent;
-            this.mbAlignmentOperatorSide.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mbAlignmentOperatorSide.BackgroundImage")));
-            this.mbAlignmentOperatorSide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.mbAlignmentOperatorSide.ButtonSize = 102;
-            this.mbAlignmentOperatorSide.FlatAppearance.BorderSize = 0;
-            this.mbAlignmentOperatorSide.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.mbAlignmentOperatorSide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.mbAlignmentOperatorSide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mbAlignmentOperatorSide.ForeColor = System.Drawing.Color.Transparent;
-            this.mbAlignmentOperatorSide.InactiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("mbAlignmentOperatorSide.InactiveBackgroundImage")));
-            this.mbAlignmentOperatorSide.Location = new System.Drawing.Point(17, 156);
-            this.mbAlignmentOperatorSide.Name = "mbAlignmentOperatorSide";
-            this.mbAlignmentOperatorSide.Size = new System.Drawing.Size(102, 102);
-            this.mbAlignmentOperatorSide.StateChangeActivated = true;
-            this.mbAlignmentOperatorSide.TabIndex = 38;
-            this.mbAlignmentOperatorSide.TabStop = false;
-            this.mbAlignmentOperatorSide.UseVisualStyleBackColor = false;
-            this.mbAlignmentOperatorSide.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mbAlignmentOperatorSide_MouseDown);
-            this.mbAlignmentOperatorSide.MouseUp += new System.Windows.Forms.MouseEventHandler(this.mbAlignmentOperatorSide_MouseUp);
+            mbAlignmentOperatorSide.Active = false;
+            mbAlignmentOperatorSide.ActiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("mbAlignmentOperatorSide.ActiveBackgroundImage");
+            mbAlignmentOperatorSide.BackColor = System.Drawing.Color.Transparent;
+            mbAlignmentOperatorSide.BackgroundImage = (System.Drawing.Image)resources.GetObject("mbAlignmentOperatorSide.BackgroundImage");
+            mbAlignmentOperatorSide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            mbAlignmentOperatorSide.ButtonSize = 102;
+            mbAlignmentOperatorSide.FlatAppearance.BorderSize = 0;
+            mbAlignmentOperatorSide.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            mbAlignmentOperatorSide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            mbAlignmentOperatorSide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            mbAlignmentOperatorSide.ForeColor = System.Drawing.Color.Transparent;
+            mbAlignmentOperatorSide.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("mbAlignmentOperatorSide.InactiveBackgroundImage");
+            mbAlignmentOperatorSide.Location = new System.Drawing.Point(20, 180);
+            mbAlignmentOperatorSide.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            mbAlignmentOperatorSide.Name = "mbAlignmentOperatorSide";
+            mbAlignmentOperatorSide.Size = new System.Drawing.Size(102, 102);
+            mbAlignmentOperatorSide.StateChangeActivated = true;
+            mbAlignmentOperatorSide.TabIndex = 38;
+            mbAlignmentOperatorSide.TabStop = false;
+            mbAlignmentOperatorSide.UseVisualStyleBackColor = false;
+            mbAlignmentOperatorSide.MouseDown += mbAlignmentOperatorSide_MouseDown;
+            mbAlignmentOperatorSide.MouseUp += mbAlignmentOperatorSide_MouseUp;
             // 
             // mlCradleJog
             // 
-            this.mlCradleJog.BackColor = System.Drawing.Color.Transparent;
-            this.mlCradleJog.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mlCradleJog.Location = new System.Drawing.Point(41, 353);
-            this.mlCradleJog.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.mlCradleJog.Name = "mlCradleJog";
-            this.mlCradleJog.Size = new System.Drawing.Size(175, 69);
-            this.mlCradleJog.TabIndex = 45;
-            this.mlCradleJog.Text = "mlCradleJog";
-            this.mlCradleJog.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            mlCradleJog.BackColor = System.Drawing.Color.Transparent;
+            mlCradleJog.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            mlCradleJog.Location = new System.Drawing.Point(25, 376);
+            mlCradleJog.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            mlCradleJog.Name = "mlCradleJog";
+            mlCradleJog.Size = new System.Drawing.Size(204, 31);
+            mlCradleJog.TabIndex = 45;
+            mlCradleJog.Text = "mlCradleJog";
+            mlCradleJog.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // panelJog
             // 
-            this.panelJog.Controls.Add(this.cbCradleJogACW);
-            this.panelJog.Controls.Add(this.cbCradleJogCW);
-            this.panelJog.LineColor = System.Drawing.Color.LightGray;
-            this.panelJog.LineWidth = 5;
-            this.panelJog.Location = new System.Drawing.Point(55, 427);
-            this.panelJog.Name = "panelJog";
-            this.panelJog.Radius = 10;
-            this.panelJog.Size = new System.Drawing.Size(135, 280);
-            this.panelJog.TabIndex = 44;
+            panelJog.Controls.Add(cbCradleJogACW);
+            panelJog.Controls.Add(cbCradleJogCW);
+            panelJog.LineColor = System.Drawing.Color.LightGray;
+            panelJog.LineWidth = 5;
+            panelJog.Location = new System.Drawing.Point(41, 413);
+            panelJog.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panelJog.Name = "panelJog";
+            panelJog.Radius = 10;
+            panelJog.Size = new System.Drawing.Size(158, 295);
+            panelJog.TabIndex = 44;
             // 
             // cbCradleJogACW
             // 
-            this.cbCradleJogACW.Active = false;
-            this.cbCradleJogACW.ActiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbCradleJogACW.ActiveBackgroundImage")));
-            this.cbCradleJogACW.BackColor = System.Drawing.Color.Transparent;
-            this.cbCradleJogACW.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cbCradleJogACW.BackgroundImage")));
-            this.cbCradleJogACW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cbCradleJogACW.ButtonSize = 102;
-            this.cbCradleJogACW.FlatAppearance.BorderSize = 0;
-            this.cbCradleJogACW.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.cbCradleJogACW.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.cbCradleJogACW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbCradleJogACW.ForeColor = System.Drawing.Color.Transparent;
-            this.cbCradleJogACW.InactiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbCradleJogACW.InactiveBackgroundImage")));
-            this.cbCradleJogACW.Location = new System.Drawing.Point(16, 156);
-            this.cbCradleJogACW.Name = "cbCradleJogACW";
-            this.cbCradleJogACW.Size = new System.Drawing.Size(102, 102);
-            this.cbCradleJogACW.StateChangeActivated = true;
-            this.cbCradleJogACW.TabIndex = 40;
-            this.cbCradleJogACW.TabStop = false;
-            this.cbCradleJogACW.UseVisualStyleBackColor = false;
-            this.cbCradleJogACW.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CbCradleJogACW_MouseDown);
-            this.cbCradleJogACW.MouseUp += new System.Windows.Forms.MouseEventHandler(this.CbCradleJogACW_MouseUp);
+            cbCradleJogACW.Active = false;
+            cbCradleJogACW.ActiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbCradleJogACW.ActiveBackgroundImage");
+            cbCradleJogACW.BackColor = System.Drawing.Color.Transparent;
+            cbCradleJogACW.BackgroundImage = (System.Drawing.Image)resources.GetObject("cbCradleJogACW.BackgroundImage");
+            cbCradleJogACW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            cbCradleJogACW.ButtonSize = 102;
+            cbCradleJogACW.FlatAppearance.BorderSize = 0;
+            cbCradleJogACW.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            cbCradleJogACW.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            cbCradleJogACW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            cbCradleJogACW.ForeColor = System.Drawing.Color.Transparent;
+            cbCradleJogACW.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbCradleJogACW.InactiveBackgroundImage");
+            cbCradleJogACW.Location = new System.Drawing.Point(19, 180);
+            cbCradleJogACW.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            cbCradleJogACW.Name = "cbCradleJogACW";
+            cbCradleJogACW.Size = new System.Drawing.Size(102, 102);
+            cbCradleJogACW.StateChangeActivated = true;
+            cbCradleJogACW.TabIndex = 40;
+            cbCradleJogACW.TabStop = false;
+            cbCradleJogACW.UseVisualStyleBackColor = false;
+            cbCradleJogACW.MouseDown += CbCradleJogACW_MouseDown;
+            cbCradleJogACW.MouseUp += CbCradleJogACW_MouseUp;
             // 
             // cbCradleJogCW
             // 
-            this.cbCradleJogCW.Active = false;
-            this.cbCradleJogCW.ActiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbCradleJogCW.ActiveBackgroundImage")));
-            this.cbCradleJogCW.BackColor = System.Drawing.Color.Transparent;
-            this.cbCradleJogCW.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cbCradleJogCW.BackgroundImage")));
-            this.cbCradleJogCW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cbCradleJogCW.ButtonSize = 102;
-            this.cbCradleJogCW.FlatAppearance.BorderSize = 0;
-            this.cbCradleJogCW.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.cbCradleJogCW.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.cbCradleJogCW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbCradleJogCW.ForeColor = System.Drawing.Color.Transparent;
-            this.cbCradleJogCW.InactiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbCradleJogCW.InactiveBackgroundImage")));
-            this.cbCradleJogCW.Location = new System.Drawing.Point(17, 18);
-            this.cbCradleJogCW.Name = "cbCradleJogCW";
-            this.cbCradleJogCW.Size = new System.Drawing.Size(102, 102);
-            this.cbCradleJogCW.StateChangeActivated = true;
-            this.cbCradleJogCW.TabIndex = 38;
-            this.cbCradleJogCW.TabStop = false;
-            this.cbCradleJogCW.UseVisualStyleBackColor = false;
-            this.cbCradleJogCW.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CbCradleJogCW_MouseDown);
-            this.cbCradleJogCW.MouseUp += new System.Windows.Forms.MouseEventHandler(this.CbCradleJogCW_MouseUp);
+            cbCradleJogCW.Active = false;
+            cbCradleJogCW.ActiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbCradleJogCW.ActiveBackgroundImage");
+            cbCradleJogCW.BackColor = System.Drawing.Color.Transparent;
+            cbCradleJogCW.BackgroundImage = (System.Drawing.Image)resources.GetObject("cbCradleJogCW.BackgroundImage");
+            cbCradleJogCW.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            cbCradleJogCW.ButtonSize = 102;
+            cbCradleJogCW.FlatAppearance.BorderSize = 0;
+            cbCradleJogCW.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            cbCradleJogCW.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            cbCradleJogCW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            cbCradleJogCW.ForeColor = System.Drawing.Color.Transparent;
+            cbCradleJogCW.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbCradleJogCW.InactiveBackgroundImage");
+            cbCradleJogCW.Location = new System.Drawing.Point(20, 21);
+            cbCradleJogCW.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            cbCradleJogCW.Name = "cbCradleJogCW";
+            cbCradleJogCW.Size = new System.Drawing.Size(102, 102);
+            cbCradleJogCW.StateChangeActivated = true;
+            cbCradleJogCW.TabIndex = 38;
+            cbCradleJogCW.TabStop = false;
+            cbCradleJogCW.UseVisualStyleBackColor = false;
+            cbCradleJogCW.MouseDown += CbCradleJogCW_MouseDown;
+            cbCradleJogCW.MouseUp += CbCradleJogCW_MouseUp;
             // 
             // panelCuttOff
             // 
-            this.panelCuttOff.Controls.Add(this.mbSharpening);
-            this.panelCuttOff.Controls.Add(this.cbCutOff);
-            this.panelCuttOff.LineColor = System.Drawing.Color.LightGray;
-            this.panelCuttOff.LineWidth = 5;
-            this.panelCuttOff.Location = new System.Drawing.Point(853, 556);
-            this.panelCuttOff.Name = "panelCuttOff";
-            this.panelCuttOff.Radius = 10;
-            this.panelCuttOff.Size = new System.Drawing.Size(254, 125);
-            this.panelCuttOff.TabIndex = 43;
+            panelCuttOff.Controls.Add(mbSharpening);
+            panelCuttOff.Controls.Add(cbCutOff);
+            panelCuttOff.LineColor = System.Drawing.Color.LightGray;
+            panelCuttOff.LineWidth = 5;
+            panelCuttOff.Location = new System.Drawing.Point(841, 563);
+            panelCuttOff.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panelCuttOff.Name = "panelCuttOff";
+            panelCuttOff.Radius = 10;
+            panelCuttOff.Size = new System.Drawing.Size(296, 144);
+            panelCuttOff.TabIndex = 43;
             // 
             // mbSharpening
             // 
-            this.mbSharpening.Active = false;
-            this.mbSharpening.ActiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("mbSharpening.ActiveBackgroundImage")));
-            this.mbSharpening.BackColor = System.Drawing.Color.Transparent;
-            this.mbSharpening.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mbSharpening.BackgroundImage")));
-            this.mbSharpening.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.mbSharpening.ButtonSize = 102;
-            this.mbSharpening.FlatAppearance.BorderSize = 0;
-            this.mbSharpening.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.mbSharpening.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.mbSharpening.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mbSharpening.ForeColor = System.Drawing.Color.Transparent;
-            this.mbSharpening.InactiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("mbSharpening.InactiveBackgroundImage")));
-            this.mbSharpening.Location = new System.Drawing.Point(133, 13);
-            this.mbSharpening.Name = "mbSharpening";
-            this.mbSharpening.Size = new System.Drawing.Size(102, 102);
-            this.mbSharpening.StateChangeActivated = true;
-            this.mbSharpening.TabIndex = 48;
-            this.mbSharpening.TabStop = false;
-            this.mbSharpening.UseVisualStyleBackColor = false;
-            this.mbSharpening.Click += new System.EventHandler(this.mbSharpening_Click);
+            mbSharpening.Active = false;
+            mbSharpening.ActiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("mbSharpening.ActiveBackgroundImage");
+            mbSharpening.BackColor = System.Drawing.Color.Transparent;
+            mbSharpening.BackgroundImage = (System.Drawing.Image)resources.GetObject("mbSharpening.BackgroundImage");
+            mbSharpening.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            mbSharpening.ButtonSize = 102;
+            mbSharpening.FlatAppearance.BorderSize = 0;
+            mbSharpening.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            mbSharpening.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            mbSharpening.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            mbSharpening.ForeColor = System.Drawing.Color.Transparent;
+            mbSharpening.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("mbSharpening.InactiveBackgroundImage");
+            mbSharpening.Location = new System.Drawing.Point(155, 15);
+            mbSharpening.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            mbSharpening.Name = "mbSharpening";
+            mbSharpening.Size = new System.Drawing.Size(102, 102);
+            mbSharpening.StateChangeActivated = true;
+            mbSharpening.TabIndex = 48;
+            mbSharpening.TabStop = false;
+            mbSharpening.UseVisualStyleBackColor = false;
+            mbSharpening.Click += mbSharpening_Click;
             // 
             // cbCutOff
             // 
-            this.cbCutOff.Active = false;
-            this.cbCutOff.ActiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbCutOff.ActiveBackgroundImage")));
-            this.cbCutOff.BackColor = System.Drawing.Color.Transparent;
-            this.cbCutOff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cbCutOff.BackgroundImage")));
-            this.cbCutOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cbCutOff.ButtonSize = 102;
-            this.cbCutOff.FlatAppearance.BorderSize = 0;
-            this.cbCutOff.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.cbCutOff.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.cbCutOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbCutOff.ForeColor = System.Drawing.Color.Transparent;
-            this.cbCutOff.InactiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbCutOff.InactiveBackgroundImage")));
-            this.cbCutOff.Location = new System.Drawing.Point(18, 13);
-            this.cbCutOff.Name = "cbCutOff";
-            this.cbCutOff.Size = new System.Drawing.Size(102, 102);
-            this.cbCutOff.StateChangeActivated = true;
-            this.cbCutOff.TabIndex = 33;
-            this.cbCutOff.TabStop = false;
-            this.cbCutOff.UseVisualStyleBackColor = false;
-            this.cbCutOff.Click += new System.EventHandler(this.CbCutOff_Click);
-            this.cbCutOff.MouseDown += new System.Windows.Forms.MouseEventHandler(this.CbCutOff_MouseDown);
-            this.cbCutOff.MouseUp += new System.Windows.Forms.MouseEventHandler(this.CbCutOff_MouseUp);
+            cbCutOff.Active = false;
+            cbCutOff.ActiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbCutOff.ActiveBackgroundImage");
+            cbCutOff.BackColor = System.Drawing.Color.Transparent;
+            cbCutOff.BackgroundImage = (System.Drawing.Image)resources.GetObject("cbCutOff.BackgroundImage");
+            cbCutOff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            cbCutOff.ButtonSize = 102;
+            cbCutOff.FlatAppearance.BorderSize = 0;
+            cbCutOff.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            cbCutOff.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            cbCutOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            cbCutOff.ForeColor = System.Drawing.Color.Transparent;
+            cbCutOff.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbCutOff.InactiveBackgroundImage");
+            cbCutOff.Location = new System.Drawing.Point(21, 15);
+            cbCutOff.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            cbCutOff.Name = "cbCutOff";
+            cbCutOff.Size = new System.Drawing.Size(102, 102);
+            cbCutOff.StateChangeActivated = true;
+            cbCutOff.TabIndex = 33;
+            cbCutOff.TabStop = false;
+            cbCutOff.UseVisualStyleBackColor = false;
+            cbCutOff.Click += CbCutOff_Click;
+            cbCutOff.MouseDown += CbCutOff_MouseDown;
+            cbCutOff.MouseUp += CbCutOff_MouseUp;
             // 
             // panelWorkingMode
             // 
-            this.panelWorkingMode.Controls.Add(this.mlWorkingModeTitle);
-            this.panelWorkingMode.Controls.Add(this.mlWorkingMode);
-            this.panelWorkingMode.LineColor = System.Drawing.Color.LightGray;
-            this.panelWorkingMode.LineWidth = 4;
-            this.panelWorkingMode.Location = new System.Drawing.Point(35, 17);
-            this.panelWorkingMode.Name = "panelWorkingMode";
-            this.panelWorkingMode.Radius = 10;
-            this.panelWorkingMode.Size = new System.Drawing.Size(356, 75);
-            this.panelWorkingMode.TabIndex = 42;
+            panelWorkingMode.Controls.Add(mlWorkingModeTitle);
+            panelWorkingMode.Controls.Add(mlWorkingMode);
+            panelWorkingMode.LineColor = System.Drawing.Color.LightGray;
+            panelWorkingMode.LineWidth = 4;
+            panelWorkingMode.Location = new System.Drawing.Point(16, 12);
+            panelWorkingMode.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panelWorkingMode.Name = "panelWorkingMode";
+            panelWorkingMode.Radius = 10;
+            panelWorkingMode.Size = new System.Drawing.Size(415, 87);
+            panelWorkingMode.TabIndex = 42;
             // 
             // mlWorkingModeTitle
             // 
-            this.mlWorkingModeTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mlWorkingModeTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.mlWorkingModeTitle.Location = new System.Drawing.Point(14, 8);
-            this.mlWorkingModeTitle.Name = "mlWorkingModeTitle";
-            this.mlWorkingModeTitle.Size = new System.Drawing.Size(321, 28);
-            this.mlWorkingModeTitle.TabIndex = 38;
-            this.mlWorkingModeTitle.Text = "labelWorkingModeTitle";
-            this.mlWorkingModeTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            mlWorkingModeTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            mlWorkingModeTitle.ForeColor = System.Drawing.Color.FromArgb(192, 0, 0);
+            mlWorkingModeTitle.Location = new System.Drawing.Point(16, 9);
+            mlWorkingModeTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            mlWorkingModeTitle.Name = "mlWorkingModeTitle";
+            mlWorkingModeTitle.Size = new System.Drawing.Size(374, 32);
+            mlWorkingModeTitle.TabIndex = 38;
+            mlWorkingModeTitle.Text = "labelWorkingModeTitle";
+            mlWorkingModeTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mlWorkingMode
             // 
-            this.mlWorkingMode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mlWorkingMode.Location = new System.Drawing.Point(14, 39);
-            this.mlWorkingMode.Name = "mlWorkingMode";
-            this.mlWorkingMode.Size = new System.Drawing.Size(321, 28);
-            this.mlWorkingMode.TabIndex = 37;
-            this.mlWorkingMode.Text = "labelWorkingMode";
-            this.mlWorkingMode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            mlWorkingMode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            mlWorkingMode.Location = new System.Drawing.Point(16, 45);
+            mlWorkingMode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            mlWorkingMode.Name = "mlWorkingMode";
+            mlWorkingMode.Size = new System.Drawing.Size(374, 32);
+            mlWorkingMode.TabIndex = 37;
+            mlWorkingMode.Text = "labelWorkingMode";
+            mlWorkingMode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mlMaterialRegulation
             // 
-            this.mlMaterialRegulation.BackColor = System.Drawing.Color.Transparent;
-            this.mlMaterialRegulation.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mlMaterialRegulation.Location = new System.Drawing.Point(337, 98);
-            this.mlMaterialRegulation.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
-            this.mlMaterialRegulation.Name = "mlMaterialRegulation";
-            this.mlMaterialRegulation.Size = new System.Drawing.Size(255, 59);
-            this.mlMaterialRegulation.TabIndex = 41;
-            this.mlMaterialRegulation.Text = "mlMaterialRegulation";
-            this.mlMaterialRegulation.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            mlMaterialRegulation.BackColor = System.Drawing.Color.Transparent;
+            mlMaterialRegulation.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            mlMaterialRegulation.Location = new System.Drawing.Point(253, 112);
+            mlMaterialRegulation.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
+            mlMaterialRegulation.Name = "mlMaterialRegulation";
+            mlMaterialRegulation.Size = new System.Drawing.Size(298, 30);
+            mlMaterialRegulation.TabIndex = 41;
+            mlMaterialRegulation.Text = "mlMaterialRegulation";
+            mlMaterialRegulation.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // mSearchBox
             // 
-            this.mSearchBox.ButtonColor = System.Drawing.Color.DimGray;
-            this.mSearchBox.ItemText = "";
-            this.mSearchBox.Location = new System.Drawing.Point(521, 17);
-            this.mSearchBox.Name = "mSearchBox";
-            this.mSearchBox.SearchText = "";
-            this.mSearchBox.SelectedIndex = -1;
-            this.mSearchBox.Size = new System.Drawing.Size(590, 75);
-            this.mSearchBox.TabIndex = 35;
+            mSearchBox.ButtonColor = System.Drawing.Color.DimGray;
+            mSearchBox.ItemText = "";
+            mSearchBox.Location = new System.Drawing.Point(449, 12);
+            mSearchBox.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mSearchBox.Name = "mSearchBox";
+            mSearchBox.SearchText = "";
+            mSearchBox.SelectedIndex = -1;
+            mSearchBox.Size = new System.Drawing.Size(688, 87);
+            mSearchBox.TabIndex = 35;
             // 
             // cmbStraightRoller
             // 
-            this.cmbStraightRoller.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.cmbStraightRoller.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.cmbStraightRoller.Location = new System.Drawing.Point(847, 172);
-            this.cmbStraightRoller.Name = "cmbStraightRoller";
-            this.cmbStraightRoller.Size = new System.Drawing.Size(260, 125);
-            this.cmbStraightRoller.TabIndex = 31;
-            this.cmbStraightRoller.Value = 0;
-            this.cmbStraightRoller.ValueChangedEventEnabled = false;
-            this.cmbStraightRoller.ValueChanged += new System.EventHandler<Machine.UI.Controls.MultiButtonsEventArgs>(this.CmbStraightRoller_ValueChanged);
+            cmbStraightRoller.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            cmbStraightRoller.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            cmbStraightRoller.Location = new System.Drawing.Point(834, 151);
+            cmbStraightRoller.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            cmbStraightRoller.Name = "cmbStraightRoller";
+            cmbStraightRoller.Size = new System.Drawing.Size(303, 144);
+            cmbStraightRoller.TabIndex = 31;
+            cmbStraightRoller.Value = 0;
+            cmbStraightRoller.ValueChangedEventEnabled = false;
+            cmbStraightRoller.ValueChanged += CmbStraightRoller_ValueChanged;
             // 
             // cpbsCradleScalingFactor
             // 
-            this.cpbsCradleScalingFactor.Location = new System.Drawing.Point(400, 168);
-            this.cpbsCradleScalingFactor.MaxValue = 100F;
-            this.cpbsCradleScalingFactor.MinValue = 0F;
-            this.cpbsCradleScalingFactor.Name = "cpbsCradleScalingFactor";
-            this.cpbsCradleScalingFactor.PropertyName = "";
-            this.cpbsCradleScalingFactor.Size = new System.Drawing.Size(140, 192);
-            this.cpbsCradleScalingFactor.TabIndex = 30;
-            this.cpbsCradleScalingFactor.Value = 0F;
-            this.cpbsCradleScalingFactor.ValueChangedEventEnabled = false;
+            cpbsCradleScalingFactor.Location = new System.Drawing.Point(327, 155);
+            cpbsCradleScalingFactor.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            cpbsCradleScalingFactor.Name = "cpbsCradleScalingFactor";
+            cpbsCradleScalingFactor.Size = new System.Drawing.Size(163, 222);
+            cpbsCradleScalingFactor.TabIndex = 30;
             // 
             // mlStraightRoller
             // 
-            this.mlStraightRoller.BackColor = System.Drawing.Color.Transparent;
-            this.mlStraightRoller.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mlStraightRoller.Location = new System.Drawing.Point(847, 105);
-            this.mlStraightRoller.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.mlStraightRoller.Name = "mlStraightRoller";
-            this.mlStraightRoller.Size = new System.Drawing.Size(260, 59);
-            this.mlStraightRoller.TabIndex = 32;
-            this.mlStraightRoller.Text = "mlStraightRoller";
-            this.mlStraightRoller.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            mlStraightRoller.BackColor = System.Drawing.Color.Transparent;
+            mlStraightRoller.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            mlStraightRoller.Location = new System.Drawing.Point(834, 112);
+            mlStraightRoller.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            mlStraightRoller.Name = "mlStraightRoller";
+            mlStraightRoller.Size = new System.Drawing.Size(303, 30);
+            mlStraightRoller.TabIndex = 32;
+            mlStraightRoller.Text = "mlStraightRoller";
+            mlStraightRoller.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // mpStatistics
             // 
-            this.mpStatistics.Controls.Add(this.mlWorkingsStatistics);
-            this.mpStatistics.LineColor = System.Drawing.Color.LightGray;
-            this.mpStatistics.LineWidth = 5;
-            this.mpStatistics.Location = new System.Drawing.Point(772, 337);
-            this.mpStatistics.Name = "mpStatistics";
-            this.mpStatistics.Radius = 10;
-            this.mpStatistics.Size = new System.Drawing.Size(335, 172);
-            this.mpStatistics.TabIndex = 51;
+            mpStatistics.Controls.Add(mlWorkingsStatistics);
+            mpStatistics.LineColor = System.Drawing.Color.LightGray;
+            mpStatistics.LineWidth = 5;
+            mpStatistics.Location = new System.Drawing.Point(746, 315);
+            mpStatistics.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            mpStatistics.Name = "mpStatistics";
+            mpStatistics.Radius = 10;
+            mpStatistics.Size = new System.Drawing.Size(391, 198);
+            mpStatistics.TabIndex = 51;
             // 
             // mlWorkingsStatistics
             // 
-            this.mlWorkingsStatistics.BackColor = System.Drawing.Color.Transparent;
-            this.mlWorkingsStatistics.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mlWorkingsStatistics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.mlWorkingsStatistics.Location = new System.Drawing.Point(9, 5);
-            this.mlWorkingsStatistics.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.mlWorkingsStatistics.Name = "mlWorkingsStatistics";
-            this.mlWorkingsStatistics.Size = new System.Drawing.Size(320, 162);
-            this.mlWorkingsStatistics.TabIndex = 52;
-            this.mlWorkingsStatistics.Text = "mlWorkingsStatistics";
-            this.mlWorkingsStatistics.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.mlWorkingsStatistics.DoubleClick += new System.EventHandler(this.mlWorkingsStatistics_DoubleClick);
+            mlWorkingsStatistics.BackColor = System.Drawing.Color.Transparent;
+            mlWorkingsStatistics.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            mlWorkingsStatistics.ForeColor = System.Drawing.Color.FromArgb(192, 0, 0);
+            mlWorkingsStatistics.Location = new System.Drawing.Point(10, 6);
+            mlWorkingsStatistics.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            mlWorkingsStatistics.Name = "mlWorkingsStatistics";
+            mlWorkingsStatistics.Size = new System.Drawing.Size(373, 187);
+            mlWorkingsStatistics.TabIndex = 52;
+            mlWorkingsStatistics.Text = "mlWorkingsStatistics";
+            mlWorkingsStatistics.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            mlWorkingsStatistics.DoubleClick += mlWorkingsStatistics_DoubleClick;
             // 
             // mlCutterVelocity
             // 
-            this.mlCutterVelocity.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mlCutterVelocity.Location = new System.Drawing.Point(583, 98);
-            this.mlCutterVelocity.Name = "mlCutterVelocity";
-            this.mlCutterVelocity.Size = new System.Drawing.Size(255, 59);
-            this.mlCutterVelocity.TabIndex = 68;
-            this.mlCutterVelocity.Text = "mlCutterVelocity";
-            this.mlCutterVelocity.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            mlCutterVelocity.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            mlCutterVelocity.Location = new System.Drawing.Point(523, 112);
+            mlCutterVelocity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            mlCutterVelocity.Name = "mlCutterVelocity";
+            mlCutterVelocity.Size = new System.Drawing.Size(298, 30);
+            mlCutterVelocity.TabIndex = 68;
+            mlCutterVelocity.Text = "mlCutterVelocity";
+            mlCutterVelocity.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // mpbsCutterVelocity
             // 
-            this.mpbsCutterVelocity.Location = new System.Drawing.Point(632, 168);
-            this.mpbsCutterVelocity.MaxValue = 100F;
-            this.mpbsCutterVelocity.MinValue = 0F;
-            this.mpbsCutterVelocity.Name = "mpbsCutterVelocity";
-            this.mpbsCutterVelocity.PropertyName = "";
-            this.mpbsCutterVelocity.Size = new System.Drawing.Size(140, 192);
-            this.mpbsCutterVelocity.TabIndex = 69;
-            this.mpbsCutterVelocity.Value = 0F;
-            this.mpbsCutterVelocity.ValueChangedEventEnabled = false;
+            mpbsCutterVelocity.Location = new System.Drawing.Point(580, 155);
+            mpbsCutterVelocity.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mpbsCutterVelocity.Name = "mpbsCutterVelocity";
+            mpbsCutterVelocity.Size = new System.Drawing.Size(163, 222);
+            mpbsCutterVelocity.TabIndex = 69;
             // 
             // cbStop
             // 
-            this.cbStop.Active = false;
-            this.cbStop.ActiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbStop.ActiveBackgroundImage")));
-            this.cbStop.BackColor = System.Drawing.Color.Transparent;
-            this.cbStop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cbStop.BackgroundImage")));
-            this.cbStop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cbStop.ButtonSize = 125;
-            this.cbStop.FlatAppearance.BorderSize = 0;
-            this.cbStop.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.cbStop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.cbStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbStop.ForeColor = System.Drawing.Color.Transparent;
-            this.cbStop.InactiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbStop.InactiveBackgroundImage")));
-            this.cbStop.Location = new System.Drawing.Point(499, 556);
-            this.cbStop.Name = "cbStop";
-            this.cbStop.Size = new System.Drawing.Size(125, 125);
-            this.cbStop.StateChangeActivated = true;
-            this.cbStop.TabIndex = 70;
-            this.cbStop.TabStop = false;
-            this.cbStop.UseVisualStyleBackColor = false;
-            this.cbStop.Click += new System.EventHandler(this.CbStop_Click);
+            cbStop.Active = false;
+            cbStop.ActiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbStop.ActiveBackgroundImage");
+            cbStop.BackColor = System.Drawing.Color.Transparent;
+            cbStop.BackgroundImage = (System.Drawing.Image)resources.GetObject("cbStop.BackgroundImage");
+            cbStop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            cbStop.ButtonSize = 125;
+            cbStop.FlatAppearance.BorderSize = 0;
+            cbStop.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            cbStop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            cbStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            cbStop.ForeColor = System.Drawing.Color.Transparent;
+            cbStop.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbStop.InactiveBackgroundImage");
+            cbStop.Location = new System.Drawing.Point(580, 582);
+            cbStop.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            cbStop.Name = "cbStop";
+            cbStop.Size = new System.Drawing.Size(125, 125);
+            cbStop.StateChangeActivated = true;
+            cbStop.TabIndex = 70;
+            cbStop.TabStop = false;
+            cbStop.UseVisualStyleBackColor = false;
+            cbStop.Click += CbStop_Click;
             // 
             // FormDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1145, 720);
-            this.Controls.Add(this.cbStop);
-            this.Controls.Add(this.mlAlignment);
-            this.Controls.Add(this.mpbsCutterVelocity);
-            this.Controls.Add(this.mlCutterVelocity);
-            this.Controls.Add(this.mpStatistics);
-            this.Controls.Add(this.mlSync);
-            this.Controls.Add(this.cbCradleSync);
-            this.Controls.Add(this.mlCutter);
-            this.Controls.Add(this.panelAlignment);
-            this.Controls.Add(this.mlCradleJog);
-            this.Controls.Add(this.panelJog);
-            this.Controls.Add(this.panelCuttOff);
-            this.Controls.Add(this.panelWorkingMode);
-            this.Controls.Add(this.mlMaterialRegulation);
-            this.Controls.Add(this.mSearchBox);
-            this.Controls.Add(this.cmbStraightRoller);
-            this.Controls.Add(this.mlStraightRoller);
-            this.Controls.Add(this.cpbsCradleScalingFactor);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.Name = "FormDashboard";
-            this.Text = "FormDashboard";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormDashboard_FormClosing);
-            this.Load += new System.EventHandler(this.FormDashboard_Load);
-            this.panelAlignment.ResumeLayout(false);
-            this.panelJog.ResumeLayout(false);
-            this.panelCuttOff.ResumeLayout(false);
-            this.panelWorkingMode.ResumeLayout(false);
-            this.mpStatistics.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(1280, 800);
+            Controls.Add(cbStop);
+            Controls.Add(mlAlignment);
+            Controls.Add(mpbsCutterVelocity);
+            Controls.Add(mlCutterVelocity);
+            Controls.Add(mpStatistics);
+            Controls.Add(mlSync);
+            Controls.Add(cbCradleSync);
+            Controls.Add(mlCutter);
+            Controls.Add(panelAlignment);
+            Controls.Add(mlCradleJog);
+            Controls.Add(panelJog);
+            Controls.Add(panelCuttOff);
+            Controls.Add(panelWorkingMode);
+            Controls.Add(mlMaterialRegulation);
+            Controls.Add(mSearchBox);
+            Controls.Add(cmbStraightRoller);
+            Controls.Add(mlStraightRoller);
+            Controls.Add(cpbsCradleScalingFactor);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            Name = "FormDashboard";
+            Text = "FormDashboard";
+            FormClosing += FormDashboard_FormClosing;
+            Load += FormDashboard_Load;
+            panelAlignment.ResumeLayout(false);
+            panelJog.ResumeLayout(false);
+            panelCuttOff.ResumeLayout(false);
+            panelWorkingMode.ResumeLayout(false);
+            mpStatistics.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

@@ -842,8 +842,8 @@ output_driver04                    :20";
                 // Web Api
                 //-----------------------------------------------------------
                 #region Web Api 
-                //var url = String.Format("http://{0}:{1}", Machine.Constants.Networking.IPAddressHighLevelControl, Machine.Constants.Networking.WebApiPort);
-                var url = $"http://0.0.0.0:{Machine.Constants.Networking.WebApiPort}";
+                var url = String.Format("http://{0}:{1}", Machine.Constants.Networking.IPAddressHighLevelControl, Machine.Constants.Networking.WebApiPort);
+                //var url = $"http://0.0.0.0:{Machine.Constants.Networking.WebApiPort}";
                 var cts = new CancellationTokenSource();
                 var apiTask = Task.Run(() => Caron.Cradle.Control.Api.WebApiHost.RunAsync(url, cts.Token));
 

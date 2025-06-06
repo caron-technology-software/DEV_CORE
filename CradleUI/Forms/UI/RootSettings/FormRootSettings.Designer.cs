@@ -31,335 +31,361 @@ namespace Caron.Cradle.UI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRootSettings));
-            this.mlSoftwareVersion = new System.Windows.Forms.Label();
-            this.panelForm = new System.Windows.Forms.Panel();
-            this.mpInfo = new Machine.UI.Controls.MachinePanelEdgeRounded();
-            this.mlIndustrialPcId = new System.Windows.Forms.Label();
-            this.mlMachineSerial = new System.Windows.Forms.Label();
-            this.mlTitle = new System.Windows.Forms.Label();
-            this.cbReturn = new Machine.UI.Controls.MachineButton();
-            this.mlSoftwareUpdate = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlBackupSystem = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlResetSettings = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlLocalization = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlMachineParameters = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlIOSettings = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlBackupWorkingsSettings = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlLowLevelStatus = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlMachineConfiguration = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlCmdMaintenance = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlMachineEndurance = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlAnalogInputsCalibration = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlMachineEnduranceLimits = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlShutdownApp = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlUpdateWorkingSettings = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlUpdateSettings = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlFilterUWF = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlResetMachineEndurance = new Machine.UI.Controls.MachineButtonRectangular();
-            this.mlBackupLog = new Machine.UI.Controls.MachineButtonRectangular();
-            this.panelForm.SuspendLayout();
-            this.mpInfo.SuspendLayout();
-            this.SuspendLayout();
+            mlSoftwareVersion = new System.Windows.Forms.Label();
+            panelForm = new System.Windows.Forms.Panel();
+            mpInfo = new MachinePanelEdgeRounded();
+            mlIndustrialPcId = new System.Windows.Forms.Label();
+            mlMachineSerial = new System.Windows.Forms.Label();
+            mlTitle = new System.Windows.Forms.Label();
+            cbReturn = new MachineButton();
+            mlSoftwareUpdate = new MachineButtonRectangular();
+            mlBackupSystem = new MachineButtonRectangular();
+            mlResetSettings = new MachineButtonRectangular();
+            mlLocalization = new MachineButtonRectangular();
+            mlMachineParameters = new MachineButtonRectangular();
+            mlIOSettings = new MachineButtonRectangular();
+            mlBackupWorkingsSettings = new MachineButtonRectangular();
+            mlLowLevelStatus = new MachineButtonRectangular();
+            mlMachineConfiguration = new MachineButtonRectangular();
+            mlCmdMaintenance = new MachineButtonRectangular();
+            mlMachineEndurance = new MachineButtonRectangular();
+            mlAnalogInputsCalibration = new MachineButtonRectangular();
+            mlMachineEnduranceLimits = new MachineButtonRectangular();
+            mlShutdownApp = new MachineButtonRectangular();
+            mlUpdateWorkingSettings = new MachineButtonRectangular();
+            mlUpdateSettings = new MachineButtonRectangular();
+            mlFilterUWF = new MachineButtonRectangular();
+            mlResetMachineEndurance = new MachineButtonRectangular();
+            mlBackupLog = new MachineButtonRectangular();
+            panelForm.SuspendLayout();
+            mpInfo.SuspendLayout();
+            SuspendLayout();
             // 
             // mlSoftwareVersion
             // 
-            this.mlSoftwareVersion.AutoSize = true;
-            this.mlSoftwareVersion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mlSoftwareVersion.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.mlSoftwareVersion.Location = new System.Drawing.Point(13, 11);
-            this.mlSoftwareVersion.Name = "mlSoftwareVersion";
-            this.mlSoftwareVersion.Size = new System.Drawing.Size(166, 20);
-            this.mlSoftwareVersion.TabIndex = 23;
-            this.mlSoftwareVersion.Text = "mlSoftwareVersion";
+            mlSoftwareVersion.AutoSize = true;
+            mlSoftwareVersion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            mlSoftwareVersion.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            mlSoftwareVersion.Location = new System.Drawing.Point(15, 13);
+            mlSoftwareVersion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            mlSoftwareVersion.Name = "mlSoftwareVersion";
+            mlSoftwareVersion.Size = new System.Drawing.Size(166, 20);
+            mlSoftwareVersion.TabIndex = 23;
+            mlSoftwareVersion.Text = "mlSoftwareVersion";
             // 
             // panelForm
             // 
-            this.panelForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(37)))), ((int)(((byte)(43)))));
-            this.panelForm.Controls.Add(this.mpInfo);
-            this.panelForm.Controls.Add(this.mlTitle);
-            this.panelForm.Controls.Add(this.cbReturn);
-            this.panelForm.Location = new System.Drawing.Point(0, 0);
-            this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(1280, 120);
-            this.panelForm.TabIndex = 8;
+            panelForm.BackColor = System.Drawing.Color.FromArgb(26, 37, 43);
+            panelForm.Controls.Add(mpInfo);
+            panelForm.Controls.Add(mlTitle);
+            panelForm.Controls.Add(cbReturn);
+            panelForm.Location = new System.Drawing.Point(0, 0);
+            panelForm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panelForm.Name = "panelForm";
+            panelForm.Size = new System.Drawing.Size(1493, 138);
+            panelForm.TabIndex = 8;
             // 
             // mpInfo
             // 
-            this.mpInfo.Controls.Add(this.mlSoftwareVersion);
-            this.mpInfo.Controls.Add(this.mlIndustrialPcId);
-            this.mpInfo.Controls.Add(this.mlMachineSerial);
-            this.mpInfo.LineColor = System.Drawing.Color.LightGray;
-            this.mpInfo.LineWidth = 3;
-            this.mpInfo.Location = new System.Drawing.Point(774, 13);
-            this.mpInfo.Name = "mpInfo";
-            this.mpInfo.Radius = 5;
-            this.mpInfo.Size = new System.Drawing.Size(481, 97);
-            this.mpInfo.TabIndex = 39;
-            this.mpInfo.DoubleClick += new System.EventHandler(this.mpInfo_DoubleClick);
+            mpInfo.Controls.Add(mlSoftwareVersion);
+            mpInfo.Controls.Add(mlIndustrialPcId);
+            mpInfo.Controls.Add(mlMachineSerial);
+            mpInfo.LineColor = System.Drawing.Color.LightGray;
+            mpInfo.LineWidth = 3;
+            mpInfo.Location = new System.Drawing.Point(658, 12);
+            mpInfo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            mpInfo.Name = "mpInfo";
+            mpInfo.Radius = 5;
+            mpInfo.Size = new System.Drawing.Size(561, 112);
+            mpInfo.TabIndex = 39;
+            mpInfo.DoubleClick += mpInfo_DoubleClick;
             // 
             // mlIndustrialPcId
             // 
-            this.mlIndustrialPcId.AutoSize = true;
-            this.mlIndustrialPcId.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mlIndustrialPcId.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.mlIndustrialPcId.Location = new System.Drawing.Point(13, 63);
-            this.mlIndustrialPcId.Name = "mlIndustrialPcId";
-            this.mlIndustrialPcId.Size = new System.Drawing.Size(144, 20);
-            this.mlIndustrialPcId.TabIndex = 38;
-            this.mlIndustrialPcId.Text = "mlIndustrialPcId";
+            mlIndustrialPcId.AutoSize = true;
+            mlIndustrialPcId.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            mlIndustrialPcId.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            mlIndustrialPcId.Location = new System.Drawing.Point(15, 73);
+            mlIndustrialPcId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            mlIndustrialPcId.Name = "mlIndustrialPcId";
+            mlIndustrialPcId.Size = new System.Drawing.Size(144, 20);
+            mlIndustrialPcId.TabIndex = 38;
+            mlIndustrialPcId.Text = "mlIndustrialPcId";
             // 
             // mlMachineSerial
             // 
-            this.mlMachineSerial.AutoSize = true;
-            this.mlMachineSerial.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mlMachineSerial.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.mlMachineSerial.Location = new System.Drawing.Point(13, 37);
-            this.mlMachineSerial.Name = "mlMachineSerial";
-            this.mlMachineSerial.Size = new System.Drawing.Size(146, 20);
-            this.mlMachineSerial.TabIndex = 37;
-            this.mlMachineSerial.Text = "mlMachineSerial";
+            mlMachineSerial.AutoSize = true;
+            mlMachineSerial.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            mlMachineSerial.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            mlMachineSerial.Location = new System.Drawing.Point(15, 43);
+            mlMachineSerial.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            mlMachineSerial.Name = "mlMachineSerial";
+            mlMachineSerial.Size = new System.Drawing.Size(146, 20);
+            mlMachineSerial.TabIndex = 37;
+            mlMachineSerial.Text = "mlMachineSerial";
             // 
             // mlTitle
             // 
-            this.mlTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mlTitle.ForeColor = System.Drawing.Color.White;
-            this.mlTitle.Location = new System.Drawing.Point(119, 8);
-            this.mlTitle.Name = "mlTitle";
-            this.mlTitle.Size = new System.Drawing.Size(289, 102);
-            this.mlTitle.TabIndex = 2;
-            this.mlTitle.Text = "Root Settings Menu";
-            this.mlTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            mlTitle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            mlTitle.ForeColor = System.Drawing.Color.White;
+            mlTitle.Location = new System.Drawing.Point(139, 9);
+            mlTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            mlTitle.Name = "mlTitle";
+            mlTitle.Size = new System.Drawing.Size(337, 118);
+            mlTitle.TabIndex = 2;
+            mlTitle.Text = "Root Settings Menu";
+            mlTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cbReturn
             // 
-            this.cbReturn.Active = false;
-            this.cbReturn.ActiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbReturn.ActiveBackgroundImage")));
-            this.cbReturn.BackColor = System.Drawing.Color.Transparent;
-            this.cbReturn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cbReturn.BackgroundImage")));
-            this.cbReturn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.cbReturn.ButtonSize = 102;
-            this.cbReturn.FlatAppearance.BorderSize = 0;
-            this.cbReturn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.cbReturn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.cbReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbReturn.ForeColor = System.Drawing.Color.Transparent;
-            this.cbReturn.InactiveBackgroundImage = ((System.Drawing.Bitmap)(resources.GetObject("cbReturn.InactiveBackgroundImage")));
-            this.cbReturn.Location = new System.Drawing.Point(11, 8);
-            this.cbReturn.Name = "cbReturn";
-            this.cbReturn.Size = new System.Drawing.Size(102, 102);
-            this.cbReturn.StateChangeActivated = true;
-            this.cbReturn.TabIndex = 7;
-            this.cbReturn.TabStop = false;
-            this.cbReturn.UseVisualStyleBackColor = false;
-            this.cbReturn.Click += new System.EventHandler(this.CbReturn_Click);
+            cbReturn.Active = false;
+            cbReturn.ActiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbReturn.ActiveBackgroundImage");
+            cbReturn.BackColor = System.Drawing.Color.Transparent;
+            cbReturn.BackgroundImage = (System.Drawing.Image)resources.GetObject("cbReturn.BackgroundImage");
+            cbReturn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            cbReturn.ButtonSize = 102;
+            cbReturn.FlatAppearance.BorderSize = 0;
+            cbReturn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            cbReturn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            cbReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            cbReturn.ForeColor = System.Drawing.Color.Transparent;
+            cbReturn.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbReturn.InactiveBackgroundImage");
+            cbReturn.Location = new System.Drawing.Point(13, 9);
+            cbReturn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            cbReturn.Name = "cbReturn";
+            cbReturn.Size = new System.Drawing.Size(102, 102);
+            cbReturn.StateChangeActivated = true;
+            cbReturn.TabIndex = 7;
+            cbReturn.TabStop = false;
+            cbReturn.UseVisualStyleBackColor = false;
+            cbReturn.Click += CbReturn_Click;
             // 
             // mlSoftwareUpdate
             // 
-            this.mlSoftwareUpdate.Location = new System.Drawing.Point(514, 277);
-            this.mlSoftwareUpdate.Name = "mlSoftwareUpdate";
-            this.mlSoftwareUpdate.Size = new System.Drawing.Size(294, 60);
-            this.mlSoftwareUpdate.TabIndex = 32;
-            this.mlSoftwareUpdate.Text = "mlSoftwareUpdate";
-            this.mlSoftwareUpdate.Click += new System.EventHandler(this.MlSoftwareUpdate_Click);
+            mlSoftwareUpdate.Location = new System.Drawing.Point(423, 317);
+            mlSoftwareUpdate.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlSoftwareUpdate.Name = "mlSoftwareUpdate";
+            mlSoftwareUpdate.Size = new System.Drawing.Size(343, 69);
+            mlSoftwareUpdate.TabIndex = 32;
+            mlSoftwareUpdate.Text = "mlSoftwareUpdate";
+            mlSoftwareUpdate.Click += MlSoftwareUpdate_Click;
             // 
             // mlBackupSystem
             // 
-            this.mlBackupSystem.Location = new System.Drawing.Point(514, 427);
-            this.mlBackupSystem.Name = "mlBackupSystem";
-            this.mlBackupSystem.Size = new System.Drawing.Size(294, 60);
-            this.mlBackupSystem.TabIndex = 31;
-            this.mlBackupSystem.Text = "mlBackupSystem";
-            this.mlBackupSystem.Click += new System.EventHandler(this.MlBackupSystemSettings_Click);
+            mlBackupSystem.Location = new System.Drawing.Point(423, 490);
+            mlBackupSystem.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlBackupSystem.Name = "mlBackupSystem";
+            mlBackupSystem.Size = new System.Drawing.Size(343, 69);
+            mlBackupSystem.TabIndex = 31;
+            mlBackupSystem.Text = "mlBackupSystem";
+            mlBackupSystem.Click += MlBackupSystemSettings_Click;
             // 
             // mlResetSettings
             // 
-            this.mlResetSettings.Location = new System.Drawing.Point(514, 352);
-            this.mlResetSettings.Name = "mlResetSettings";
-            this.mlResetSettings.Size = new System.Drawing.Size(294, 60);
-            this.mlResetSettings.TabIndex = 30;
-            this.mlResetSettings.Text = "mlResetSettings";
-            this.mlResetSettings.Click += new System.EventHandler(this.MlResetSettings_Click);
+            mlResetSettings.Location = new System.Drawing.Point(423, 403);
+            mlResetSettings.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlResetSettings.Name = "mlResetSettings";
+            mlResetSettings.Size = new System.Drawing.Size(343, 69);
+            mlResetSettings.TabIndex = 30;
+            mlResetSettings.Text = "mlResetSettings";
+            mlResetSettings.Click += MlResetSettings_Click;
             // 
             // mlLocalization
             // 
-            this.mlLocalization.Location = new System.Drawing.Point(514, 127);
-            this.mlLocalization.Name = "mlLocalization";
-            this.mlLocalization.Size = new System.Drawing.Size(294, 60);
-            this.mlLocalization.TabIndex = 29;
-            this.mlLocalization.Text = "mlLocalization";
-            this.mlLocalization.Click += new System.EventHandler(this.MlLocalization_Click);
+            mlLocalization.Location = new System.Drawing.Point(423, 144);
+            mlLocalization.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlLocalization.Name = "mlLocalization";
+            mlLocalization.Size = new System.Drawing.Size(343, 69);
+            mlLocalization.TabIndex = 29;
+            mlLocalization.Text = "mlLocalization";
+            mlLocalization.Click += MlLocalization_Click;
             // 
             // mlMachineParameters
             // 
-            this.mlMachineParameters.Location = new System.Drawing.Point(94, 202);
-            this.mlMachineParameters.Name = "mlMachineParameters";
-            this.mlMachineParameters.Size = new System.Drawing.Size(294, 60);
-            this.mlMachineParameters.TabIndex = 28;
-            this.mlMachineParameters.Text = "mlMachineParameters";
-            this.mlMachineParameters.Click += new System.EventHandler(this.MlMachineParameters_Click);
+            mlMachineParameters.Location = new System.Drawing.Point(13, 230);
+            mlMachineParameters.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlMachineParameters.Name = "mlMachineParameters";
+            mlMachineParameters.Size = new System.Drawing.Size(343, 69);
+            mlMachineParameters.TabIndex = 28;
+            mlMachineParameters.Text = "mlMachineParameters";
+            mlMachineParameters.Click += MlMachineParameters_Click;
             // 
             // mlIOSettings
             // 
-            this.mlIOSettings.Location = new System.Drawing.Point(94, 427);
-            this.mlIOSettings.Name = "mlIOSettings";
-            this.mlIOSettings.Size = new System.Drawing.Size(294, 60);
-            this.mlIOSettings.TabIndex = 27;
-            this.mlIOSettings.Text = "mlIOSettings";
-            this.mlIOSettings.Click += new System.EventHandler(this.MlIOSettings_Click);
+            mlIOSettings.Location = new System.Drawing.Point(13, 490);
+            mlIOSettings.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlIOSettings.Name = "mlIOSettings";
+            mlIOSettings.Size = new System.Drawing.Size(343, 69);
+            mlIOSettings.TabIndex = 27;
+            mlIOSettings.Text = "mlIOSettings";
+            mlIOSettings.Click += MlIOSettings_Click;
             // 
             // mlBackupWorkingsSettings
             // 
-            this.mlBackupWorkingsSettings.Location = new System.Drawing.Point(94, 352);
-            this.mlBackupWorkingsSettings.Name = "mlBackupWorkingsSettings";
-            this.mlBackupWorkingsSettings.Size = new System.Drawing.Size(294, 60);
-            this.mlBackupWorkingsSettings.TabIndex = 26;
-            this.mlBackupWorkingsSettings.Text = "mlBackupWorkingsSettings";
-            this.mlBackupWorkingsSettings.Click += new System.EventHandler(this.MlBackupWorkingSettings_Click);
+            mlBackupWorkingsSettings.Location = new System.Drawing.Point(13, 403);
+            mlBackupWorkingsSettings.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlBackupWorkingsSettings.Name = "mlBackupWorkingsSettings";
+            mlBackupWorkingsSettings.Size = new System.Drawing.Size(343, 69);
+            mlBackupWorkingsSettings.TabIndex = 26;
+            mlBackupWorkingsSettings.Text = "mlBackupWorkingsSettings";
+            mlBackupWorkingsSettings.Click += MlBackupWorkingSettings_Click;
             // 
             // mlLowLevelStatus
             // 
-            this.mlLowLevelStatus.Location = new System.Drawing.Point(94, 277);
-            this.mlLowLevelStatus.Name = "mlLowLevelStatus";
-            this.mlLowLevelStatus.Size = new System.Drawing.Size(294, 60);
-            this.mlLowLevelStatus.TabIndex = 25;
-            this.mlLowLevelStatus.Text = "mlLowLevelStatus";
-            this.mlLowLevelStatus.Click += new System.EventHandler(this.MlLowLevelStatus_Click);
+            mlLowLevelStatus.Location = new System.Drawing.Point(13, 317);
+            mlLowLevelStatus.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlLowLevelStatus.Name = "mlLowLevelStatus";
+            mlLowLevelStatus.Size = new System.Drawing.Size(343, 69);
+            mlLowLevelStatus.TabIndex = 25;
+            mlLowLevelStatus.Text = "mlLowLevelStatus";
+            mlLowLevelStatus.Click += MlLowLevelStatus_Click;
             // 
             // mlMachineConfiguration
             // 
-            this.mlMachineConfiguration.Location = new System.Drawing.Point(94, 127);
-            this.mlMachineConfiguration.Name = "mlMachineConfiguration";
-            this.mlMachineConfiguration.Size = new System.Drawing.Size(294, 60);
-            this.mlMachineConfiguration.TabIndex = 24;
-            this.mlMachineConfiguration.Text = "mlMachineConfiguration";
-            this.mlMachineConfiguration.Click += new System.EventHandler(this.MlMachineConfiguration_Click);
+            mlMachineConfiguration.Location = new System.Drawing.Point(13, 144);
+            mlMachineConfiguration.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlMachineConfiguration.Name = "mlMachineConfiguration";
+            mlMachineConfiguration.Size = new System.Drawing.Size(343, 69);
+            mlMachineConfiguration.TabIndex = 24;
+            mlMachineConfiguration.Text = "mlMachineConfiguration";
+            mlMachineConfiguration.Click += MlMachineConfiguration_Click;
             // 
             // mlCmdMaintenance
             // 
-            this.mlCmdMaintenance.Location = new System.Drawing.Point(514, 502);
-            this.mlCmdMaintenance.Name = "mlCmdMaintenance";
-            this.mlCmdMaintenance.Size = new System.Drawing.Size(294, 60);
-            this.mlCmdMaintenance.TabIndex = 33;
-            this.mlCmdMaintenance.Text = "mlCmdMaintenance";
-            this.mlCmdMaintenance.Click += new System.EventHandler(this.MlCmdMaintenance_Click);
+            mlCmdMaintenance.Location = new System.Drawing.Point(423, 576);
+            mlCmdMaintenance.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlCmdMaintenance.Name = "mlCmdMaintenance";
+            mlCmdMaintenance.Size = new System.Drawing.Size(343, 69);
+            mlCmdMaintenance.TabIndex = 33;
+            mlCmdMaintenance.Text = "mlCmdMaintenance";
+            mlCmdMaintenance.Click += MlCmdMaintenance_Click;
             // 
             // mlMachineEndurance
             // 
-            this.mlMachineEndurance.Location = new System.Drawing.Point(94, 502);
-            this.mlMachineEndurance.Name = "mlMachineEndurance";
-            this.mlMachineEndurance.Size = new System.Drawing.Size(294, 60);
-            this.mlMachineEndurance.TabIndex = 34;
-            this.mlMachineEndurance.Text = "mlMachineEndurance";
-            this.mlMachineEndurance.Click += new System.EventHandler(this.MlMachineEndurance_Click);
+            mlMachineEndurance.Location = new System.Drawing.Point(13, 576);
+            mlMachineEndurance.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlMachineEndurance.Name = "mlMachineEndurance";
+            mlMachineEndurance.Size = new System.Drawing.Size(343, 69);
+            mlMachineEndurance.TabIndex = 34;
+            mlMachineEndurance.Text = "mlMachineEndurance";
+            mlMachineEndurance.Click += MlMachineEndurance_Click;
             // 
             // mlAnalogInputsCalibration
             // 
-            this.mlAnalogInputsCalibration.Location = new System.Drawing.Point(514, 202);
-            this.mlAnalogInputsCalibration.Name = "mlAnalogInputsCalibration";
-            this.mlAnalogInputsCalibration.Size = new System.Drawing.Size(294, 60);
-            this.mlAnalogInputsCalibration.TabIndex = 35;
-            this.mlAnalogInputsCalibration.Text = "mlAnalogInputsCalibration";
-            this.mlAnalogInputsCalibration.Click += new System.EventHandler(this.MlMachineCalibration_Click);
+            mlAnalogInputsCalibration.Location = new System.Drawing.Point(423, 230);
+            mlAnalogInputsCalibration.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlAnalogInputsCalibration.Name = "mlAnalogInputsCalibration";
+            mlAnalogInputsCalibration.Size = new System.Drawing.Size(343, 69);
+            mlAnalogInputsCalibration.TabIndex = 35;
+            mlAnalogInputsCalibration.Text = "mlAnalogInputsCalibration";
+            mlAnalogInputsCalibration.Click += MlMachineCalibration_Click;
             // 
             // mlMachineEnduranceLimits
             // 
-            this.mlMachineEnduranceLimits.Location = new System.Drawing.Point(94, 577);
-            this.mlMachineEnduranceLimits.Name = "mlMachineEnduranceLimits";
-            this.mlMachineEnduranceLimits.Size = new System.Drawing.Size(294, 60);
-            this.mlMachineEnduranceLimits.TabIndex = 36;
-            this.mlMachineEnduranceLimits.Text = "mlMachineEnduranceLimits";
-            this.mlMachineEnduranceLimits.Click += new System.EventHandler(this.MlMachineEnduranceLimits_Click);
+            mlMachineEnduranceLimits.Location = new System.Drawing.Point(13, 663);
+            mlMachineEnduranceLimits.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlMachineEnduranceLimits.Name = "mlMachineEnduranceLimits";
+            mlMachineEnduranceLimits.Size = new System.Drawing.Size(343, 69);
+            mlMachineEnduranceLimits.TabIndex = 36;
+            mlMachineEnduranceLimits.Text = "mlMachineEnduranceLimits";
+            mlMachineEnduranceLimits.Click += MlMachineEnduranceLimits_Click;
             // 
             // mlShutdownApp
             // 
-            this.mlShutdownApp.Location = new System.Drawing.Point(514, 577);
-            this.mlShutdownApp.Name = "mlShutdownApp";
-            this.mlShutdownApp.Size = new System.Drawing.Size(294, 60);
-            this.mlShutdownApp.TabIndex = 37;
-            this.mlShutdownApp.Text = "mlShutdownApp";
-            this.mlShutdownApp.Click += new System.EventHandler(this.MlShutdownApp_Click);
+            mlShutdownApp.Location = new System.Drawing.Point(423, 663);
+            mlShutdownApp.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlShutdownApp.Name = "mlShutdownApp";
+            mlShutdownApp.Size = new System.Drawing.Size(343, 69);
+            mlShutdownApp.TabIndex = 37;
+            mlShutdownApp.Text = "mlShutdownApp";
+            mlShutdownApp.Click += MlShutdownApp_Click;
             // 
             // mlUpdateWorkingSettings
             // 
-            this.mlUpdateWorkingSettings.Location = new System.Drawing.Point(94, 656);
-            this.mlUpdateWorkingSettings.Name = "mlUpdateWorkingSettings";
-            this.mlUpdateWorkingSettings.Size = new System.Drawing.Size(294, 60);
-            this.mlUpdateWorkingSettings.TabIndex = 38;
-            this.mlUpdateWorkingSettings.Text = "mlUpdateWorkingSettings";
-            this.mlUpdateWorkingSettings.Click += new System.EventHandler(this.MlRestoreWorkingSettings_Click);
+            mlUpdateWorkingSettings.Location = new System.Drawing.Point(13, 754);
+            mlUpdateWorkingSettings.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlUpdateWorkingSettings.Name = "mlUpdateWorkingSettings";
+            mlUpdateWorkingSettings.Size = new System.Drawing.Size(343, 69);
+            mlUpdateWorkingSettings.TabIndex = 38;
+            mlUpdateWorkingSettings.Text = "mlUpdateWorkingSettings";
+            mlUpdateWorkingSettings.Click += MlRestoreWorkingSettings_Click;
             // 
             // mlUpdateSettings
             // 
-            this.mlUpdateSettings.Location = new System.Drawing.Point(514, 656);
-            this.mlUpdateSettings.Name = "mlUpdateSettings";
-            this.mlUpdateSettings.Size = new System.Drawing.Size(294, 60);
-            this.mlUpdateSettings.TabIndex = 39;
-            this.mlUpdateSettings.Text = "mlUpdateSettings";
-            this.mlUpdateSettings.Click += new System.EventHandler(this.MlUpdateSettings_Click);
+            mlUpdateSettings.Location = new System.Drawing.Point(423, 754);
+            mlUpdateSettings.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlUpdateSettings.Name = "mlUpdateSettings";
+            mlUpdateSettings.Size = new System.Drawing.Size(343, 69);
+            mlUpdateSettings.TabIndex = 39;
+            mlUpdateSettings.Text = "mlUpdateSettings";
+            mlUpdateSettings.Click += MlUpdateSettings_Click;
             // 
             // mlFilterUWF
             // 
-            this.mlFilterUWF.Location = new System.Drawing.Point(907, 127);
-            this.mlFilterUWF.Name = "mlFilterUWF";
-            this.mlFilterUWF.Size = new System.Drawing.Size(294, 60);
-            this.mlFilterUWF.TabIndex = 40;
-            this.mlFilterUWF.Text = "mlFilterUWF";
-            this.mlFilterUWF.Click += new System.EventHandler(this.MlFilterUWF_Click);
+            mlFilterUWF.Location = new System.Drawing.Point(826, 144);
+            mlFilterUWF.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlFilterUWF.Name = "mlFilterUWF";
+            mlFilterUWF.Size = new System.Drawing.Size(343, 69);
+            mlFilterUWF.TabIndex = 40;
+            mlFilterUWF.Text = "mlFilterUWF";
+            mlFilterUWF.Click += MlFilterUWF_Click;
             // 
             // mlResetMachineEndurance
             // 
-            this.mlResetMachineEndurance.Location = new System.Drawing.Point(907, 202);
-            this.mlResetMachineEndurance.Name = "mlResetMachineEndurance";
-            this.mlResetMachineEndurance.Size = new System.Drawing.Size(294, 60);
-            this.mlResetMachineEndurance.TabIndex = 41;
-            this.mlResetMachineEndurance.Text = "mlResetMachineEndurance";
-            this.mlResetMachineEndurance.Click += new System.EventHandler(this.MlResetMachineEndurance_Click);
+            mlResetMachineEndurance.Location = new System.Drawing.Point(826, 230);
+            mlResetMachineEndurance.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlResetMachineEndurance.Name = "mlResetMachineEndurance";
+            mlResetMachineEndurance.Size = new System.Drawing.Size(343, 69);
+            mlResetMachineEndurance.TabIndex = 41;
+            mlResetMachineEndurance.Text = "mlResetMachineEndurance";
+            mlResetMachineEndurance.Click += MlResetMachineEndurance_Click;
             // 
             // mlBackupLog
             // 
-            this.mlBackupLog.Location = new System.Drawing.Point(907, 277);
-            this.mlBackupLog.Name = "mlBackupLog";
-            this.mlBackupLog.Size = new System.Drawing.Size(294, 60);
-            this.mlBackupLog.TabIndex = 45;
-            this.mlBackupLog.Text = "mlBackupLog";
-            this.mlBackupLog.Click += new System.EventHandler(this.mlBackupLog_Click);
+            mlBackupLog.Location = new System.Drawing.Point(826, 317);
+            mlBackupLog.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
+            mlBackupLog.Name = "mlBackupLog";
+            mlBackupLog.Size = new System.Drawing.Size(343, 69);
+            mlBackupLog.TabIndex = 45;
+            mlBackupLog.Text = "mlBackupLog";
+            mlBackupLog.Click += mlBackupLog_Click;
             // 
             // FormRootSettings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
-            this.Controls.Add(this.mlBackupLog);
-            this.Controls.Add(this.mlResetMachineEndurance);
-            this.Controls.Add(this.mlFilterUWF);
-            this.Controls.Add(this.mlUpdateSettings);
-            this.Controls.Add(this.mlUpdateWorkingSettings);
-            this.Controls.Add(this.mlShutdownApp);
-            this.Controls.Add(this.mlMachineEnduranceLimits);
-            this.Controls.Add(this.mlAnalogInputsCalibration);
-            this.Controls.Add(this.mlMachineEndurance);
-            this.Controls.Add(this.mlCmdMaintenance);
-            this.Controls.Add(this.mlSoftwareUpdate);
-            this.Controls.Add(this.mlBackupSystem);
-            this.Controls.Add(this.mlResetSettings);
-            this.Controls.Add(this.mlLocalization);
-            this.Controls.Add(this.mlMachineParameters);
-            this.Controls.Add(this.mlIOSettings);
-            this.Controls.Add(this.mlBackupWorkingsSettings);
-            this.Controls.Add(this.mlLowLevelStatus);
-            this.Controls.Add(this.mlMachineConfiguration);
-            this.Controls.Add(this.panelForm);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "FormRootSettings";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormRootSettingsMenu";
-            this.Load += new System.EventHandler(this.FormRootSettings_Load);
-            this.panelForm.ResumeLayout(false);
-            this.mpInfo.ResumeLayout(false);
-            this.mpInfo.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(1280, 800);
+            Controls.Add(mlBackupLog);
+            Controls.Add(mlResetMachineEndurance);
+            Controls.Add(mlFilterUWF);
+            Controls.Add(mlUpdateSettings);
+            Controls.Add(mlUpdateWorkingSettings);
+            Controls.Add(mlShutdownApp);
+            Controls.Add(mlMachineEnduranceLimits);
+            Controls.Add(mlAnalogInputsCalibration);
+            Controls.Add(mlMachineEndurance);
+            Controls.Add(mlCmdMaintenance);
+            Controls.Add(mlSoftwareUpdate);
+            Controls.Add(mlBackupSystem);
+            Controls.Add(mlResetSettings);
+            Controls.Add(mlLocalization);
+            Controls.Add(mlMachineParameters);
+            Controls.Add(mlIOSettings);
+            Controls.Add(mlBackupWorkingsSettings);
+            Controls.Add(mlLowLevelStatus);
+            Controls.Add(mlMachineConfiguration);
+            Controls.Add(panelForm);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "FormRootSettings";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "FormRootSettingsMenu";
+            Load += FormRootSettings_Load;
+            panelForm.ResumeLayout(false);
+            mpInfo.ResumeLayout(false);
+            mpInfo.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

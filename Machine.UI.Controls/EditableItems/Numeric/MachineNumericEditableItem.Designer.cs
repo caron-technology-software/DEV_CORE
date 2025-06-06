@@ -28,78 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.slPropertyValue = new Machine.UI.Controls.MachineLabel();
-            this.slPropertyName = new Machine.UI.Controls.MachineLabel();
-            this.machinePanelEdgeRounded = new Machine.UI.Controls.MachinePanelEdgeRounded();
-            this.slPropertyValueYard = new Machine.UI.Controls.MachineLabel();
-            this.SuspendLayout();
+            slPropertyValue = new MachineLabel();
+            slPropertyName = new MachineLabel();
+            machinePanelEdgeRounded = new MachinePanelEdgeRounded();
+            slPropertyValueYard = new MachineLabel();
+            machinePanelEdgeRounded.SuspendLayout();
+            SuspendLayout();
             // 
             // slPropertyValue
             // 
-            this.slPropertyValue.BackColor = System.Drawing.Color.LightGray;
-            this.slPropertyValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.slPropertyValue.Location = new System.Drawing.Point(444, 6);
-            this.slPropertyValue.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.slPropertyValue.Name = "slPropertyValue";
-            this.slPropertyValue.Size = new System.Drawing.Size(143, 30);
-            this.slPropertyValue.TabIndex = 1;
-            this.slPropertyValue.Click += new System.EventHandler(this.SlPropertyValue_Click);
-            this.slPropertyValue.DoubleClick += new System.EventHandler(this.slPropertyValue_DoubleClick);
-            this.slPropertyValue.Enter += new System.EventHandler(this.slPropertyValue_Enter);
-            this.slPropertyValue.Leave += new System.EventHandler(this.slPropertyValue_Leave);
+            slPropertyValue.BackColor = System.Drawing.Color.LightGray;
+            slPropertyValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            slPropertyValue.Location = new System.Drawing.Point(426, 6);
+            slPropertyValue.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            slPropertyValue.Name = "slPropertyValue";
+            slPropertyValue.Size = new System.Drawing.Size(167, 35);
+            slPropertyValue.TabIndex = 1;
+            slPropertyValue.Click += SlPropertyValue_Click;
+            slPropertyValue.DoubleClick += slPropertyValue_DoubleClick;
+            slPropertyValue.Enter += slPropertyValue_Enter;
+            slPropertyValue.Leave += slPropertyValue_Leave;
             // 
             // slPropertyName
             // 
-            this.slPropertyName.BackColor = System.Drawing.Color.Transparent;
-            this.slPropertyName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.slPropertyName.Location = new System.Drawing.Point(7, 6);
-            this.slPropertyName.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.slPropertyName.Name = "slPropertyName";
-            this.slPropertyName.Size = new System.Drawing.Size(431, 30);
-            this.slPropertyName.TabIndex = 0;
-            this.slPropertyName.Click += new System.EventHandler(this.SlPropertyName_Click);
-            this.slPropertyName.DoubleClick += new System.EventHandler(this.slPropertyName_DoubleClick);
-            this.slPropertyName.Enter += new System.EventHandler(this.slPropertyName_Enter);
-            this.slPropertyName.Leave += new System.EventHandler(this.slPropertyName_Leave);
+            slPropertyName.BackColor = System.Drawing.Color.Transparent;
+            slPropertyName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            slPropertyName.Location = new System.Drawing.Point(8, 7);
+            slPropertyName.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            slPropertyName.Name = "slPropertyName";
+            slPropertyName.Size = new System.Drawing.Size(410, 35);
+            slPropertyName.TabIndex = 0;
+            slPropertyName.Click += SlPropertyName_Click;
+            slPropertyName.DoubleClick += slPropertyName_DoubleClick;
+            slPropertyName.Enter += slPropertyName_Enter;
+            slPropertyName.Leave += slPropertyName_Leave;
             // 
             // machinePanelEdgeRounded
             // 
-            this.machinePanelEdgeRounded.LineColor = System.Drawing.Color.LightGray;
-            this.machinePanelEdgeRounded.LineWidth = 2;
-            this.machinePanelEdgeRounded.Location = new System.Drawing.Point(0, 0);
-            this.machinePanelEdgeRounded.Name = "machinePanelEdgeRounded";
-            this.machinePanelEdgeRounded.Radius = 4;
-            this.machinePanelEdgeRounded.Size = new System.Drawing.Size(595, 42);
-            this.machinePanelEdgeRounded.TabIndex = 2;
+            machinePanelEdgeRounded.Controls.Add(slPropertyValue);
+            machinePanelEdgeRounded.Controls.Add(slPropertyValueYard);
+            machinePanelEdgeRounded.LineColor = System.Drawing.Color.LightGray;
+            machinePanelEdgeRounded.LineWidth = 2;
+            machinePanelEdgeRounded.Location = new System.Drawing.Point(0, 0);
+            machinePanelEdgeRounded.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            machinePanelEdgeRounded.Name = "machinePanelEdgeRounded";
+            machinePanelEdgeRounded.Radius = 4;
+            machinePanelEdgeRounded.Size = new System.Drawing.Size(601, 48);
+            machinePanelEdgeRounded.TabIndex = 2;
             // 
             // slPropertyValueYard
             // 
-            this.slPropertyValueYard.BackColor = System.Drawing.Color.LightGray;
-            this.slPropertyValueYard.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.slPropertyValueYard.Location = new System.Drawing.Point(446, 6);
-            this.slPropertyValueYard.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.slPropertyValueYard.Name = "slPropertyValueYard";
-            this.slPropertyValueYard.Size = new System.Drawing.Size(143, 30);
-            this.slPropertyValueYard.TabIndex = 3;
-            this.slPropertyValueYard.Visible = false;
-            this.slPropertyValueYard.Click += new System.EventHandler(this.SlPropertyValue_Click);
-            this.slPropertyValueYard.DoubleClick += new System.EventHandler(this.slPropertyValue_DoubleClick);
-            this.slPropertyValueYard.Enter += new System.EventHandler(this.slPropertyValue_Enter);
-            this.slPropertyValueYard.Leave += new System.EventHandler(this.slPropertyValue_Leave);
+            slPropertyValueYard.BackColor = System.Drawing.Color.LightGray;
+            slPropertyValueYard.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            slPropertyValueYard.Location = new System.Drawing.Point(426, 7);
+            slPropertyValueYard.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            slPropertyValueYard.Name = "slPropertyValueYard";
+            slPropertyValueYard.Size = new System.Drawing.Size(167, 35);
+            slPropertyValueYard.TabIndex = 3;
+            slPropertyValueYard.Visible = false;
+            slPropertyValueYard.Click += SlPropertyValue_Click;
+            slPropertyValueYard.DoubleClick += slPropertyValue_DoubleClick;
+            slPropertyValueYard.Enter += slPropertyValue_Enter;
+            slPropertyValueYard.Leave += slPropertyValue_Leave;
             // 
             // MachineNumericEditableItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.slPropertyValueYard);
-            this.Controls.Add(this.slPropertyValue);
-            this.Controls.Add(this.slPropertyName);
-            this.Controls.Add(this.machinePanelEdgeRounded);
-            this.Name = "MachineNumericEditableItem";
-            this.Size = new System.Drawing.Size(595, 42);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.Transparent;
+            Controls.Add(slPropertyName);
+            Controls.Add(machinePanelEdgeRounded);
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "MachineNumericEditableItem";
+            Size = new System.Drawing.Size(608, 48);
+            machinePanelEdgeRounded.ResumeLayout(false);
+            ResumeLayout(false);
         }
         #endregion
 
