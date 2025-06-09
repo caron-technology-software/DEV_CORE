@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Cradle.Console\Cradle.Control.csproj" />
     <ProjectReference Include="..\Cradle.Core\Cradle.Core.csproj" />
     <ProjectReference Include="..\Machine.Core\Machine.Core.csproj" />
     <ProjectReference Include="..\ProRob.Framework.ApplicationInfo\ProRob.Framework.ApplicationInfo.csproj" />

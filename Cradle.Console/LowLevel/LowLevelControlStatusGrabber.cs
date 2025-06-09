@@ -72,6 +72,7 @@ namespace Caron.Cradle.Control
 
         public void Stop()
         {
+            cancellationTokenSource.Cancel();
             lock (_lock)
             {
                 isRunning = false;

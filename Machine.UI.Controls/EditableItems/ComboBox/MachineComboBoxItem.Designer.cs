@@ -40,21 +40,21 @@
             machinePanelEdgeRounded.Controls.Add(comboBoxPropertyValue);
             machinePanelEdgeRounded.LineColor = System.Drawing.Color.LightGray;
             machinePanelEdgeRounded.LineWidth = 2;
-            machinePanelEdgeRounded.Location = new System.Drawing.Point(0, 0);
+            machinePanelEdgeRounded.Location = new System.Drawing.Point(4, 0);
             machinePanelEdgeRounded.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             machinePanelEdgeRounded.Name = "machinePanelEdgeRounded";
             machinePanelEdgeRounded.Radius = 4;
-            machinePanelEdgeRounded.Size = new System.Drawing.Size(694, 48);
+            machinePanelEdgeRounded.Size = new System.Drawing.Size(607, 48);
             machinePanelEdgeRounded.TabIndex = 2;
             // 
             // slPropertyName
             // 
             slPropertyName.BackColor = System.Drawing.Color.Transparent;
             slPropertyName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            slPropertyName.Location = new System.Drawing.Point(8, 11);
+            slPropertyName.Location = new System.Drawing.Point(8, 7);
             slPropertyName.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             slPropertyName.Name = "slPropertyName";
-            slPropertyName.Size = new System.Drawing.Size(510, 30);
+            slPropertyName.Size = new System.Drawing.Size(382, 30);
             slPropertyName.TabIndex = 0;
             slPropertyName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             slPropertyName.Enter += slPropertyName_Enter;
@@ -64,7 +64,7 @@
             // 
             comboBoxPropertyValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             comboBoxPropertyValue.FormattingEnabled = true;
-            comboBoxPropertyValue.Location = new System.Drawing.Point(519, 13);
+            comboBoxPropertyValue.Location = new System.Drawing.Point(429, 7);
             comboBoxPropertyValue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             comboBoxPropertyValue.Name = "comboBoxPropertyValue";
             comboBoxPropertyValue.Size = new System.Drawing.Size(171, 30);
@@ -78,7 +78,7 @@
             Controls.Add(machinePanelEdgeRounded);
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "MachineComboBoxItem";
-            Size = new System.Drawing.Size(694, 48);
+            Size = new System.Drawing.Size(617, 48);
             machinePanelEdgeRounded.ResumeLayout(false);
             ResumeLayout(false);
         }

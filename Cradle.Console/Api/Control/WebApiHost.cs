@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
@@ -24,6 +25,9 @@ namespace Caron.Cradle.Control.Api
                 WebRootPath = "wwwroot",
                 ApplicationName = typeof(WebApiHost).Assembly.FullName
             });
+
+            //disattiva il log di sistema
+            builder.Logging.ClearProviders();
 
             builder.WebHost.UseUrls(url);
 

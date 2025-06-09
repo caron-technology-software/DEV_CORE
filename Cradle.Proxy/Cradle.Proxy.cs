@@ -64,7 +64,7 @@ namespace Cradle.Proxy
             string serverUri = $"http://*:{Machine.Constants.Networking.WebApiProxyPort}/";
 #endif
             var cts = new CancellationTokenSource();
-            var apiTask = Task.Run(() => Caron.Cradle.Control.Api.RunAsync(serverUri, cts.Token));
+            var apiTask = Task.Run(() => Caron.Cradle.Control.Api.WebApiHost.RunAsync(serverUri, cts.Token));
 
             Console.WriteLine($"Server started at {serverUri}");
             #endregion

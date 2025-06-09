@@ -152,7 +152,7 @@ namespace Caron.Cradle.UI
             mbAlignmentMotorSide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             mbAlignmentMotorSide.ForeColor = System.Drawing.Color.Transparent;
             mbAlignmentMotorSide.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("mbAlignmentMotorSide.InactiveBackgroundImage");
-            mbAlignmentMotorSide.Location = new System.Drawing.Point(21, 21);
+            mbAlignmentMotorSide.Location = new System.Drawing.Point(31, 21);
             mbAlignmentMotorSide.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             mbAlignmentMotorSide.Name = "mbAlignmentMotorSide";
             mbAlignmentMotorSide.Size = new System.Drawing.Size(102, 102);
@@ -177,7 +177,7 @@ namespace Caron.Cradle.UI
             mbAlignmentOperatorSide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             mbAlignmentOperatorSide.ForeColor = System.Drawing.Color.Transparent;
             mbAlignmentOperatorSide.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("mbAlignmentOperatorSide.InactiveBackgroundImage");
-            mbAlignmentOperatorSide.Location = new System.Drawing.Point(20, 180);
+            mbAlignmentOperatorSide.Location = new System.Drawing.Point(31, 180);
             mbAlignmentOperatorSide.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             mbAlignmentOperatorSide.Name = "mbAlignmentOperatorSide";
             mbAlignmentOperatorSide.Size = new System.Drawing.Size(102, 102);
@@ -227,7 +227,7 @@ namespace Caron.Cradle.UI
             cbCradleJogACW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             cbCradleJogACW.ForeColor = System.Drawing.Color.Transparent;
             cbCradleJogACW.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbCradleJogACW.InactiveBackgroundImage");
-            cbCradleJogACW.Location = new System.Drawing.Point(19, 180);
+            cbCradleJogACW.Location = new System.Drawing.Point(25, 180);
             cbCradleJogACW.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             cbCradleJogACW.Name = "cbCradleJogACW";
             cbCradleJogACW.Size = new System.Drawing.Size(102, 102);
@@ -252,7 +252,7 @@ namespace Caron.Cradle.UI
             cbCradleJogCW.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             cbCradleJogCW.ForeColor = System.Drawing.Color.Transparent;
             cbCradleJogCW.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbCradleJogCW.InactiveBackgroundImage");
-            cbCradleJogCW.Location = new System.Drawing.Point(20, 21);
+            cbCradleJogCW.Location = new System.Drawing.Point(25, 21);
             cbCradleJogCW.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             cbCradleJogCW.Name = "cbCradleJogCW";
             cbCradleJogCW.Size = new System.Drawing.Size(102, 102);
@@ -290,7 +290,7 @@ namespace Caron.Cradle.UI
             mbSharpening.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             mbSharpening.ForeColor = System.Drawing.Color.Transparent;
             mbSharpening.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("mbSharpening.InactiveBackgroundImage");
-            mbSharpening.Location = new System.Drawing.Point(155, 15);
+            mbSharpening.Location = new System.Drawing.Point(163, 19);
             mbSharpening.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             mbSharpening.Name = "mbSharpening";
             mbSharpening.Size = new System.Drawing.Size(102, 102);
@@ -314,7 +314,7 @@ namespace Caron.Cradle.UI
             cbCutOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             cbCutOff.ForeColor = System.Drawing.Color.Transparent;
             cbCutOff.InactiveBackgroundImage = (System.Drawing.Bitmap)resources.GetObject("cbCutOff.InactiveBackgroundImage");
-            cbCutOff.Location = new System.Drawing.Point(21, 15);
+            cbCutOff.Location = new System.Drawing.Point(31, 19);
             cbCutOff.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             cbCutOff.Name = "cbCutOff";
             cbCutOff.Size = new System.Drawing.Size(102, 102);
@@ -390,7 +390,7 @@ namespace Caron.Cradle.UI
             // 
             cmbStraightRoller.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             cmbStraightRoller.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            cmbStraightRoller.Location = new System.Drawing.Point(834, 151);
+            cmbStraightRoller.Location = new System.Drawing.Point(834, 155);
             cmbStraightRoller.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
             cmbStraightRoller.Name = "cmbStraightRoller";
             cmbStraightRoller.Size = new System.Drawing.Size(303, 144);
