@@ -8,10 +8,11 @@ using System.Net.Http;
 
 using ProRob.WebApi.Auth;
 using ProRob.WebApi;
+using Cradle.Proxy.Api.ApiController;
 
 namespace Cradle.Proxy.Api
 {
-    [BasicAuthorization]
+    [BasicAuth]
     [Route("machine_events")]
     public class MachineEventsController : ProxyApiController
     {

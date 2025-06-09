@@ -195,7 +195,7 @@ namespace Caron.Cradle.UI
                 //-----------------------------------------------------------
                 #region Localization
                 Machine.Localization.Initialize(Cradle.Constants.Path.Data.LocalizationsFile);
-                Machine.Localization.MachineLanguage = Communicator.GetData<MachineLanguage>("localization/language/pippo");
+                Machine.Localization.MachineLanguage = Communicator.GetData<MachineLanguage>("localization/language");
                 Console.WriteLine($"MachineLanguage: {Machine.Localization.MachineLanguage.ToString()}");
                 #endregion
 

@@ -8,10 +8,11 @@ using System.Net.Http;
 
 using ProRob.WebApi;
 using ProRob.WebApi.Auth;
+using Cradle.Proxy.Api.ApiController;
 
 namespace Cradle.Proxy.Api
 {
-    [BasicAuthorization]
+    [BasicAuth]
     [Route("workings_statistics")]
     public class WorkingsStatisticsController : ProxyApiController
     {

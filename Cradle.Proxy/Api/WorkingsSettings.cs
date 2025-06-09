@@ -11,10 +11,11 @@ using Caron.Cradle.Control.HighLevel.Settings;
 using System.Net;
 using System.Net.Http;
 using ProRob.WebApi;
+using Cradle.Proxy.Api.ApiController;
 
 namespace Cradle.Proxy.Api
 {
-    [BasicAuthorization]
+    [BasicAuth]
     [Route("workings_settings")]
     public class WorkingsSettingsController : ProxyApiController
     {

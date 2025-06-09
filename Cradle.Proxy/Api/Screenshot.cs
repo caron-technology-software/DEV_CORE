@@ -13,9 +13,11 @@ using ProRob;
 using ProRob.Imaging;
 using ProRob.WebApi;
 using ProRob.WebApi.Auth;
+using Cradle.Proxy.Api.ApiController;
 
 namespace Cradle.Proxy
 {
+    [BasicAuth]
     [Route("screenshot")]
     public class ScreenshotController : ProxyApiController
     {

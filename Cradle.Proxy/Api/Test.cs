@@ -15,9 +15,12 @@ using System.Net.Http.Headers;
 using ProRob;
 using ProRob.Imaging;
 using ProRob.WebApi;
+using ProRob.WebApi.Auth;
+using Cradle.Proxy.Api.ApiController;
 
 namespace Cradle.Proxy
 {
+    [BasicAuth]
     [Route("test")]
     public class TestController : ProxyApiController
     {
