@@ -9,7 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ProRob.Extensions.Object\ProRob.Extensions.Object.csproj" />
     <ProjectReference Include="..\ProRob.Motion\ProRob.Motion.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MatlabHelper">
+      <HintPath>..\..\DEV\ProRob.Motion.TrajectoryPlanner.MatlabHelper\lib\MatlabHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="MWArray">
+      <HintPath>..\..\DEV\ProRob.Motion.TrajectoryPlanner.MatlabHelper\lib\MWArray.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

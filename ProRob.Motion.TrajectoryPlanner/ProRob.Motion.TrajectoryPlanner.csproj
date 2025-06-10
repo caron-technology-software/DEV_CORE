@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net9.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Configurations>Debug;Release;Test</Configurations>
@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DoubleSTrajectoryPlanner\ProRob.Motion.TrajectoryPlanner.MatlabHelper.csproj" />
     <ProjectReference Include="..\ProRob.Extensions.Object\ProRob.Extensions.Object.csproj" />
+    <ProjectReference Include="..\ProRob.Framework.Log\ProRob.Framework.Log.csproj" />
     <ProjectReference Include="..\ProRob.Framework\ProRob.Framework.csproj" />
     <ProjectReference Include="..\ProRob.Motion\ProRob.Motion.Models.csproj" />
   </ItemGroup>
